@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", serif;
+    @apply bg-backgroundPrimary;
+  }
+
+  h1 {
+    @apply sm:text-[18px] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-transparent bg-clip-text 
+    bg-gradient-to-b from-primary to-secondary font-bold
+  }
+
+  p {
+    @apply text-color
+  }
+
+  header {
+    @apply bg-backgroundPrimary select-none
+  }
+
+  nav {
+    @apply bg-backgroundPrimary select-none
+  }
+
+  img {
+    @apply select-none
+  }
+
+  li {
+    @apply list-none text-color font-semibold
+  }
+
+  li a {
+    @apply text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b from-primary to-secondary
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
