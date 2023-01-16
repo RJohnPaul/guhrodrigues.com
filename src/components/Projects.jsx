@@ -9,7 +9,7 @@ const Projects = () => {
     {
       id: 1,
       src: portfolio,
-      visit: "",
+      visit: "https://guhrodrigues.vercel.app/",
       code: "https://github.com/projects-gustavo/portfolio"
     },
     {
