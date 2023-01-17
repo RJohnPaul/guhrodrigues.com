@@ -24,9 +24,7 @@ const Home = () => {
                     <div className="xl:ml-12 2xl:ml-12 flex sm:justify-center md:justify-start">
                         <a href="#projects">
                             <button className="relative inline-flex items-center gap-[0.5rem] bg-gradient-to-r from-primary to-secondary 
-                            text-black 2xl:text-[1.2rem] py-[0.8rem] px-[1.4rem] rounded-[0.8rem] isolate before:content[' '] before:absolute 
-                            before:inset-0 before:z-[-1] before:bg-gradient-to-r from-secondary to-primary before:rounded-[inherit] 
-                            before:opacity-0 before:transition-opacity hover:before:opacity-100">
+                            text-black 2xl:text-[1.2rem] py-[0.8rem] px-[1.4rem] rounded-[0.8rem] isolate">
                                 Portfólio
                                 <RiSendPlane2Line />
                             </button>
