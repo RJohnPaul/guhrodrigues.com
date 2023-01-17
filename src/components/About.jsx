@@ -28,7 +28,7 @@ const About = () => {
                         Com isso, espero arrumar o meu primeiro emprego.
                     </p>
                     <div className="mt-5 flex text-center justify-center">
-                        <a href={curriculo} download="Gustavo Rodrigues.pdf" target="_blank">
+                        <a href={curriculo} download="Gustavo Rodrigues.pdf">
                             <button class="flex text-center items-center relative font-medium border-2 border-primary bg-transparent py-2.5 px-3 
                           text-primary rounded-lg hover:bg-gradient-to-r from-primary to-secondary 
                           hover:text-black duration-300">
