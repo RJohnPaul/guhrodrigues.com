@@ -9,24 +9,28 @@ const Projects = () => {
     {
       id: 1,
       src: portfolio,
+      alt: "Portfolio",
       visit: "https://guhrodrigues.vercel.app/",
       code: "https://github.com/projects-gustavo/portfolio"
     },
     {
       id: 2,
       src: musicplayer,
+      alt: "Music Player",
       visit: "https://projects-gustavo.github.io/music-player/",
       code: "https://github.com/projects-gustavo/music-player"
     },
     {
       id: 3,
       src: calculator,
+      alt: "Calculadora",
       visit: "https://projects-gustavo.github.io/calculator/",
       code: "https://github.com/projects-gustavo/calculator"
     },
     {
       id: 4,
       src: todo,
+      alt: "To-do",
       visit: "https://to-do-projects-gustavo.vercel.app/",
       code: "https://github.com/projects-gustavo/to-do"
     }
@@ -41,9 +45,9 @@ const Projects = () => {
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 sm:px-0">
           {
-            projects.map(({ id, src, visit, code }) => (
+            projects.map(({ id, src, alt, visit, code }) => (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg bg-backgroundSecondary">
-                <img src={src} className="rounded-md duration-200" />
+                <img src={src} className="rounded-md duration-200" alt={alt} />
                 <div className="flex items-center justify-center">
                   <a href={visit} className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary" target="_blank">
                     <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-300">Visitar</button>

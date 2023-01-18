@@ -6,7 +6,7 @@ import TypeWriter from 'typewriter-effect'
 const Home = () => {
     return (
         <section className="w-full md:h-screen sm:h-[70vh] grid grid-cols-1 md:grid-cols-9 sm:text-center sm:items-center md:text-start" id="home">
-            <div className="md:col-span-5 lg:ml-12 xl:ml-12 2xl:ml-12 flex items-center justify-center p-8">
+            <div className="md:col-span-5 lg:ml-12 xl:ml-12 2xl:ml-36 flex items-center justify-center p-8">
                 <div className="flex flex-col gap-4 xl:ml-12 2xl:-mr-10">
                     <h1 className="text-white xl:ml-12 2xl:ml-12">
                         <span className="font-medium">Olá! Meu nome é</span><br></br>
@@ -34,7 +34,7 @@ const Home = () => {
             </div>
             <div className="md:col-span-3 flex items-center justify-start relative sm:hidden md:grid" id="img">
                 <img src={avatar} className="sm:w-[310px] sm:h-[310px] md:w-[400px] md:h-[400px] lg:w-[450px] 
-                lg:h-[450px] xl:w-[600px] xl:h-[600px] 2xl:w-[600px] 2xl:h-[600px] object-cover xl:-mt-28" />
+                lg:h-[450px] xl:w-[600px] xl:h-[600px] 2xl:w-[600px] 2xl:h-[600px] object-cover" />
             </div>
         </section>
     )
