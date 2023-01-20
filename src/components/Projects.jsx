@@ -1,9 +1,12 @@
 import React from 'react'
+
+// Images
 import portfolio from '../../public/assets/img/portfolio.jpg'
 import musicplayer from '../../public/assets/img/musicplayer.jpg'
 import calculator from '../../public/assets/img/calculator.jpg'
 import todo from '../../public/assets/img/todo.jpg'
 
+// Projects
 const Projects = () => {
   const projects = [
     {
@@ -46,13 +49,27 @@ const Projects = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 sm:px-0">
           {
             projects.map(({ id, src, alt, visit, code }) => (
-              <div key={id} className="shadow-md shadow-gray-600 rounded-lg bg-backgroundSecondary">
-                <img src={src} className="rounded-md duration-200" alt={alt} />
+              <div
+                key={id}
+                className="shadow-md shadow-gray-600 rounded-lg bg-backgroundSecondary"
+              >
+                <img
+                  src={src}
+                  className="rounded-md duration-200"
+                  alt={alt}
+                />
                 <div className="flex items-center justify-center">
-                  <a href={visit} className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary" target="_blank">
+                  <a
+                    href={visit}
+                    className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary"
+                    target="_blank"
+                  >
                     <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-300">Visitar</button>
                   </a>
-                  <a href={code} className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary" target="_blank">
+                  <a
+                    href={code}
+                    className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary"
+                    target="_blank">
                     <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-300">Repositório</button>
                   </a>
                 </div>
