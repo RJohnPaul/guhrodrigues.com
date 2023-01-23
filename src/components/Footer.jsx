@@ -10,7 +10,7 @@ import ScrollToTop from 'react-scroll-to-top'
 // Footer
 const Footer = () => {
     return (
-        <footer className="bg-backgroundSecondary p-8 xl:p-20 mt-12" id="contact">
+        <footer className="bg-backgroundSecondary p-8 xl:p-20 mt-24" id="contact">
             <ScrollToTop
                 smooth top="20"
                 className="flex justify-center items-center bg-gradient-to-r from-primary to-secondary shadow-none"

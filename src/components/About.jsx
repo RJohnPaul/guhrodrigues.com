@@ -14,7 +14,7 @@ const About = () => {
             className="w-full md:h-screen p-2 flex items-center py-16"
             id="about"
         >
-            <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto md:grid grid-cols-3 gap-8 shadow-xl rounded-[45px] bg-backgroundSecondary p-5">
+            <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto md:grid grid-cols-3 gap-8 p-5">
                 <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-110 ease-in duration-300">
                     <img
                         src={about}
@@ -43,8 +43,8 @@ const About = () => {
                             href={curriculo}
                             download="Gustavo Rodrigues.pdf"
                         >
-                            <button class="flex text-center items-center relative font-medium border-2 border-primary bg-transparent py-2.5 px-3 text-primary rounded-lg hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300">
-                                <RiDownload2Fill className="mr-1" />
+                            <button class="flex text-center items-center font-medium border-2 gap-1 border-primary bg-transparent py-3 px-3 text-primary rounded-lg hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300">
+                                <RiDownload2Fill />
                                 Download C.V
                             </button>
                         </a>

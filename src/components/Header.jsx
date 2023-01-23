@@ -8,7 +8,7 @@ const Header = () => {
     const [showMenu, setShowMenu] = useState(false)
 
     return (
-        <header className="fixed flex items-center justify-between w-full py-4 h-[7vh] z-50 border-b-2 border-backgroundSecondary">
+        <header className="fixed flex items-center justify-between w-full py-4 h-[8vh] z-50 border-b-2 border-backgroundSecondary">
             <div className="xl:w-1/3 2xl:w-1/3 text-center 2xl:mr-12">
                 <a
                     href="#home"

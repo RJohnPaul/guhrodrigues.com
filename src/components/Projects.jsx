@@ -53,24 +53,26 @@ const Projects = () => {
                 key={id}
                 className="shadow-md shadow-gray-600 rounded-lg bg-backgroundSecondary"
               >
-                <img
-                  src={src}
-                  className="rounded-md duration-200"
-                  alt={alt}
-                />
+                <div className="overflow-hidden">
+                  <img
+                    src={src}
+                    className="rounded-md hover:scale-105 ease-in duration-300"
+                    alt={alt}
+                  />
+                </div>
                 <div className="flex items-center justify-center">
                   <a
                     href={visit}
                     className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary"
                     target="_blank"
                   >
-                    <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-300">Visitar</button>
+                    <button className="w-1/2 px-6 py-3 m-4 duration-300">Visitar</button>
                   </a>
                   <a
                     href={code}
                     className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary"
                     target="_blank">
-                    <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-300">Repositório</button>
+                    <button className="w-1/2 px-6 py-3 m-4 duration-300">Repositório</button>
                   </a>
                 </div>
               </div>
