@@ -30,12 +30,12 @@ const About = () => {
                     </p>
                     <p className="py-1">
                         Desde os meus 10 anos eu me interesso pela tecnologia, e com isso, em 2015 iniciei meus estudos
-                        em edição de vídeos e edição de imagens. <br></br>
+                        em edição de vídeos e edição de imagens. <br />
                         Meu interesse na programação veio aos 15 anos, logo após entrar na Etec.
                     </p>
                     <p className="py-1">
                         Sou uma pessoa muito focada e determinada quando quero algo,
-                        e a cada dia venho me dedicando e estudando mais essa área. <br></br>
+                        e a cada dia venho me dedicando e estudando mais essa área.
                         Com isso, espero arrumar o meu primeiro emprego.
                     </p>
                     <div className="mt-5 flex text-center justify-center">
