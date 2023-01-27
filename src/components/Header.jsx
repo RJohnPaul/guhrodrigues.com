@@ -29,9 +29,6 @@ const Header = () => {
                 <li>
                     <a href="#projects">Projetos</a>
                 </li>
-                <li>
-                    <a href="#contact">Contato</a>
-                </li>
             </nav>
             <button
                 onClick={() => setShowMenu(!showMenu)}
