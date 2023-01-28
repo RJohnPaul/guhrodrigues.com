@@ -12,6 +12,57 @@ import mysql from '../../public/assets/img/mysql.png'
 
 // Skills
 const Skills = () => {
+    const skills = [
+        {
+            id: 1,
+            src: html,
+            name: 'HTML',
+            style: 'shadow-orange-500'
+        },
+        {
+            id: 2,
+            src: css,
+            name: 'CSS',
+            style: 'shadow-blue-500'
+        },
+        {
+            id: 3,
+            src: javascript,
+            name: 'JavaScript',
+            style: 'shadow-yellow-300'
+        },
+        {
+            id: 4,
+            src: php,
+            name: 'PHP',
+            style: 'shadow-indigo-300'
+        },
+        {
+            id: 5,
+            src: react,
+            name: 'React',
+            style: 'shadow-cyan-400'
+        },
+        {
+            id: 6,
+            src: tailwind,
+            name: 'Tailwind',
+            style: 'shadow-cyan-600'
+        },
+        {
+            id: 7,
+            src: bootstrap,
+            name: 'Bootstrap',
+            style: 'shadow-violet-500'
+        },
+        {
+            id: 8,
+            src: mysql,
+            name: 'MySQL',
+            style: 'shadow-sky-400'
+        },
+    ]
+
     return (
         <section
             className="w-full lg:h-screen p-2"
@@ -23,126 +74,28 @@ const Skills = () => {
                     <p className="py-3">Tecnologias que tenho conhecimento</p>
                 </div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 text-white">
-                    <div className="p-6 shadow-2xl shadow-orange-500 rounded-xl ease-in duration-300 bg-backgroundSecondary">
-                        <div className="grid grid-cols-1 gap-4 justify-center items-center">
-                            <div className="m-auto">
-                                <img
-                                    src={html}
-                                    width="64px"
-                                    height="64px"
-                                    alt="Imagem do HTML"
-                                />
+                    {
+                        skills.map(({ id, src, name, style }) => (
+                            <div
+                                key={id}
+                                className={`p-6 shadow-2xl rounded-xl ease-in duration-300 ${style} bg-backgroundSecondary`}
+                            >
+                                <div className="grid grid-cols-1 gap-4 justify-center items-center">
+                                    <div className="m-auto">
+                                        <img
+                                            src={src}
+                                            width="64px"
+                                            height="64px"
+                                            alt={name}
+                                        />
+                                    </div>
+                                    <div className="flex flex-col items-center justify-center">
+                                        <h3>{name}</h3>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center">
-                                <h3>HTML</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6 shadow-2xl shadow-blue-500 rounded-xl ease-in duration-300 bg-backgroundSecondary">
-                        <div className="grid grid-cols-1 gap-4 justify-center items-center">
-                            <div className="m-auto">
-                                <img
-                                    src={css}
-                                    width="64px"
-                                    height="64px"
-                                    alt="Imagem do CSS"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center justify-center">
-                                <h3>CSS</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6 shadow-2xl shadow-yellow-300 rounded-xl ease-in duration-300 bg-backgroundSecondary">
-                        <div className="grid grid-cols-1 gap-4 justify-center items-center">
-                            <div className="m-auto">
-                                <img
-                                    src={javascript}
-                                    width="64px"
-                                    height="64px"
-                                    alt="Imagem do JavaScript"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center justify-center">
-                                <h3>JavaScript</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6 shadow-2xl shadow-indigo-300 rounded-xl ease-in duration-300 bg-backgroundSecondary">
-                        <div className="grid grid-cols-1 gap-4 justify-center items-center">
-                            <div className="m-auto">
-                                <img
-                                    src={php}
-                                    width="64px"
-                                    height="64px"
-                                    alt="Imagem do PHP"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center justify-center">
-                                <h3>PHP</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6 shadow-2xl shadow-cyan-400 rounded-xl ease-in duration-300 bg-backgroundSecondary">
-                        <div className="grid grid-cols-1 gap-4 justify-center items-center">
-                            <div className="m-auto">
-                                <img
-                                    src={react}
-                                    width="64px"
-                                    height="64px"
-                                    alt="Imagem do React"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center justify-center">
-                                <h3>React</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6 shadow-2xl shadow-cyan-600 rounded-xl ease-in duration-300 bg-backgroundSecondary">
-                        <div className="grid grid-cols-1 gap-4 justify-center items-center">
-                            <div className="m-auto">
-                                <img
-                                    src={tailwind}
-                                    width="64px"
-                                    height="64px"
-                                    alt="Imagem do Tailwind"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center justify-center">
-                                <h3>Tailwind</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6 shadow-2xl shadow-violet-500 rounded-xl ease-in duration-300 bg-backgroundSecondary">
-                        <div className="grid grid-cols-1 gap-4 justify-center items-center">
-                            <div className="m-auto">
-                                <img
-                                    src={bootstrap}
-                                    width="64px"
-                                    height="64px"
-                                    alt="Imagem do Bootstrap"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center justify-center">
-                                <h3>Bootstrap</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6 shadow-2xl shadow-sky-700 rounded-xl ease-in duration-300 bg-backgroundSecondary">
-                        <div className="grid grid-cols-1 gap-4 justify-center items-center">
-                            <div className="m-auto">
-                                <img
-                                    src={mysql}
-                                    width="64px"
-                                    height="64px"
-                                    alt="Imagem do MySQL"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center justify-center">
-                                <h3>MySQL</h3>
-                            </div>
-                        </div>
-                    </div>
+                        ))
+                    }
                 </div>
             </div>
         </section>

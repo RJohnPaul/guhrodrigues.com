@@ -13,6 +13,29 @@ import TypeWriter from 'typewriter-effect'
 
 // Home
 const Home = () => {
+    const socials = [
+        {
+            id: 1,
+            href: 'https://wa.me/5511986319802',
+            icon: <FaWhatsapp />,
+        },
+        {
+            id: 2,
+            href: 'https://www.linkedin.com/in/guhrodrigues/',
+            icon: <FiLinkedin />,
+        },
+        {
+            id: 3,
+            href: 'https://github.com/projects-gustavo',
+            icon: <FiGithub />,
+        },
+        {
+            id: 4,
+            href: 'https://www.instagram.com/gustavinrm/',
+            icon: <FiInstagram />,
+        },
+    ]
+
     return (
         <section
             className="w-full md:h-screen sm:h-[70vh] grid grid-cols-1 md:grid-cols-9 sm:text-center sm:items-center md:text-start"
@@ -20,36 +43,27 @@ const Home = () => {
         >
             <div className="md:col-span-5 lg:ml-12 xl:ml-36 2xl:ml-36 flex items-center justify-center p-8">
                 <div className="flex flex-col items-end sm:hidden md:flex">
-                    <nav className="flex flex-col items-center gap-7">
-                        <a
-                            href="https://wa.me/5511986319802"
-                            className="block text-gray-400"
-                            target="_blank">
-                            <FaWhatsapp className="scale-150" />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/guhrodrigues/"
-                            className="block text-gray-400"
-                            target="_blank">
-                            <FiLinkedin className="scale-150" />
-                        </a>
-                        <a
-                            href="https://github.com/projects-gustavo"
-                            className="block text-gray-400"
-                            target="_blank">
-                            <FiGithub className="scale-150" />
-                        </a>
-                        <a
-                            href="https://www.instagram.com/gustavinrm/"
-                            className="block text-gray-400"
-                            target="_blank">
-                            <FiInstagram className="scale-150" />
-                        </a>
-                    </nav>
+                    {socials.map(({ id, href, icon }) => (
+                        <nav
+                            key={id}
+                            className="flex flex-col items-center"
+                        >
+                            <ul className="py-3.5">
+                                <a
+                                    href={href}
+                                    className="block text-gray-400"
+                                    target="_blank">
+                                    <div className="scale-150">
+                                        {icon}
+                                    </div>
+                                </a>
+                            </ul>
+                        </nav>
+                    ))}
                 </div>
                 <div className="flex flex-col gap-4 md:ml-12 lg:ml-12 xl:ml-12 2xl:-mr-36">
                     <h1 className="text-white">
-                        <span className="font-medium ml-1.5">Olá! Meu nome é</span><br />
+                        <span className="font-medium lg:text-2xl ml-1.5">Olá! Meu nome é</span><br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary sm:text-5xl md:text-5xl lg:text-7xl xl:text-7xl 2xl:text-7xl">
                             Gustavo Rodrigues
                         </span>
@@ -66,8 +80,8 @@ const Home = () => {
                     </p>
                     <div className="flex sm:justify-center md:justify-start">
                         <a href="#projects">
-                            <button className="flex text-center items-center text-[18px] font-medium border-2 gap-2 border-primary bg-transparent py-3 px-6 text-primary rounded-[0.5rem] hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300">
-                                Portfólio
+                            <button className="flex text-center items-center lg:text-[18px] font-medium border-2 gap-2 border-primary bg-transparent py-3 px-6 text-primary rounded-[0.5rem] hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300">
+                                Projetos
                                 <UilMessage />
                             </button>
                         </a>

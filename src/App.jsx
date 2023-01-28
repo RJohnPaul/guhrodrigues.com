@@ -8,13 +8,13 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div>
+    <>
       <Header />
       <Home />
       <About />
       <Skills />
       <Projects />
       <Footer />
-    </div>
+    </>
   )
 }

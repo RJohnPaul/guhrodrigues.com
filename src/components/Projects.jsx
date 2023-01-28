@@ -41,7 +41,9 @@ const Projects = () => {
 
   return (
     <div className="w-full text-white md:h-screen" id="projects">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div
+        className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
+      >
         <div className="pb-8 text-center mt-20">
           <h1 className="text-4xl font-bold inline">Projetos</h1>
           <p className="py-3">Confira aqui alguns dos meus trabalhos</p>
