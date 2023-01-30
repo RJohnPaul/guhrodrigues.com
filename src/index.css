@@ -30,11 +30,11 @@
   }
 
   li {
-    @apply list-none text-color font-semibold
+    @apply list-none text-gray-400 font-medium
   }
 
   li a {
-    @apply text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b from-primary to-secondary
+    @apply hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b from-primary to-secondary
   }
 }
 

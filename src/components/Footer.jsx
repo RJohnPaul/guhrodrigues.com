@@ -2,6 +2,7 @@ import React from 'react'
 
 // Icons
 import { FaWhatsapp } from 'react-icons/fa'
+import { AiOutlineMail } from 'react-icons/ai'
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
 
 // ScrollToTop
@@ -17,23 +18,28 @@ const Footer = () => {
         },
         {
             id: 2,
+            href: 'mailto:gumartinsR1201@gmail.com',
+            icon: <AiOutlineMail />,
+        },
+        {
+            id: 3,
             href: 'https://www.linkedin.com/in/guhrodrigues/',
             icon: <FiLinkedin />,
         },
         {
-            id: 3,
+            id: 4,
             href: 'https://github.com/projects-gustavo',
             icon: <FiGithub />,
         },
         {
-            id: 4,
+            id: 5,
             href: 'https://www.instagram.com/gustavinrm/',
             icon: <FiInstagram />,
         },
     ]
-    
+
     return (
-        <footer className="bg-backgroundSecondary p-8 xl:p-20 sm:mt-12 lg:mt-52">
+        <footer className="bg-backgroundSecondary p-12 xl:p-20 sm:mt-12 lg:mt-52">
             <ScrollToTop
                 smooth top="20"
                 className="flex justify-center items-center bg-gradient-to-r from-primary to-secondary shadow-none"
@@ -41,30 +47,32 @@ const Footer = () => {
                 width="20px"
                 height="20px"
             />
-            <p className="text-center text-white mb-4 font-medium">Entre em contato</p>
-            <div className="flex items-center justify-center border-b border-neutral-800 pb-8">
-                {socials.map(({ id, href, icon }) => (
-                    <nav
-                        key={id}
-                        className="flex items-center bg-backgroundSecondary"
-                    >
-                        <ul className="px-2">
-                            <a
-                                href={href}
-                                className="block p-4 rounded-xl text-white bg-backgroundPrimary hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300"
-                                target="_blank">
-                                <div className="scale-150">
-                                    {icon}
-                                </div>
-                            </a>
-                        </ul>
-                    </nav>
-                ))}
-            </div>
-            <div className="mt-10">
-                <p className="text-color text-center font-medium">
-                    2023 © <span className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary">Gustavo Rodrigues</span>
-                </p>
+            <div>
+                <div className="flex items-center justify-center mb-3">
+                    {socials.map(({ id, href, icon }) => (
+                        <nav
+                            key={id}
+                            className="flex items-center bg-backgroundSecondary"
+                        >
+                            <ul className="px-2">
+                                <a
+                                    href={href}
+                                    className="block p-2 rounded-xl text-gray-400 duration-300"
+                                    target="_blank">
+                                    <div className="scale-[1.40]">
+                                        {icon}
+                                    </div>
+                                </a>
+                            </ul>
+                        </nav>
+                    ))}
+                </div>
+                <div>
+                    <h1 className="font-signature text-center text-5xl p-4">Gustavo</h1>
+                    <p className="text-color text-center font-medium mt-3">
+                        2023 © Gustavo Rodrigues. Todos os direitos reservados.
+                    </p>
+                </div>
             </div>
         </footer>
     )

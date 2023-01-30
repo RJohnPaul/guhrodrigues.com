@@ -5,8 +5,9 @@ import avatar from '../../public/assets/img/avatar.png'
 
 // Icons
 import { FaWhatsapp } from 'react-icons/fa'
+import { AiOutlineMail } from 'react-icons/ai'
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
-import { UilMessage } from '@iconscout/react-unicons'
+import { BsFillMouse2Fill } from 'react-icons/bs'
 
 // TypeWriter
 import TypeWriter from 'typewriter-effect'
@@ -21,16 +22,21 @@ const Home = () => {
         },
         {
             id: 2,
+            href: 'mailto:gumartinsR1201@gmail.com',
+            icon: <AiOutlineMail />,
+        },
+        {
+            id: 3,
             href: 'https://www.linkedin.com/in/guhrodrigues/',
             icon: <FiLinkedin />,
         },
         {
-            id: 3,
+            id: 4,
             href: 'https://github.com/projects-gustavo',
             icon: <FiGithub />,
         },
         {
-            id: 4,
+            id: 5,
             href: 'https://www.instagram.com/gustavinrm/',
             icon: <FiInstagram />,
         },
@@ -80,9 +86,9 @@ const Home = () => {
                     </p>
                     <div className="flex sm:justify-center md:justify-start">
                         <a href="#projects">
-                            <button className="flex text-center items-center lg:text-[18px] font-medium border-2 gap-2 border-primary bg-transparent py-3 px-6 text-primary rounded-[0.5rem] hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300">
-                                Projetos
-                                <UilMessage />
+                            <button className="flex text-center items-center lg:text-[16px] gap-5 font-medium py-3 px-7 rounded-[1.3rem] duration-300 border border-primary text-black bg-gradient-to-r from-primary to-secondary hover:bg-none hover:text-primary">
+                                <BsFillMouse2Fill size={15} />
+                                Meus Projetos
                             </button>
                         </a>
                     </div>
