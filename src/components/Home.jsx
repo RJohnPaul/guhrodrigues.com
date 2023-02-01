@@ -86,7 +86,7 @@ const Home = () => {
                     </p>
                     <div className="flex sm:justify-center md:justify-start">
                         <a href="#projects">
-                            <button className="flex text-center items-center lg:text-[16px] gap-5 font-medium py-3 px-7 rounded-[1.3rem] duration-300 border border-primary text-black bg-gradient-to-r from-primary to-secondary hover:bg-none hover:text-primary">
+                            <button className="flex text-center items-center lg:text-[16px] gap-4 font-medium py-3 px-8 rounded-[1.3rem] duration-300 border border-primary text-black bg-gradient-to-r from-primary to-secondary hover:bg-none hover:text-primary">
                                 <BsFillMouse2Fill size={15} />
                                 Meus Projetos
                             </button>
