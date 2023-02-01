@@ -69,7 +69,7 @@ const Skills = () => {
             id="skills"
         >
             <div className="max-w-[1000px] mx-auto flex justify-center flex-col h-full">
-                <div className="pb-8 text-center mt-12">
+                <div className="pb-8 text-center">
                     <h1 className="text-4xl font-bold inline">Habilidades</h1>
                     <p className="py-3">Tecnologias que tenho conhecimento</p>
                 </div>
