@@ -2,7 +2,6 @@ import React from 'react'
 
 // Icons
 import { FaWhatsapp } from 'react-icons/fa'
-import { AiOutlineMail } from 'react-icons/ai'
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
 
 // ScrollToTop
@@ -18,21 +17,16 @@ const Footer = () => {
         },
         {
             id: 2,
-            href: 'mailto:gumartinsR1201@gmail.com',
-            icon: <AiOutlineMail />,
-        },
-        {
-            id: 3,
             href: 'https://www.linkedin.com/in/guhrodrigues/',
             icon: <FiLinkedin />,
         },
         {
-            id: 4,
+            id: 3,
             href: 'https://github.com/projects-gustavo',
             icon: <FiGithub />,
         },
         {
-            id: 5,
+            id: 4,
             href: 'https://www.instagram.com/gustavinrm/',
             icon: <FiInstagram />,
         },
