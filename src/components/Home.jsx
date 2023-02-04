@@ -42,7 +42,7 @@ const Home = () => {
             id="home"
         >
             <div className="md:col-span-5 lg:ml-12 xl:ml-36 2xl:ml-36 flex items-center justify-center p-8">
-                <div className="flex flex-col items-end sm:hidden md:flex">
+                <div className="flex flex-col sm:hidden md:flex">
                     {socials.map(({ id, href, icon }) => (
                         <nav
                             key={id}

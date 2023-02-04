@@ -9,45 +9,68 @@ import curriculo from '../../public/assets/docs/curriculo.pdf'
 
 // About
 const About = () => {
+    const info = [
+        {
+            id: 1,
+            count: "02",
+            text: "Anos de experiência"
+        },
+        {
+            id: 2,
+            count: "10",
+            text: "Projetos concluídos"
+        },
+        {
+            id: 3,
+            count: "240",
+            text: "Commits no GitHub"
+        },
+    ];
+
     return (
         <section
             className="w-full md:h-screen p-2 flex items-center py-16"
             id="about"
         >
-            <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto md:grid grid-cols-3 gap-8 p-5">
-                <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-110 ease-in duration-300">
-                    <img
-                        src={about}
-                        className="rounded-xl"
-                        alt="Gustavo"
-                    />
-                </div>
-                <div className="col-span-2">
-                    <h1 className="py-4 text-4xl text-center mb-1">Sobre</h1>
-                    <p className="py-1">
-                        Meu nome é Gustavo Rodrigues Martins, nasci em 2005 e sou estudante da Etec MCM,
-                        na qual faço curso de técnico em informática para internet.
-                    </p>
-                    <p className="py-1">
-                        Desde os meus 10 anos eu me interesso pela tecnologia, e com isso, em 2015 iniciei meus estudos
-                        em edição de vídeos e edição de imagens. <br />
-                        Meu interesse na programação veio aos 15 anos, logo após entrar na Etec.
-                    </p>
-                    <p className="py-1">
-                        Sou uma pessoa muito focada e determinada quando quero algo,
-                        e a cada dia venho me dedicando e estudando mais essa área.
-                        Com isso, espero arrumar o meu primeiro emprego.
-                    </p>
-                    <div className="mt-5 flex text-center justify-center">
-                        <a
-                            href={curriculo}
-                            download="Gustavo Rodrigues.pdf"
-                        >
-                            <button class="flex text-center items-center font-medium border-2 gap-1 border-primary bg-transparent py-3 px-3.5 text-primary rounded-lg hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300">
-                                <RiDownload2Fill />
-                                Download C.V
-                            </button>
-                        </a>
+            <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto gap-8 p-5">
+                <h1 className="text-4xl text-center">Sobre</h1>
+                <p className="text-gray-400 py-3 mb-2 text-center">Introdução</p>
+                <div className="md:grid lg:grid-cols-4">
+                    <div className="w-full h-auto col-span-2 m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+                        <img
+                            src={about}
+                            className="rounded-2xl w-[340px]"
+                            alt="Gustavo"
+                        />
+                    </div>
+                    <div className="col-span-2 flex flex-col mt-5">
+                        <p className="lg:text-lg text-center text-gray-300 leading-7">
+                            Gustavo Rodrigues, 17 anos. Desenvolvedor web e estudante de técnico em informática para internet com carreira 
+                            iniciada em 2021, logo após entrar no curso técnico. Uma pessoa dedicada e que busca sempre aprender
+                            mais e mais.
+                        </p>
+                        <div className="flex mt-5 justify-center items-center gap-7">
+                            {info.map(({id, text, count}) => (
+                                <div key={id}>
+                                    <h3 className="md:text-4xl text-2xl text-center font-semibold text-white">
+                                        {count}
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">+</span>
+                                    </h3>
+                                    <span className="md:text-base text-xs flex text-center text-gray-400">{text}</span>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="mt-6 flex text-center sm:justify-center">
+                            <a
+                                href={curriculo}
+                                download="Gustavo Rodrigues.pdf"
+                            >
+                                <button class="flex text-center items-center font-medium border-2 gap-1 border-primary bg-transparent py-3 px-3.5 text-primary rounded-lg hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300">
+                                    Download C.V
+                                    <RiDownload2Fill />
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

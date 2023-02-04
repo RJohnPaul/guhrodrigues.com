@@ -36,6 +36,10 @@
   li a {
     @apply hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b from-primary to-secondary
   }
+
+  button {
+    @apply select-none
+  }
 }
 
 html {

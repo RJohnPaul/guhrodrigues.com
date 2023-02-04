@@ -45,8 +45,8 @@ const Projects = () => {
         className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
       >
         <div className="pb-8 text-center mt-20">
-          <h1 className="text-4xl font-bold inline">Projetos</h1>
-          <p className="py-3">Confira aqui alguns dos meus trabalhos</p>
+          <h1 className="text-4xl inline">Projetos</h1>
+          <p className="py-3 text-gray-400">Confira aqui alguns dos meus trabalhos</p>
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 sm:px-0">
           {
