@@ -33,7 +33,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className="bg-backgroundSecondary p-12 xl:p-16 sm:mt-12 lg:mt-52">
+        <footer className="bg-backgroundSecondary p-12 xl:p-20 sm:mt-12 lg:mt-52">
             <ScrollToTop
                 smooth top="20"
                 className="flex justify-center items-center bg-gradient-to-r from-primary to-secondary shadow-none"

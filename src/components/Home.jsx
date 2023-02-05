@@ -7,7 +7,6 @@ import avatar from '../../public/assets/img/avatar.png'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
 import { BsFillMouse2Fill } from 'react-icons/bs';
-import { PaperPlaneRight } from 'phosphor-react'
 
 // TypeWriter
 import TypeWriter from 'typewriter-effect'
@@ -81,9 +80,9 @@ const Home = () => {
                     </p>
                     <div className="flex sm:justify-center md:justify-start">
                         <a href="#projects">
-                            <button className="flex text-center items-center lg:text-[16px] gap-2 font-medium py-3 px-5 rounded-lg duration-300 border border-primary text-black bg-gradient-to-r from-primary to-secondary hover:bg-none hover:text-primary">
-                                Projetos
+                            <button class="flex text-center items-center lg:text-[16px] gap-4 font-medium py-3 px-8 rounded-[1.3rem] duration-300 border border-primary text-black bg-gradient-to-r from-primary to-secondary hover:bg-none hover:text-primary">
                                 <BsFillMouse2Fill size={15} />
+                                Meus Projetos
                             </button>
                         </a>
                     </div>
