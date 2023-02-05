@@ -44,7 +44,7 @@ const About = () => {
                         />
                     </div>
                     <div className="col-span-2 flex flex-col mt-5">
-                        <p className="lg:text-lg text-center text-gray-300 leading-7">
+                        <p className="lg:text-md sm:text-center lg:text-start text-gray-300 leading-7">
                             Gustavo Rodrigues, 17 anos. Desenvolvedor web e estudante de técnico em informática para internet com carreira 
                             iniciada em 2021, logo após entrar no curso técnico. Uma pessoa dedicada e que busca sempre aprender
                             mais e mais.
