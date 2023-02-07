@@ -58,7 +58,7 @@ const Projects = () => {
                 <div className="overflow-hidden">
                   <img
                     src={src}
-                    className="rounded-md hover:scale-105 ease-in duration-300"
+                    className="rounded-md hover:scale-105 ease-in-out duration-300"
                     alt={alt}
                   />
                 </div>
