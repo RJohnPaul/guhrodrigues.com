@@ -4,7 +4,7 @@ import React from 'react'
 import { RiDownload2Fill } from 'react-icons/ri'
 
 // Assets
-import about from '../../public/assets/img/about.jpg'
+import about from '/assets/img/about.jpg'
 import curriculo from '../../public/assets/docs/curriculo.pdf'
 
 // About
