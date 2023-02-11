@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Image
-import avatar from '../../public/assets/img/avatar.png'
+import avatar from '/assets/img/avatar.png'
 
 // Icons
 import { FaWhatsapp } from 'react-icons/fa'
