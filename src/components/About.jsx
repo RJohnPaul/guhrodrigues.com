@@ -5,7 +5,7 @@ import { RiDownload2Fill } from 'react-icons/ri'
 
 // Assets
 import about from '/assets/img/about.jpg'
-import curriculo from '../../public/assets/docs/curriculo.pdf'
+import curriculo from '/assets/docs/curriculo.pdf'
 
 // About
 const About = () => {

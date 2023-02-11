@@ -1,10 +1,10 @@
 import React from 'react'
 
 // Images
-import portfolio from '../../public/assets/img/portfolio.jpg'
-import musicplayer from '../../public/assets/img/musicplayer.jpg'
-import calculator from '../../public/assets/img/calculator.jpg'
-import todo from '../../public/assets/img/todo.jpg'
+import portfolio from '/assets/img/portfolio.jpg'
+import musicplayer from '/assets/img/musicplayer.jpg'
+import calculator from '/assets/img/calculator.jpg'
+import todo from '/assets/img/todo.jpg'
 
 // Projects
 const Projects = () => {

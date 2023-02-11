@@ -1,14 +1,14 @@
 import React from 'react'
 
 // Images
-import html from '../../public/assets/img/html.png'
-import css from '../../public/assets/img/css.png'
-import javascript from '../../public/assets/img/javascript.png'
-import php from '../../public/assets/img/php.png'
-import react from '../../public/assets/img/react.png'
-import tailwind from '../../public/assets/img/tailwind.png'
-import bootstrap from '../../public/assets/img/bootstrap.png'
-import mysql from '../../public/assets/img/mysql.png'
+import html from '/assets/img/html.png'
+import css from '/assets/img/css.png'
+import javascript from '/assets/img/javascript.png'
+import php from '/assets/img/php.png'
+import react from '/assets/img/react.png'
+import tailwind from '/assets/img/tailwind.png'
+import bootstrap from '/assets/img/bootstrap.png'
+import mysql from '/assets/img/mysql.png'
 
 // Skills
 const Skills = () => {
