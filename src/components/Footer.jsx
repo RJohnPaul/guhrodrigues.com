@@ -7,12 +7,6 @@ import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
 // ScrollToTop
 import ScrollToTop from 'react-scroll-to-top'
 
-// Tippy
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
-import 'tippy.js/animations/scale.css';
-
-
 // Footer
 const Footer = () => {
     const socials = [
@@ -59,16 +53,14 @@ const Footer = () => {
                             className="flex items-center bg-backgroundSecondary"
                         >
                             <ul className="px-2">
-                                <Tippy content={<span>{name}</span>} inertia={true} animation='scale'>
-                                    <a
-                                        href={href}
-                                        className="block p-2 rounded-xl text-gray-400 duration-300"
-                                        target="_blank">
-                                        <div className="scale-[1.40]">
-                                            {icon}
-                                        </div>
-                                    </a>
-                                </Tippy>
+                                <a
+                                    href={href}
+                                    className="block p-2 rounded-xl text-gray-400 duration-300"
+                                    target="_blank">
+                                    <div className="scale-[1.40]">
+                                        {icon}
+                                    </div>
+                                </a>
                             </ul>
                         </nav>
                     ))}
