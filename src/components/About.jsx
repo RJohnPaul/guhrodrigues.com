@@ -22,7 +22,7 @@ const About = () => {
         },
         {
             id: 3,
-            count: "240",
+            count: "250",
             text: "Commits no GitHub"
         },
     ];
