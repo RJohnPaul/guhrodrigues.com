@@ -63,7 +63,7 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col gap-4 md:ml-12 lg:ml-12 xl:ml-12 2xl:-mr-36">
                     <h1 className="text-white">
-                        <span className="font-medium lg:text-2xl ml-1.5">Olá! Meu nome é</span><br />
+                        <span className="font-normal lg:text-[22px] ml-1.5">Olá! Meu nome é</span><br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary sm:text-5xl md:text-5xl lg:text-7xl xl:text-7xl 2xl:text-7xl">
                             Gustavo Rodrigues
                         </span>
