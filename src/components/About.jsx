@@ -4,7 +4,7 @@ import React from 'react'
 import { RiDownload2Fill } from 'react-icons/ri'
 
 // Assets
-import picture from '../../public/assets/img/picture.jpg'
+import about from '../../public/assets/img/about.jpg'
 import curriculo from '../../public/assets/docs/curriculo.pdf'
 
 // About
@@ -38,7 +38,7 @@ const About = () => {
                 <div className="md:grid lg:grid-cols-5">
                     <div className="w-full h-auto col-span-2 m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
                         <img
-                            src={picture}
+                            src={about}
                             className="rounded-2xl w-[320px]"
                             alt="Gustavo"
                         />
