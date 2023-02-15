@@ -36,10 +36,10 @@ const About = () => {
                 <h1 className="text-4xl text-center">Sobre</h1>
                 <p className="text-gray-400 py-3 mb-2 text-center">Introdução</p>
                 <div className="md:grid lg:grid-cols-5">
-                    <div className="w-full h-auto col-span-2 m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+                    <div className="w-full h-auto sm:col-span-3 lg:col-span-2 m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
                         <img
                             src={about}
-                            className="rounded-2xl w-[320px]"
+                            className="rounded-2xl flex w-[320px]"
                             alt="Gustavo"
                         />
                     </div>
