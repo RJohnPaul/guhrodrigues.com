@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#2cd9ff",
-        secondary: "#7effb2",
-        backgroundPrimary: "#111",
-        backgroundSecondary: "#1C1C1C",
+        primary: "#0184fc",
+        secondary: "#00e3eb",
+        backgroundPrimary: "#0c0c0c",
+        backgroundSecondary: "#111",
         color: "#d6d6dc"
       },
     },
@@ -22,6 +22,7 @@ module.exports = {
       '2xl': '1536px',
     },
     fontFamily: {
+      poppins: ["Poppins"],
       signature: ["Great Vibes"]
     }
   },

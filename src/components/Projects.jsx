@@ -65,14 +65,14 @@ const Projects = () => {
                 <div className="flex items-center justify-center">
                   <a
                     href={visit}
-                    className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary"
+                    className="font-medium text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary"
                     target="_blank"
                   >
                     <button className="w-1/2 px-6 py-3 m-4 duration-300">Visitar</button>
                   </a>
                   <a
                     href={code}
-                    className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary"
+                    className="font-medium text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary"
                     target="_blank">
                     <button className="w-1/2 px-6 py-3 m-4 duration-300">Repositório</button>
                   </a>

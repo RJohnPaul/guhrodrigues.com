@@ -64,7 +64,7 @@ const About = () => {
                                 href={curriculo}
                                 download="Gustavo Rodrigues.pdf"
                             >
-                                <button class="flex text-center items-center font-medium border-2 gap-1 border-primary bg-transparent py-3 px-3.5 text-primary rounded-lg hover:bg-gradient-to-r from-primary to-secondary hover:text-black duration-300">
+                                <button class="flex text-center items-center font-medium border-2 gap-1 border-primary bg-transparent py-3 px-3.5 text-primary rounded-lg hover:bg-primary hover:text-white duration-300">
                                     Download C.V
                                     <RiDownload2Fill />
                                 </button>

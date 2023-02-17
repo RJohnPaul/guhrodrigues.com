@@ -8,7 +8,7 @@ const Header = () => {
     const [showMenu, setShowMenu] = useState(false)
 
     return (
-        <header className="fixed flex items-center justify-between w-full py-4 h-[8vh] z-50 border-b border-backgroundSecondary">
+        <header className="fixed flex items-center justify-between w-full py-4 h-[9vh] z-50 border-b border-backgroundSecondary">
             <div className="xl:w-1/3 2xl:w-[35.7%] text-center 2xl:mr-12">
                 <a
                     href="#home"
@@ -16,7 +16,7 @@ const Header = () => {
                     Gustavo
                 </a>
             </div>
-            <nav className={`fixed w-[80%] md:w-[40%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 xl:ml-12 2xl:ml-12`}>
+            <nav className={`fixed w-[80%] md:w-[40%] xl:w-full h-full ${showMenu ? "drop-shadow-2xl left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 xl:ml-12 2xl:ml-12`}>
                 <li>
                     <a href="#home">Início</a>
                 </li>

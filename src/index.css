@@ -4,8 +4,7 @@
 
 @layer base {
   body {
-    font-family: "Poppins", serif;
-    @apply bg-backgroundPrimary;
+    @apply bg-backgroundPrimary font-poppins;
   }
 
   h1 {
@@ -51,7 +50,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb{
-  background:  linear-gradient(0deg, #7effb2 0%, #2cd9ff 100%);
+  background:  linear-gradient(0deg, #0184fc 0%, #00e3eb 100%);
   border-radius: 10px;
-  border: 3.5px solid #111;
+  border: 3.5px solid #0c0c0c;
 }
