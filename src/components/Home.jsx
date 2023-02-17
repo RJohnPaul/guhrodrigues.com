@@ -21,7 +21,7 @@ const Home = () => {
                             Gustavo Rodrigues
                         </span>
                     </h1>
-                    <p className="flex gap-1 justify-center text-[20px] font-medium">
+                    <p className="flex gap-1 justify-center md:text-[20px] font-medium">
                         <span className="text-gray-400">
                             Sou
                         </span>
