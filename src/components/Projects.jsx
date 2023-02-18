@@ -2,9 +2,9 @@ import React from 'react'
 
 // Images
 import portfolio from '/assets/img/portfolio.jpg'
+import moviecorn from '/assets/img/moviecorn.jpg'
 import musicplayer from '/assets/img/musicplayer.jpg'
 import calculator from '/assets/img/calculator.jpg'
-import todo from '/assets/img/todo.jpg'
 
 // Projects
 const Projects = () => {
@@ -18,25 +18,25 @@ const Projects = () => {
     },
     {
       id: 2,
+      src: moviecorn,
+      alt: "MovieCorn",
+      visit: "https://moviecorn.vercel.app/",
+      code: "https://github.com/projects-gustavo/moviecorn"
+    },
+    {
+      id: 3,
       src: musicplayer,
       alt: "Music Player",
       visit: "https://projects-gustavo.github.io/music-player/",
       code: "https://github.com/projects-gustavo/music-player"
     },
     {
-      id: 3,
+      id: 4,
       src: calculator,
       alt: "Calculadora",
       visit: "https://projects-gustavo.github.io/calculator/",
       code: "https://github.com/projects-gustavo/calculator"
     },
-    {
-      id: 4,
-      src: todo,
-      alt: "To-do",
-      visit: "https://to-do-projects-gustavo.vercel.app/",
-      code: "https://github.com/projects-gustavo/to-do"
-    }
   ]
 
   return (
