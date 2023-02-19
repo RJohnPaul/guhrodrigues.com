@@ -4,6 +4,11 @@ import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
 
+// Tippy
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale-subtle.css';
+
 // ScrollToTop
 import ScrollToTop from 'react-scroll-to-top'
 
@@ -12,26 +17,26 @@ const Footer = () => {
     const socials = [
         {
             id: 1,
-            name: 'WhatsApp',
             href: 'https://wa.me/5511986319802',
+            name: 'WhatsApp',
             icon: <FaWhatsapp />,
         },
         {
             id: 2,
-            name: 'LinkedIn',
             href: 'https://www.linkedin.com/in/guhrodrigues/',
+            name: 'LinkedIn',
             icon: <FiLinkedin />,
         },
         {
             id: 3,
-            name: 'Github',
             href: 'https://github.com/projects-gustavo',
+            name: 'Github',
             icon: <FiGithub />,
         },
         {
             id: 4,
-            name: 'Instagram',
             href: 'https://www.instagram.com/gustavinrm/',
+            name: 'Instagram',
             icon: <FiInstagram />,
         },
     ]
@@ -47,20 +52,32 @@ const Footer = () => {
             />
             <div>
                 <div className="flex items-center justify-center mb-3">
-                    {socials.map(({ id, name, href, icon }) => (
+                    {socials.map(({ id, href, name, icon }) => (
                         <nav
                             key={id}
                             className="flex items-center bg-backgroundSecondary"
                         >
                             <ul className="px-2">
-                                <a
-                                    href={href}
-                                    className="block p-2 rounded-xl text-gray-400 duration-300"
-                                    target="_blank">
-                                    <div className="scale-[1.40]">
-                                        {icon}
-                                    </div>
-                                </a>
+                                <Tippy
+                                    content={
+                                        <span
+                                            aria-describedby={name}
+                                        >
+                                            {name}
+                                        </span>
+                                    }
+                                    animation="scale-subtle"
+                                    inertia={true}
+                                >
+                                    <a
+                                        href={href}
+                                        className="block p-2 rounded-xl text-gray-400 duration-300 hover:text-secondary"
+                                        target="_blank">
+                                        <div className="scale-[1.40]">
+                                            <button>{icon}</button>
+                                        </div>
+                                    </a>
+                                </Tippy>
                             </ul>
                         </nav>
                     ))}
