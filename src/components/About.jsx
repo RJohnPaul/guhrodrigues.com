@@ -45,8 +45,8 @@ const About = () => {
                     </div>
                     <div className="col-span-3 flex flex-col mt-5">
                         <p className="lg:text-md sm:text-center lg:text-start text-gray-300 leading-7">
-                            Meu nome é Gustavo Rodrigues, nasci em 2005 na região do Grande ABC. Sou desenvolvedor web e estudante de técnico em informática para internet. Iniciei na programação
-                            em 2021, logo após eu entrar no curso técnico. Sou uma pessoa dedicada e que busca sempre aprender mais e mais.
+                            Meu nome é Gustavo Rodrigues, tenho 17 anos e nasci na região do Grande ABC. Sou desenvolvedor web e estudante de técnico em informática para internet. Iniciei na programação
+                            em 2021, logo após eu entrar no curso técnico. Sou uma pessoa dedicada e que busca sempre mais conhecimento.
                         </p>
                         <div className="flex mt-5 justify-center items-center gap-7">
                             {info.map(({id, text, count}) => (

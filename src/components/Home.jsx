@@ -16,7 +16,7 @@ const Home = () => {
             <div className="md:col-span-12 flex flex-col items-center justify-center p-8">
                 <div className="flex flex-col gap-4 text-center">
                     <h1 className="text-white">
-                        <span className="font-normal lg:text-[22px] ml-1.5">Olá! Meu nome é</span><br />
+                        <span className="font-medium lg:text-[22px] ml-1.5">Olá! Meu nome é</span><br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary sm:text-5xl md:text-5xl lg:text-7xl xl:text-7xl 2xl:text-7xl">
                             Gustavo Rodrigues
                         </span>
@@ -37,7 +37,7 @@ const Home = () => {
                     </p>
                     <div className="flex items-center gap-4 justify-center">
                         <a href="#projects">
-                            <button class="flex text-center items-center lg:text-[16px] gap-2.5 font-medium py-3 px-5 rounded-[1rem] duration-300 border border-primary text-white bg-primary hover:bg-transparent hover:text-primary">
+                            <button class="flex text-center items-center lg:text-[16px] gap-2 font-medium py-3 px-5 rounded-[1rem] duration-300 border border-primary text-white bg-primary hover:bg-transparent hover:text-primary">
                                 <BsArrowRight size={25} />
                                 Meus projetos
                             </button>
