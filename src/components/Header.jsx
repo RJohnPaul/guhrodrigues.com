@@ -6,6 +6,7 @@ import { List, X } from 'phosphor-react'
 // Header
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false)
+    const closeMobileIcon = () => setShowMenu(false)
 
     return (
         <header className="fixed flex items-center justify-between w-full py-4 h-[9vh] z-50 border-b border-backgroundSecondary">
@@ -16,17 +17,17 @@ const Header = () => {
                     Gustavo
                 </a>
             </div>
-            <nav className={`fixed w-full md:w-[40%] xl:w-full h-full ${showMenu ? "left-0 top-[9vh] bg-backgroundPrimary/80" : "-left-full top-[9vh]"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 xl:ml-12`}>
-                <li>
+            <nav className={`fixed w-full md:w-[40%] xl:w-full h-full ${showMenu ? "left-0 top-[3.5rem] bg-backgroundPrimary/90" : "-left-full top-[3.5rem]"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 xl:ml-12`}>
+                <li onClick={closeMobileIcon}>
                     <a href="#home">Início</a>
                 </li>
-                <li>
+                <li onClick={closeMobileIcon}>
                     <a href="#about">Sobre</a>
                 </li>
-                <li>
+                <li onClick={closeMobileIcon}>
                     <a href="#skills">Habilidades</a>
                 </li>
-                <li>
+                <li onClick={closeMobileIcon}>
                     <a href="#projects">Projetos</a>
                 </li>
             </nav>
