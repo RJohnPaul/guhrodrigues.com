@@ -18,10 +18,7 @@ const Header = () => {
                     Gustavo
                 </a>
             </div>
-            <nav
-                className={`fixed w-full md:w-[40%] xl:w-full h-full ${showMenu ? "left-0 bg-backgroundPrimary/90" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 xl:ml-12`}
-                style={showMenu ? {top: '9vh'} : {top: '9vh'}}
-            >
+            <nav className={`fixed w-full md:w-[40%] xl:w-full h-full ${showMenu ? "left-0 bg-backgroundPrimary/90 z-[-1]" : "-left-full z-[-1]"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 xl:ml-12`}>
                 <li onClick={closeMobileIcon}>
                     <a href="#home">Início</a>
                 </li>
