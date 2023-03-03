@@ -16,7 +16,7 @@ const Home = () => {
       <div className="md:col-span-12 flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
           <h1 className="text-white">
-            <span className="font-medium lg:text-[22px] ml-1.5">
+            <span className="font-medium lg:text-[22px]">
               Olá! Meu nome é
             </span>
             <br />
