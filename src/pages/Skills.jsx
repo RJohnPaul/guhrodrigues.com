@@ -82,7 +82,7 @@ const Skills = () => {
                 <div className="m-auto">
                   <img src={src} width="64px" height="64px" alt={name} />
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center text-center">
                   <h3>{name}</h3>
                 </div>
               </div>
