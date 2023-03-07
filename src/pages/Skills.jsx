@@ -7,8 +7,8 @@ import javascript from "/assets/img/javascript.png";
 import php from "/assets/img/php.png";
 import react from "/assets/img/react.png";
 import tailwind from "/assets/img/tailwind.png";
+import styledcomponents from "/assets/img/styled-components.png";
 import bootstrap from "/assets/img/bootstrap.png";
-import mysql from "/assets/img/mysql.png";
 
 // Skills
 const Skills = () => {
@@ -51,15 +51,15 @@ const Skills = () => {
     },
     {
       id: 7,
-      src: bootstrap,
-      name: "Bootstrap",
-      style: "shadow-violet-500",
+      src: styledcomponents,
+      name: "Styled Components",
+      style: "shadow-fuchsia-600",
     },
     {
       id: 8,
-      src: mysql,
-      name: "MySQL",
-      style: "shadow-sky-400",
+      src: bootstrap,
+      name: "Bootstrap",
+      style: "shadow-violet-500",
     },
   ];
 

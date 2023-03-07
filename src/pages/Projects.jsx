@@ -17,7 +17,7 @@ const Projects = () => {
       src: portfolio,
       title: "Portfólio",
       description:
-        "No meu portfólio você conheçe um pouco dos meus projetos e lê um pouco sobre mim. Esse projeto foi desenvolvido com React e Tailwind.",
+        "No meu portfólio você conheçe um pouco dos meus projetos e lê um pouco sobre mim. Este projeto foi desenvolvido com React e Tailwind.",
       visit: "https://guhrodrigues.vercel.app/",
       code: "https://github.com/projects-gustavo/portfolio",
     },
