@@ -13,7 +13,7 @@
   }
 
   p {
-    @apply text-color;
+    @apply text-color font-medium;
   }
 
   header {

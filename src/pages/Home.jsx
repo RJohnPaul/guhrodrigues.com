@@ -42,7 +42,7 @@ const Home = () => {
           </p>
           <div className="flex items-center gap-4 justify-center">
             <a href="#projects">
-              <button class="flex text-center items-center lg:text-[16px] gap-2 font-medium py-3 px-5 rounded-[1rem] duration-300 border border-primary text-white bg-primary hover:bg-transparent hover:text-primary">
+              <button class="flex text-center items-center lg:text-[16px] gap-2 font-medium py-3 px-5 rounded-[1rem] duration-300 border-2 border-transparent text-white bg-primary hover:border-primary hover:bg-transparent hover:text-primary">
                 <BsArrowRight size={25} />
                 Meus projetos
               </button>

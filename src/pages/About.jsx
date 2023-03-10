@@ -48,7 +48,7 @@ const About = () => {
               Meu nome é Gustavo Rodrigues, tenho 17 anos e nasci na região do
               Grande ABC. Sou desenvolvedor web e estudante de técnico em
               informática para internet. Iniciei na programação em 2021, logo
-              após eu entrar no curso técnico. Sou uma pessoa dedicada e que
+              após eu entrar no curso técnico. Sou uma pessoa muito dedicada e que
               busca sempre mais conhecimento.
             </p>
             <div className="flex mt-5 justify-center items-center gap-7">
@@ -60,9 +60,9 @@ const About = () => {
                       +
                     </span>
                   </h3>
-                  <span className="md:text-base text-xs flex text-center text-gray-400">
+                  <p className="md:text-base text-xs flex text-center text-gray-400">
                     {text}
-                  </span>
+                  </p>
                 </div>
               ))}
             </div>

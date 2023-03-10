@@ -64,7 +64,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="w-full lg:h-screen p-2" id="skills">
+    <section className="w-full md:h-screen p-2" id="skills">
       <div className="max-w-[1000px] mx-auto flex justify-center flex-col h-full">
         <div className="pb-8 sm:mt-20 lg:mt-0 text-center">
           <h1 className="text-4xl inline">Habilidades</h1>
@@ -72,7 +72,7 @@ const Skills = () => {
             Tecnologias que tenho conhecimento
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 text-white">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 sm:gap-4 lg:gap-8 text-white">
           {skills.map(({ id, src, name, style }) => (
             <div
               key={id}
@@ -82,7 +82,7 @@ const Skills = () => {
                 <div className="m-auto">
                   <img src={src} width="64px" height="64px" alt={name} />
                 </div>
-                <div className="flex flex-col items-center justify-center text-center">
+                <div className="flex flex-col items-center justify-center text-center font-medium">
                   <h3>{name}</h3>
                 </div>
               </div>

@@ -17,7 +17,7 @@ const Projects = () => {
       src: portfolio,
       title: "Portfólio",
       description:
-        "No meu portfólio você conheçe um pouco dos meus projetos e lê um pouco sobre mim. Este projeto foi desenvolvido com React e Tailwind.",
+        "No meu portfólio você conheçe um pouco dos meus projetos e lê um pouco sobre mim.",
       visit: "https://guhrodrigues.vercel.app/",
       code: "https://github.com/projects-gustavo/portfolio",
     },
@@ -26,7 +26,7 @@ const Projects = () => {
       src: moviecorn,
       title: "MovieCorn",
       description:
-        "MovieCorn é uma aplicação onde é mostrado uma biblioteca de filmes e séries utilizando a TMDb API. Foi desenvolvido com React, Styled Components e React Router.",
+        "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries.",
       visit: "https://moviecorn.vercel.app/",
       code: "https://github.com/projects-gustavo/moviecorn",
     },
@@ -35,7 +35,7 @@ const Projects = () => {
       src: musicplayer,
       title: "Music Player",
       description:
-        "Nesse website você ouve minhas top 10 músicas favoritas. Desenvolvido com HTML, CSS e JavaScript",
+        "A música sempre está presente em minha vida, então nesse site você pode ouvir minhas músicas favoritas.",
       visit: "https://projects-gustavo.github.io/music-player/",
       code: "https://github.com/projects-gustavo/music-player",
     },
@@ -44,26 +44,29 @@ const Projects = () => {
       src: calculator,
       title: "Calculadora",
       description:
-        "Calculadora simples desenvolvida com HTML, CSS e JavaScript.",
+        "Calculadora simples desenvolvida para praticar o uso do JavaScript.",
       visit: "https://projects-gustavo.github.io/calculator/",
       code: "https://github.com/projects-gustavo/calculator",
     },
   ];
 
   return (
-    <div className="w-full text-white md:h-screen" id="projects">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8 text-center mt-20">
+    <section
+      className="w-full md:h-screen sm:pt-36 md:pt-16 flex"
+      id="projects"
+    >
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
+        <div className="pb-8 text-center">
           <h1 className="text-4xl inline">Projetos</h1>
           <p className="py-3 text-gray-400">
             Confira aqui alguns dos meus trabalhos
           </p>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, src, title, description, visit, code }) => (
             <div
               key={id}
-              className="shadow-md shadow-gray-600 rounded-lg bg-backgroundSecondary"
+              className="shadow-md shadow-gray-600 rounded-lg bg-backgroundSecondary h-full"
             >
               <img
                 src={src}
@@ -74,16 +77,18 @@ const Projects = () => {
                 <h3 className="font-semibold text-[20px] text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary">
                   {title}
                 </h3>
-                <span className="text-[14px] text-gray-400">{description}</span>
+                <span className="text-[13.5px] text-color font-medium mt-1">
+                  {description}
+                </span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-1.5">
                 <a
                   href={visit}
                   className="font-medium text-primary"
                   target="_blank"
                 >
-                  <button className="w-full flex flex-row items-center justify-center gap-2 text-[14px] bg-primary border border-transparent rounded-lg text-white px-3 py-3 m-4 duration-300 hover:bg-opacity-50">
-                    <FiLink size={20} />
+                  <button className="w-full flex flex-row items-center justify-center gap-2 text-[14px] bg-primary border-2 border-transparent rounded-lg text-white py-2 m-4 duration-300 hover:bg-opacity-50">
+                    <FiLink size={18} />
                     Visitar
                   </button>
                 </a>
@@ -92,8 +97,8 @@ const Projects = () => {
                   className="font-medium text-primary"
                   target="_blank"
                 >
-                  <button className="w-full flex flex-row items-center justify-center gap-2 text-[14px] border border-primary rounded-lg hover:bg-primary hover:text-white px-3 py-3 m-4 duration-300">
-                    <FiGithub size={20} />
+                  <button className="w-full flex flex-row items-center justify-center gap-2 text-[14px] border-2 border-primary rounded-lg hover:bg-primary hover:text-white py-2 m-4 duration-300">
+                    <FiGithub size={18} />
                     Repositório
                   </button>
                 </a>
@@ -102,7 +107,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
