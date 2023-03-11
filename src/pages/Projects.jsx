@@ -17,7 +17,7 @@ const Projects = () => {
       src: portfolio,
       title: "Portfólio",
       description:
-        "No meu portfólio você conheçe um pouco dos meus projetos e lê um pouco sobre mim.",
+        "No meu portfólio você conhece um pouco dos meus projetos e lê um pouco sobre mim.",
       visit: "https://guhrodrigues.vercel.app/",
       code: "https://github.com/projects-gustavo/portfolio",
     },
@@ -52,7 +52,7 @@ const Projects = () => {
 
   return (
     <section
-      className="w-full md:h-screen sm:pt-36 md:pt-16 flex"
+      className="w-full md:h-screen sm:pt-36 md:pt-48 flex"
       id="projects"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
