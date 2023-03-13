@@ -15,7 +15,7 @@ const Home = () => {
     >
       <div className="md:col-span-12 flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
-          <h1 className="text-white sm:mt-0 md:mt-5">
+          <h1 className="text-white">
             <span className="font-medium lg:text-[22px]">
               Olá! Meu nome é
             </span>
@@ -48,9 +48,9 @@ const Home = () => {
               </button>
             </a>
           </div>
-          <div className="sm:hidden md:flex items-center gap-4 sm:mt-0 md:mt-5 justify-center">
+          <div className="sm:hidden md:flex items-center gap-4 justify-center">
             <a href="#about">
-              <button className="flex text-center items-center lg:text-[16px] gap-1.5 font-medium py-3 px-5 text-gray-400 bg-none animate-bounce">
+              <button className="flex text-center items-center lg:text-[16px] gap-1.5 font-medium py-3 px-5 text-gray-400 bg-none ease-in duration-300 hover:translate-y-1">
                 <BsMouse className="fill-primary" size={25} />
                 Deslizar para baixo
                 <BsArrowDownShort className="fill-primary" size={25} />
