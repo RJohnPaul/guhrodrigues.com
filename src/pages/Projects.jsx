@@ -6,9 +6,6 @@ import moviecorn from "/assets/img/moviecorn.jpg";
 import musicplayer from "/assets/img/musicplayer.jpg";
 import calculator from "/assets/img/calculator.jpg";
 
-// Icons
-import { FiLink, FiGithub } from "react-icons/fi";
-
 // Projects
 const Projects = () => {
   const projects = [
@@ -52,7 +49,7 @@ const Projects = () => {
 
   return (
     <section
-      className="w-full md:h-screen sm:pt-36 md:pt-48 flex"
+      className="w-full md:max-h-screen sm:pt-36 lg:p-12"
       id="projects"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
@@ -77,18 +74,17 @@ const Projects = () => {
                 <h3 className="font-semibold text-[20px] text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary">
                   {title}
                 </h3>
-                <span className="text-[13.5px] text-color font-medium mt-1">
+                <span className="max-w-full text-[13.5px] text-color font-medium mt-1">
                   {description}
                 </span>
               </div>
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 mx-4 my-3 pb-1">
                 <a
                   href={visit}
                   className="font-medium text-primary"
                   target="_blank"
                 >
-                  <button className="w-full flex flex-row items-center justify-center gap-2 text-[14px] bg-primary border-2 border-transparent rounded-lg text-white py-2 m-4 duration-300 hover:bg-opacity-50">
-                    <FiLink size={18} />
+                  <button className="max-w-full flex flex-row items-center justify-center gap-2 text-[14px] bg-primary border-2 border-transparent rounded-lg text-white py-2 px-3 duration-300 hover:bg-opacity-50">
                     Visitar
                   </button>
                 </a>
@@ -97,8 +93,7 @@ const Projects = () => {
                   className="font-medium text-primary"
                   target="_blank"
                 >
-                  <button className="w-full flex flex-row items-center justify-center gap-2 text-[14px] border-2 border-primary rounded-lg hover:bg-primary hover:text-white py-2 m-4 duration-300">
-                    <FiGithub size={18} />
+                  <button className="max-w-full flex flex-row items-center justify-center gap-2 text-[14px] border-2 border-primary rounded-lg hover:bg-primary hover:text-white py-2 px-3 duration-300">
                     Repositório
                   </button>
                 </a>

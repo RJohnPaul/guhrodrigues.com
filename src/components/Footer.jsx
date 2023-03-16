@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-backgroundSecondary p-12 xl:p-20 sm:mt-36 lg:mt-72 xl:mt-62">
+    <footer className="bg-backgroundSecondary p-12 xl:p-20 sm:mt-36 md:mt-96 lg:mt-72 xl:mt-62">
       <div className="flex items-center justify-center mb-3">
         {socials.map(({ id, href, name, icon }) => (
           <nav key={id} className="flex items-center bg-backgroundSecondary">
