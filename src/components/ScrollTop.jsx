@@ -6,7 +6,8 @@ const ScrollTop = () => {
     <ScrollToTop
       smooth
       top="20"
-      className="flex justify-center items-center bg-primary shadow-none"
+      className="flex justify-center items-center shadow-none"
+      style={{ background: "#0062A7" }}
       color="#000"
       width="20px"
       height="20px"
