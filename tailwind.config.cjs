@@ -1,14 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        primary: "#0184fc",
-        secondary: "#00e3eb",
-        backgroundPrimary: "#0c0c0c",
-        backgroundSecondary: "#111",
+        // Globals
+        primary: "#0062A7",
         color: "#d6d6dc",
+        // LightMode
+        backgroundPrimaryLight: "#F2F2F2",
+        backgroundSecondaryLight: "#e7e7e7",
+        // DarkMode
+        backgroundPrimaryDark: "#0c0c0c",
+        backgroundSecondaryDark: "#111",
       },
     },
     screens: {

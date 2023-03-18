@@ -15,18 +15,18 @@ const Home = () => {
     >
       <div className="md:col-span-12 flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
-          <h1 className="text-white">
+          <h1 className="text-black dark:text-white">
             <span className="font-medium lg:text-[22px]">
               Olá! Meu nome é
             </span>
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary sm:text-5xl md:text-5xl lg:text-7xl">
+            <span className="text-primary sm:text-5xl md:text-5xl lg:text-7xl">
               Gustavo Rodrigues
             </span>
           </h1>
           <p className="flex gap-1 justify-center md:text-[20px] font-medium">
-            <span className="text-gray-400">Sou</span>
-            <span className="text-secondary">
+            <span className="text-gray-500 dark:text-gray-400">Sou</span>
+            <span className="text-primary">
               <TypeWriter
                 options={{
                   strings: [
@@ -43,14 +43,14 @@ const Home = () => {
           <div className="flex items-center gap-4 justify-center">
             <a href="#projects">
               <button className="flex text-center items-center lg:text-[16px] gap-2 font-medium py-3 px-5 rounded-[1rem] duration-300 border-2 border-transparent text-white bg-primary hover:border-primary hover:bg-transparent hover:text-primary">
-                <BsArrowRight size={25} />
                 Meus projetos
+                <BsArrowRight size={25} />
               </button>
             </a>
           </div>
           <div className="sm:hidden md:flex items-center gap-4 justify-center">
             <a href="#about">
-              <button className="flex text-center items-center lg:text-[16px] gap-1.5 font-medium py-3 px-5 text-gray-400 bg-none ease-in duration-300 hover:translate-y-1">
+              <button className="flex text-center items-center lg:text-[16px] gap-1.5 font-medium py-3 px-5 text-gray-500 dark:text-gray-400 bg-none ease-in duration-300 hover:translate-y-1">
                 <BsMouse className="fill-primary" size={25} />
                 Deslizar para baixo
                 <BsArrowDownShort className="fill-primary" size={25} />

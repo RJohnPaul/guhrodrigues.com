@@ -4,53 +4,49 @@
 
 @layer base {
   body {
-    @apply bg-backgroundPrimary font-poppins;
+    @apply font-poppins transition-all duration-300;
   }
 
   h1 {
-    @apply sm:text-[18px] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-transparent bg-clip-text 
-    bg-gradient-to-b from-primary to-secondary font-bold;
+    @apply sm:text-[18px] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-primary font-bold;
   }
 
   p {
-    @apply text-color font-medium;
+    @apply font-medium;
   }
 
-  header {
-    @apply bg-backgroundPrimary select-none;
-  }
-
-  nav {
-    @apply bg-backgroundPrimary select-none;
-  }
-
+  header,
+  nav,
   img {
     @apply select-none;
   }
 
+  header,
+  nav {
+    @apply bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark transition-all duration-300;
+  }
+
   li {
-    @apply list-none text-gray-400 font-medium;
+    @apply list-none text-black dark:text-gray-400 font-medium;
   }
 
   li a {
-    @apply hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b from-primary to-secondary;
+    @apply hover:text-primary;
   }
 
   button {
     @apply select-none;
   }
+
+  ::-webkit-scrollbar {
+    @apply w-[10px];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-2xl;
+  }
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(0deg, #0184fc 0%, #00e3eb 100%);
-  border-radius: 10px;
-  border: 3.5px solid #0c0c0c;
 }

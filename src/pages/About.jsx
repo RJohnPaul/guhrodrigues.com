@@ -34,7 +34,7 @@ const About = () => {
     >
       <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto gap-8 p-5">
         <h1 className="text-4xl text-center">Sobre</h1>
-        <p className="text-gray-400 py-3 mb-2 text-center">Introdução</p>
+        <p className="py-3 mb-2 text-center text-gray-400">Introdução</p>
         <div className="md:grid lg:grid-cols-5">
           <div className="w-full h-auto sm:col-span-3 lg:col-span-2 m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <img
@@ -44,7 +44,7 @@ const About = () => {
             />
           </div>
           <div className="col-span-3 flex flex-col mt-5">
-            <p className="lg:text-md sm:text-center lg:text-start text-gray-300 leading-7">
+            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">
               Meu nome é Gustavo Rodrigues, tenho 17 anos e nasci na região do
               Grande ABC. Sou desenvolvedor web e estudante de técnico em
               informática para internet. Iniciei na programação em 2021, logo
@@ -54,9 +54,9 @@ const About = () => {
             <div className="flex mt-5 justify-center items-center gap-7">
               {info.map(({ id, text, count }) => (
                 <div key={id}>
-                  <h3 className="md:text-4xl text-2xl text-center font-semibold text-white">
+                  <h3 className="md:text-4xl text-2xl text-center font-semibold text-black dark:text-white">
                     {count}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">
+                    <span className="text-primary">
                       +
                     </span>
                   </h3>

@@ -48,10 +48,7 @@ const Projects = () => {
   ];
 
   return (
-    <section
-      className="w-full md:max-h-screen sm:pt-36 lg:p-12"
-      id="projects"
-    >
+    <section className="w-full md:max-h-screen sm:pt-36 lg:p-12" id="projects">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
         <div className="pb-8 text-center">
           <h1 className="text-4xl inline">Projetos</h1>
@@ -63,18 +60,20 @@ const Projects = () => {
           {projects.map(({ id, src, title, description, visit, code }) => (
             <div
               key={id}
-              className="shadow-md shadow-gray-600 rounded-lg bg-backgroundSecondary h-full"
+              className="shadow-md shadow-gray-300 dark:shadow-gray-600 rounded-lg bg-backgroundSecondary h-full"
             >
-              <img
-                src={src}
-                className="rounded-md hover:opacity-40 ease-in-out duration-300"
-                alt={title}
-              />
+              <div className="overflow-hidden">
+                <img
+                  src={src}
+                  className="rounded-md hover:scale-105 ease-in-out duration-200"
+                  alt={title}
+                />
+              </div>
               <div className="flex flex-col justify-center mx-5 mt-3">
-                <h3 className="font-semibold text-[20px] text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary">
+                <h3 className="font-semibold text-[20px] text-primary">
                   {title}
                 </h3>
-                <span className="max-w-full text-[13.5px] text-color font-medium mt-1">
+                <span className="max-w-full text-[13.5px] text-gray-700 dark:text-color font-medium mt-1">
                   {description}
                 </span>
               </div>
@@ -84,7 +83,7 @@ const Projects = () => {
                   className="font-medium text-primary"
                   target="_blank"
                 >
-                  <button className="max-w-full flex flex-row items-center justify-center gap-2 text-[14px] bg-primary border-2 border-transparent rounded-lg text-white py-2 px-3 duration-300 hover:bg-opacity-50">
+                  <button className="max-w-full flex flex-row items-center justify-center gap-2 text-[14px] bg-primary border-2 border-transparent rounded-lg text-white py-2 px-3 duration-300 hover:bg-[#0184fc]">
                     Visitar
                   </button>
                 </a>
