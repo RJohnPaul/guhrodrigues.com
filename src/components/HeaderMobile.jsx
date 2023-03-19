@@ -42,10 +42,10 @@ const HeaderMobile = () => {
         shadow ? "shadow-lg" : "shadow-none"
       } fixed lg:hidden flex items-center justify-between w-full py-4 h-[10vh] z-50`}
     >
-      <div className="text-center">
+      <div className="text-center px-3">
         <a
           href="#home"
-          className="text-[2.2rem] font-signature font-semibold relative p-3.5 text-primary"
+          className="text-[2.2rem] font-signature font-semibold relative text-primary"
         >
           Gustavo
         </a>
@@ -90,7 +90,7 @@ const HeaderMobile = () => {
           </a>
         </li>
       </nav>
-      <div className="flex items-center gap-2.5 px-2">
+      <div className="flex items-center gap-2.5 px-3">
         <button className="text-black text-[18px] dark:text-gray-300">
           {theme === "dark" ? (
             <Sun size={25} weight="bold" onClick={() => setTheme("light")} />
