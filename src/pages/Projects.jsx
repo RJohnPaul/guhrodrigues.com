@@ -50,7 +50,7 @@ const Projects = () => {
       id: 5,
       src: toDo,
       title: "To-do List",
-      description: "Lista de tarefas desenvolvida para criar rotinas.",
+      description: "Lista de tarefas desenvolvida para criar e armazenar rotinas.",
       visit: "https://projects-gustavo.github.io/to-do/",
       code: "https://github.com/projects-gustavo/to-do",
     }
