@@ -37,11 +37,7 @@ const HeaderMobile = () => {
   }, []);
 
   return (
-    <header
-      className={`${
-        shadow ? "shadow-lg" : "shadow-none"
-      } fixed lg:hidden flex items-center justify-between w-full py-4 h-[10vh] z-50`}
-    >
+    <header className="fixed lg:hidden flex items-center justify-between w-full py-4 h-[10vh] z-50 bg-backgroundPrimaryLight/90 dark:bg-backgroundPrimaryDark/90 backdrop-blur-[5px]">
       <div className="text-center px-3">
         <a
           href="#home"

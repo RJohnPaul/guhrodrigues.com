@@ -11,28 +11,28 @@ import { useTheme } from "../hooks/useTheme";
 
 // Header
 const Header = () => {
-  const [shadow, setShadow] = useState(false);
+  const [shrink, setShrink] = useState(false);
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    const handleShadow = () => {
+    const handleShrink = () => {
       if (window.scrollY >= 90) {
-        setShadow(true);
+        setShrink(true);
       } else {
-        setShadow(false);
+        setShrink(false);
       }
     };
-    window.addEventListener("scroll", handleShadow);
+    window.addEventListener("scroll", handleShrink);
   }, []);
 
   return (
     <>
-      <header
-        className={`${
-          shadow ? "shadow-lg" : "shadow-none"
-        } md:hidden lg:flex w-full fixed z-50 bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark`}
-      >
-        <nav className="fixed w-full h-[9vh] justify-between lg:mx-auto xl:mx-[11rem] 2xl:mx-[22rem] top-0 xl:static flex flex-row items-center gap-10 z-50">
+      <header className="md:hidden lg:flex w-full fixed z-50 bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark">
+        <nav
+          className={`${
+            shrink ? "h-[6vh]" : "h-[9vh]"
+          } fixed w-full justify-between lg:mx-auto xl:mx-[11rem] 2xl:mx-[22rem] top-0 xl:static flex flex-row items-center gap-10 z-50`}
+        >
           <div className="text-center">
             <a
               href="#home"
@@ -74,16 +74,16 @@ const Header = () => {
                 Projetos
               </a>
             </li>
-            <button className="text-black text-[18px] p-2 dark:text-gray-300">
+            <button className="text-black text-[18px] dark:text-gray-300">
               {theme === "dark" ? (
                 <Sun
-                  size={25}
+                  size={22}
                   weight="bold"
                   onClick={() => setTheme("light")}
                 />
               ) : (
                 <Moon
-                  size={25}
+                  size={22}
                   weight="bold"
                   onClick={() => setTheme("dark")}
                 />
