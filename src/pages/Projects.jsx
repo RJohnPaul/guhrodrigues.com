@@ -5,6 +5,7 @@ import portfolio from "/assets/img/portfolio.jpg";
 import moviecorn from "/assets/img/moviecorn.jpg";
 import musicplayer from "/assets/img/musicplayer.jpg";
 import calculator from "/assets/img/calculator.jpg";
+import toDo from "/assets/img/to-do.jpg";
 
 // Projects
 const Projects = () => {
@@ -45,6 +46,14 @@ const Projects = () => {
       visit: "https://projects-gustavo.github.io/calculator/",
       code: "https://github.com/projects-gustavo/calculator",
     },
+    {
+      id: 5,
+      src: toDo,
+      title: "To-do List",
+      description: "Lista de tarefas desenvolvida para criar rotinas.",
+      visit: "https://projects-gustavo.github.io/to-do/",
+      code: "https://github.com/projects-gustavo/to-do",
+    }
   ];
 
   return (
