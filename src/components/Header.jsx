@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="md:hidden lg:flex w-full fixed z-50 bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark">
+      <header className="sm:hidden lg:flex w-full fixed z-50 bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark">
         <nav
           className={`${
             shrink ? "h-[6vh]" : "h-[9vh]"
