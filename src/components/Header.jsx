@@ -26,7 +26,7 @@ const Header = () => {
     <header className="sm:hidden lg:flex w-full fixed z-50 bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark">
       <nav
         className={`${
-          shrink ? "h-[6vh]" : "h-[9vh]"
+          shrink ? "h-[7vh]" : "h-[9vh]"
         } fixed w-full justify-between lg:mx-auto xl:mx-[11rem] 2xl:mx-[22rem] top-0 xl:static flex flex-row items-center gap-10 z-50`}
       >
         <div className="text-center">

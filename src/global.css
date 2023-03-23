@@ -27,7 +27,7 @@
   }
 
   li {
-    @apply list-none text-black dark:text-gray-400 font-medium;
+    @apply list-none text-black dark:text-color font-medium;
   }
 
   li a {

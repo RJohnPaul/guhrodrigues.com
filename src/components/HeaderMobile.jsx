@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 // Icons
 import { List, X, Moon, Sun } from "phosphor-react";
@@ -8,7 +8,6 @@ import { useTheme } from "../hooks/useTheme";
 
 const HeaderMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [shadow, setShadow] = useState(false);
   const { theme, setTheme } = useTheme();
 
   const handleCloseMenu = () => {
@@ -25,23 +24,12 @@ const HeaderMobile = () => {
     }
   };
 
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
-    };
-    window.addEventListener("scroll", handleShadow);
-  }, []);
-
   return (
-    <header className="fixed lg:hidden flex items-center justify-between w-full py-4 h-[10vh] z-50 bg-backgroundPrimaryLight/90 dark:bg-backgroundPrimaryDark/90 backdrop-blur-[5px]">
-      <div className="text-center px-3">
+    <header className="fixed lg:hidden flex items-center justify-between w-full py-4 h-[10vh] z-50">
+      <div className="text-center">
         <a
           href="#home"
-          className="text-[2.2rem] font-signature font-semibold relative text-primary"
+          className="text-[2.2rem] font-signature font-semibold relative p-3.5 text-primary"
         >
           Gustavo
         </a>
@@ -86,7 +74,7 @@ const HeaderMobile = () => {
           </a>
         </li>
       </nav>
-      <div className="flex items-center gap-2.5 px-3">
+      <div className="flex items-center gap-2.5 px-2">
         <button className="text-black text-[18px] dark:text-gray-300">
           {theme === "dark" ? (
             <Sun size={25} weight="bold" onClick={() => setTheme("light")} />
