@@ -57,8 +57,8 @@ const Projects = () => {
   ];
 
   return (
-    <section className="w-full md:max-h-screen sm:pt-36 lg:p-12" id="projects">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
+    <section className="w-full min-h-screen sm:pt-36 lg:p-12" id="projects">
+      <div className="max-w-screen-lg min-h-screen p-4 mx-auto flex flex-col justify-center w-full">
         <div className="pb-8 text-center">
           <h1 className="text-4xl inline">Projetos</h1>
           <p className="py-3 text-gray-400">
