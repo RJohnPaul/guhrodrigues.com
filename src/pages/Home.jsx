@@ -10,7 +10,7 @@ import TypeWriter from "typewriter-effect";
 const Home = () => {
   return (
     <section
-      className="w-full md:h-screen sm:h-[70vh] grid grid-cols-1 md:grid-cols-9 sm:text-center sm:items-center md:text-start"
+      className="w-full md:min-h-screen sm:h-[70vh] grid grid-cols-1 md:grid-cols-9 sm:text-center sm:items-center md:text-start"
       id="home"
     >
       <div className="md:col-span-12 flex flex-col items-center justify-center p-8">
