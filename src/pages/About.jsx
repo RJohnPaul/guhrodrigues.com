@@ -29,7 +29,7 @@ const About = () => {
 
   return (
     <section
-      className="w-full md:h-screen p-2 flex items-center py-16"
+      className="w-full md:min-h-screen p-2 flex items-center py-16"
       id="about"
     >
       <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto gap-8 p-5">
