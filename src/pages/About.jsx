@@ -68,7 +68,7 @@ const About = () => {
             </div>
             <div className="mt-6 flex text-center sm:justify-center">
               <a href={curriculo} download="Gustavo Rodrigues.pdf">
-                <button className="flex text-center items-center font-medium border-2 gap-1 border-primary bg-transparent py-3 px-3.5 text-primary rounded-lg hover:bg-primary hover:text-white duration-300">
+                <button className="flex text-center items-center font-medium border-2 gap-1 border-primary bg-transparent py-3 px-3.5 text-primary rounded-lg hover:bg-primary hover:text-[#D2EAFF] duration-300">
                   Download C.V
                   <RiDownload2Fill />
                 </button>

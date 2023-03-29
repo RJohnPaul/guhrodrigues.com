@@ -8,7 +8,7 @@
   }
 
   h1 {
-    @apply sm:text-[18px] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-primary font-bold;
+    @apply sm:text-[18px] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-primary font-black;
   }
 
   p {
@@ -49,4 +49,20 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.animation-scroll {
+  animation: scroll 0.7s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
