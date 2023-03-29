@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 // Icons
 import { Moon, Sun } from "phosphor-react";
@@ -54,7 +54,7 @@ const Header = () => {
               Projetos
             </a>
           </li>
-          <button className="text-black text-[18px] dark:text-gray-300">
+          <button className="text-black text-[18px] dark:text-gray-300 animation-hold">
             {theme === "dark" ? (
               <Sun size={22} weight="bold" onClick={() => setTheme("light")} />
             ) : (
