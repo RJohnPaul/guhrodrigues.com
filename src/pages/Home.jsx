@@ -1,7 +1,7 @@
 import React from "react";
 
 // Icons
-import { BsArrowRight, BsMouse, BsArrowDownShort } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 
 // TypeWriter
 import TypeWriter from "typewriter-effect";

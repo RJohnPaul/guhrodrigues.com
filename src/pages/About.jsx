@@ -9,24 +9,6 @@ import curriculo from "/assets/docs/curriculo.pdf";
 
 // About
 const About = () => {
-  const info = [
-    {
-      id: 1,
-      count: "02",
-      text: "Anos de experiência",
-    },
-    {
-      id: 2,
-      count: "10",
-      text: "Projetos concluídos",
-    },
-    {
-      id: 3,
-      count: "300",
-      text: "Commits no GitHub",
-    },
-  ];
-
   return (
     <section
       className="w-full md:min-h-screen p-2 flex items-center py-16"
@@ -36,39 +18,35 @@ const About = () => {
         <h1 className="text-4xl text-center">Sobre</h1>
         <p className="py-3 mb-2 text-center text-gray-400">Introdução</p>
         <div className="md:grid lg:grid-cols-5">
-          <div className="w-full h-auto sm:col-span-3 lg:col-span-2 m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <div className="w-full h-auto sm:col-span-3 lg:col-span-2 m-auto flex items-center justify-center p-4">
             <img
               src={about}
-              className="rounded-2xl flex w-[320px]"
+              className="rounded-2xl flex w-[450px] hover:scale-105 ease-in duration-300"
               alt="Gustavo"
             />
           </div>
-          <div className="col-span-3 flex flex-col mt-5">
+          <div className="col-span-3 flex justify-center flex-col sm:mt-6 lg:ml-24 lg:mt-0 gap-3">
             <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">
               Meu nome é Gustavo Rodrigues, tenho 17 anos e nasci na região do
               Grande ABC. Sou desenvolvedor web e estudante de técnico em
-              informática para internet. Iniciei na programação em 2021, logo
-              após eu entrar no curso técnico. Sou uma pessoa muito dedicada e que
-              busca sempre mais conhecimento.
+              informática para internet.
             </p>
-            <div className="flex mt-5 justify-center items-center gap-7">
-              {info.map(({ id, text, count }) => (
-                <div key={id}>
-                  <h3 className="md:text-4xl text-2xl text-center font-semibold text-black dark:text-white">
-                    {count}
-                    <span className="text-primary">
-                      +
-                    </span>
-                  </h3>
-                  <p className="md:text-base text-xs flex text-center text-gray-400">
-                    {text}
-                  </p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 flex text-center sm:justify-center">
-              <a href={curriculo} download="Gustavo Rodrigues.pdf">
-                <button className="flex text-center items-center font-medium border-2 gap-1 border-primary bg-transparent py-3 px-3.5 text-primary rounded-lg hover:bg-primary hover:text-[#D2EAFF] duration-300">
+            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">
+              Meu primeiro contato com desenvolvimento web começou em 2021, logo
+              após a minha entrada no curso técnico.
+            </p>
+            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">
+              Atualmente estou estudando e desenvolvendo projetos web, com o
+              objetivo de ampliar meus conhecimentos e assim aprimorar ainda
+              mais as habilidades que possuo.
+            </p>
+            <div className="mt-6 flex text-center sm:justify-center lg:justify-start">
+              <a
+                href={curriculo}
+                download="Gustavo Rodrigues.pdf"
+                type="application/pdf"
+              >
+                <button className="flex text-center items-center font-medium gap-1 bg-primary py-3 px-3.5 text-[#D2EAFF] rounded-lg hover:opacity-90 duration-300">
                   Download C.V
                   <RiDownload2Fill />
                 </button>

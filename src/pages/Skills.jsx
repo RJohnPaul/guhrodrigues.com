@@ -72,17 +72,17 @@ const Skills = () => {
             Tecnologias que tenho conhecimento
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 sm:gap-4 lg:gap-8 text-black dark:text-white">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 sm:gap-4 lg:gap-8">
           {skills.map(({ id, src, name, style }) => (
             <div
               key={id}
-              className={`p-6 shadow-2xl rounded-xl ${style} bg-backgroundPrimaryLight dark:bg-backgroundSecondaryDark`}
+              className={`py-6 px-2 shadow-2xl rounded-xl ${style} bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark`}
             >
               <div className="grid grid-cols-1 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <img src={src} width="64px" height="64px" alt={name} />
                 </div>
-                <div className="flex flex-col items-center justify-center text-center font-medium">
+                <div className="flex flex-col items-center justify-center text-center font-semibold text-black dark:text-color">
                   <h3>{name}</h3>
                 </div>
               </div>
