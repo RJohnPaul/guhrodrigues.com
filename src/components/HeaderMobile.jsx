@@ -79,9 +79,9 @@ const HeaderMobile = () => {
       <div className="flex items-center gap-3 px-2">
         <button className="text-black text-[18px] dark:text-gray-300">
           {theme === "dark" ? (
-            <Sun size={25} weight="bold" onClick={() => setTheme("light")} />
+            <Sun size={23} weight="bold" onClick={() => setTheme("light")} />
           ) : (
-            <Moon size={25} weight="bold" onClick={() => setTheme("dark")} />
+            <Moon size={23} weight="bold" onClick={() => setTheme("dark")} />
           )}
         </button>
         <button
