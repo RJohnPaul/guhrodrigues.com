@@ -32,7 +32,7 @@ const About = () => {
               informática para internet.
             </p>
             <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">
-              Meu primeiro contato com desenvolvimento web começou em 2021, logo
+              Meu primeiro contato com desenvolvimento web foi em 2021, logo
               após a minha entrada no curso técnico.
             </p>
             <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">

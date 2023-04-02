@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 // Icons
-import { List, X, Moon, Sun } from "phosphor-react";
+import { Moon, Sun } from "phosphor-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBarsStaggered, faX } from "@fortawesome/free-solid-svg-icons";
 
 // Theme
 import { useTheme } from "../hooks/useTheme";
@@ -74,7 +76,7 @@ const HeaderMobile = () => {
           </a>
         </li>
       </nav>
-      <div className="flex items-center gap-2.5 px-2">
+      <div className="flex items-center gap-3 px-2">
         <button className="text-black text-[18px] dark:text-gray-300">
           {theme === "dark" ? (
             <Sun size={25} weight="bold" onClick={() => setTheme("light")} />
@@ -87,9 +89,9 @@ const HeaderMobile = () => {
           className="text-black dark:text-gray-300 xl:hidden text-[18px]"
         >
           {showMenu ? (
-            <X weight="bold" size={30} />
+            <FontAwesomeIcon icon={faX} size="lg" />
           ) : (
-            <List weight="bold" size={30} />
+            <FontAwesomeIcon icon={faBarsStaggered} size="lg" />
           )}
         </button>
       </div>
