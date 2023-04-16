@@ -8,7 +8,7 @@
   }
 
   h1 {
-    @apply sm:text-[18px] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-primary font-black;
+    @apply sm:text-[18px] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-primary font-extrabold;
   }
 
   p {

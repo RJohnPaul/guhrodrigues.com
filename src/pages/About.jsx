@@ -1,7 +1,7 @@
 import React from "react";
 
 // Icon
-import { RiDownload2Fill } from "react-icons/ri";
+import { DownloadSimple } from "phosphor-react";
 
 // Assets
 import about from "/assets/img/about.jpg";
@@ -15,8 +15,12 @@ const About = () => {
       id="about"
     >
       <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto gap-8 p-5">
-        <h1 className="text-4xl text-center">Sobre</h1>
-        <p className="py-3 mb-2 text-center text-gray-400">Introdução</p>
+        <p className="text-primary text-sm font-semibold uppercase bg-primary/20 table mx-auto py-1 px-2 rounded-lg">
+          Quem sou
+        </p>
+        <h1 className="text-3xl py-3 mb-2 text-center text-slate-800 dark:text-secondary">
+          Sobre
+        </h1>
         <div className="md:grid lg:grid-cols-5">
           <div className="w-full h-auto sm:col-span-3 lg:col-span-2 m-auto flex items-center justify-center p-4">
             <img
@@ -26,16 +30,16 @@ const About = () => {
             />
           </div>
           <div className="col-span-3 flex justify-center flex-col sm:mt-6 lg:ml-24 lg:mt-0 gap-3">
-            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">
+            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300/90">
               Meu nome é Gustavo Rodrigues, tenho 17 anos e nasci na região do
               Grande ABC. Sou desenvolvedor web e estudante de técnico em
-              informática para internet.
+              informática para internet na ETEC.
             </p>
-            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">
+            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300/90">
               Meu primeiro contato com desenvolvimento web foi em 2021, logo
               após a minha entrada no curso técnico.
             </p>
-            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300">
+            <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300/90">
               Atualmente estou estudando e desenvolvendo projetos web, com o
               objetivo de ampliar meus conhecimentos e assim aprimorar ainda
               mais as habilidades que possuo.
@@ -46,9 +50,9 @@ const About = () => {
                 download="Gustavo Rodrigues.pdf"
                 type="application/pdf"
               >
-                <button className="flex text-center items-center font-medium gap-1 bg-primary py-3 px-3.5 text-[#D2EAFF] rounded-lg hover:opacity-90 duration-300">
+                <button className="flex text-center items-center font-semibold gap-2 text-primary rounded-lg hover:text-blue-800 duration-300">
                   Download C.V
-                  <RiDownload2Fill />
+                  <DownloadSimple size={18} weight="bold" />
                 </button>
               </a>
             </div>

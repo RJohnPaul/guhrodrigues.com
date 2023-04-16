@@ -1,6 +1,8 @@
+import { useEffect } from "react";
+
+// Gsap Scroll Progress Bar
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
 
 const ScrollProgress = () => {
   useEffect(() => {

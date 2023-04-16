@@ -53,7 +53,7 @@ const Footer = () => {
               >
                 <a
                   href={href}
-                  className="block p-2 rounded-xl text-[#D2EAFF]"
+                  className="block p-2 rounded-xl text-secondary"
                   target="_blank"
                 >
                   <div className="scale-[1.40]">
@@ -66,10 +66,10 @@ const Footer = () => {
         ))}
       </div>
       <div>
-        <h1 className="font-signature text-[#D2EAFF] text-center text-5xl p-4">
+        <h1 className="font-signature text-secondary text-center text-5xl p-4">
           Gustavo
         </h1>
-        <p className="text-[#D2EAFF] text-center font-medium mt-3">
+        <p className="text-secondary text-center font-medium mt-3">
           2023 © Gustavo Rodrigues. Todos os direitos reservados.
         </p>
       </div>

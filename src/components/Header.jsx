@@ -12,11 +12,11 @@ const Header = () => {
 
   return (
     <header className="sm:hidden lg:flex w-full fixed z-50 bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark">
-      <nav className="fixed w-full h-[8vh] justify-between lg:mx-auto xl:mx-[8rem] 2xl:mx-[22rem] top-0 xl:static flex flex-row items-center gap-10 z-50">
+      <nav className="fixed max-w-[1200px] w-full h-[8vh] justify-between mx-auto top-0 xl:static flex flex-row items-center gap-10 z-50">
         <div className="text-center">
           <a
             href="#home"
-            className="lg:text-4xl 2xl:text-[2.4rem] font-signature font-semibold relative p-2 text-primary"
+            className="lg:text-3xl 2xl:text-[2.4rem] font-signature font-semibold relative p-2 text-primary"
           >
             Gustavo
           </a>
@@ -56,9 +56,9 @@ const Header = () => {
           </li>
           <button className="text-black text-[18px] dark:text-gray-300 animation-hold">
             {theme === "dark" ? (
-              <Sun size={22} weight="bold" onClick={() => setTheme("light")} />
+              <Sun size={21} weight="bold" onClick={() => setTheme("light")} />
             ) : (
-              <Moon size={22} weight="bold" onClick={() => setTheme("dark")} />
+              <Moon size={21} weight="bold" onClick={() => setTheme("dark")} />
             )}
           </button>
         </ul>

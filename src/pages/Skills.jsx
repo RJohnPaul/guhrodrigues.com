@@ -67,10 +67,12 @@ const Skills = () => {
     <section className="w-full md:h-screen p-2" id="skills">
       <div className="max-w-[1000px] mx-auto flex justify-center flex-col h-full">
         <div className="pb-8 sm:mt-20 lg:mt-0 text-center">
-          <h1 className="text-4xl inline">Habilidades</h1>
-          <p className="py-3 text-gray-400">
-            Tecnologias que tenho conhecimento
+          <p className="text-primary text-sm uppercase font-semibold bg-primary/20 table mx-auto py-1 px-2 rounded-lg">
+            Conhecimento
           </p>
+          <h1 className="text-3xl py-3 mb-2 text-center text-slate-800 dark:text-secondary">
+            Habilidades
+          </h1>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 sm:gap-4 lg:gap-8">
           {skills.map(({ id, src, name, style }) => (

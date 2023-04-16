@@ -18,7 +18,7 @@ const Home = () => {
           <h1 className="text-black dark:text-white">
             <span className="font-semibold lg:text-[22px]">Olá! Meu nome é</span>
             <br />
-            <span className="text-primary sm:text-5xl md:text-5xl lg:text-7xl">
+            <span className="text-primary font-black sm:text-5xl md:text-5xl lg:text-7xl">
               Gustavo Rodrigues
             </span>
           </h1>
@@ -49,7 +49,7 @@ const Home = () => {
         </div>
         <div className="sm:hidden lg:flex absolute bottom-12 w-full justify-center items-center">
           <a href="#about">
-            <div className="w-[35px] h-[64px] border-gray-400 dark:border-gray-500 rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <div className="w-[35px] h-[64px] border-4 border-gray-400 dark:border-gray-500 rounded-3xl flex justify-center items-start p-2">
                 <div className="w-3 h-3 bg-gray-400 dark:bg-gray-500 rounded-full mb-1 animation-scroll" />
             </div>      
           </a>
