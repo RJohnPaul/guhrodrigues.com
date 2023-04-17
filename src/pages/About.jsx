@@ -16,7 +16,7 @@ const About = () => {
     >
       <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto gap-8 p-5">
         <p className="text-primary text-sm font-semibold uppercase bg-primary/20 table mx-auto py-1 px-2 rounded-lg">
-          Quem sou
+          Apresentação
         </p>
         <h1 className="text-3xl py-3 mb-2 text-center text-slate-800 dark:text-secondary">
           Sobre
