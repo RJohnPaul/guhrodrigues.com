@@ -36,7 +36,7 @@ const About = () => {
               informática para internet na ETEC.
             </p>
             <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300/90">
-              Meu primeiro contato com desenvolvimento web foi em 2021, logo
+              Tive meu primeiro contato com desenvolvimento web em 2021, logo
               após a minha entrada no curso técnico.
             </p>
             <p className="lg:text-md sm:text-center lg:text-start leading-7 text-gray-500 dark:text-gray-300/90">
