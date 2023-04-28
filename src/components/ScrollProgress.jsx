@@ -1,3 +1,4 @@
+// React Hooks
 import { useEffect } from "react";
 
 // Gsap Scroll Progress Bar

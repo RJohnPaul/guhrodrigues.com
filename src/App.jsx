@@ -1,7 +1,8 @@
 // Components
+import Toast from "./components/Toast";
 import Header from "./components/Header";
 import HeaderMobile from "./components/HeaderMobile";
-import ScrollTop from "./components/ScrollTop"
+import ScrollTop from "./components/ScrollTop";
 import Footer from "./components/Footer";
 
 // Pages
@@ -14,6 +15,7 @@ import ScrollProgress from "./components/ScrollProgress";
 export default function App() {
   return (
     <>
+      <Toast />
       <ScrollProgress />
       <Header />
       <HeaderMobile />

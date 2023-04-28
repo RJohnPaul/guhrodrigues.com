@@ -1,17 +1,7 @@
-import React from "react";
-
-// Icons
-import { Moon, Sun } from "phosphor-react";
-
-// Theme
-import { useTheme } from "../hooks/useTheme";
-
 // Header
 const Header = () => {
-  const { theme, setTheme } = useTheme();
-
   return (
-    <header className="sm:hidden lg:flex w-full fixed z-50 bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark">
+    <header className="sm:invisible lg:visible flex w-full fixed z-50 bg-backgroundPrimaryDark">
       <nav className="fixed max-w-[1200px] w-full h-[8vh] justify-between mx-auto top-0 xl:static flex flex-row items-center gap-10 z-50">
         <div className="text-center">
           <a
@@ -54,13 +44,6 @@ const Header = () => {
               Projetos
             </a>
           </li>
-          <button className="text-black text-[18px] dark:text-gray-300 animation-hold">
-            {theme === "dark" ? (
-              <Sun size={21} weight="bold" onClick={() => setTheme("light")} />
-            ) : (
-              <Moon size={21} weight="bold" onClick={() => setTheme("dark")} />
-            )}
-          </button>
         </ul>
       </nav>
     </header>

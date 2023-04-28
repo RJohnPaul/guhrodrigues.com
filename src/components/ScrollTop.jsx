@@ -1,4 +1,4 @@
-import React from "react";
+// ScrollToTop
 import ScrollToTop from "react-scroll-to-top";
 
 const ScrollTop = () => {

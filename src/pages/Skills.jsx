@@ -46,7 +46,7 @@ const Skills = () => {
     {
       id: 6,
       src: tailwind,
-      name: "Tailwind",
+      name: "Tailwind CSS",
       style: "shadow-cyan-600",
     },
     {

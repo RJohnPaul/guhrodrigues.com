@@ -23,11 +23,11 @@
 
   header,
   nav {
-    @apply bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark transition-all duration-300;
+    @apply bg-backgroundPrimaryDark transition-all duration-300;
   }
 
   li {
-    @apply list-none text-black dark:text-color font-medium;
+    @apply list-none text-color font-medium;
   }
 
   li a {
@@ -47,7 +47,7 @@
   }
 
   progress::-webkit-progress-bar {
-    @apply bg-backgroundPrimaryLight dark:bg-backgroundPrimaryDark;
+    @apply bg-backgroundPrimaryDark;
   }
 
   progress::-webkit-progress-value {
@@ -70,20 +70,4 @@ progress {
   height: 3px;
   border: none;
   background: transparent;
-}
-
-.animation-scroll {
-  animation: scroll 0.7s linear infinite;
-  animation-direction: alternate;
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-    transform: translateY(25px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
