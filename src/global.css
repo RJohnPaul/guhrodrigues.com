@@ -27,11 +27,7 @@
   }
 
   li {
-    @apply list-none text-color font-medium;
-  }
-
-  li a {
-    @apply hover:text-primary;
+    @apply list-none text-color font-medium hover:text-primary;
   }
 
   button {
@@ -70,4 +66,28 @@ progress {
   height: 3px;
   border: none;
   background: transparent;
+}
+
+ul li .active {
+  color: #1d4ed8;
+}
+
+ul li :not(.active) {
+  position: relative;
+  padding-bottom: 6px;
+}
+
+ul li :not(.active)::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #1d4ed8;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+ul li :not(.active):hover::after {
+  width: 100%;
 }

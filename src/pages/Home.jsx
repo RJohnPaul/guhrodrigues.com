@@ -1,8 +1,10 @@
+// React Hooks
 import { useRef } from "react";
 
-// Icons
-
+// Lottie
 import Lottie from "lottie-react";
+
+// Icons
 import mouseIcon from "../../public/static/mouse.json";
 import codeIcon from "../../public/static/code.json";
 
@@ -22,9 +24,7 @@ const Home = () => {
       <div className="md:col-span-12 flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
           <h1 className="text-white">
-            <span className="font-medium lg:text-[22px]">
-              Meu nome é
-            </span>
+            <span className="font-medium lg:text-[22px]">Meu nome é</span>
             <br />
             <span className="text-primary font-black sm:text-5xl md:text-5xl lg:text-7xl">
               Gustavo Rodrigues
@@ -37,8 +37,8 @@ const Home = () => {
                 options={{
                   strings: [
                     "desenvolvedor web",
-                    "amante da música",
                     "estudante de informática",
+                    "entusiasta da tecnologia",
                   ],
                   autoStart: true,
                   loop: true,

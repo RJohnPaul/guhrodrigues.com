@@ -1,48 +1,66 @@
+// React Scroll
+import { Link } from "react-scroll";
+
 // Header
 const Header = () => {
   return (
     <header className="sm:invisible lg:visible flex w-full fixed z-50 bg-backgroundPrimaryDark">
       <nav className="fixed max-w-[1200px] w-full h-[8vh] justify-between mx-auto top-0 xl:static flex flex-row items-center gap-10 z-50">
         <div className="text-center">
-          <a
-            href="#home"
-            className="lg:text-3xl 2xl:text-[2.4rem] font-signature font-semibold relative p-2 text-primary"
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={0}
+            className="cursor-pointer lg:text-3xl 2xl:text-[2.4rem] font-signature font-semibold relative p-2 text-primary"
           >
             Gustavo
-          </a>
+          </Link>
         </div>
         <ul className="flex items-center gap-8">
           <li>
-            <a
-              href="#home"
-              className="relative pb-1.5 after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:ease-in-out hover:after:w-full"
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={0}
+              className="cursor-pointer"
             >
               Início
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
-              className="relative pb-1.5 after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:ease-in-out hover:after:w-full"
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={0}
+              className="cursor-pointer"
             >
               Sobre
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#skills"
-              className="relative pb-1.5 after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:ease-in-out hover:after:w-full"
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={0}
+              className="cursor-pointer"
             >
               Habilidades
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#projects"
-              className="relative pb-1.5 after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:ease-in-out hover:after:w-full"
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={0}
+              className="cursor-pointer"
             >
               Projetos
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
