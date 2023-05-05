@@ -64,7 +64,7 @@ const About = () => {
               </span>{" "}
               e assim aprimorar ainda mais as habilidades que possuo.
             </p>
-            <div className="mt-3 flex text-center sm:justify-center lg:justify-start">
+            <div className="mt-3.5 flex text-center sm:justify-center lg:justify-start">
               <a
                 href={curriculo}
                 download="Gustavo Rodrigues.pdf"
