@@ -19,7 +19,7 @@ const About = () => {
   const downloadRef = useRef();
 
   const downloadAlert = () => {
-    toast.success("Currículo instalado :D");
+    toast.success("Downloading...");
   };
 
   return (
@@ -64,7 +64,7 @@ const About = () => {
               </span>{" "}
               e assim aprimorar ainda mais as habilidades que possuo.
             </p>
-            <div className="mt-6 flex text-center sm:justify-center lg:justify-start">
+            <div className="mt-3 flex text-center sm:justify-center lg:justify-start">
               <a
                 href={curriculo}
                 download="Gustavo Rodrigues.pdf"
@@ -74,7 +74,7 @@ const About = () => {
                   onMouseEnter={() => downloadRef.current?.play()}
                   onClick={downloadAlert}
                   onMouseLeave={() => downloadRef.current?.stop()}
-                  className="flex text-center items-center text-white font-semibold py-2 px-3 gap-2 rounded-lg duration-300 hover:bg-[#212024]"
+                  className="flex text-center bg-primary border-2 border-transparent items-center text-white font-semibold py-3 px-3 gap-2 rounded-lg duration-300 hover:bg-primary/70"
                 >
                   <Lottie
                     lottieRef={downloadRef}

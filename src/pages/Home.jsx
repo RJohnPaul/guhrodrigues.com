@@ -31,7 +31,7 @@ const Home = () => {
             </span>
           </h1>
           <p className="flex gap-1 justify-center md:text-[20px] font-medium mb-1">
-            <span className="text-gray-500 dark:text-gray-400">Sou</span>
+            <span className="text-gray-400">Sou</span>
             <span className="text-primary">
               <TypeWriter
                 options={{
@@ -51,7 +51,7 @@ const Home = () => {
               <button
                 onMouseEnter={() => codeRef.current?.play()}
                 onMouseLeave={() => codeRef.current?.stop()}
-                className="flex text-center items-center lg:text-[16px] gap-2 font-medium py-3 px-5 rounded-[1rem] duration-300 border-2 border-transparent text-white bg-primary"
+                className="flex text-center items-center lg:text-[16px] gap-2 font-medium py-3 px-5 rounded-2xl border-2 border-transparent text-white bg-primary duration-300 hover:bg-primary/70"
               >
                 Meus projetos
                 <Lottie

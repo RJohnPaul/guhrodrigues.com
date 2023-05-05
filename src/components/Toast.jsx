@@ -9,7 +9,7 @@ export default function Toast() {
         autoClose={5000}
         hideProgressBar={true}
         newestOnTop={false}
-        toastStyle={{ backgroundColor: "#1f1f1f", color: "#a1a1aa" }}
+        toastStyle={{ backgroundColor: "#212024", color: "#a1a1aa", borderRadius: "5px", border: "1px solid #333" }}
         closeOnClick
         rtl={false}
         pauseOnFocusLoss
