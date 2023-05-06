@@ -1,3 +1,4 @@
+// Images
 import html from "/assets/img/html.png";
 import css from "/assets/img/css.png";
 import javascript from "/assets/img/javascript.png";

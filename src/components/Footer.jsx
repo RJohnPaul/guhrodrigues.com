@@ -1,6 +1,7 @@
-// Icons
-import { FaWhatsapp } from "react-icons/fa";
-import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
+// Data
+import { socials } from "../data/footer-data";
+
+// Icon
 import { BsFillTriangleFill } from "react-icons/bs";
 
 // Tippy
@@ -11,33 +12,6 @@ import "tippy.js/animations/scale-subtle.css";
 
 // Footer
 const Footer = () => {
-  const socials = [
-    {
-      id: 1,
-      href: "https://wa.me/5511986319802",
-      name: "WhatsApp",
-      icon: <FaWhatsapp />,
-    },
-    {
-      id: 2,
-      href: "https://www.linkedin.com/in/guhrodrigues/",
-      name: "LinkedIn",
-      icon: <FiLinkedin />,
-    },
-    {
-      id: 3,
-      href: "https://github.com/projects-gustavo",
-      name: "Github",
-      icon: <FiGithub />,
-    },
-    {
-      id: 4,
-      href: "https://www.instagram.com/gustavinrm/",
-      name: "Instagram",
-      icon: <FiInstagram />,
-    },
-  ];
-
   return (
     <footer className="bg-primary p-12 sm:mt-36 md:mt-96 lg:mt-52 xl:mt-36 2xl:mt-56">
       <div className="flex items-center justify-center mb-3">
