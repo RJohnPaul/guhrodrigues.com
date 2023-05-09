@@ -1,55 +1,70 @@
 // Data
 import { socials } from "../data/footer-data";
 
+// React Scroll
+import { Link } from "react-scroll";
+
 // Icon
-import { BsFillTriangleFill } from "react-icons/bs";
+import { MouseSimple } from "phosphor-react";
 
 // Tippy
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import "tippy.js/themes/light.css";
-import "tippy.js/animations/scale-subtle.css";
+import "tippy.js/animations/scale-extreme.css";
+import "../styles/tippy.css";
 
 // Footer
 const Footer = () => {
   return (
     <footer className="bg-primary p-12 sm:mt-36 md:mt-96 lg:mt-52 xl:mt-36 2xl:mt-56">
-      <div className="flex items-center justify-center mb-3">
-        {socials.map(({ id, href, name, icon }) => (
-          <nav key={id} className="flex items-center">
-            <ul className="px-2 bg-primary">
-              <Tippy
-                content={<span>{name}</span>}
-                animation="scale-subtle"
-                inertia={true}
-                theme="light"
+      <div className="flex flex-col items-center justify-center mb-3">
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={0}
+          className="cursor-pointer"
+        >
+          <button
+            onMouseEnter={() => mouseRef.current?.play()}
+            onMouseLeave={() => mouseRef.current?.stop()}
+            className="flex items-center"
+          >
+            <Tippy
+              content={
+                <span className="flex items-center gap-1">
+                  Topo <MouseSimple weight="bold" size={17} />
+                </span>
+              }
+              animation="scale-extreme"
+              inertia={true}
+              theme="custom"
+              placement="right"
+            >
+              <h1 className="font-signature table mx-auto text-secondary text-center text-5xl mb-8">
+                Gustavo
+              </h1>
+            </Tippy>
+          </button>
+        </Link>
+        <div className="text-center relative">
+          <ul className="sm:block lg:flex text-center gap-16">
+            {socials.map(({ id, href, name }) => (
+              <a href={href} className="text-secondary hover:text-secondary" target="_blank">
+              <li
+                key={id}
+                className="relative pb-1.5 sm:p-4 sm:float-left sm:w-[50%] sm:mx-0 lg:float-none lg:w-full lg:p-1 after:content-[''] after:w-0 after:h-[2px] after:block after:bg-tertiary after:left-[40%] after:-translate-x-[40%] after:absolute after:transition-all after:bottom-0 hover:after:w-[85%]"
               >
-                <a
-                  href={href}
-                  className="block p-2 rounded-xl text-secondary"
-                  target="_blank"
-                >
-                  <div className="scale-[1.40]">
-                    <button>{icon}</button>
-                  </div>
+                  {name}
+              </li>
                 </a>
-              </Tippy>
-            </ul>
-          </nav>
-        ))}
+            ))}
+          </ul>
+        </div>
+        <p className="text-secondary flex justify-center text-center items-center text-sm gap-2.5 font-medium mt-6">
+          2023 © Gustavo Rodrigues. Todos os direitos reservados.
+        </p>
       </div>
-      <h1 className="font-signature text-secondary text-center text-5xl p-4">
-        Gustavo
-      </h1>
-      <p className="text-secondary flex justify-center items-center text-sm gap-2.5 font-medium mt-3">
-        Distribuído por:{" "}
-        <a href="https://vercel.com/" target="_blank">
-          <span className="flex items-center gap-1 bg-secondary text-primary font-semibold text-sm py-1 px-2 rounded-md hover:bg-blue-900 hover:text-secondary transition-all">
-            <BsFillTriangleFill size={12} />
-            Vercel
-          </span>
-        </a>
-      </p>
     </footer>
   );
 };

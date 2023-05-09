@@ -13,7 +13,7 @@ export const projects = [
     title: "Portfólio",
     description:
       "No meu portfólio você conhece um pouco dos meus projetos e lê um pouco sobre mim.",
-    visit: "https://guhrodrigues.vercel.app/",
+    visit: "https://guhrodrigues.vercel.app",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const projects = [
     title: "MovieCorn",
     description:
       "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries.",
-    visit: "https://moviecorn.vercel.app/",
+    visit: "https://moviecorn.vercel.app",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const projects = [
     title: "Music Player",
     description:
       "A música sempre está presente em minha vida, então nesse site você pode ouvir minhas músicas favoritas.",
-    visit: "https://projects-gustavo.github.io/music-player/",
+    visit: "https://projects-gustavo.github.io/music-player",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const projects = [
     src: toDo,
     title: "To-do List",
     description: "Projeto desenvolvido para criar e armazenar tarefas.",
-    visit: "https://projects-gustavo.github.io/to-do/",
+    visit: "https://projects-gustavo.github.io/to-do",
   },
   {
     id: 6,
@@ -52,6 +52,6 @@ export const projects = [
     title: "Calculadora",
     description:
       "Calculadora simples desenvolvida para praticar o uso do JavaScript.",
-    visit: "https://projects-gustavo.github.io/calculator/",
+    visit: "https://projects-gustavo.github.io/calculator",
   },
 ];

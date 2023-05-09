@@ -6,7 +6,7 @@ import php from "/assets/img/php.png";
 import react from "/assets/img/react.png";
 import tailwind from "/assets/img/tailwind.png";
 import styledcomponents from "/assets/img/styled-components.png";
-import bootstrap from "/assets/img/bootstrap.png";
+import typescript from "/assets/img/typescript.png";
 
 export const skills = [
   {
@@ -19,7 +19,7 @@ export const skills = [
     id: 2,
     src: css,
     name: "CSS",
-    style: "shadow-blue-500",
+    style: "shadow-blue-400",
   },
   {
     id: 3,
@@ -29,9 +29,9 @@ export const skills = [
   },
   {
     id: 4,
-    src: php,
-    name: "PHP",
-    style: "shadow-indigo-300",
+    src: typescript,
+    name: "TypeScript",
+    style: "shadow-blue-500",
   },
   {
     id: 5,
@@ -53,8 +53,8 @@ export const skills = [
   },
   {
     id: 8,
-    src: bootstrap,
-    name: "Bootstrap",
-    style: "shadow-violet-500",
+    src: php,
+    name: "PHP",
+    style: "shadow-indigo-300",
   },
 ];

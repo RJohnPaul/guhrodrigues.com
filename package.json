@@ -9,9 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@tippyjs/react": "^4.2.6",
     "esbuild": "^0.17.12",
     "gsap": "^3.11.5",
@@ -19,9 +16,7 @@
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
     "react-scroll": "^1.8.9",
-    "react-scroll-to-top": "^3.0.0",
     "react-toastify": "^9.1.2",
     "typed.js": "^2.0.12",
     "typewriter-effect": "^2.19.0"

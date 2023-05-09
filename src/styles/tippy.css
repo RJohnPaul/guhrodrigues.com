@@ -1,0 +1,10 @@
+.tippy-box[data-theme~="custom"] {
+  background-color: transparent;
+  color: #D2EAFF;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.tippy-box[data-placement^=right]>.tippy-arrow:before {
+  display: none;
+}

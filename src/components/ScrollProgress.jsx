@@ -16,7 +16,14 @@ const ScrollProgress = () => {
     });
   }, []);
 
-  return <progress max="210" value="0"></progress>;
+  return (
+    <progress
+      max="210"
+      value="0"
+      className="fixed z-[90] top-0 left-0 appearance-none w-full h-[2px] border-none bg-transparent"
+      style={{ WebkitAppearance: "none" }}
+    ></progress>
+  );
 };
 
 export default ScrollProgress;

@@ -1,6 +1,9 @@
 // React Hooks
 import { useRef } from "react";
 
+// React Scroll
+import { Link } from "react-scroll";
+
 // Lottie
 import Lottie from "lottie-react";
 
@@ -23,8 +26,10 @@ const Home = () => {
     >
       <div className="md:col-span-12 flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
-          <h1 className="text-white">
-            <span className="font-medium lg:text-[22px]">Meu nome é</span>
+          <h1>
+            <span className="font-medium text-tertiary lg:text-[22px]">
+              Meu nome é
+            </span>
             <br />
             <span className="text-primary font-black sm:text-5xl md:text-5xl lg:text-7xl">
               Gustavo Rodrigues
@@ -47,7 +52,13 @@ const Home = () => {
             </span>
           </p>
           <div className="flex items-center gap-4 justify-center">
-            <a href="#projects">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={0}
+              className="cursor-pointer"
+            >
               <button
                 onMouseEnter={() => codeRef.current?.play()}
                 onMouseLeave={() => codeRef.current?.stop()}
@@ -58,21 +69,27 @@ const Home = () => {
                   lottieRef={codeRef}
                   animationData={codeIcon}
                   style={{ width: 30, height: 30 }}
-                  autoPlay={false}
+                  autoplay={false}
                   loop={false}
                 />
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="sm:invisible lg:visible flex absolute bottom-5 w-full justify-center items-center">
-          <a href="#about">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={0}
+            className="cursor-pointer"
+          >
             <Lottie
               lottieRef={mouseRef}
               animationData={mouseIcon}
-              style={{ width: 100, height: 100 }}
+              style={{ width: 90, height: 90 }}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

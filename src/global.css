@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply font-poppins transition-all duration-300;
   }
@@ -27,7 +31,7 @@
   }
 
   li {
-    @apply list-none text-color font-medium hover:text-primary;
+    @apply list-none font-semibold;
   }
 
   button {
@@ -49,62 +53,4 @@
   progress::-webkit-progress-value {
     @apply bg-primary;
   }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-progress {
-  position: fixed;
-  z-index: 90;
-  top: 0;
-  left: 0;
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 3px;
-  border: none;
-  background: transparent;
-}
-
-ul li .active {
-  color: #1d4ed8;
-  position: relative;
-  padding-bottom: 6px;
-}
-
-ul li .active::after {
-  content: "";
-  width: 85%;
-  height: 2px;
-  display: block;
-  background: #1d4ed8;
-  left: 40%;
-  transform: translateX(-40%);
-  position: absolute;
-  bottom: 0;
-  transition: all 0.2s ease-in-out;
-}
-
-ul li :not(.active) {
-  position: relative;
-  padding-bottom: 6px;
-}
-
-ul li :not(.active)::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  display: block;
-  background: #1d4ed8;
-  left: 40%;
-  transform: translateX(-40%);
-  position: absolute;
-  bottom: 0;
-  transition: all 0.2s ease-in-out;
-}
-
-ul li :not(.active):hover::after {
-  width: 85%;
 }
