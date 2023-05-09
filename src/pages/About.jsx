@@ -5,11 +5,11 @@ import { useRef } from "react";
 import { toast } from "react-toastify";
 
 // Lottie
-import Lottie from "lottie-react"
+import Lottie from "lottie-react";
 
 // Icon
 import { CheckCircle } from "phosphor-react";
-import downloadIcon from "../../public/static/download.json"
+import downloadIcon from "../../public/static/download.json";
 
 // Assets
 import about from "/assets/img/about.jpg";

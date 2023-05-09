@@ -7,7 +7,7 @@ module.exports = {
         primary: "#1d4ed8",
         secondary: "#D2EAFF",
         tertiary: "#d6d6dc",
-        backgroundPrimaryDark: "#0c0c0c",
+        background: "#0c0c0c",
       },
     },
     screens: {

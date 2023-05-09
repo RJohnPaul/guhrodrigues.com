@@ -18,7 +18,7 @@ const Skills = () => {
           {skills.map(({ id, src, name, style }) => (
             <div
               key={id}
-              className={`py-6 px-2 shadow-2xl rounded-xl ${style} bg-backgroundPrimaryDark`}
+              className={`py-6 px-2 shadow-2xl rounded-xl ${style} bg-background`}
             >
               <div className="grid grid-cols-1 gap-4 justify-center items-center">
                 <div className="m-auto">
