@@ -42,8 +42,8 @@ const HeaderMobile = () => {
         className={`fixed w-full left-0 h-full ${
           showMenu
             ? "bottom-0 z-[-1] bg-black/80 backdrop-blur-[15px] pointer-events-auto opacity-1 translate-y-0"
-            : "-bottom-full z-[-1] opacity-0 pointer-events-none translate-y-[50px] transition-[.5s]"
-        } top-0 flex items-center justify-center transition-all duration-500 z-50`}
+            : "-bottom-full z-[-1] opacity-0 pointer-events-none translate-y-[50px]"
+        } top-0 flex items-center justify-center duration-500 z-50 transition-[.5s]`}
       >
         <ul className={`flex flex-col items-center justify-center gap-10`}>
           <li className="text-tertiary">
