@@ -57,7 +57,7 @@ const Footer = () => {
               >
                 <li
                   key={id}
-                  className="relative pb-1.5 sm:p-4 sm:float-left sm:w-[50%] sm:mx-0 lg:float-none lg:w-full lg:p-1 after:content-[''] after:w-0 after:h-[2px] after:block after:bg-secondary after:left-[40%] after:-translate-x-[40%] after:absolute after:transition-all after:bottom-0 hover:after:w-[85%]"
+                  className="relative pb-1.5 sm:p-4 sm:float-left sm:w-[50%] sm:mx-0 lg:float-none lg:w-full lg:p-1 after:content-[''] after:w-0 lg:after:h-[2px] after:block after:bg-secondary after:left-[40%] after:-translate-x-[40%] after:absolute after:transition-all after:bottom-0 hover:after:w-[85%]"
                 >
                   {name}
                 </li>

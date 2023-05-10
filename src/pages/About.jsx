@@ -1,15 +1,14 @@
 // React Hooks
 import { useRef } from "react";
 
-// React Toastify
-import { toast } from "react-toastify";
-
 // Lottie
 import Lottie from "lottie-react";
 
 // Icon
-import { CheckCircle } from "phosphor-react";
 import downloadIcon from "../../public/static/download.json";
+
+// Download Alert
+import { downloadAlert } from "../components/Toast"
 
 // Assets
 import about from "/assets/img/about.jpg";
@@ -18,12 +17,6 @@ import curriculo from "/assets/docs/curriculo.pdf";
 // About
 const About = () => {
   const downloadRef = useRef();
-
-  const downloadAlert = () => {
-    toast.success("Downloading...", {
-      icon: <CheckCircle weight="bold" size={24} />,
-    });
-  };
 
   return (
     <section

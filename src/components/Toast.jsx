@@ -1,14 +1,22 @@
 // React Toastify
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// Icon
+import { CheckCircle } from "phosphor-react";
+
+// Toast Container
 const Toast = () => {
   return (
     <ToastContainer
       position="bottom-right"
       autoClose={5000}
       newestOnTop={false}
-      progressStyle={{ background: "#D2EAFF" }}
+      progressStyle={{
+        background: "#D2EAFF",
+        borderRadius: "5px",
+        height: "2px",
+      }}
       toastStyle={{
         backgroundColor: "#1d4ed8",
         color: "#D2EAFF",
@@ -23,6 +31,13 @@ const Toast = () => {
       theme="dark"
     />
   );
+};
+
+// Download Alert
+export const downloadAlert = () => {
+  toast.success("Downloading...", {
+    icon: <CheckCircle weight="bold" size={24} />,
+  });
 };
 
 export default Toast;

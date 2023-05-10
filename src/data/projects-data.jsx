@@ -6,6 +6,7 @@ import calculator from "/assets/img/calculator.jpg";
 import toDo from "/assets/img/to-do.jpg";
 import weather from "/assets/img/weather.jpg";
 
+// Data
 export const projects = [
   {
     id: 1,
