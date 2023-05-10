@@ -32,7 +32,7 @@ const Footer = () => {
           >
             <Tippy
               content={
-                <span className="flex items-center gap-1 select-none">
+                <span className="sm:invisible lg:visible flex items-center gap-1 select-none">
                   Topo <MouseSimple weight="bold" size={17} />
                 </span>
               }
