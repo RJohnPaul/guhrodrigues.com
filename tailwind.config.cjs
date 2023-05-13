@@ -18,8 +18,8 @@ module.exports = {
       "2xl": "1536px",
     },
     fontFamily: {
-      poppins: ["Poppins"],
-      signature: ["Great Vibes"],
+      poppins: ["Poppins", "sans-serif"],
+      signature: ["Great Vibes", "sans-serif"],
     },
   },
   plugins: [],
