@@ -2,8 +2,8 @@
 export const socials = [
   {
     id: 1,
-    href: "https://wa.me/5511986319802",
-    name: "WhatsApp",
+    href: "https://github.com/projects-gustavo",
+    name: "GitHub",
   },
   {
     id: 2,
@@ -12,8 +12,8 @@ export const socials = [
   },
   {
     id: 3,
-    href: "https://github.com/projects-gustavo",
-    name: "GitHub",
+    href: "https://wa.me/5511986319802",
+    name: "WhatsApp",
   },
   {
     id: 4,

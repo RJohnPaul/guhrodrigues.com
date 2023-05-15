@@ -7,7 +7,7 @@ import "../styles/header.css"
 const Header = () => {
   return (
     <header className="sm:invisible md:visible flex w-full fixed z-50 bg-background">
-      <nav className="fixed max-w-[1200px] w-full md:px-12 xl:px-0 min-h-[9vh] justify-between mx-auto top-0 xl:static flex flex-row items-center gap-10 z-50">
+      <nav className="fixed max-w-[1200px] w-full md:px-6 xl:px-0 min-h-[9vh] justify-between mx-auto top-0 xl:static flex flex-row items-center gap-10 z-50">
         <div className="text-center">
           <Link
             to="home"
