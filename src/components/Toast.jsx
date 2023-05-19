@@ -10,18 +10,15 @@ const Toast = () => {
   return (
     <ToastContainer
       position="bottom-right"
-      autoClose={5000}
+      autoClose={3000}
       newestOnTop={false}
-      progressStyle={{
-        background: "#D2EAFF",
-        borderRadius: "5px",
-        height: "2px",
-      }}
+      hideProgressBar={true}
       toastStyle={{
-        backgroundColor: "#1d4ed8",
-        color: "#D2EAFF",
-        borderRadius: "5px",
-        fontWeight: "600",
+        backgroundColor: "#222",
+        color: "#fff",
+        borderRadius: "4px",
+        fontSize: "14px",
+        border: "1px solid #333",
       }}
       closeOnClick
       rtl={false}
@@ -35,8 +32,8 @@ const Toast = () => {
 
 // Download Alert
 export const downloadAlert = () => {
-  toast.success("Downloading...", {
-    icon: <CheckCircle weight="bold" size={24} />,
+  toast.success("Currículo instalado :D", {
+    icon: <CheckCircle className="text-emerald-400" weight="bold" size={24} />,
   });
 };
 

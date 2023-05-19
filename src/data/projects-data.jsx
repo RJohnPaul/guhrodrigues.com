@@ -2,7 +2,7 @@
 import portfolio from "/assets/img/portfolio.jpg";
 import moviecorn from "/assets/img/moviecorn.jpg";
 import musicplayer from "/assets/img/musicplayer.jpg";
-import calculator from "/assets/img/calculator.jpg";
+import crypto from "/assets/img/crypto.jpg";
 import toDo from "/assets/img/to-do.jpg";
 import weather from "/assets/img/weather.jpg";
 
@@ -21,7 +21,7 @@ export const projects = [
     src: moviecorn,
     title: "MovieCorn",
     description:
-      "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries.",
+      "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries utilizando a TMDb API.",
     visit: "https://moviecorn.vercel.app",
   },
   {
@@ -49,10 +49,10 @@ export const projects = [
   },
   {
     id: 6,
-    src: calculator,
-    title: "Calculadora",
+    src: crypto,
+    title: "Crypto",
     description:
-      "Calculadora simples desenvolvida para praticar o uso do JavaScript.",
-    visit: "https://projects-gustavo.github.io/calculator",
+      "Sistema de criptografia e descriptografia utilizando o crypto-js.",
+    visit: "https://crypto-shield.vercel.app/",
   },
 ];
