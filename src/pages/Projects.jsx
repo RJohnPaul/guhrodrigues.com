@@ -17,6 +17,7 @@ import TransitionEffect from "../components/TransitionEffect";
 const Projects = ({ title }) => {
   useEffect(() => {
     document.title = title;
+    window.scrollTo(0, 0);
   }, [title]);
 
   return (
