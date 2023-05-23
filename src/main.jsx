@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       />
       <Route
         path="/*"
-        element={<NotFound title="Gustavo Rodrigues — Error" />}
+        element={<NotFound title="Gustavo Rodrigues — Not Found" />}
       />
     </Routes>
     <Footer />
