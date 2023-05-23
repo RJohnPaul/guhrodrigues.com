@@ -8,6 +8,7 @@ import tailwind from "/assets/img/tailwind.png";
 import styledcomponents from "/assets/img/styled-components.png";
 import typescript from "/assets/img/typescript.png";
 
+// Data
 export const skills = [
   {
     id: 1,

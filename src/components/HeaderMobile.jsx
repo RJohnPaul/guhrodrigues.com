@@ -5,8 +5,9 @@ import { useState } from "react";
 import { List, X } from "phosphor-react";
 
 // React Scroll
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
+// Header Mobile
 const HeaderMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -27,16 +28,13 @@ const HeaderMobile = () => {
   return (
     <header className="fixed md:invisible flex items-center justify-between w-full py-4 h-18 z-50 px-3">
       <div className="text-center">
-        <Link
-          to="home"
-          spy={true}
-          smooth={true}
-          duration={0}
+        <NavLink
+          to="/"
           onClick={handleCloseMenu}
           className="cursor-pointer text-[2.2rem] font-signature font-semibold relative p-2 text-primary"
         >
           Gustavo
-        </Link>
+        </NavLink>
       </div>
       <nav
         className={`fixed w-full left-0 h-full ${
@@ -47,56 +45,24 @@ const HeaderMobile = () => {
       >
         <ul className={`flex flex-col items-center justify-center gap-10`}>
           <li className="text-tertiary">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={0}
-              className="cursor-pointer"
-              onClick={handleCloseMenu}
-              activeClass="text-primary"
-            >
+            <NavLink to="/" onClick={handleCloseMenu}>
               Início
-            </Link>
+            </NavLink>
           </li>
           <li className="text-tertiary">
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={0}
-              className="cursor-pointer"
-              onClick={handleCloseMenu}
-              activeClass="text-primary"
-            >
+            <NavLink to="/about" onClick={handleCloseMenu}>
               Sobre
-            </Link>
+            </NavLink>
           </li>
           <li className="text-tertiary">
-            <Link
-              to="skills"
-              spy={true}
-              smooth={true}
-              duration={0}
-              className="cursor-pointer"
-              onClick={handleCloseMenu}
-              activeClass="text-primary"
-            >
+            <NavLink to="/skills" onClick={handleCloseMenu}>
               Habilidades
-            </Link>
+            </NavLink>
           </li>
           <li className="text-tertiary">
-            <Link
-              to="projects"
-              spy={true}
-              smooth={true}
-              duration={0}
-              className="cursor-pointer"
-              onClick={handleCloseMenu}
-              activeClass="text-primary"
-            >
+            <NavLink to="/projects" onClick={handleCloseMenu}>
               Projetos
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

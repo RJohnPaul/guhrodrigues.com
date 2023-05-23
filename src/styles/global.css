@@ -27,7 +27,7 @@
 
   header,
   nav {
-    @apply bg-background transition-all duration-300;
+    @apply bg-background;
   }
 
   li {
