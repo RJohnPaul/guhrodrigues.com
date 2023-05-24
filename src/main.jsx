@@ -41,7 +41,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         element={<Projects title="Gustavo Rodrigues — Projetos" />}
       />
       <Route
-        path="/*"
+        path="*"
         element={<NotFound title="Gustavo Rodrigues — Not Found" />}
       />
     </Routes>

@@ -20,14 +20,17 @@ const Skills = ({ title }) => {
   return (
     <>
       <TransitionEffect />
-      <section className="w-full md:h-screen sm:pb-24 lg:pb-0 px-2" id="skills">
+      <section
+        className="w-full sm:min-h-screen md:h-screen sm:py-24 md:py-0 lg:pb-0 px-2"
+        id="skills"
+      >
         <motion.div
           initial={{ y: -15, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.5, ease: "easeInOut" }}
           className="max-w-[1000px] mx-auto flex justify-center flex-col h-full"
         >
-          <div className="pb-6 sm:mt-20 lg:mt-0 text-center">
+          <div className="pb-6 text-center">
             <p className="text-gray-500 font-semibold uppercase tracking-widest text-sm table mx-auto rounded-lg py-2">
               Meu conhecimento &mdash;
             </p>
