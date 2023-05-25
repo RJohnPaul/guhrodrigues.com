@@ -61,7 +61,7 @@ const About = ({ title }) => {
                 alt="Gustavo"
               />
             </div>
-            <div className="col-span-3 flex justify-center flex-col sm:mt-6 lg:ml-24 lg:mt-0 gap-3">
+            <div className="col-span-3 flex justify-center flex-col sm:mt-6 lg:ml-24 lg:mt-0 gap-3 sm:px-4 lg:px-0">
               <p className="lg:text-md sm:text-center lg:text-start leading-8 text-tertiary">
                 Meu nome é Gustavo Rodrigues, tenho 17 anos e nasci na região do
                 Grande ABC. Sou desenvolvedor web e estudante de técnico em
@@ -104,8 +104,8 @@ const About = ({ title }) => {
           </div>
           <div className="flex justify-center gap-2 py-5">
             {socials.map(({ id, href, icon }) => (
-              <a href={href} key={id} target="_blank" className="group">
-                <button className="p-3 rounded-md hover:bg-primary duration-300">
+              <a href={href} key={id} target="_blank">
+                <button className="p-3 rounded-md text-primary sm:hover:bg-transparent lg:hover:bg-primary lg:hover:text-black duration-300">
                   {icon}
                 </button>
               </a>
