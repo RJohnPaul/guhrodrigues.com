@@ -1,7 +1,7 @@
 // React Hooks
 import { useEffect, useRef } from "react";
 
-// React Scroll
+// React Router
 import { Link } from "react-router-dom";
 
 // Lottie

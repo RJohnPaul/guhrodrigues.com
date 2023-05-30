@@ -20,9 +20,6 @@ import { motion } from "framer-motion";
 // Transition Effect
 import TransitionEffect from "../components/TransitionEffect";
 
-// Data
-import { socials } from "../data/footer-data";
-
 // About
 const About = ({ title }) => {
   const downloadRef = useRef();
@@ -83,8 +80,8 @@ const About = ({ title }) => {
                   type="application/pdf"
                 >
                   <button
-                    onMouseEnter={() => downloadRef.current?.play()}
                     onClick={downloadAlert}
+                    onMouseEnter={() => downloadRef.current?.play()}
                     onMouseLeave={() => downloadRef.current?.stop()}
                     className="group flex text-center bg-transparent border-2 border-primary items-center text-primary font-semibold py-3 px-4 gap-2 rounded-lg transition-all duration-300 hover:bg-primary hover:text-white"
                   >
@@ -101,15 +98,6 @@ const About = ({ title }) => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="flex justify-center gap-2 py-5">
-            {socials.map(({ id, href, icon }) => (
-              <a href={href} key={id} target="_blank">
-                <button className="p-3 rounded-md text-primary sm:hover:bg-transparent lg:hover:bg-primary lg:hover:text-black duration-300">
-                  {icon}
-                </button>
-              </a>
-            ))}
           </div>
         </motion.div>
       </section>

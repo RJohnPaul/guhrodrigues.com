@@ -4,7 +4,7 @@ import { useEffect } from "react";
 // Framer Motion
 import { motion } from "framer-motion";
 
-// React Router DOM
+// React Router
 import { Link } from "react-router-dom";
 
 // Phosphor React
