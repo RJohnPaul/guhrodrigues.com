@@ -1,31 +1,27 @@
 // Icons
-import { FiInstagram } from "react-icons/fi";
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FiInstagram, FiGithub } from "react-icons/fi";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 // Data
 export const socials = [
   {
     id: 1,
     href: "https://github.com/projects-gustavo",
-    name: "GitHub",
-    icon: <FaGithub size={20} />,
+    icon: <FiGithub size={18} />,
   },
   {
     id: 2,
     href: "https://www.linkedin.com/in/guhrodrigues",
-    name: "LinkedIn",
-    icon: <FaLinkedinIn size={20} />,
+    icon: <FaLinkedinIn size={18} />,
   },
   {
     id: 3,
     href: "https://wa.me/5511986319802",
-    name: "WhatsApp",
-    icon: <FaWhatsapp size={20} />,
+    icon: <FaWhatsapp size={18} />,
   },
   {
     id: 4,
     href: "https://www.instagram.com/gustavinrm",
-    name: "Instagram",
-    icon: <FiInstagram size={20} />,
+    icon: <FiInstagram size={18} />,
   },
 ];

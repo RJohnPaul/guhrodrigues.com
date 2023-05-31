@@ -11,8 +11,12 @@
     @apply font-poppins bg-background outline-none;
   }
 
+  section {
+    @apply animate-fade-in;
+  }
+
   h1 {
-    @apply sm:text-[18px] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-primary font-extrabold;
+    @apply text-primary;
   }
 
   p {
@@ -46,15 +50,7 @@
     @apply bg-primary rounded-2xl;
   }
 
-  progress::-webkit-progress-bar {
-    @apply bg-background;
-  }
-
-  progress::-webkit-progress-value {
-    @apply bg-primary;
-  }
-
   ::selection {
-    @apply bg-primary text-secondary;
+    @apply bg-teal-300/20 text-teal-300;
   }
 }

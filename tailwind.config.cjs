@@ -4,10 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1d4ed8",
-        secondary: "#D2EAFF",
-        tertiary: "#d6d6dc",
-        background: "#0c0c0c",
+        primary: "#fff",
+        background: "#08070B",
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0.4", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 0.4s ease",
       },
     },
     screens: {
@@ -19,7 +26,6 @@ module.exports = {
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
-      signature: ["Great Vibes", "sans-serif"],
     },
   },
   plugins: [],

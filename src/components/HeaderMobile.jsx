@@ -26,16 +26,10 @@ const HeaderMobile = () => {
   };
 
   return (
-    <header className="fixed md:invisible flex items-center justify-between w-full py-4 h-18 z-50 px-3">
-      <div className="text-center">
-        <NavLink
-          to="/"
-          onClick={handleCloseMenu}
-          className="cursor-pointer text-[2.2rem] font-signature font-semibold relative p-2 text-primary"
-        >
-          Gustavo
-        </NavLink>
-      </div>
+    <header className="fixed md:invisible flex items-center justify-between w-full py-5 h-18 z-50 px-3">
+      <NavLink to="/" onClick={handleCloseMenu} className="px-1.5">
+        <h1 className="text-xl font-semibold relative text-primary">Gustavo</h1>
+      </NavLink>
       <nav
         className={`fixed w-full left-0 h-full ${
           showMenu
@@ -44,22 +38,17 @@ const HeaderMobile = () => {
         } top-0 flex items-center justify-center duration-150`}
       >
         <ul className={`flex flex-col items-center justify-center gap-10`}>
-          <li className="text-tertiary">
+          <li className="text-gray-400">
             <NavLink to="/" onClick={handleCloseMenu}>
               Início
             </NavLink>
           </li>
-          <li className="text-tertiary">
+          <li className="text-gray-400">
             <NavLink to="/about" onClick={handleCloseMenu}>
               Sobre
             </NavLink>
           </li>
-          <li className="text-tertiary">
-            <NavLink to="/skills" onClick={handleCloseMenu}>
-              Habilidades
-            </NavLink>
-          </li>
-          <li className="text-tertiary">
+          <li className="text-gray-400">
             <NavLink to="/projects" onClick={handleCloseMenu}>
               Projetos
             </NavLink>
@@ -67,7 +56,7 @@ const HeaderMobile = () => {
         </ul>
       </nav>
       <div className="flex items-center px-1">
-        <button onClick={handleMenu} className="text-tertiary text-[18px]">
+        <button onClick={handleMenu} className="text-primary text-lg">
           {showMenu ? (
             <X weight="bold" size={30} />
           ) : (

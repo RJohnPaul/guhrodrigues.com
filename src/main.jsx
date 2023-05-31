@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 
@@ -31,10 +30,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route
         path="/about"
         element={<About title="Gustavo Rodrigues — Sobre" />}
-      />
-      <Route
-        path="/skills"
-        element={<Skills title="Gustavo Rodrigues — Habilidades" />}
       />
       <Route
         path="/projects"
