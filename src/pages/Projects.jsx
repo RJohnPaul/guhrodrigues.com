@@ -32,10 +32,10 @@ const Projects = ({ title }) => {
                 key={id}
                 className="shadow-md flex sm:flex-col lg:flex-row shadow-gray-600 rounded-xl h-full group"
               >
-                <div className="overflow-hidden">
+                <div className="overflow-hidden rounded-l-xl">
                   <img
                     src={src}
-                    className="ease-in-out rounded-l-xl duration-200 group-hover:scale-105 max-w-5xl w-full"
+                    className="ease-in-out duration-200 group-hover:scale-105 max-w-5xl w-full"
                     alt={title}
                   />
                 </div>

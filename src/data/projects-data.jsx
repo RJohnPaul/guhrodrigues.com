@@ -15,7 +15,7 @@ export const projects = [
     description:
       "No meu portfólio você conhece um pouco dos meus projetos e lê um pouco sobre mim.",
     techs: ["React", "Tailwind CSS", "React Router"],
-    code: "https://github.com/projects-gustavo/portfolio",
+    code: "https://github.com/guhrodriguess/portfolio",
     visit: "https://guhrodrigues.vercel.app",
   },
   {
@@ -25,7 +25,7 @@ export const projects = [
     description:
       "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries utilizando a TMDb API.",
     techs: ["React", "Styled Components", "React Router"],
-    code: "https://github.com/projects-gustavo/moviecorn",
+    code: "https://github.com/guhrodriguess/moviecorn",
     visit: "https://moviecorn.vercel.app",
   },
   {
@@ -33,9 +33,9 @@ export const projects = [
     src: crypto,
     title: "Crypto",
     description:
-      "Sistema de criptografia e descriptografia utilizando o crypto-js.",
-    techs: ["React", "Tailwind CSS", "React Router"],
-    code: "https://github.com/projects-gustavo/crypto",
+      "Sistema de criptografia e descriptografia realizado para um trabalho escolar.",
+    techs: ["React", "Tailwind CSS", "CryptoJS"],
+    code: "https://github.com/guhrodriguess/crypto",
     visit: "https://crypto-shield.vercel.app/",
   },
   {
@@ -45,17 +45,18 @@ export const projects = [
     description:
       "Aplicação para mostrar a previsão do tempo utilizando a Open Weather API.",
     techs: ["React", "Tailwind CSS"],
-    code: "https://github.com/projects-gustavo/weather",
+    code: "https://github.com/guhrodriguess/weather",
     visit: "https://earth-weather.vercel.app",
   },
   {
     id: 5,
     src: toDo,
     title: "To-do List",
-    description: "Projeto desenvolvido para criar e armazenar tarefas.",
+    description:
+      "Projeto desenvolvido para criar e armazenar tarefas com o uso do localStorage.",
     techs: ["HTML", "CSS", "JavaScript"],
-    code: "https://github.com/projects-gustavo/to-do",
-    visit: "https://projects-gustavo.github.io/to-do",
+    code: "https://github.com/guhrodriguess/to-do",
+    visit: "https://guhrodriguess.github.io/to-do",
   },
   {
     id: 6,
@@ -64,7 +65,7 @@ export const projects = [
     description:
       "A música sempre está presente em minha vida, então nesse site você pode ouvir minhas músicas favoritas.",
     techs: ["HTML", "CSS", "JavaScript"],
-    code: "https://github.com/projects-gustavo/music-player",
-    visit: "https://projects-gustavo.github.io/music-player",
+    code: "https://github.com/guhrodriguess/music-player",
+    visit: "https://guhrodriguess.github.io/music-player",
   },
 ];

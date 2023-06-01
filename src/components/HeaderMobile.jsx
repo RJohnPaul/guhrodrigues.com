@@ -33,7 +33,7 @@ const HeaderMobile = () => {
       <nav
         className={`fixed w-full left-0 h-full ${
           showMenu
-            ? "bottom-0 z-[-1] bg-black/80 backdrop-blur-[15px] pointer-events-auto opacity-1 translate-y-0"
+            ? "bottom-0 z-[-1] bg-background/80 backdrop-blur-[15px] pointer-events-auto opacity-1 translate-y-0"
             : "-bottom-full z-[-1] opacity-0 pointer-events-none translate-y-[50px]"
         } top-0 flex items-center justify-center duration-150`}
       >
