@@ -4,7 +4,7 @@ import { socials } from "../data/footer-data";
 // Footer
 const Footer = () => {
   return (
-    <footer className="p-6">
+    <footer className="sm:pb-20 md:p-6">
       <div className="text-center flex items-center sm:justify-center md:justify-between max-w-[1250px] w-full mx-auto px-3">
         <div className="flex gap-3">
           {socials.map(({ id, icon, href }) => (

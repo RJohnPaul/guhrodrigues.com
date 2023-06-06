@@ -66,7 +66,7 @@ const Projects = ({ title }) => {
                     </a>
                     <a href={code} target="_blank">
                       <button className="flex flex-row items-center justify-center text-sm text-primary bg-gradient-to-br from-black via-black to-zinc-700 border border-zinc-700 rounded-full p-2 duration-300">
-                        <FiGithub size={18} />
+                        <FiGithub size={20} />
                       </button>
                     </a>
                   </div>

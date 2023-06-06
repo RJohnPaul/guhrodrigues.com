@@ -26,7 +26,7 @@ const HeaderMobile = () => {
   };
 
   return (
-    <header className="fixed md:invisible flex items-center justify-between w-full py-5 h-18 z-50 px-3">
+    <header className="fixed bottom-0 md:invisible flex items-center justify-between w-full py-5 z-50 px-4">
       <NavLink to="/" onClick={handleCloseMenu} className="px-1.5">
         <h1 className="text-xl font-semibold relative text-primary">Gustavo</h1>
       </NavLink>

@@ -15,13 +15,13 @@ const Home = ({ title }) => {
   }, [title]);
 
   return (
-    <section className="w-full sm:h-[90vh] flex text-center justify-center pt-20">
+    <section className="w-full sm:h-[85vh] md:h-[90vh] flex text-center justify-center pt-20">
       <div className="flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
           <h1 className="text-5xl py-1 font-bold">Gustavo Rodrigues</h1>
           <div className="flex flex-col gap-2">
             <p className="flex gap-1 justify-center sm:text-sm md:text-md text-primary">
-              Desenvolvedor Front-end & Estudante de T.I <br />
+              Desenvolvedor Front-end & Estudante de T.I
             </p>
             <p className="flex gap-1 justify-center sm:text-sm md:text-md mb-1 text-gray-400">
               A tecnologia move o mundo.
