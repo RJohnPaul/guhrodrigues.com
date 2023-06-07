@@ -26,7 +26,7 @@ const HeaderMobile = () => {
   };
 
   return (
-    <header className="fixed bottom-0 md:invisible flex items-center justify-between w-full py-5 z-50 px-4">
+    <header className="fixed md:invisible flex items-center justify-between w-full py-5 z-50 px-4">
       <NavLink to="/" onClick={handleCloseMenu} className="px-1.5">
         <h1 className="text-xl font-semibold relative text-primary">Gustavo</h1>
       </NavLink>
@@ -57,11 +57,7 @@ const HeaderMobile = () => {
       </nav>
       <div className="flex items-center px-1">
         <button onClick={handleMenu} className="text-primary text-lg">
-          {showMenu ? (
-            <X weight="bold" size={30} />
-          ) : (
-            <List weight="bold" size={30} />
-          )}
+          {showMenu ? <X size={30} /> : <List size={30} />}
         </button>
       </div>
     </header>
