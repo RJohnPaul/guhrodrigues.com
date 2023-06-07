@@ -27,7 +27,7 @@ const About = ({ title }) => {
   return (
     <>
       <Toast />
-      <section className="w-full lg:h-[90vh] p-2 flex items-center py-16">
+      <section className="w-full lg:h-full lg:min-h-[calc(100vh_-_90px)] p-2 flex items-center py-16">
         <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto gap-8 p-5">
           <div className="pb-8 text-center">
             <p className="text-gray-500 font-semibold uppercase tracking-widest text-sm table mx-auto rounded-lg py-2">

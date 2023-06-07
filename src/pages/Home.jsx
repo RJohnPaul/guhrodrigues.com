@@ -15,7 +15,7 @@ const Home = ({ title }) => {
   }, [title]);
 
   return (
-    <section className="w-full sm:h-[85vh] md:h-[90vh] flex text-center justify-center pt-20">
+    <section className="w-full sm:h-full sm:min-h-[calc(100vh_-_90px)] flex text-center justify-center pt-20">
       <div className="flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
           <h1 className="text-5xl py-1 font-bold">Gustavo Rodrigues</h1>
