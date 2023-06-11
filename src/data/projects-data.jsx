@@ -23,7 +23,7 @@ export const projects = [
     src: moviecorn,
     title: "MovieCorn",
     description:
-      "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries utilizando a TMDb API.",
+      "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries.",
     techs: ["React", "Styled Components", "React Router"],
     code: "https://github.com/guhrodriguess/moviecorn",
     visit: "https://moviecorn.vercel.app",

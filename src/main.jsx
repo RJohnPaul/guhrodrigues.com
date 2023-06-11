@@ -6,7 +6,12 @@ import ReactDOM from "react-dom/client";
 import "./styles/global.css";
 
 // React Router
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 // Pages
 import Home from "./pages/Home";
@@ -34,9 +39,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         element={<Projects title="Gustavo Rodrigues — Projetos" />}
       />
       <Route
-        path="*"
+        path="/404"
         element={<NotFound title="Gustavo Rodrigues — Not Found" />}
       />
+      <Route path="*" element={<Navigate to="/404" />} />
     </Routes>
     <Footer />
   </Router>

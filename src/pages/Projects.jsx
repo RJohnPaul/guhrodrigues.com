@@ -58,7 +58,7 @@ const Projects = ({ title }) => {
                       </button>
                     ))}
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 py-1.5">
                     <a href={visit} target="_blank">
                       <button className="flex flex-row items-center justify-center text-sm text-primary bg-gradient-to-br from-black via-black to-zinc-700 border border-zinc-700 rounded-full p-2 duration-300">
                         <FiExternalLink size={20} />
