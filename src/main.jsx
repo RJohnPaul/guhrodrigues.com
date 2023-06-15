@@ -21,13 +21,11 @@ import NotFound from "./pages/NotFound";
 
 // Components
 import Header from "./components/Header";
-import HeaderMobile from "./components/HeaderMobile";
 import Footer from "./components/Footer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <Header />
-    <HeaderMobile />
     <Routes>
       <Route path="/" element={<Home title="Gustavo Rodrigues — Início" />} />
       <Route
