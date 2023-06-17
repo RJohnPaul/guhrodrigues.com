@@ -44,7 +44,7 @@ const Projects = ({ title }) => {
                     <h3 className="font-bold text-xl text-primary py-1.5">
                       {title}
                     </h3>
-                    <span className="max-w-full text-[13.5px] text-gray-400 font-medium mt-1 mx-2">
+                    <span className="max-w-full text-[13.5px] text-gray-400 font-medium mt-1 mx-6">
                       {description}
                     </span>
                   </div>
@@ -58,15 +58,17 @@ const Projects = ({ title }) => {
                       </button>
                     ))}
                   </div>
-                  <div className="flex gap-3 py-1.5">
+                  <div className="flex gap-6 py-1.5">
                     <a href={visit} target="_blank">
-                      <button className="flex flex-row items-center justify-center text-sm text-primary bg-gradient-to-br from-black via-black to-zinc-700 border border-zinc-700 rounded-full p-2 duration-300">
-                        <FiExternalLink size={20} />
+                      <button className="flex flex-row items-center justify-center font-medium text-sm text-gray-400 gap-1 duration-300 hover:text-primary">
+                        Visitar
+                        <FiExternalLink />
                       </button>
                     </a>
                     <a href={code} target="_blank">
-                      <button className="flex flex-row items-center justify-center text-sm text-primary bg-gradient-to-br from-black via-black to-zinc-700 border border-zinc-700 rounded-full p-2 duration-300">
-                        <FiGithub size={20} />
+                      <button className="flex flex-row items-center justify-center font-medium text-sm text-gray-400 gap-1 duration-300 hover:text-primary">
+                        Repositório
+                        <FiGithub />
                       </button>
                     </a>
                   </div>

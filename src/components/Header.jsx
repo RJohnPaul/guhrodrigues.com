@@ -47,9 +47,9 @@ const Header = () => {
         <ul
           className={`${
             showMenu
-              ? "flex flex-col justify-center w-full h-screen left-0 z-[-1] top-0 bg-background/80 backdrop-blur-lg pointer-events-auto opacity-100 translate-y-0"
-              : "-bottom-full md:flex sm:opacity-0 md:opacity-100 sm:pointer-events-none md:pointer-events-auto sm:translate-y-[50px] md:translate-y-0"
-          } sm:fixed md:static gap-8 items-center transition-all`}
+              ? "flex flex-col justify-center w-full h-screen left-0 z-[-1] top-0 bg-background/80 backdrop-blur-lg"
+              : "-bottom-full md:flex"
+          } sm:fixed md:static gap-8 items-center duration-300`}
         >
           <li className="text-gray-400 hover:text-primary">
             <NavLink to="/" onClick={handleCloseMenu}>
