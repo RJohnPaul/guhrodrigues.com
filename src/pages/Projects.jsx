@@ -25,48 +25,48 @@ const Projects = ({ title }) => {
             Meus projetos
           </h1>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-1 gap-8 sm:px-2 lg:px-0">
+        <div className="grid grid-cols-1 gap-8 sm:px-2 lg:px-0">
           {projects.map(
             ({ id, src, title, description, techs, code, visit }) => (
               <div
                 key={id}
                 className="shadow-md flex sm:flex-col lg:flex-row shadow-gray-600 rounded-xl h-full group"
               >
-                <div className="overflow-hidden rounded-l-xl">
+                <div className="overflow-hidden sm:rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl">
                   <img
                     src={src}
                     className="ease-in-out duration-200 group-hover:scale-105 max-w-5xl w-full"
                     alt={title}
                   />
                 </div>
-                <div className="flex flex-col justify-center items-center text-center w-full py-5">
-                  <div className="flex flex-col justify-center mx-5">
+                <div className="flex flex-col justify-center items-center text-center w-full py-5 px-10">
+                  <div className="flex flex-col justify-center">
                     <h3 className="font-bold text-xl text-primary py-1.5">
                       {title}
                     </h3>
-                    <span className="max-w-full text-[13.5px] text-gray-400 font-medium mt-1 mx-6">
+                    <span className="max-w-full text-[13.5px] text-gray-400 font-medium py-2 mx-3">
                       {description}
                     </span>
                   </div>
-                  <div className="py-4">
+                  <div className="py-2">
                     {techs.map((tech) => (
                       <button
                         key={tech}
-                        className="text-gray-300 bg-[#222] text-xs px-3 font-medium py-2 rounded-lg cursor-default m-1"
+                        className="text-gray-300 bg-primary/10 text-xs px-3 font-medium py-2 rounded-lg cursor-default m-1"
                       >
                         {tech}
                       </button>
                     ))}
                   </div>
-                  <div className="flex gap-6 py-1.5">
+                  <div className="flex flex-wrap justify-center gap-3 py-1.5">
                     <a href={visit} target="_blank">
-                      <button className="flex flex-row items-center justify-center font-medium text-sm text-gray-400 gap-1 duration-300 hover:text-primary">
+                      <button className="flex flex-row items-center justify-center font-medium text-sm text-gray-400 p-2 gap-1 duration-300 hover:text-primary">
                         Visitar
                         <FiExternalLink />
                       </button>
                     </a>
                     <a href={code} target="_blank">
-                      <button className="flex flex-row items-center justify-center font-medium text-sm text-gray-400 gap-1 duration-300 hover:text-primary">
+                      <button className="flex flex-row items-center justify-center font-medium text-sm text-gray-400 p-2 gap-1 duration-300 hover:text-primary">
                         Repositório
                         <FiGithub />
                       </button>
