@@ -1,6 +1,7 @@
-// Icons
+// Icon
 import { FiChevronRight } from "react-icons/fi";
 
+// ProjectItem
 const ProjectItem = ({ id, src, title, description, techs, code, visit }) => {
   return (
     <div
