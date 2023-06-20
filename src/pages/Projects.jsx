@@ -1,11 +1,11 @@
 // React Hooks
 import { useEffect } from "react";
 
-// Icon
-import { FiGithub, FiExternalLink } from "react-icons/fi";
-
 // Data
 import { projects } from "../data/projects-data";
+
+// ProjectItem Component
+import ProjectItem from "../components/ProjectItem";
 
 // Projects
 const Projects = ({ title }) => {
@@ -28,52 +28,15 @@ const Projects = ({ title }) => {
         <div className="grid grid-cols-1 gap-8 sm:px-2 lg:px-0">
           {projects.map(
             ({ id, src, title, description, techs, code, visit }) => (
-              <div
+              <ProjectItem
                 key={id}
-                className="shadow-md flex sm:flex-col lg:flex-row shadow-gray-600 rounded-xl h-full group"
-              >
-                <div className="overflow-hidden sm:rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl">
-                  <img
-                    src={src}
-                    className="ease-in-out duration-200 group-hover:scale-105 max-w-5xl w-full"
-                    alt={title}
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center text-center w-full py-5 px-10">
-                  <div className="flex flex-col justify-center">
-                    <h3 className="font-bold text-xl text-primary py-1.5">
-                      {title}
-                    </h3>
-                    <span className="max-w-full text-[13.5px] text-gray-400 font-medium py-2 mx-3">
-                      {description}
-                    </span>
-                  </div>
-                  <div className="py-2">
-                    {techs.map((tech) => (
-                      <button
-                        key={tech}
-                        className="text-gray-300 bg-primary/10 text-xs px-3 font-medium py-2 rounded-lg cursor-default m-1"
-                      >
-                        {tech}
-                      </button>
-                    ))}
-                  </div>
-                  <div className="flex flex-wrap justify-center gap-3 py-1.5">
-                    <a href={visit} target="_blank">
-                      <button className="flex flex-row items-center justify-center font-medium text-sm text-gray-400 p-2 gap-1 duration-300 hover:text-primary">
-                        Visitar
-                        <FiExternalLink />
-                      </button>
-                    </a>
-                    <a href={code} target="_blank">
-                      <button className="flex flex-row items-center justify-center font-medium text-sm text-gray-400 p-2 gap-1 duration-300 hover:text-primary">
-                        Repositório
-                        <FiGithub />
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
+                src={src}
+                title={title}
+                description={description}
+                techs={techs}
+                code={code}
+                visit={visit}
+              />
             )
           )}
         </div>
