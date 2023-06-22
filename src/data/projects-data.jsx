@@ -1,10 +1,10 @@
 // Images
-import portfolio from "/assets/img/portfolio.jpg";
-import moviecorn from "/assets/img/moviecorn.jpg";
-import musicplayer from "/assets/img/musicplayer.jpg";
-import crypto from "/assets/img/crypto.jpg";
-import toDo from "/assets/img/to-do.jpg";
-import weather from "/assets/img/weather.jpg";
+import portfolio from "/assets/img/portfolio.png";
+import moviecorn from "/assets/img/moviecorn.png";
+import crypto from "/assets/img/crypto.png";
+import weather from "/assets/img/weather.png";
+import toDo from "/assets/img/to-do.png";
+import musicplayer from "/assets/img/musicplayer.png";
 
 // Data
 export const projects = [
