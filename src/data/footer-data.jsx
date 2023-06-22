@@ -1,6 +1,6 @@
 // Icons
 import { FiInstagram, FiGithub } from "react-icons/fi";
-import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 // Data
 export const socials = [
@@ -16,11 +16,6 @@ export const socials = [
   },
   {
     id: 3,
-    href: "https://wa.me/5511986319802",
-    icon: <FaWhatsapp size={18} />,
-  },
-  {
-    id: 4,
     href: "https://www.instagram.com/gustavinrm",
     icon: <FiInstagram size={18} />,
   },
