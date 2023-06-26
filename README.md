@@ -1,6 +1,8 @@
-<h1 align="center">Portfolio 👨‍💻</h1>
-   
-<h3 align="center">Click <a href="https://guhrodrigues.vercel.app/">here</a></h3>   
+<h1 align="center">Portfolio</h1>
+
+<p align="center">My personal website.</p>
+<p align="center">Access <a href="https://guhrodrigues.vercel.app/">here</a></p>
+
 <img src="./public/assets/img/portfolio.png">
 <div align="center">
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
