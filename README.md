@@ -1,6 +1,6 @@
 <div align="center">
 
-   ![MovieCorn image](./public/assets/img/portfolio.png)
+   ![Portfolio image](./public/assets/img/portfolio.png)
    
 </div>
 
