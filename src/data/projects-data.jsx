@@ -1,5 +1,6 @@
 // Images
 import portfolio from "/assets/img/portfolio.png";
+import swiftmart from "/assets/img/swiftmart.png";
 import moviecorn from "/assets/img/moviecorn.png";
 import crypto from "/assets/img/crypto.png";
 import weather from "/assets/img/weather.png";
@@ -20,6 +21,16 @@ export const projects = [
     },
     {
         id: 2,
+        src: swiftmart,
+        title: "SwiftMart",
+        description:
+            "Simulação de e-commerce na qual utiliza a API do Mercado Livre para a listagem dos produtos",
+        techs: ["React", "TypeScript", "Styled Components"],
+        code: "https://github.com/guhrodriguess/swiftmart",
+        visit: "https://swiftmartstore.vercel.app",
+    },
+    {
+        id: 3,
         src: moviecorn,
         title: "MovieCorn",
         description:
@@ -29,7 +40,7 @@ export const projects = [
         visit: "https://moviecorn.vercel.app",
     },
     {
-        id: 3,
+        id: 4,
         src: crypto,
         title: "Crypto",
         description:
@@ -39,7 +50,7 @@ export const projects = [
         visit: "https://crypto-shield.vercel.app/",
     },
     {
-        id: 4,
+        id: 5,
         src: weather,
         title: "Weather",
         description:
@@ -49,7 +60,7 @@ export const projects = [
         visit: "https://earth-weather.vercel.app",
     },
     {
-        id: 5,
+        id: 6,
         src: toDo,
         title: "To-do List",
         description:
@@ -59,7 +70,7 @@ export const projects = [
         visit: "https://guhrodriguess.github.io/to-do",
     },
     {
-        id: 6,
+        id: 7,
         src: musicplayer,
         title: "Music Player",
         description:
