@@ -24,7 +24,7 @@ export const projects = [
         src: swiftmart,
         title: "SwiftMart",
         description:
-            "Simulação de e-commerce na qual utiliza a API do Mercado Livre para a listagem dos produtos",
+            "Simulação de e-commerce na qual utiliza a API do Mercado Livre para a listagem dos produtos.",
         techs: ["React", "TypeScript", "Styled Components"],
         code: "https://github.com/guhrodriguess/swiftmart",
         visit: "https://swiftmartstore.vercel.app",
