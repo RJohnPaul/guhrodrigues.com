@@ -1,7 +1,7 @@
 <div align="center">
 
-   ![Portfolio image](./public/assets/img/portfolio.png)
-   
+![Portfolio image](./public/assets/img/portfolio.png)
+
 </div>
 
 <div align="center"><strong>Portfolio</strong></div>

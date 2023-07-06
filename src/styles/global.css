@@ -3,54 +3,54 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    @apply scroll-smooth;
-  }
+    html {
+        @apply scroll-smooth;
+    }
 
-  body {
-    @apply font-poppins bg-background outline-none;
-  }
+    body {
+        @apply font-poppins bg-background outline-none;
+    }
 
-  section {
-    @apply animate-fade-in;
-  }
+    section {
+        @apply animate-fade-in;
+    }
 
-  h1 {
-    @apply text-primary;
-  }
+    h1 {
+        @apply text-primary;
+    }
 
-  p {
-    @apply font-medium;
-  }
+    p {
+        @apply font-medium;
+    }
 
-  header,
-  nav,
-  img {
-    @apply select-none;
-  }
+    header,
+    nav,
+    img {
+        @apply select-none;
+    }
 
-  header,
-  nav {
-    @apply bg-background;
-  }
+    header,
+    nav {
+        @apply bg-background;
+    }
 
-  li {
-    @apply list-none font-semibold;
-  }
+    li {
+        @apply list-none font-semibold;
+    }
 
-  button {
-    @apply select-none;
-  }
+    button {
+        @apply select-none;
+    }
 
-  ::-webkit-scrollbar {
-    @apply w-1;
-  }
+    ::-webkit-scrollbar {
+        @apply w-1;
+    }
 
-  ::-webkit-scrollbar-thumb {
-    @apply bg-primary rounded-2xl;
-  }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-primary rounded-2xl;
+    }
 
-  ::selection {
-    @apply bg-teal-300/20 text-teal-300;
-  }
+    ::selection {
+        @apply bg-teal-300/20 text-teal-300;
+    }
 }
