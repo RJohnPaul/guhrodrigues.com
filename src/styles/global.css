@@ -29,11 +29,6 @@
         @apply select-none;
     }
 
-    header,
-    nav {
-        @apply bg-background;
-    }
-
     li {
         @apply list-none font-semibold;
     }

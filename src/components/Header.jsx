@@ -1,5 +1,5 @@
 // React Hooks
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // React Router
 import { NavLink } from "react-router-dom";
@@ -17,6 +17,7 @@ import Lottie from "lottie-react";
 // Header
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const [shadow, setShadow] = useState(false);
     const contactRef = useRef();
 
     const handleCloseMenu = () => {
@@ -33,9 +34,24 @@ const Header = () => {
         }
     };
 
+    useEffect(() => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true);
+            } else {
+                setShadow(false);
+            }
+        };
+        window.addEventListener("scroll", handleShadow);
+    }, []);
+
     return (
-        <header className="flex w-full z-50 fixed bg-background">
-            <nav className="fixed max-w-[1250px] w-full xl:px-3 p-5 justify-between mx-auto right-0 left-0 top-0 xl:static flex flex-row items-center gap-10 z-50">
+        <header className="flex w-full z-50 fixed ">
+            <nav
+                className={`fixed max-w-[1250px] w-full sm:px-6 xl:px-3 ${
+                    shadow ? "sm:py-5 md:py-3" : "py-5"
+                } justify-between mx-auto right-0 left-0 sm:bg-background md:bg-background/60 md:backdrop-blur-[5px] top-0 xl:static flex flex-row items-center gap-10 z-50 md:ease-in-out md:duration-300`}
+            >
                 <div className="text-center">
                     <NavLink to="/" onClick={handleCloseMenu}>
                         <h1 className="sm:text-md md:text-xl font-semibold relative text-primary">
