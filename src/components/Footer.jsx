@@ -1,5 +1,5 @@
 // Data
-import { socials } from "../data/footer-data";
+import { socials } from "../data/footer";
 
 // Footer
 const Footer = () => {

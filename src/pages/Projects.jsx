@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 // Data
-import { projects } from "../data/projects-data";
+import { projects } from "../data/projects";
 
 // ProjectItem Component
 import ProjectItem from "../components/ProjectItem";
