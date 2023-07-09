@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 
 // React Router
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 // Styles
 import "../styles/header.css";
@@ -15,7 +15,7 @@ import contactIcon from "../../public/static/contact.json";
 import Lottie from "lottie-react";
 
 // Header
-const Header = () => {
+export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
     const [shadow, setShadow] = useState(false);
     const contactRef = useRef();
@@ -83,7 +83,7 @@ const Header = () => {
                     </li>
                 </ul>
                 <div>
-                    <a href="https://wa.me/5511986319802" target="_blank">
+                    <Link to="/contact">
                         <button
                             onMouseEnter={() => contactRef.current?.play()}
                             onMouseLeave={() => contactRef.current?.stop()}
@@ -98,7 +98,7 @@ const Header = () => {
                                 loop={false}
                             />
                         </button>
-                    </a>
+                    </Link>
                 </div>
                 <button
                     onClick={handleMenu}
@@ -109,6 +109,4 @@ const Header = () => {
             </nav>
         </header>
     );
-};
-
-export default Header;
+}

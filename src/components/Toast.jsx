@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { CheckCircle } from "phosphor-react";
 
 // Toast Container
-const Toast = () => {
+export default function Toast() {
     return (
         <ToastContainer
             position="bottom-right"
@@ -28,7 +28,7 @@ const Toast = () => {
             theme="dark"
         />
     );
-};
+}
 
 // Download Alert
 export const downloadAlert = () => {
@@ -39,4 +39,11 @@ export const downloadAlert = () => {
     });
 };
 
-export default Toast;
+// Send Email Alert
+export const sendEmailAlert = () => {
+    toast.success("Email enviado :D", {
+        icon: (
+            <CheckCircle className="text-emerald-400" weight="bold" size={24} />
+        ),
+    });
+};

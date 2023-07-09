@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "phosphor-react";
 
 // Not Found
-const NotFound = ({ title }) => {
+export default function NotFound({ title }) {
     useEffect(() => {
         document.title = title;
         window.scrollTo(0, 0);
@@ -42,6 +42,4 @@ const NotFound = ({ title }) => {
             </div>
         </section>
     );
-};
-
-export default NotFound;
+}

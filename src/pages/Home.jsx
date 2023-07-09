@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "phosphor-react";
 
 // Home
-const Home = ({ title }) => {
+export default function Home({ title }) {
     useEffect(() => {
         document.title = title;
         window.scrollTo(0, 0);
@@ -21,11 +21,11 @@ const Home = ({ title }) => {
                     <h1 className="text-5xl py-1 font-bold">
                         Gustavo Rodrigues
                     </h1>
-                    <div className="flex flex-col gap-2">
-                        <p className="flex gap-1 justify-center sm:text-sm md:text-md text-primary">
+                    <div className="flex flex-col justify-center gap-2">
+                        <p className="sm:text-sm md:text-md text-primary">
                             Desenvolvedor Web & Estudante de T.I
                         </p>
-                        <p className="flex gap-1 justify-center sm:text-sm md:text-md mb-1 text-gray-400">
+                        <p className="sm:text-sm md:text-md mb-1 text-gray-400">
                             A tecnologia move o mundo.
                         </p>
                     </div>
@@ -45,6 +45,4 @@ const Home = ({ title }) => {
             </div>
         </section>
     );
-};
-
-export default Home;
+}

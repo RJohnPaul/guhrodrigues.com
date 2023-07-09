@@ -16,7 +16,7 @@ import about from "/assets/img/about.jpg";
 import curriculo from "/assets/docs/curriculo.pdf";
 
 // About
-const About = ({ title }) => {
+export default function About({ title }) {
     const downloadRef = useRef();
 
     useEffect(() => {
@@ -116,6 +116,4 @@ const About = ({ title }) => {
             </section>
         </>
     );
-};
-
-export default About;
+}

@@ -9,6 +9,8 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@emailjs/browser": "^3.11.0",
+        "@radix-ui/react-form": "^0.0.3",
         "esbuild": "^0.17.12",
         "lottie-react": "^2.4.0",
         "phosphor-react": "^1.4.1",

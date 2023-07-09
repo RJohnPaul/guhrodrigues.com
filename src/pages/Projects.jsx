@@ -8,7 +8,7 @@ import { projects } from "../data/projects";
 import ProjectItem from "../components/ProjectItem";
 
 // Projects
-const Projects = ({ title }) => {
+export default function Projects({ title }) {
     useEffect(() => {
         document.title = title;
         window.scrollTo(0, 0);
@@ -51,6 +51,4 @@ const Projects = ({ title }) => {
             </div>
         </section>
     );
-};
-
-export default Projects;
+}

@@ -17,6 +17,7 @@ import {
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 // Components
@@ -38,6 +39,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route
                 path="/projects"
                 element={<Projects title="Gustavo Rodrigues — Projetos" />}
+            />
+            <Route
+                path="/contact"
+                element={<Contact title="Gustavo Rodrigues — Contato" />}
             />
             <Route
                 path="/404"
