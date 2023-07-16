@@ -21,17 +21,15 @@ export default function NotFound({ title }) {
         >
             <div className="flex flex-col items-center justify-center p-8">
                 <div className="flex flex-col gap-4 text-center">
-                    <p className="flex gap-1 justify-center md:text-[20px] font-medium mb-1">
-                        <span className="text-primary">
-                            A página que você está tentando acessar não existe.
-                        </span>
+                    <p className="flex text-primary md:text-[20px] font-medium mb-1">
+                        A página que você está tentando acessar não existe.
                     </p>
                     <div className="flex items-center gap-4 justify-center">
                         <Link to="/">
                             <button className="group/icon w-full flex items-center justify-center py-2 px-3 gap-1.5 font-medium text-sm text-gray-400 hover:text-primary duration-300">
                                 <ArrowLeft
                                     className="group-hover/icon:-translate-x-1 duration-300 transition-transform"
-                                    size={20}
+                                    size={16}
                                     weight="bold"
                                 />
                                 voltar

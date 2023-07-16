@@ -1,4 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useContext } from "react";
+
+// Context
+import AppContext from "./../contexts/AppContext";
 
 // Radix-UI
 import * as Form from "@radix-ui/react-form";
@@ -16,9 +19,8 @@ const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
 // Contact
 export default function Contact({ title }) {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const { name, setName, email, setEmail, message, setMessage } =
+        useContext(AppContext);
 
     const sendEmail = (e) => {
         e.preventDefault();

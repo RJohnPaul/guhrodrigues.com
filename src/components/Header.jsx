@@ -1,8 +1,11 @@
 // React Hooks
-import { useEffect, useRef, useState } from "react";
+import { useContext, useRef, useEffect } from "react";
 
 // React Router
 import { NavLink, Link } from "react-router-dom";
+
+// Context
+import AppContext from "./../contexts/AppContext";
 
 // Styles
 import "../styles/header.css";
@@ -16,8 +19,9 @@ import Lottie from "lottie-react";
 
 // Header
 export default function Header() {
-    const [showMenu, setShowMenu] = useState(false);
-    const [shadow, setShadow] = useState(false);
+    const { showMenu, setShowMenu, pageScrolled, setPageScrolled } =
+        useContext(AppContext);
+
     const contactRef = useRef();
 
     const handleCloseMenu = () => {
@@ -35,21 +39,21 @@ export default function Header() {
     };
 
     useEffect(() => {
-        const handleShadow = () => {
+        const handlePageScrolled = () => {
             if (window.scrollY >= 90) {
-                setShadow(true);
+                setPageScrolled(true);
             } else {
-                setShadow(false);
+                setPageScrolled(false);
             }
         };
-        window.addEventListener("scroll", handleShadow);
+        window.addEventListener("scroll", handlePageScrolled);
     }, []);
 
     return (
-        <header className="flex w-full z-50 fixed ">
+        <header className="flex w-full z-50 fixed">
             <nav
                 className={`fixed max-w-[1250px] w-full sm:px-6 xl:px-3 ${
-                    shadow ? "sm:py-5 md:py-3" : "py-5"
+                    pageScrolled ? "sm:py-5 md:py-3" : "py-5"
                 } justify-between mx-auto right-0 left-0 sm:bg-background md:bg-background/60 md:backdrop-blur-[5px] top-0 xl:static flex flex-row items-center gap-10 z-50 md:ease-in-out md:duration-300`}
             >
                 <div className="text-center">
