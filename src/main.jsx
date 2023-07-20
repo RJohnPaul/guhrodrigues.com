@@ -24,8 +24,8 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 // Components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/ui/Header";
+import Footer from "./components/ui/Footer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>

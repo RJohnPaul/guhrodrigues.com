@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 // Phosphor React
 import { ArrowLeft } from "phosphor-react";
+import NotFoundSection from "./../components/sections/NotFoundSection";
 
 // Not Found
 export default function NotFound({ title }) {
@@ -15,10 +16,7 @@ export default function NotFound({ title }) {
     }, [title]);
 
     return (
-        <section
-            className="w-full relative h-[90vh] flex text-center items-center justify-center"
-            id="home"
-        >
+        <NotFoundSection>
             <div className="flex flex-col items-center justify-center p-8">
                 <div className="flex flex-col gap-4 text-center">
                     <p className="flex text-primary md:text-[20px] font-medium mb-1">
@@ -38,6 +36,6 @@ export default function NotFound({ title }) {
                     </div>
                 </div>
             </div>
-        </section>
+        </NotFoundSection>
     );
 }

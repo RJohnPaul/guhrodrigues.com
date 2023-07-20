@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 // Icon
 import { ArrowRight } from "phosphor-react";
+import HomeSection from "../components/sections/HomeSection";
 
 // Home
 export default function Home({ title }) {
@@ -15,7 +16,7 @@ export default function Home({ title }) {
     }, [title]);
 
     return (
-        <section className="w-full sm:h-full sm:min-h-[calc(100vh_-_85px)] flex text-center justify-center pt-20">
+        <HomeSection>
             <div className="flex flex-col items-center justify-center p-8">
                 <div className="flex flex-col gap-4 text-center">
                     <h1 className="text-5xl py-1 font-bold">
@@ -43,6 +44,6 @@ export default function Home({ title }) {
                     </div>
                 </div>
             </div>
-        </section>
+        </HomeSection>
     );
 }

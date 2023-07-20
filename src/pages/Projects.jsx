@@ -5,7 +5,10 @@ import { useEffect } from "react";
 import { projects } from "../data/projects";
 
 // ProjectItem Component
-import ProjectItem from "../components/ProjectItem";
+import ProjectItem from "../components/ui/ProjectItem";
+
+// Section
+import ProjectsSection from "./../components/sections/ProjectsSection";
 
 // Projects
 export default function Projects({ title }) {
@@ -15,7 +18,7 @@ export default function Projects({ title }) {
     }, [title]);
 
     return (
-        <section className="w-full min-h-screen py-24">
+        <ProjectsSection>
             <div className="max-w-[1000px] min-h-screen p-4 mx-auto flex flex-col justify-center w-full">
                 <div className="pb-8 text-center">
                     <p className="text-gray-500 font-semibold uppercase tracking-widest text-sm table mx-auto rounded-lg py-2">
@@ -49,6 +52,6 @@ export default function Projects({ title }) {
                     )}
                 </div>
             </div>
-        </section>
+        </ProjectsSection>
     );
 }
