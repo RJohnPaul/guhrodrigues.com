@@ -35,7 +35,7 @@ export default function LinksMenuNav() {
                         className={({ isActive }) =>
                             isActive
                                 ? "active"
-                                : "relative pb-1.5 after:content-[''] after:w-0 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 after:duration-300 hover:after:w-[50%]"
+                                : "relative pb-1.5 after:content-[''] after:w-0 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 after:duration-300 md:hover:after:w-[50%]"
                         }
                     >
                         {name}
