@@ -40,7 +40,7 @@
     }
 
     ::-webkit-scrollbar {
-        @apply w-1;
+        @apply w-0.5;
     }
 
     ::-webkit-scrollbar-thumb {
