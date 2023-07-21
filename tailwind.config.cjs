@@ -9,8 +9,8 @@ module.exports = {
             },
             keyframes: {
                 "fade-in": {
-                    "0%": { opacity: "0.4", transform: "translateY(10px)" },
-                    "100%": { opacity: "1", transform: "translateY(0)" },
+                    from: { opacity: "0", transform: "translateY(8px)" },
+                    to: { opacity: "1", transform: "translateY(0)" },
                 },
             },
             animation: {
