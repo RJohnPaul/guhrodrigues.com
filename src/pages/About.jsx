@@ -37,7 +37,7 @@ export default function About({ title }) {
                         <div className="w-full h-auto sm:col-span-3 lg:col-span-2 m-auto flex items-center justify-center p-4">
                             <img
                                 src={about}
-                                className="rounded-2xl flex w-[450px] hover:scale-105 ease-in duration-300"
+                                className="rounded-2xl flex w-[350px] hover:scale-105 ease-in duration-300"
                                 alt="Gustavo"
                             />
                         </div>
