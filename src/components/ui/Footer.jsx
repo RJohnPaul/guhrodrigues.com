@@ -5,7 +5,7 @@ import { socials } from "../../data/footer";
 import { Link } from "react-router-dom";
 
 // Icon
-import { HiOutlineMail } from "react-icons/hi";
+import { Mail } from "lucide-react";
 
 // Footer
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="flex gap-3">
                     <Link to="/contact">
                         <button className="sm:flex md:hidden flex-row items-center justify-center text-sm text-primary bg-gradient-to-br from-black via-black to-zinc-700 border border-zinc-700 rounded-full p-2 duration-300">
-                            <HiOutlineMail size={18} />
+                            <Mail size={18} />
                         </button>
                     </Link>
                     {socials.map(({ id, icon, href }) => (

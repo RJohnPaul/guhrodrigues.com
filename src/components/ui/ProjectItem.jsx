@@ -1,5 +1,5 @@
 // Icon
-import { FiChevronRight } from "react-icons/fi";
+import { ChevronRight } from "lucide-react";
 
 // ProjectItem
 export default function ProjectItem({
@@ -46,13 +46,13 @@ export default function ProjectItem({
                     <a href={visit} target="_blank">
                         <button className="flex text-center justify-center items-center bg-primary text-black font-semibold p-3 text-sm gap-1 rounded-2xl hover:bg-primary/70 duration-300">
                             Visitar
-                            <FiChevronRight size={18} />
+                            <ChevronRight size={18} />
                         </button>
                     </a>
                     <a href={code} target="_blank">
                         <button className="flex items-center justify-center font-medium text-sm text-gray-400 gap-1 duration-300 hover:text-primary">
                             Repositório
-                            <FiChevronRight size={18} />
+                            <ChevronRight size={18} />
                         </button>
                     </a>
                 </div>

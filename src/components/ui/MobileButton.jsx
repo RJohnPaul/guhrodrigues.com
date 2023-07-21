@@ -5,7 +5,7 @@ import { useContext } from "react";
 import AppContext from "../../contexts/AppContext";
 
 // Icons
-import { List, X } from "phosphor-react";
+import { Equal, X } from "lucide-react";
 
 // Mobile Button
 export default function MobileButton() {
@@ -23,9 +23,9 @@ export default function MobileButton() {
     return (
         <button
             onClick={handleMenu}
-            className="text-primary transition-transform active:scale-90 sm:flex md:hidden"
+            className="text-primary transition-transform active:scale-75 sm:flex md:hidden"
         >
-            {showMenu ? <X size={26} /> : <List size={26} />}
+            {showMenu ? <X size={26} /> : <Equal size={26} />}
         </button>
     );
 }

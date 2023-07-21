@@ -13,10 +13,9 @@
         "@radix-ui/react-form": "^0.0.3",
         "esbuild": "^0.17.12",
         "lottie-react": "^2.4.0",
-        "phosphor-react": "^1.4.1",
+        "lucide-react": "^0.261.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-icons": "^4.9.0",
         "react-router-dom": "^6.11.2",
         "react-toastify": "^9.1.2"
     },

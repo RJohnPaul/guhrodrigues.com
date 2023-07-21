@@ -5,7 +5,9 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Icon
-import { ArrowRight } from "phosphor-react";
+import { MoveRight } from "lucide-react";
+
+// Section
 import HomeSection from "../components/sections/HomeSection";
 
 // Home
@@ -34,10 +36,9 @@ export default function Home({ title }) {
                         <Link to="/projects">
                             <button className="group/icon w-full flex items-center justify-center py-2 px-3 gap-1.5 font-medium text-sm text-gray-400 hover:text-primary duration-300">
                                 Veja meus projetos
-                                <ArrowRight
+                                <MoveRight
                                     className="group-hover/icon:translate-x-1 duration-300 transition-transform"
                                     size={20}
-                                    weight="bold"
                                 />
                             </button>
                         </Link>

@@ -3,7 +3,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // Icon
-import { CheckCircle } from "phosphor-react";
+import { CheckCircle2 } from "lucide-react";
 
 // Toast Container
 export default function Toast() {
@@ -34,7 +34,11 @@ export default function Toast() {
 export const downloadAlert = () => {
     toast.success("Currículo instalado :D", {
         icon: (
-            <CheckCircle className="text-emerald-400" weight="bold" size={24} />
+            <CheckCircle2
+                className="text-emerald-400"
+                weight="bold"
+                size={24}
+            />
         ),
     });
 };
@@ -43,7 +47,11 @@ export const downloadAlert = () => {
 export const sendEmailAlert = () => {
     toast.success("Email enviado :D", {
         icon: (
-            <CheckCircle className="text-emerald-400" weight="bold" size={24} />
+            <CheckCircle2
+                className="text-emerald-400"
+                weight="bold"
+                size={24}
+            />
         ),
     });
 };
