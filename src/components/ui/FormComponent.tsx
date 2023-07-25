@@ -2,10 +2,10 @@
 import { useContext } from "react";
 
 // Context
-import AppContext from "../../contexts/AppContext";
+import AppContext from "@/contexts/AppContext";
 
 // Toast
-import { sendEmailAlert } from "../../components/ui/Toast";
+import { sendEmailAlert } from "./Toast";
 
 // Radix-UI
 import * as Form from "@radix-ui/react-form";
@@ -23,7 +23,7 @@ export default function FormComponent() {
     const { name, setName, email, setEmail, message, setMessage } =
         useContext(AppContext);
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
 
         const templateParams = {

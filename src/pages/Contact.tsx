@@ -2,11 +2,11 @@
 import { useEffect } from "react";
 
 // Toastify
-import Toast from "./../components/ui/Toast";
+import Toast from "@/components/ui/Toast";
 
 // Section
-import ContactSection from "./../components/sections/ContactSection";
-import FormComponent from "./../components/ui/FormComponent";
+import ContactSection from "@/components/sections/ContactSection";
+import FormComponent from "@/components/ui/FormComponent";
 
 // Contact
 export default function Contact({ title }) {

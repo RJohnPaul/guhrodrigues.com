@@ -33,25 +33,13 @@ export default function Toast() {
 // Download Alert
 export const downloadAlert = () => {
     toast.success("Currículo instalado :D", {
-        icon: (
-            <CheckCircle2
-                className="text-emerald-400"
-                weight="bold"
-                size={24}
-            />
-        ),
+        icon: <CheckCircle2 className="text-emerald-400" size={24} />,
     });
 };
 
 // Send Email Alert
 export const sendEmailAlert = () => {
     toast.success("Email enviado :D", {
-        icon: (
-            <CheckCircle2
-                className="text-emerald-400"
-                weight="bold"
-                size={24}
-            />
-        ),
+        icon: <CheckCircle2 className="text-emerald-400" size={24} />,
     });
 };

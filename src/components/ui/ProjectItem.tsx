@@ -3,7 +3,6 @@ import { ChevronRight } from "lucide-react";
 
 // ProjectItem
 export default function ProjectItem({
-    id,
     src,
     title,
     description,
@@ -12,10 +11,7 @@ export default function ProjectItem({
     visit,
 }) {
     return (
-        <div
-            key={id}
-            className="shadow-md flex sm:flex-col lg:flex-row shadow-gray-600 rounded-xl h-full group"
-        >
+        <div className="shadow-md flex sm:flex-col lg:flex-row shadow-gray-600 rounded-xl h-full group">
             <div className="overflow-hidden sm:rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl">
                 <img
                     src={src}

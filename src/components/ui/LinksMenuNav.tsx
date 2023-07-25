@@ -5,10 +5,10 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 // Context
-import AppContext from "../../contexts/AppContext";
+import AppContext from "@/contexts/AppContext";
 
 // Data
-import { LinksMenu } from "./../../data/menu";
+import { LinksMenu } from "@/data/menu";
 
 // LinksMenuNav Component
 export default function LinksMenuNav() {

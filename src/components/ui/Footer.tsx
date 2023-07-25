@@ -1,5 +1,5 @@
 // Data
-import { socials } from "../../data/footer";
+import { socials } from "@/data/footer";
 
 // React Router
 import { Link } from "react-router-dom";

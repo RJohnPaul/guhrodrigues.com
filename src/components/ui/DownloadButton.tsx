@@ -5,17 +5,17 @@ import { useRef } from "react";
 import Lottie from "lottie-react";
 
 // Icon
-import downloadIcon from "../../../public/static/download.json";
+import downloadIcon from "@/static/download.json";
 
 // PDF
-import curriculo from "/assets/docs/curriculo.pdf";
+import curriculo from "@/assets/docs/curriculo.pdf";
 
 // Toast
 import { downloadAlert } from "./Toast";
 
 // Download Button
 export default function DownloadButton() {
-    const downloadRef = useRef();
+    const downloadRef = useRef<any>();
 
     return (
         <div className="mt-3.5 flex text-center sm:justify-center lg:justify-start">

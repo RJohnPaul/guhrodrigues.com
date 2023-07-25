@@ -5,10 +5,10 @@ import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Context
-import AppContext from "../../contexts/AppContext";
+import AppContext from "@/contexts/AppContext";
 
 // Header Components
-import LinksMenuNav from "./LinksMenuNav";
+import LinksMenuNav from "./LinksMenuNav.tsx";
 import MobileButton from "./MobileButton";
 import ContactButton from "./ContactButton";
 

@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 
 // Contact Icon
-import contactIcon from "../../../public/static/contact.json";
+import contactIcon from "@/static/contact.json";
 
 // Contact Button
 export default function ContactButton() {
-    const contactRef = useRef();
+    const contactRef = useRef<any>();
 
     return (
         <>
