@@ -1,6 +1,6 @@
 <div align="center">
 
-![Portfolio image](./public/assets/img/portfolio.png)
+![Portfolio image](./src/assets/img/portfolio.png)
 
 </div>
 
@@ -11,6 +11,6 @@
 
 <div align="center">
 
-[![My Skills](https://skillicons.dev/icons?i=react,tailwindcss)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,typescript,tailwindcss)](https://skillicons.dev)
 
 </div>
