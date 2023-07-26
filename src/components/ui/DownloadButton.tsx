@@ -8,7 +8,7 @@ import Lottie from "lottie-react";
 import downloadIcon from "@/static/download.json";
 
 // PDF
-import curriculo from "@/assets/docs/curriculo.pdf";
+import resume from "@/assets/docs/resume.pdf";
 
 // Toast
 import { downloadAlert } from "./Toast";
@@ -19,7 +19,7 @@ export default function DownloadButton() {
 
     return (
         <a
-            href={curriculo}
+            href={resume}
             download="Gustavo Rodrigues.pdf"
             type="application/pdf"
         >

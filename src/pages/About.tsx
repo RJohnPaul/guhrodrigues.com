@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Toast from "@/components/ui/Toast";
 
 // Assets
-import about from "@/assets/img/about.jpg";
+import author from "@/assets/img/author.jpg";
 
 // Section
 import AboutSection from "@/components/sections/AboutSection";
@@ -33,7 +33,7 @@ export default function About({ title }) {
                     <div className="flex sm:flex-col lg:flex-row justify-between gap-12">
                         <div className="w-full lg:order-2">
                             <img
-                                src={about}
+                                src={author}
                                 className="rounded-2xl w-[350px] hover:scale-105 ease-in duration-300"
                                 alt="Gustavo"
                             />
