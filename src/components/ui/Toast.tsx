@@ -19,6 +19,7 @@ export default function Toast() {
                 borderRadius: "4px",
                 fontSize: "14px",
                 border: "1px solid #333",
+                userSelect: "none",
             }}
             closeOnClick
             rtl={false}

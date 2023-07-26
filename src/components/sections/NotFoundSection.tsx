@@ -1,4 +1,4 @@
-import { SectionProps } from "@/models/section";
+import { SectionProps } from "@/types";
 
 export default function NotFoundSection({ children }: SectionProps) {
     return (

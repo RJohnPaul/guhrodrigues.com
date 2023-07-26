@@ -7,15 +7,8 @@ import weather from "@/assets/img/weather.png";
 import toDo from "@/assets/img/to-do.png";
 import musicplayer from "@/assets/img/musicplayer.png";
 
-interface ProjectsProps {
-    id: number;
-    src: string;
-    title: string;
-    description: string;
-    techs: string[];
-    code: string;
-    visit: string;
-}
+// Types
+import { ProjectsProps } from "@/types";
 
 // Data
 export const projects: ProjectsProps[] = [

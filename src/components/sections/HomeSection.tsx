@@ -1,4 +1,4 @@
-import { SectionProps } from "@/models/section";
+import { SectionProps } from "@/types";
 
 export default function HomeSection({ children }: SectionProps) {
     return (

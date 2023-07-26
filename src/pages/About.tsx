@@ -24,24 +24,21 @@ export default function About({ title }) {
     return (
         <>
             <AboutSection>
-                <div className="sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1050px] m-auto gap-8 p-5">
-                    <div className="pb-8 text-center">
-                        <p className="text-gray-500 font-semibold uppercase tracking-widest text-sm table mx-auto rounded-lg py-2">
-                            Introdução &mdash;
-                        </p>
+                <div className="max-w-[1000px] w-full m-auto py-8 px-4">
+                    <div className="mb-8">
                         <h1 className="text-4xl font-extrabold bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
-                            Sobre mim
+                            Um pouco sobre mim. Meu conhecimento.
                         </h1>
                     </div>
-                    <div className="md:grid lg:grid-cols-5">
-                        <div className="w-full h-auto sm:col-span-3 lg:col-span-2 m-auto flex items-center justify-center p-4">
+                    <div className="flex sm:flex-col lg:flex-row justify-between gap-12">
+                        <div className="w-full lg:order-2">
                             <img
                                 src={about}
-                                className="rounded-2xl flex w-[350px] hover:scale-105 ease-in duration-300"
+                                className="rounded-2xl w-[350px] hover:scale-105 ease-in duration-300"
                                 alt="Gustavo"
                             />
                         </div>
-                        <div className="col-span-3 flex justify-center flex-col sm:mt-6 lg:ml-24 lg:mt-0 gap-3 sm:px-1 lg:px-0">
+                        <div className="flex justify-center flex-col lg:mt-0 gap-4 sm:px-1 lg:px-0">
                             <Biography />
 
                             <DownloadButton />

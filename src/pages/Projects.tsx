@@ -19,14 +19,20 @@ export default function Projects({ title }) {
 
     return (
         <ProjectsSection>
-            <div className="max-w-[1000px] min-h-screen p-4 mx-auto flex flex-col justify-center w-full">
-                <div className="pb-8 text-center">
-                    <p className="text-gray-500 font-semibold uppercase tracking-widest text-sm table mx-auto rounded-lg py-2">
-                        Minhas aplicações &mdash;
-                    </p>
-                    <h1 className="text-4xl font-extrabold mb-6 bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
-                        Meus projetos
+            <div className="max-w-[1000px] py-3 px-4 mx-auto flex flex-col justify-center w-full">
+                <div className="sm:px-2 lg:px-0 mb-8 space-y-4">
+                    <h1 className="text-4xl font-extrabold bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
+                        Trabalho, hobby & open source.
                     </h1>
+                    <p className="text-gray-400">
+                        Sou fanático em criar{" "}
+                        <span className="text-primary">projetos paralelos</span>
+                        . Nesta página você pode navegar para{" "}
+                        <span className="text-primary">
+                            {projects.length} sites
+                        </span>{" "}
+                        na qual desenvolvi.
+                    </p>
                 </div>
                 <div className="grid grid-cols-1 gap-8 sm:px-2 lg:px-0">
                     {projects.map(
