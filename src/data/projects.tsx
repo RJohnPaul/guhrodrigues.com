@@ -18,7 +18,7 @@ export const projects: ProjectsProps[] = [
         title: "Portfólio",
         description:
             "No meu portfólio você conhece um pouco dos meus projetos e lê um pouco sobre mim.",
-        techs: ["React", "Tailwind CSS", "React Router"],
+        techs: ["React", "TypeScript", "Tailwind CSS"],
         code: "https://github.com/guhrodriguess/portfolio",
         visit: "https://guhrodrigues.vercel.app",
     },
