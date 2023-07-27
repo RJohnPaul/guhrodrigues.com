@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Toast from "@/components/ui/Toast";
 
 // Assets
-import author from "@/assets/img/author.jpg";
+import author from "@/assets/img/author.jpeg";
 
 // Section
 import AboutSection from "@/components/sections/AboutSection";
