@@ -28,7 +28,7 @@ export default function LinksMenuNav() {
             } sm:fixed md:static gap-8 items-center duration-300`}
         >
             {LinksMenu.map(({ id, path, name }) => (
-                <li key={id} className="text-gray-400 hover:text-primary">
+                <li key={id} className="text-gray-400">
                     <NavLink
                         to={path}
                         onClick={handleCloseMenu}
