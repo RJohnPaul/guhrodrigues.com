@@ -11,7 +11,7 @@
         @apply font-poppins bg-background outline-none;
     }
 
-    section {
+    main {
         @apply animate-fade-in;
     }
 

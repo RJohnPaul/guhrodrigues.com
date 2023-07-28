@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 // Icon
 import { MoveLeft } from "lucide-react";
 
-// Section
-import NotFoundSection from "@/components/sections/NotFoundSection";
-
 // Not Found
 export default function NotFound({ title }) {
     useEffect(() => {
@@ -18,8 +15,8 @@ export default function NotFound({ title }) {
     }, [title]);
 
     return (
-        <NotFoundSection>
-            <div className="flex flex-col items-center justify-center p-8">
+        <main className="w-full relative h-[90vh] flex text-center items-center justify-center">
+            <section className="flex flex-col items-center justify-center p-8">
                 <div className="flex flex-col gap-4 text-center">
                     <p className="text-primary md:text-[20px] font-medium mb-1">
                         A página que você está tentando acessar não existe.
@@ -36,7 +33,7 @@ export default function NotFound({ title }) {
                         </Link>
                     </div>
                 </div>
-            </div>
-        </NotFoundSection>
+            </section>
+        </main>
     );
 }

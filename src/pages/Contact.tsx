@@ -4,8 +4,7 @@ import { useEffect } from "react";
 // Toastify
 import Toast from "@/components/ui/Toast";
 
-// Section
-import ContactSection from "@/components/sections/ContactSection";
+// Form Component
 import FormComponent from "@/components/ui/FormComponent";
 
 // Contact
@@ -17,8 +16,8 @@ export default function Contact({ title }) {
 
     return (
         <>
-            <ContactSection>
-                <div className="m-auto gap-8 py-9 px-4">
+            <main className="w-full sm:h-full sm:min-h-[calc(100vh_-_85px)] p-2 flex items-center py-16">
+                <section className="m-auto gap-8 py-9 px-4">
                     <div className="mb-8 space-y-4">
                         <h1 className="text-4xl font-extrabold bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
                             Mande um e-mail. Como nos velhos tempos.
@@ -37,8 +36,8 @@ export default function Contact({ title }) {
                     </div>
 
                     <FormComponent />
-                </div>
-            </ContactSection>
+                </section>
+            </main>
 
             <Toast />
         </>

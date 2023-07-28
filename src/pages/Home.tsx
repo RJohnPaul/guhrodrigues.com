@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 // Icon
 import { MoveRight } from "lucide-react";
 
-// Section
-import HomeSection from "@/components/sections/HomeSection";
-
 // Home
 export default function Home({ title }) {
     useEffect(() => {
@@ -18,8 +15,8 @@ export default function Home({ title }) {
     }, [title]);
 
     return (
-        <HomeSection>
-            <div className="flex flex-col items-center justify-center p-8">
+        <main className="w-full sm:h-full sm:min-h-[calc(100vh_-_85px)] flex text-center justify-center pt-20">
+            <section className="flex flex-col items-center justify-center p-8">
                 <div className="flex flex-col gap-4 text-center">
                     <h1 className="text-5xl py-1 font-bold">
                         Gustavo Rodrigues
@@ -44,7 +41,7 @@ export default function Home({ title }) {
                         </Link>
                     </div>
                 </div>
-            </div>
-        </HomeSection>
+            </section>
+        </main>
     );
 }

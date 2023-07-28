@@ -7,9 +7,6 @@ import { projects } from "@/data/projects";
 // ProjectItem Component
 import ProjectItem from "@/components/ui/ProjectItem";
 
-// Section
-import ProjectsSection from "@/components/sections/ProjectsSection";
-
 // Projects
 export default function Projects({ title }) {
     useEffect(() => {
@@ -18,8 +15,8 @@ export default function Projects({ title }) {
     }, [title]);
 
     return (
-        <ProjectsSection>
-            <div className="max-w-[1000px] py-3 px-4 mx-auto flex flex-col justify-center w-full">
+        <main className="w-full min-h-screen py-24">
+            <section className="max-w-[1000px] py-3 px-4 mx-auto flex flex-col justify-center w-full">
                 <div className="sm:px-2 lg:px-0 mb-8 space-y-4">
                     <h1 className="text-4xl font-extrabold bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
                         Trabalho, hobby & open source.
@@ -57,7 +54,7 @@ export default function Projects({ title }) {
                         )
                     )}
                 </div>
-            </div>
-        </ProjectsSection>
+            </section>
+        </main>
     );
 }

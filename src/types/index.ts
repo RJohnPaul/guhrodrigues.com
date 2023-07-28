@@ -1,7 +1,3 @@
-export interface SectionProps {
-    children: React.ReactNode;
-}
-
 export interface ContextProps {
     showMenu: boolean;
     setShowMenu: (newState: boolean) => void;

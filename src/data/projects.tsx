@@ -14,16 +14,6 @@ import { ProjectsProps } from "@/types";
 export const projects: ProjectsProps[] = [
     {
         id: 1,
-        src: portfolio,
-        title: "Portfólio",
-        description:
-            "No meu portfólio você conhece um pouco dos meus projetos e lê um pouco sobre mim.",
-        techs: ["React", "TypeScript", "Tailwind CSS"],
-        code: "https://github.com/guhrodriguess/portfolio",
-        visit: "https://guhrodrigues.vercel.app",
-    },
-    {
-        id: 2,
         src: swiftmart,
         title: "SwiftMart",
         description:
@@ -33,7 +23,7 @@ export const projects: ProjectsProps[] = [
         visit: "https://swiftmartstore.vercel.app",
     },
     {
-        id: 3,
+        id: 2,
         src: moviecorn,
         title: "MovieCorn",
         description:
@@ -43,7 +33,7 @@ export const projects: ProjectsProps[] = [
         visit: "https://moviecorn.vercel.app",
     },
     {
-        id: 4,
+        id: 3,
         src: crypto,
         title: "Crypto",
         description:
@@ -53,7 +43,7 @@ export const projects: ProjectsProps[] = [
         visit: "https://crypto-shield.vercel.app/",
     },
     {
-        id: 5,
+        id: 4,
         src: weather,
         title: "Weather",
         description:
@@ -63,7 +53,7 @@ export const projects: ProjectsProps[] = [
         visit: "https://earth-weather.vercel.app",
     },
     {
-        id: 6,
+        id: 5,
         src: toDo,
         title: "To-do List",
         description:
@@ -73,7 +63,7 @@ export const projects: ProjectsProps[] = [
         visit: "https://guhrodriguess.github.io/to-do",
     },
     {
-        id: 7,
+        id: 6,
         src: musicplayer,
         title: "Music Player",
         description:

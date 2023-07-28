@@ -7,9 +7,6 @@ import Toast from "@/components/ui/Toast";
 // Assets
 import author from "@/assets/img/author.jpeg";
 
-// Section
-import AboutSection from "@/components/sections/AboutSection";
-
 // About Components
 import Biography from "@/components/ui/Biography";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -23,8 +20,8 @@ export default function About({ title }) {
 
     return (
         <>
-            <AboutSection>
-                <div className="max-w-[1000px] w-full m-auto py-8 px-4">
+            <main className="w-full sm:h-full lg:min-h-[calc(100vh_-_85px)] p-2 flex items-center py-16">
+                <section className="max-w-[1000px] w-full m-auto py-8 px-4">
                     <div className="mb-8">
                         <h1 className="text-4xl font-extrabold bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
                             Sobre mim. Meu conhecimento.
@@ -44,8 +41,8 @@ export default function About({ title }) {
                             <DownloadButton />
                         </div>
                     </div>
-                </div>
-            </AboutSection>
+                </section>
+            </main>
             <Toast />
         </>
     );
