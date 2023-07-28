@@ -27,14 +27,14 @@ export default function About({ title }) {
                 <div className="max-w-[1000px] w-full m-auto py-8 px-4">
                     <div className="mb-8">
                         <h1 className="text-4xl font-extrabold bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
-                            Um pouco sobre mim. Meu conhecimento.
+                            Sobre mim. Meu conhecimento.
                         </h1>
                     </div>
                     <div className="flex sm:flex-col lg:flex-row justify-between gap-12">
-                        <div className="w-full lg:order-2">
+                        <div className="w-full">
                             <img
                                 src={author}
-                                className="rounded-2xl w-[350px] hover:scale-105 ease-in duration-300"
+                                className="rounded-lg w-[350px] hover:grayscale ease-in duration-300"
                                 alt="Gustavo"
                             />
                         </div>

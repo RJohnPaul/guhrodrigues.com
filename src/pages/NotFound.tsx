@@ -21,7 +21,7 @@ export default function NotFound({ title }) {
         <NotFoundSection>
             <div className="flex flex-col items-center justify-center p-8">
                 <div className="flex flex-col gap-4 text-center">
-                    <p className="flex text-primary md:text-[20px] font-medium mb-1">
+                    <p className="text-primary md:text-[20px] font-medium mb-1">
                         A página que você está tentando acessar não existe.
                     </p>
                     <div className="flex items-center gap-4 justify-center">
