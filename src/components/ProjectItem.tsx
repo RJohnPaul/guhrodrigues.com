@@ -38,17 +38,17 @@ export default function ProjectItem({
                         </button>
                     ))}
                 </div>
-                <div className="flex flex-wrap items-center justify-center gap-7 py-2">
+                <div className="flex flex-wrap items-center justify-center gap-3 py-2">
                     <a href={visit} target="_blank">
-                        <button className="flex text-center justify-center items-center bg-primary text-black font-semibold p-3 text-sm gap-1 rounded-2xl hover:bg-primary/70 duration-300">
+                        <button className="flex text-center justify-center items-center bg-primary text-black font-semibold py-3 px-4 text-sm gap-1 rounded-full hover:bg-primary/70 duration-300">
                             Visitar
-                            <ChevronRight size={18} />
+                            <ChevronRight size={14} />
                         </button>
                     </a>
                     <a href={code} target="_blank">
-                        <button className="flex items-center justify-center font-medium text-sm text-gray-400 gap-1 duration-300 hover:text-primary">
+                        <button className="flex text-center items-center text-sm font-semibold py-3 px-4 gap-1 rounded-full text-gray-400 hover:text-primary hover:bg-neutral-800 duration-300">
                             Repositório
-                            <ChevronRight size={18} />
+                            <ChevronRight size={14} />
                         </button>
                     </a>
                 </div>

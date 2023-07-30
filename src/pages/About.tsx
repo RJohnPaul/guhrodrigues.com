@@ -2,14 +2,14 @@
 import { useEffect } from "react";
 
 // Toastify
-import Toast from "@/components/ui/Toast";
+import Toast from "@/components/Toast";
 
 // Assets
 import author from "@/assets/img/author.jpeg";
 
 // About Components
-import Biography from "@/components/ui/Biography";
-import DownloadButton from "@/components/ui/DownloadButton";
+import Biography from "@/components/Biography";
+import DownloadButton from "@/components/DownloadButton";
 
 // About
 export default function About({ title }) {
@@ -23,7 +23,7 @@ export default function About({ title }) {
             <main className="w-full sm:h-full lg:min-h-[calc(100vh_-_85px)] p-2 flex items-center py-16">
                 <section className="max-w-[1000px] w-full m-auto py-8 px-4">
                     <div className="mb-8">
-                        <h1 className="text-4xl font-extrabold bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
+                        <h1 className="text-4xl font-extrabold">
                             Sobre mim. Meu conhecimento.
                         </h1>
                     </div>
@@ -31,11 +31,12 @@ export default function About({ title }) {
                         <div className="w-full">
                             <img
                                 src={author}
+                                loading="lazy"
                                 className="rounded-lg w-[350px] hover:grayscale ease-in duration-300"
                                 alt="Gustavo"
                             />
                         </div>
-                        <div className="flex justify-center flex-col lg:mt-0 gap-4 sm:px-1 lg:px-0">
+                        <div className="flex flex-col lg:mt-0 gap-4 sm:px-1 lg:px-0">
                             <Biography />
 
                             <DownloadButton />

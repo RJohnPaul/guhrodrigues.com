@@ -23,8 +23,8 @@ import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
 
 // Components
-import Header from "@/components/ui/Header";
-import Footer from "@/components/ui/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // Render
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -32,25 +32,22 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Provider>
             <Header />
             <Routes>
-                <Route
-                    path="/"
-                    element={<Home title="Gustavo Rodrigues — Início" />}
-                />
+                <Route path="/" element={<Home title="Gustavo Rodrigues" />} />
                 <Route
                     path="/about"
-                    element={<About title="Gustavo Rodrigues — Sobre" />}
+                    element={<About title="Gustavo Rodrigues · Sobre" />}
                 />
                 <Route
                     path="/projects"
-                    element={<Projects title="Gustavo Rodrigues — Projetos" />}
+                    element={<Projects title="Gustavo Rodrigues · Projetos" />}
                 />
                 <Route
                     path="/contact"
-                    element={<Contact title="Gustavo Rodrigues — Contato" />}
+                    element={<Contact title="Gustavo Rodrigues · Contato" />}
                 />
                 <Route
                     path="/404"
-                    element={<NotFound title="Gustavo Rodrigues — Not Found" />}
+                    element={<NotFound title="Gustavo Rodrigues · Not Found" />}
                 />
                 <Route path="*" element={<Navigate to="/404" />} />
             </Routes>

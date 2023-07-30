@@ -20,7 +20,7 @@ export default function ContactButton() {
                 <button
                     onMouseEnter={() => contactRef.current?.play()}
                     onMouseLeave={() => contactRef.current?.stop()}
-                    className="sm:hidden md:flex text-center justify-center items-center bg-primary text-black font-semibold p-3 text-sm gap-1.5 rounded-2xl hover:bg-primary/70 duration-300"
+                    className="sm:hidden md:flex text-center justify-center items-center bg-primary text-black font-semibold py-3 px-4 text-sm gap-1.5 rounded-full hover:bg-primary/70 duration-300"
                 >
                     Contato
                     <Lottie

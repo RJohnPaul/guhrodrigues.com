@@ -31,10 +31,6 @@
         @apply list-none font-semibold;
     }
 
-    .active {
-        @apply relative pb-1.5 text-primary after:content-[''] md:after:w-[50%] after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 duration-300;
-    }
-
     button {
         @apply select-none;
     }

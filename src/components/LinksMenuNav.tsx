@@ -34,8 +34,8 @@ export default function LinksMenuNav() {
                         onClick={handleCloseMenu}
                         className={({ isActive }) =>
                             isActive
-                                ? "active"
-                                : "relative pb-1.5 after:content-[''] after:w-0 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 after:duration-300 md:hover:after:w-[50%]"
+                                ? "relative pb-1.5 text-primary after:content-[''] md:after:w-5 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 duration-300"
+                                : "relative pb-1.5 after:content-[''] after:w-0 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 after:duration-300 md:hover:after:w-5"
                         }
                     >
                         {name}

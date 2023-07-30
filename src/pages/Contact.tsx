@@ -2,10 +2,10 @@
 import { useEffect } from "react";
 
 // Toastify
-import Toast from "@/components/ui/Toast";
+import Toast from "@/components/Toast";
 
 // Form Component
-import FormComponent from "@/components/ui/FormComponent";
+import FormComponent from "@/components/FormComponent";
 
 // Contact
 export default function Contact({ title }) {
@@ -19,7 +19,7 @@ export default function Contact({ title }) {
             <main className="w-full sm:h-full sm:min-h-[calc(100vh_-_85px)] p-2 flex items-center py-16">
                 <section className="m-auto gap-8 py-9 px-4">
                     <div className="mb-8 space-y-4">
-                        <h1 className="text-4xl font-extrabold bg-gradient-to-br from-white to-transparent via-primary bg-clip-text text-transparent">
+                        <h1 className="text-4xl font-extrabold">
                             Mande um e-mail. Como nos velhos tempos.
                         </h1>
                         <p className="text-gray-400">

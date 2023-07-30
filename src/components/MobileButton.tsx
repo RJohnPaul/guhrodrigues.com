@@ -2,7 +2,7 @@
 import { useContext } from "react";
 
 // Context
-import AppContext from "../../contexts/AppContext";
+import AppContext from "@/contexts/AppContext";
 
 // Icons
 import { Equal, X } from "lucide-react";

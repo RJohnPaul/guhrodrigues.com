@@ -1,9 +1,6 @@
 // React Hooks
 import { useContext, useEffect } from "react";
 
-// React Router
-import { Link } from "react-router-dom";
-
 // Context
 import AppContext from "@/contexts/AppContext";
 
@@ -28,18 +25,16 @@ export default function Header() {
     }, []);
 
     return (
-        <header className="flex w-full z-50 fixed">
-            <nav
-                className={`fixed max-w-[1250px] w-full sm:px-6 xl:px-3 ${
-                    pageScrolled ? "sm:py-5 md:py-3" : "py-5"
-                } justify-between mx-auto right-0 left-0 sm:bg-background md:bg-background/60 md:backdrop-blur-[5px] top-0 xl:static flex flex-row items-center gap-10 z-50 md:ease-in-out md:duration-300`}
-            >
+        <header
+            className={`flex w-full z-50 fixed sm:bg-background md:bg-background/60 md:backdrop-blur-[5px] ${
+                pageScrolled ? "sm:h-20 md:h-[70px]" : "h-20"
+            } md:ease-in-out md:duration-300`}
+        >
+            <nav className="max-w-[1250px] w-full sm:px-6 xl:px-3 justify-between mx-auto right-0 left-0 top-0 flex items-center gap-10">
                 <div className="text-center">
-                    <Link to="/">
-                        <h1 className="sm:text-md md:text-xl font-semibold relative text-primary">
-                            Gustavo
-                        </h1>
-                    </Link>
+                    <h1 className="sm:text-md md:text-xl font-semibold relative text-primary">
+                        Gustavo
+                    </h1>
                 </div>
 
                 <LinksMenuNav />
