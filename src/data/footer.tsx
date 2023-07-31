@@ -1,10 +1,7 @@
-// Icons
 import { Github, Linkedin, Instagram } from "lucide-react";
 
-// Types
 import { FooterProps } from "@/types";
 
-// Data
 export const socials: FooterProps[] = [
     {
         id: 1,

@@ -1,16 +1,10 @@
-// React Hooks
 import { useRef } from "react";
 
-// React Router
 import { Link } from "react-router-dom";
 
-// Lottie
 import Lottie from "lottie-react";
-
-// Contact Icon
 import contactIcon from "@/static/contact.json";
 
-// Contact Button
 export default function ContactButton() {
     const contactRef = useRef<any>();
 

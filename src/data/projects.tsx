@@ -1,5 +1,3 @@
-// Images
-import portfolio from "@/assets/img/portfolio.png";
 import swiftmart from "@/assets/img/swiftmart.png";
 import moviecorn from "@/assets/img/moviecorn.png";
 import crypto from "@/assets/img/crypto.png";
@@ -7,10 +5,8 @@ import weather from "@/assets/img/weather.png";
 import toDo from "@/assets/img/to-do.png";
 import musicplayer from "@/assets/img/musicplayer.png";
 
-// Types
 import { ProjectsProps } from "@/types";
 
-// Data
 export const projects: ProjectsProps[] = [
     {
         id: 1,

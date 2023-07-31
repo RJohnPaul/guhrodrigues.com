@@ -1,10 +1,7 @@
-// React Hooks
 import { useState } from "react";
 
-// Context
 import AppContext from "./AppContext";
 
-// Provider Component
 export default function Provider({ children }) {
     const [showMenu, setShowMenu] = useState(false);
     const [pageScrolled, setPageScrolled] = useState(false);

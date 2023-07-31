@@ -1,15 +1,10 @@
-// React Hooks
 import { useContext, useEffect } from "react";
-
-// Context
 import AppContext from "@/contexts/AppContext";
 
-// Header Components
 import LinksMenuNav from "./LinksMenuNav.tsx";
 import MobileButton from "./MobileButton";
 import ContactButton from "./ContactButton";
 
-// Header
 export default function Header() {
     const { pageScrolled, setPageScrolled } = useContext(AppContext);
 

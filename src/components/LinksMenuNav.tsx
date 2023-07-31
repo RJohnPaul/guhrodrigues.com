@@ -1,16 +1,11 @@
-// React Hooks
 import { useContext } from "react";
 
-// React Router
 import { NavLink } from "react-router-dom";
 
-// Context
 import AppContext from "@/contexts/AppContext";
 
-// Data
 import { LinksMenu } from "@/data/menu";
 
-// LinksMenuNav Component
 export default function LinksMenuNav() {
     const { showMenu, setShowMenu } = useContext(AppContext);
 

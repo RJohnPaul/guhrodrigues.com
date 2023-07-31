@@ -1,13 +1,9 @@
-// React Hooks
 import { useEffect } from "react";
 
-// React Router
 import { Link } from "react-router-dom";
 
-// Icon
 import { MoveLeft } from "lucide-react";
 
-// Not Found
 export default function NotFound({ title }) {
     useEffect(() => {
         document.title = title;

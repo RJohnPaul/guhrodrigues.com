@@ -1,7 +1,5 @@
-// Icon
 import { ChevronRight } from "lucide-react";
 
-// ProjectItem
 export default function ProjectItem({
     src,
     title,

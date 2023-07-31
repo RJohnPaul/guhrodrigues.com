@@ -1,7 +1,4 @@
-// React Dom
 import ReactDOM from "react-dom/client";
-
-// Global CSS
 import "@/styles/global.css";
 
 // React Router
@@ -27,7 +24,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // Render
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+const root = ReactDOM.createRoot(
+    document.getElementById("root") as HTMLElement
+);
+
+root.render(
     <Router>
         <Provider>
             <Header />

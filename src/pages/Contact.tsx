@@ -1,13 +1,9 @@
-// React Hooks
 import { useEffect } from "react";
 
-// Toastify
 import Toast from "@/components/Toast";
 
-// Form Component
 import FormComponent from "@/components/FormComponent";
 
-// Contact
 export default function Contact({ title }) {
     useEffect(() => {
         document.title = title;

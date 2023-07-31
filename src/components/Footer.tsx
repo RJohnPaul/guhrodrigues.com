@@ -1,13 +1,9 @@
-// Data
 import { socials } from "@/data/footer";
 
-// React Router
 import { Link } from "react-router-dom";
 
-// Icon
 import { Mail } from "lucide-react";
 
-// Footer
 export default function Footer() {
     return (
         <footer className="p-6">

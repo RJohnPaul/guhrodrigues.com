@@ -1,17 +1,12 @@
-// React Hooks
 import { useEffect } from "react";
 
-// Toastify
 import Toast from "@/components/Toast";
 
-// Assets
 import author from "@/assets/img/author.jpeg";
 
-// About Components
 import Biography from "@/components/Biography";
 import DownloadButton from "@/components/DownloadButton";
 
-// About
 export default function About({ title }) {
     useEffect(() => {
         document.title = title;

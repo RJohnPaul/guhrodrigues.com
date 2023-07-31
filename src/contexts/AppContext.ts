@@ -1,10 +1,7 @@
-// React Hooks
 import { createContext } from "react";
 
-// Types
 import { ContextProps } from "@/types";
 
-// InitalValue
 const initialValues = {
     showMenu: false,
     setShowMenu: () => undefined,
@@ -18,7 +15,6 @@ const initialValues = {
     setMessage: () => undefined,
 };
 
-// AppContext
 const AppContext = createContext<ContextProps>(initialValues);
 
 export default AppContext;

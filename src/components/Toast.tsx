@@ -1,11 +1,8 @@
-// React Toastify
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// Icon
 import { CheckCircle2 } from "lucide-react";
 
-// Toast Container
 export default function Toast() {
     return (
         <ToastContainer
@@ -31,14 +28,12 @@ export default function Toast() {
     );
 }
 
-// Download Alert
 export const downloadAlert = () => {
     toast.success("Currículo instalado :D", {
         icon: <CheckCircle2 className="text-emerald-400" size={24} />,
     });
 };
 
-// Send Email Alert
 export const sendEmailAlert = () => {
     toast.success("Email enviado :D", {
         icon: <CheckCircle2 className="text-emerald-400" size={24} />,

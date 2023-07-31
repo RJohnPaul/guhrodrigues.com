@@ -1,19 +1,11 @@
-// React Hooks
 import { useRef } from "react";
 
-// Lottie
 import Lottie from "lottie-react";
-
-// Icon
 import downloadIcon from "@/static/download.json";
 
-// PDF
 import resume from "@/assets/docs/resume.pdf";
-
-// Toast
 import { downloadAlert } from "./Toast";
 
-// Download Button
 export default function DownloadButton() {
     const downloadRef = useRef<any>();
 

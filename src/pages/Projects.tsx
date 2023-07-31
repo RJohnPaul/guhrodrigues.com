@@ -1,13 +1,8 @@
-// React Hooks
 import { useEffect } from "react";
 
-// Data
 import { projects } from "@/data/projects";
-
-// ProjectItem Component
 import ProjectItem from "@/components/ProjectItem";
 
-// Projects
 export default function Projects({ title }) {
     useEffect(() => {
         document.title = title;

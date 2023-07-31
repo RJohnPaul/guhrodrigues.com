@@ -1,24 +1,16 @@
-// React Hooks
 import { useContext } from "react";
-
-// Context
 import AppContext from "@/contexts/AppContext";
 
-// Toast
 import { sendEmailAlert } from "./Toast";
 
-// Radix-UI
 import * as Form from "@radix-ui/react-form";
 
-// EmailJS
 import emailjs from "@emailjs/browser";
 
-// Environment Variables
 const emailService = import.meta.env.VITE_EMAIL_SERVICE;
 const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
 const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
-// Form Component
 export default function FormComponent() {
     const { name, setName, email, setEmail, message, setMessage } =
         useContext(AppContext);
