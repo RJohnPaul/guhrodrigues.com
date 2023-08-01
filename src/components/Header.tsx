@@ -21,13 +21,15 @@ export default function Header() {
 
     return (
         <header
-            className={`flex w-full z-50 fixed sm:bg-background md:bg-background/60 md:backdrop-blur-[5px] ${
-                pageScrolled ? "sm:h-20 md:h-[70px]" : "h-20"
-            } md:ease-in-out md:duration-300`}
+            className={`flex w-full h-[70px] z-50 fixed sm:bg-background md:backdrop-blur-[5px] ${
+                pageScrolled
+                    ? "border-b border-neutral-800 md:bg-background/60"
+                    : undefined
+            }`}
         >
-            <nav className="max-w-[1250px] w-full sm:px-6 xl:px-3 justify-between mx-auto right-0 left-0 top-0 flex items-center gap-10">
+            <nav className="max-w-5xl w-full mx-auto px-6 justify-between top-0 flex items-center gap-10">
                 <div className="text-center">
-                    <h1 className="sm:text-md md:text-xl font-semibold relative text-primary">
+                    <h1 className="text-lg font-semibold relative text-primary">
                         Gustavo
                     </h1>
                 </div>

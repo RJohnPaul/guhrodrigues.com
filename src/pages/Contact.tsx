@@ -13,7 +13,7 @@ export default function Contact({ title }) {
     return (
         <>
             <main className="w-full sm:h-full sm:min-h-[calc(100vh_-_85px)] p-2 flex items-center py-16">
-                <section className="m-auto gap-8 py-9 px-4">
+                <section className="gap-8 py-9 mx-4">
                     <div className="mb-8 space-y-4">
                         <h1 className="text-4xl font-extrabold">
                             Mande um e-mail. Como nos velhos tempos.

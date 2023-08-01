@@ -10,16 +10,16 @@ export default function Projects({ title }) {
     }, [title]);
 
     return (
-        <main className="w-full min-h-screen py-24">
-            <section className="max-w-[1000px] py-3 px-4 mx-auto flex flex-col justify-center w-full">
+        <main className="w-full min-h-screen py-16">
+            <section className="py-9 px-4 mx-auto flex flex-col justify-center w-full">
                 <div className="sm:px-2 lg:px-0 mb-8 space-y-4">
                     <h1 className="text-4xl font-extrabold">
                         Trabalho, hobby & open source.
                     </h1>
                     <p className="text-gray-400">
                         Sou fanático em criar{" "}
-                        <span className="text-primary">projetos paralelos</span>
-                        . Nesta página você pode navegar para{" "}
+                        <span className="text-primary">projetos pessoais</span>.
+                        Nesta página você pode navegar para{" "}
                         <span className="text-primary">
                             {projects.length} sites
                         </span>{" "}

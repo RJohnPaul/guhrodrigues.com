@@ -7,7 +7,7 @@ import { Mail } from "lucide-react";
 export default function Footer() {
     return (
         <footer className="p-6">
-            <div className="text-center flex items-center sm:justify-center md:justify-between max-w-[1250px] w-full mx-auto px-3">
+            <div className="max-w-5xl w-full mx-auto flex items-center sm:justify-center md:justify-between">
                 <div className="flex gap-3">
                     <Link to="/contact">
                         <button className="sm:flex md:hidden flex-row items-center justify-center text-sm text-primary bg-gradient-to-br from-black via-black to-zinc-700 border border-zinc-700 rounded-full p-2 duration-300">
