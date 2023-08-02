@@ -9,13 +9,13 @@ export default function ProjectItem({
     visit,
 }) {
     return (
-        <div className="relative flex sm:flex-col lg:flex-row border border-neutral-800 rounded-xl h-full group overflow-hidden">
+        <div className="relative flex sm:flex-col lg:flex-row border border-neutral-800 rounded-xl h-full overflow-hidden">
             <div className="absolute top-0 right-5 w-80 h-[1px] bg-gradient-to-l from-transparent via-primary/50 via-10% to-transparent" />
             <div className="overflow-hidden sm:rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl">
                 <img
                     src={src}
                     loading="lazy"
-                    className="ease-in-out duration-200 group-hover:scale-105 max-w-5xl w-full"
+                    className="max-w-5xl w-full"
                     alt={title}
                 />
             </div>

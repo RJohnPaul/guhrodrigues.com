@@ -12,10 +12,11 @@ export default function Biography() {
                 .
             </p>
             <p className="text-md leading-8 text-gray-400">
-                Tenho experiência em{" "}
-                <span className="text-primary">React e TypeScript</span>, assim
-                utilizo frequentemente várias bibliotecas para facilitar a
-                agilidade e manter{" "}
+                Atualmente atuo com{" "}
+                <span className="text-primary">TypeScript</span> com{" "}
+                <span className="text-primary">React</span>, assim utilizo
+                frequentemente várias bibliotecas para facilitar a agilidade e
+                manter{" "}
                 <span className="text-primary">
                     altos padrões de qualidade em meu código
                 </span>
