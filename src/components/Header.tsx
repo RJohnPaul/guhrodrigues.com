@@ -23,7 +23,7 @@ export default function Header() {
         <header
             className={`flex w-full h-[70px] z-50 fixed sm:bg-background md:backdrop-blur-[5px] ${
                 pageScrolled
-                    ? "border-b border-neutral-800 md:bg-background/60"
+                    ? "md:border-b border-neutral-800 md:bg-background/60"
                     : undefined
             }`}
         >

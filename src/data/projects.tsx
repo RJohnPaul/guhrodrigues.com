@@ -1,9 +1,17 @@
-import swiftmart from "@/assets/img/swiftmart.png";
-import moviecorn from "@/assets/img/moviecorn.png";
-import crypto from "@/assets/img/crypto.png";
-import weather from "@/assets/img/weather.png";
-import toDo from "@/assets/img/to-do.png";
-import musicplayer from "@/assets/img/musicplayer.png";
+import swiftmart from "@/assets/images/projects/swiftmart.png";
+import moviecorn from "@/assets/images/projects/moviecorn.png";
+import crypto from "@/assets/images/projects/crypto.png";
+import weather from "@/assets/images/projects/weather.png";
+import toDo from "@/assets/images/projects/to-do.png";
+import musicplayer from "@/assets/images/projects/musicplayer.png";
+
+import html from "@/assets/images/skills/html.svg";
+import css from "@/assets/images/skills/css.svg";
+import react from "@/assets/images/skills/react.svg";
+import typescript from "@/assets/images/skills/typescript.svg";
+import javascript from "@/assets/images/skills/javascript.svg";
+import styledComponents from "@/assets/images/skills/styledcomponents.svg";
+import tailwind from "@/assets/images/skills/tailwindcss.svg";
 
 import { ProjectsProps } from "@/types";
 
@@ -14,7 +22,7 @@ export const projects: ProjectsProps[] = [
         title: "SwiftMart",
         description:
             "Simulação de e-commerce na qual utiliza a API do Mercado Livre para a listagem dos produtos.",
-        techs: ["React", "TypeScript", "Styled Components"],
+        techs: [react, typescript, styledComponents],
         code: "https://github.com/guhrodriguess/swiftmart",
         visit: "https://swiftmartstore.vercel.app",
     },
@@ -24,7 +32,7 @@ export const projects: ProjectsProps[] = [
         title: "MovieCorn",
         description:
             "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries.",
-        techs: ["React", "Styled Components", "React Router"],
+        techs: [react, styledComponents],
         code: "https://github.com/guhrodriguess/moviecorn",
         visit: "https://moviecorn.vercel.app",
     },
@@ -34,7 +42,7 @@ export const projects: ProjectsProps[] = [
         title: "Crypto",
         description:
             "Sistema de criptografia e descriptografia realizado para um trabalho escolar.",
-        techs: ["React", "Tailwind CSS", "CryptoJS"],
+        techs: [react, tailwind],
         code: "https://github.com/guhrodriguess/crypto",
         visit: "https://crypto-shield.vercel.app/",
     },
@@ -44,7 +52,7 @@ export const projects: ProjectsProps[] = [
         title: "Weather",
         description:
             "Aplicação para mostrar a previsão do tempo utilizando a Open Weather API.",
-        techs: ["React", "Tailwind CSS"],
+        techs: [react, tailwind],
         code: "https://github.com/guhrodriguess/weather",
         visit: "https://earth-weather.vercel.app",
     },
@@ -54,7 +62,7 @@ export const projects: ProjectsProps[] = [
         title: "To-do List",
         description:
             "Projeto desenvolvido para criar e armazenar tarefas com o uso do localStorage.",
-        techs: ["HTML", "CSS", "JavaScript"],
+        techs: [html, css, javascript],
         code: "https://github.com/guhrodriguess/to-do",
         visit: "https://guhrodriguess.github.io/to-do",
     },
@@ -64,7 +72,7 @@ export const projects: ProjectsProps[] = [
         title: "Music Player",
         description:
             "A música sempre está presente em minha vida, então nesse site você pode ouvir minhas músicas favoritas.",
-        techs: ["HTML", "CSS", "JavaScript"],
+        techs: [html, css, javascript],
         code: "https://github.com/guhrodriguess/music-player",
         visit: "https://guhrodriguess.github.io/music-player",
     },

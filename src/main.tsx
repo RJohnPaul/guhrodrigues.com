@@ -41,24 +41,24 @@ root.render(
                     />
                     <Route
                         path="/about"
-                        element={<About title="Gustavo Rodrigues · Sobre" />}
+                        element={<About title="Gustavo Rodrigues — Sobre" />}
                     />
                     <Route
                         path="/projects"
                         element={
-                            <Projects title="Gustavo Rodrigues · Projetos" />
+                            <Projects title="Gustavo Rodrigues — Projetos" />
                         }
                     />
                     <Route
                         path="/contact"
                         element={
-                            <Contact title="Gustavo Rodrigues · Contato" />
+                            <Contact title="Gustavo Rodrigues — Contato" />
                         }
                     />
                     <Route
                         path="/404"
                         element={
-                            <NotFound title="Gustavo Rodrigues · Not Found" />
+                            <NotFound title="Gustavo Rodrigues — Not Found" />
                         }
                     />
                     <Route path="*" element={<Navigate to="/404" />} />

@@ -58,7 +58,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="w-full p-3 text-white bg-background border-2 border-gray-400 rounded-2xl outline-none appearance-none w-7xl bg-tertiary focus:border-teal-300"
+                                className="w-full p-3 text-white bg-background border-2 border-gray-400 rounded-2xl outline-none appearance-none w-7xl bg-tertiary focus:border-primary"
                                 type="text"
                                 autoComplete="off"
                                 required
@@ -81,7 +81,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="w-full p-3 text-white bg-background border-2 border-gray-400 rounded-2xl outline-none appearance-none w-7xl bg-tertiary focus:border-teal-300"
+                                className="w-full p-3 text-white bg-background border-2 border-gray-400 rounded-2xl outline-none appearance-none w-7xl bg-tertiary focus:border-primary"
                                 type="email"
                                 autoComplete="off"
                                 required
@@ -104,7 +104,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <textarea
-                                className="w-full p-3 text-white bg-background border-2 border-gray-400 rounded-2xl outline-none appearance-none w-7xl bg-tertiary focus:border-teal-300"
+                                className="w-full p-3 text-white bg-background border-2 border-gray-400 rounded-2xl outline-none appearance-none w-7xl bg-tertiary focus:border-primary"
                                 autoComplete="off"
                                 required
                                 value={message}

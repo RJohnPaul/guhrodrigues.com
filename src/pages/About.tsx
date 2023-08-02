@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import Toast from "@/components/Toast";
 
-import author from "@/assets/img/author.jpeg";
+import author from "@/assets/images/author.jpeg";
 
 import Biography from "@/components/Biography";
 import DownloadButton from "@/components/DownloadButton";
@@ -15,8 +15,8 @@ export default function About({ title }) {
 
     return (
         <>
-            <main className="w-full sm:h-full lg:min-h-[calc(100vh_-_85px)] p-2 flex items-center py-16">
-                <section className="w-full m-auto py-8 px-4">
+            <main className="w-full sm:h-full lg:min-h-[calc(100vh_-_85px)] flex items-center py-16">
+                <section className="w-full m-auto py-8">
                     <div className="mb-8">
                         <h1 className="text-4xl font-extrabold">
                             Sobre mim. Meu conhecimento.
@@ -28,7 +28,7 @@ export default function About({ title }) {
                                 src={author}
                                 width={350}
                                 loading="lazy"
-                                className="rounded-lg hover:grayscale ease-in duration-300"
+                                className="rounded-lg"
                                 alt="Gustavo"
                             />
                         </div>
