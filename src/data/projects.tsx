@@ -32,7 +32,7 @@ export const projects: ProjectsProps[] = [
         title: "MovieCorn",
         description:
             "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries.",
-        techs: [react, styledComponents],
+        techs: [react, typescript, styledComponents],
         code: "https://github.com/guhrodriguess/moviecorn",
         visit: "https://moviecorn.vercel.app",
     },
