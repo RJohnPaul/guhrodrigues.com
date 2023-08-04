@@ -40,7 +40,7 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        @apply bg-primary rounded-2xl;
+        @apply bg-neutral-500 rounded-2xl;
     }
 
     ::selection {
