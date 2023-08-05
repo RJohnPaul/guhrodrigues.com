@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 import Lottie from "lottie-react";
-import downloadIcon from "@/static/download.json";
+import downloadIcon from "@/assets/static/download.json";
 
 import resume from "@/assets/docs/resume.pdf";
 import { downloadAlert } from "./Toast";

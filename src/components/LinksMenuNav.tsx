@@ -19,8 +19,8 @@ export default function LinksMenuNav() {
             className={`${
                 showMenu
                     ? "flex flex-col justify-center w-full h-screen left-0 z-[-1] top-0 bg-background/80 backdrop-blur-lg"
-                    : "-bottom-full md:flex"
-            } sm:fixed md:static gap-8 items-center duration-300`}
+                    : "-bottom-full"
+            } sm:fixed md:static flex gap-8 items-center duration-300`}
         >
             {LinksMenu.map(({ id, path, name }) => (
                 <li key={id} className="text-gray-400">
