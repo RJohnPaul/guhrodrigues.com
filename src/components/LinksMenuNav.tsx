@@ -18,7 +18,7 @@ export default function LinksMenuNav() {
         <ul
             className={`${
                 showMenu
-                    ? "flex flex-col justify-center w-full h-screen left-0 z-[-1] top-0 bg-background/80 backdrop-blur-lg"
+                    ? "flex flex-col w-full h-screen left-0 z-[-1] top-0 bg-background/80 backdrop-blur-lg"
                     : "-bottom-full"
             } sm:fixed md:static flex gap-8 items-center duration-300`}
         >

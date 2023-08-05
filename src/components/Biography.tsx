@@ -13,7 +13,7 @@ export default function Biography() {
             </p>
             <p className="text-md leading-8 text-gray-400">
                 Atualmente atuo com{" "}
-                <span className="text-primary">TypeScript</span> com{" "}
+                <span className="text-primary">TypeScript</span> juntamente ao{" "}
                 <span className="text-primary">React</span>, assim utilizo
                 frequentemente várias bibliotecas para facilitar a agilidade e
                 manter{" "}

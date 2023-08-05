@@ -19,7 +19,7 @@ export default function DownloadButton() {
                 onClick={downloadAlert}
                 onMouseEnter={() => downloadRef.current?.play()}
                 onMouseLeave={() => downloadRef.current?.stop()}
-                className="flex text-center items-center text-primary font-semibold py-3 px-4 gap-2 rounded-lg hover:bg-neutral-800 transition-colors"
+                className="flex text-center items-center text-primary font-semibold p-3 gap-2 rounded-lg hover:bg-neutral-800 transition-colors"
             >
                 <Lottie
                     lottieRef={downloadRef}
