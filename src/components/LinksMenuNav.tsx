@@ -18,12 +18,12 @@ export default function LinksMenuNav() {
         <ul
             className={`${
                 showMenu
-                    ? "flex flex-col w-full h-screen left-0 z-[-1] top-0 bg-background/80 backdrop-blur-lg"
+                    ? "flex flex-col w-full h-screen justify-center left-0 z-[-1] top-0 bg-background/80 backdrop-blur-lg"
                     : "-bottom-full"
             } sm:fixed md:static flex gap-8 items-center duration-300`}
         >
             {LinksMenu.map(({ id, path, name }) => (
-                <li key={id} className="text-gray-400">
+                <li key={id} className="text-neutral-400">
                     <NavLink
                         to={path}
                         onClick={handleCloseMenu}

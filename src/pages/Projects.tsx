@@ -16,7 +16,7 @@ export default function Projects({ title }) {
                     <h1 className="text-4xl font-extrabold">
                         Trabalho, hobby & open source.
                     </h1>
-                    <p className="text-gray-400">
+                    <p className="text-neutral-400">
                         Sou fanático em criar{" "}
                         <span className="text-primary">projetos pessoais</span>.
                         Nesta página você pode navegar para{" "}

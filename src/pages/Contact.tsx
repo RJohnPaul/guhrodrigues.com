@@ -18,7 +18,7 @@ export default function Contact({ title }) {
                         <h1 className="text-4xl font-extrabold">
                             Mande um e-mail. Como nos velhos tempos.
                         </h1>
-                        <p className="text-gray-400">
+                        <p className="text-neutral-400">
                             Caso se interessou pelo meu trabalho ou queira{" "}
                             <span className="text-primary">
                                 dar um feedback

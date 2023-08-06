@@ -21,13 +21,13 @@ export default function Home({ title }) {
                         <p className="sm:text-sm md:text-md text-primary">
                             Desenvolvedor Web & Estudante de T.I
                         </p>
-                        <p className="sm:text-sm md:text-md mb-1 text-gray-400">
+                        <p className="sm:text-sm md:text-md mb-1 text-neutral-400">
                             A tecnologia move o mundo.
                         </p>
                     </div>
                     <div className="flex items-center gap-4 justify-center">
                         <Link to="/projects">
-                            <button className="group/icon w-full flex items-center justify-center py-2 px-3 gap-1.5 font-medium text-sm text-gray-400 hover:text-primary duration-300">
+                            <button className="group/icon w-full flex items-center justify-center py-2 px-3 gap-1.5 font-medium text-sm text-neutral-400 hover:text-primary duration-300">
                                 Veja meus projetos
                                 <MoveRight
                                     className="group-hover/icon:translate-x-1 duration-300 transition-transform"

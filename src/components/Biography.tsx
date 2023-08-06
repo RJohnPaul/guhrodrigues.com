@@ -1,7 +1,7 @@
 export default function Biography() {
     return (
         <>
-            <p className="text-md leading-8 text-gray-400">
+            <p className="text-md leading-8 text-neutral-400">
                 Meu nome é{" "}
                 <span className="text-primary">Gustavo Rodrigues</span>, sou{" "}
                 <span className="text-primary">Desenvolvedor Web</span> e
@@ -11,7 +11,7 @@ export default function Biography() {
                 </span>
                 .
             </p>
-            <p className="text-md leading-8 text-gray-400">
+            <p className="text-md leading-8 text-neutral-400">
                 Atualmente atuo com{" "}
                 <span className="text-primary">TypeScript</span> juntamente ao{" "}
                 <span className="text-primary">React</span>, assim utilizo
@@ -22,7 +22,7 @@ export default function Biography() {
                 </span>
                 .
             </p>
-            <p className="text-md leading-8 text-gray-400">
+            <p className="text-md leading-8 text-neutral-400">
                 Possuo{" "}
                 <span className="text-primary">+2 anos de experiência</span> em
                 desenvolvimento web e estou sempre{" "}

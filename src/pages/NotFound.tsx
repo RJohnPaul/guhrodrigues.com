@@ -19,7 +19,7 @@ export default function NotFound({ title }) {
                     </p>
                     <div className="flex items-center gap-4 justify-center">
                         <Link to="/">
-                            <button className="group/icon w-full flex items-center justify-center py-2 px-3 gap-1.5 font-medium text-sm text-gray-400 hover:text-primary duration-300">
+                            <button className="group/icon w-full flex items-center justify-center py-2 px-3 gap-1.5 font-medium text-sm text-neutral-400 hover:text-primary duration-300">
                                 <MoveLeft
                                     className="group-hover/icon:-translate-x-1 duration-300 transition-transform"
                                     size={16}

@@ -24,7 +24,7 @@ export default function ProjectItem({
                     <h3 className="font-bold text-xl text-primary py-2">
                         {title}
                     </h3>
-                    <span className="max-w-full text-[13.5px] text-gray-400 font-medium py-2">
+                    <span className="max-w-full text-[13.5px] text-neutral-400 font-medium py-2">
                         {description}
                     </span>
                 </div>
@@ -46,7 +46,7 @@ export default function ProjectItem({
                         </button>
                     </a>
                     <a href={code} target="_blank">
-                        <button className="flex text-center items-center text-sm font-semibold py-3 px-4 gap-1 rounded-full text-gray-400 hover:text-primary hover:bg-neutral-800 duration-300">
+                        <button className="flex text-center items-center text-sm font-semibold py-3 px-4 gap-1 rounded-full text-neutral-400 hover:text-primary hover:bg-neutral-800 duration-300">
                             Repositório
                             <ChevronRight size={14} />
                         </button>
