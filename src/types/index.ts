@@ -21,8 +21,9 @@ export interface ProjectsProps {
     visit: string;
 }
 
-export interface FooterProps {
+export interface SocialsProps {
     id: number;
     href: string;
-    icon: JSX.Element;
+    name?: string;
+    icon?: JSX.Element;
 }

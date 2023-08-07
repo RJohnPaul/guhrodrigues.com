@@ -19,7 +19,7 @@ export default function MobileButton() {
     return (
         <button
             onClick={handleMenu}
-            className="text-primary transition-transform active:scale-75 sm:flex md:hidden"
+            className="text-neutral-400 transition-transform active:scale-75 sm:flex md:hidden"
         >
             {showMenu ? <X size={26} /> : <Equal size={26} />}
         </button>
