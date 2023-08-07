@@ -4,11 +4,11 @@ export default function Socials() {
     return (
         <div className="md:hidden space-y-2">
             {socials.map(({ id, href, name }) => (
-                <li key={id} className="text-neutral-500 font-medium">
+                <span key={id} className="block font-medium text-neutral-500">
                     <a href={href} target="_blank">
                         {name}
                     </a>
-                </li>
+                </span>
             ))}
         </div>
     );
