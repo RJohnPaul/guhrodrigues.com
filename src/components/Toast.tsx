@@ -28,14 +28,8 @@ export default function Toast() {
     );
 }
 
-export const downloadAlert = () => {
-    toast.success("Currículo instalado :D", {
-        icon: <CheckCircle2 className="text-emerald-400" size={24} />,
-    });
-};
-
-export const sendEmailAlert = () => {
-    toast.success("Email enviado :D", {
+export const successAlert = (text: string) => {
+    toast.success(`${text}`, {
         icon: <CheckCircle2 className="text-emerald-400" size={24} />,
     });
 };

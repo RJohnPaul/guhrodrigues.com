@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 import downloadIcon from "@/assets/static/download.json";
 
 import resume from "@/assets/docs/resume.pdf";
-import { downloadAlert } from "./Toast";
+import { successAlert } from "./Toast";
 
 export default function DownloadButton() {
     const downloadRef = useRef<any>();
@@ -16,7 +16,7 @@ export default function DownloadButton() {
             type="application/pdf"
         >
             <button
-                onClick={downloadAlert}
+                onClick={() => successAlert("Currículo instalado :D")}
                 onMouseEnter={() => downloadRef.current?.play()}
                 onMouseLeave={() => downloadRef.current?.stop()}
                 className="flex text-center items-center text-primary font-semibold p-3 gap-2 rounded-lg hover:bg-neutral-800 transition-colors"

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import AppContext from "@/contexts/AppContext";
 
-import { sendEmailAlert } from "./Toast";
+import { successAlert } from "./Toast";
 
 import * as Form from "@radix-ui/react-form";
 
@@ -32,7 +32,7 @@ export default function FormComponent() {
                 `${publicKey}`
             )
             .then(() => {
-                sendEmailAlert();
+                successAlert("E-mail enviado :D");
 
                 setName("");
                 setEmail("");
