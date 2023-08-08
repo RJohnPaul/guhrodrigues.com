@@ -3,8 +3,9 @@ import { useRef } from "react";
 import Lottie from "lottie-react";
 import downloadIcon from "@/assets/static/download.json";
 
-import resume from "@/assets/docs/resume.pdf";
 import { successAlert } from "./Toast";
+
+import resume from "@/assets/docs/resume.pdf";
 
 export default function DownloadButton() {
     const downloadRef = useRef<any>();
