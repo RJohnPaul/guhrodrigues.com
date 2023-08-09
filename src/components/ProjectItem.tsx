@@ -9,17 +9,17 @@ export default function ProjectItem({
     visit,
 }) {
     return (
-        <div className="relative flex sm:flex-col lg:flex-row border border-neutral-800 rounded-xl h-full overflow-hidden">
+        <section className="relative flex sm:flex-col lg:flex-row border border-neutral-800 rounded-xl h-full overflow-hidden">
             <div className="absolute top-0 right-5 w-80 h-[1px] bg-gradient-to-l from-transparent via-primary/50 via-10% to-transparent" />
-            <div className="overflow-hidden sm:rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl">
+            <figure className="overflow-hidden sm:rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl">
                 <img
                     src={src}
                     loading="lazy"
                     className="max-w-5xl w-full"
                     alt={title}
                 />
-            </div>
-            <div className="flex flex-col sm:text-center sm:items-center lg:text-start lg:items-start justify-center w-full py-5 px-10">
+            </figure>
+            <article className="flex flex-col sm:text-center sm:items-center lg:text-start lg:items-start justify-center w-full py-5 px-10">
                 <div className="flex flex-col justify-center">
                     <h3 className="font-bold text-xl text-primary py-2">
                         {title}
@@ -52,7 +52,7 @@ export default function ProjectItem({
                         </button>
                     </a>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
     );
 }

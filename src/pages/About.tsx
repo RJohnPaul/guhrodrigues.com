@@ -23,7 +23,7 @@ export default function About({ title }) {
                         </h1>
                     </div>
                     <div className="flex sm:flex-col lg:flex-row justify-between gap-12">
-                        <div className="w-full">
+                        <figure className="w-full">
                             <img
                                 src={author}
                                 width={350}
@@ -31,7 +31,7 @@ export default function About({ title }) {
                                 className="rounded-lg"
                                 alt="Gustavo"
                             />
-                        </div>
+                        </figure>
                         <div className="flex flex-col lg:mt-0 gap-4 sm:px-1 lg:px-0">
                             <Biography />
 
