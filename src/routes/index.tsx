@@ -12,19 +12,19 @@ export function AllRoutes() {
             <Route path="/" element={<Home title="Gustavo Rodrigues" />} />
             <Route
                 path="/about"
-                element={<About title="Gustavo Rodrigues — Sobre" />}
+                element={<About title="Sobre · Gustavo Rodrigues" />}
             />
             <Route
                 path="/projects"
-                element={<Projects title="Gustavo Rodrigues — Projetos" />}
+                element={<Projects title="Projetos · Gustavo Rodrigues" />}
             />
             <Route
                 path="/contact"
-                element={<Contact title="Gustavo Rodrigues — Contato" />}
+                element={<Contact title="Contato · Gustavo Rodrigues" />}
             />
             <Route
                 path="/404"
-                element={<NotFound title="Gustavo Rodrigues — Not Found" />}
+                element={<NotFound title="Not Found · Gustavo Rodrigues" />}
             />
             <Route path="*" element={<Navigate to="/404" />} />
         </Routes>

@@ -1,5 +1,6 @@
 import swiftmart from "@/assets/images/projects/swiftmart.png";
 import moviecorn from "@/assets/images/projects/moviecorn.png";
+import portfolio from "@/assets/images/projects/portfolio.png";
 import crypto from "@/assets/images/projects/crypto.png";
 import weather from "@/assets/images/projects/weather.png";
 import toDo from "@/assets/images/projects/to-do.png";
@@ -38,6 +39,16 @@ export const projects: ProjectsProps[] = [
     },
     {
         id: 3,
+        src: portfolio,
+        title: "guhrodrigues",
+        description:
+            "Portfólio pessoal construído com React, TypeScript e TailwindCSS.",
+        techs: [react, typescript, tailwind],
+        code: "https://github.com/guhrodriguess/portfolio",
+        visit: "https://guhrodrigues.vercel.app",
+    },
+    {
+        id: 4,
         src: crypto,
         title: "Crypto",
         description:
@@ -47,7 +58,7 @@ export const projects: ProjectsProps[] = [
         visit: "https://crypto-shield.vercel.app/",
     },
     {
-        id: 4,
+        id: 5,
         src: weather,
         title: "Weather",
         description:
@@ -57,7 +68,7 @@ export const projects: ProjectsProps[] = [
         visit: "https://earth-weather.vercel.app",
     },
     {
-        id: 5,
+        id: 6,
         src: toDo,
         title: "To-do List",
         description:
@@ -67,7 +78,7 @@ export const projects: ProjectsProps[] = [
         visit: "https://guhrodriguess.github.io/to-do",
     },
     {
-        id: 6,
+        id: 7,
         src: musicplayer,
         title: "Music Player",
         description:
