@@ -1,6 +1,6 @@
 <div align="center">
 
-![Portfolio image](./public/readme-image.png)
+![Portfolio image](./src/assets/images/projects/portfolio.png)
 
 </div>
 
