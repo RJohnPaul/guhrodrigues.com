@@ -42,7 +42,7 @@ export const projects: ProjectsProps[] = [
         src: portfolio,
         title: "guhrodrigues",
         description:
-            "Portfólio pessoal construído com React, TypeScript e TailwindCSS.",
+            "Portfólio pessoal construído com o intuito de mostrar meus projetos e contar um pouco sobre mim.",
         techs: [react, typescript, tailwind],
         code: "https://github.com/guhrodriguess/portfolio",
         visit: "https://guhrodrigues.vercel.app",
