@@ -34,6 +34,7 @@ export default function ProjectItem({
                             key={tech}
                             src={tech}
                             width={22}
+                            loading="lazy"
                             className="grayscale hover:grayscale-0 duration-300"
                         />
                     ))}

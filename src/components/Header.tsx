@@ -34,7 +34,7 @@ export default function Header() {
         >
             <nav className="max-w-5xl w-full mx-auto px-6 justify-between top-0 flex items-center gap-10">
                 <Link to="/">
-                    <img src={logo} width={25} alt="Logo" />
+                    <img src={logo} width={25} loading="lazy" alt="Logo" />
                 </Link>
 
                 <LinksMenuNav />
