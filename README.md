@@ -1,5 +1,7 @@
 ## guhrodrigues
 
-Personal portfolio built with React, TypeScript and TailwindCSS. Access <a href="https://guhrodrigues.vercel.app/">here</a>.
+Personal portfolio built with React, TypeScript and TailwindCSS.
 
-![Portfolio image](./src/assets/images/projects/portfolio.png)
+<a href="https://guhrodrigues.vercel.app/">
+    <img src="./src/assets/images/projects/portfolio.png" />
+</a>
