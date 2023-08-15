@@ -14,23 +14,19 @@ export default function DownloadButton() {
         <a
             href={resume}
             download="Gustavo Rodrigues.pdf"
-            type="application/pdf"
+            onClick={() => successAlert("Currículo instalado :D")}
+            onMouseEnter={() => downloadRef.current?.play()}
+            onMouseLeave={() => downloadRef.current?.stop()}
+            className="flex items-center text-primary font-semibold p-3 gap-2 rounded-lg hover:bg-neutral-800 transition-colors"
         >
-            <button
-                onClick={() => successAlert("Currículo instalado :D")}
-                onMouseEnter={() => downloadRef.current?.play()}
-                onMouseLeave={() => downloadRef.current?.stop()}
-                className="flex text-center items-center text-primary font-semibold p-3 gap-2 rounded-lg hover:bg-neutral-800 transition-colors"
-            >
-                <Lottie
-                    lottieRef={downloadRef}
-                    animationData={downloadIcon}
-                    style={{ width: 24, height: 24 }}
-                    autoplay={false}
-                    loop={false}
-                />
-                Download C.V
-            </button>
+            <Lottie
+                lottieRef={downloadRef}
+                animationData={downloadIcon}
+                style={{ width: 24, height: 24 }}
+                autoplay={false}
+                loop={false}
+            />
+            Download C.V
         </a>
     );
 }

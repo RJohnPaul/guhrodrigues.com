@@ -44,6 +44,6 @@
     }
 
     ::selection {
-        @apply text-primary bg-neutral-800;
+        @apply text-primary bg-neutral-800/60;
     }
 }

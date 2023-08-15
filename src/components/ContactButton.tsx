@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import contactIcon from "@/assets/static/contact.json";
 
+import Button from "./Button";
+
 export default function ContactButton() {
     const contactRef = useRef<any>();
 
     return (
         <>
             <Link to="/contact">
-                <button
+                <Button
                     onMouseEnter={() => contactRef.current?.play()}
                     onMouseLeave={() => contactRef.current?.stop()}
-                    className="sm:hidden md:flex text-center justify-center items-center bg-primary text-black font-semibold py-3 px-4 text-sm gap-1.5 rounded-full hover:bg-primary/70 duration-300"
+                    className="gap-1.5 sm:hidden md:flex"
                 >
                     Contato
                     <Lottie
@@ -24,7 +26,7 @@ export default function ContactButton() {
                         autoplay={false}
                         loop={false}
                     />
-                </button>
+                </Button>
             </Link>
         </>
     );

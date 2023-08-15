@@ -7,6 +7,8 @@ import * as Form from "@radix-ui/react-form";
 
 import emailjs from "@emailjs/browser";
 
+import Button from "./Button";
+
 const emailService = import.meta.env.VITE_EMAIL_SERVICE;
 const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
 const publicKey = import.meta.env.VITE_PUBLIC_KEY;
@@ -113,12 +115,9 @@ export default function FormComponent() {
                         </Form.Control>
                     </Form.Field>
                     <Form.Submit asChild>
-                        <button
-                            className="flex text-center justify-center items-center bg-primary text-black font-semibold p-3 text-sm gap-1 rounded-2xl hover:bg-primary/70 duration-300"
-                            type="submit"
-                        >
+                        <Button type="submit" className="rounded-2xl">
                             Enviar
-                        </button>
+                        </Button>
                     </Form.Submit>
                 </div>
             </Form.Root>

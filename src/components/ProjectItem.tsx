@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import Button from "./Button";
 
 export default function ProjectItem({
     src,
@@ -41,16 +42,16 @@ export default function ProjectItem({
                 </div>
                 <div className="flex flex-wrap justify-center gap-2 py-2">
                     <a href={visit} target="_blank">
-                        <button className="flex text-center justify-center items-center bg-primary text-black font-semibold py-3 px-4 text-sm gap-1 rounded-full hover:bg-primary/70 duration-300">
+                        <Button>
                             Visitar
                             <ChevronRight size={14} />
-                        </button>
+                        </Button>
                     </a>
                     <a href={code} target="_blank">
-                        <button className="flex text-center items-center text-sm font-semibold py-3 px-4 gap-1 rounded-full text-neutral-400 hover:text-primary hover:bg-neutral-800 duration-300">
+                        <Button ghost>
                             Repositório
                             <ChevronRight size={14} />
-                        </button>
+                        </Button>
                     </a>
                 </div>
             </article>

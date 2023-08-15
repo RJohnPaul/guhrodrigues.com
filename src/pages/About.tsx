@@ -32,7 +32,7 @@ export default function About({ title }) {
                                 alt="Gustavo"
                             />
                         </figure>
-                        <div className="flex flex-col lg:mt-0 gap-4 sm:px-1 lg:px-0">
+                        <div className="flex items-start flex-col lg:mt-0 gap-4 sm:px-1 lg:px-0">
                             <Biography />
 
                             <DownloadButton />
@@ -40,6 +40,7 @@ export default function About({ title }) {
                     </div>
                 </section>
             </main>
+
             <Toast />
         </>
     );
