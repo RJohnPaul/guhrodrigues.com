@@ -23,16 +23,12 @@
         @apply font-medium;
     }
 
-    :is(header, nav, img) {
+    :is(header, nav, img, a, button) {
         @apply select-none;
     }
 
     li {
         @apply list-none font-semibold;
-    }
-
-    button {
-        @apply select-none;
     }
 
     ::-webkit-scrollbar {
