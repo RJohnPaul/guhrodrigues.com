@@ -16,6 +16,9 @@ module.exports = {
             animation: {
                 "fade-in": "fade-in 0.4s ease",
             },
+            transitionProperty: {
+                multiple: "width, height, opacity",
+            },
         },
         screens: {
             sm: "100px",
