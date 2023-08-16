@@ -20,7 +20,7 @@
     }
 
     body {
-        @apply font-poppins bg-background outline-none cursor-none;
+        @apply font-poppins bg-background outline-none md:cursor-none;
     }
 
     main {
@@ -36,7 +36,7 @@
     }
 
     :is(header, nav, img, a, button, input, label, textarea) {
-        @apply select-none cursor-none;
+        @apply select-none md:cursor-none;
     }
 
     li {

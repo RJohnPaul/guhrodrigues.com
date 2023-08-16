@@ -27,7 +27,7 @@ export default function Cursor() {
 
     return (
         <div
-            className={`cursor ${isPointer ? "pointer" : ""}`}
+            className={`hidden md:block cursor ${isPointer ? "pointer" : ""}`}
             style={{
                 ...cursorStyle,
                 left: `${position.x}px`,
