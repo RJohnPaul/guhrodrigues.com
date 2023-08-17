@@ -21,7 +21,7 @@ export default function Cursor() {
         return () => window.removeEventListener("mousemove", handleMouseMove);
     }, []);
 
-    const cursorSize = isPointer ? 0 : 35;
+    const cursorSize = isPointer ? 0 : 30;
 
     const cursorStyle = isPointer ? { left: "-100px", top: "-100px" } : {};
 
