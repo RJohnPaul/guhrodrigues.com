@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import contactIcon from "@/assets/static/contact.json";
 
-import Button from "./Button";
+import Button from "@/components/utils/Button";
 
 export default function ContactButton() {
     const contactRef = useRef<any>();

@@ -4,8 +4,8 @@ import AppContext from "@/contexts/AppContext";
 import { Link } from "react-router-dom";
 
 import LinksMenuNav from "./LinksMenuNav.tsx";
-import MobileButton from "./MobileButton";
-import ContactButton from "./ContactButton";
+import MobileButton from "./MobileButton.tsx";
+import ContactButton from "./ContactButton.tsx";
 
 import logo from "@/assets/images/logo.svg";
 
@@ -26,7 +26,7 @@ export default function Header() {
 
     return (
         <header
-            className={`flex w-full h-[70px] z-50 fixed top-0 sm:bg-background md:border-b ${
+            className={`flex w-full h-[70px] z-50 fixed top-0 bg-background md:border-b ${
                 pageScrolled
                     ? "md:border-neutral-800 md:bg-background/60 md:backdrop-blur-[5px]"
                     : "border-transparent"

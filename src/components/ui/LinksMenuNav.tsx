@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import AppContext from "@/contexts/AppContext";
 
-import Socials from "./Socials";
+import Socials from "@/components/utils/Socials";
 
 export default function LinksMenuNav() {
     const { showMenu, setShowMenu } = useContext(AppContext);

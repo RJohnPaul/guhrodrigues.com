@@ -1,17 +1,27 @@
 import { useContext } from "react";
 import AppContext from "@/contexts/AppContext";
 
-import { successAlert } from "./Toast";
+import { m } from "framer-motion";
+
+import { successAlert } from "@/components/utils/Toast";
 
 import * as Form from "@radix-ui/react-form";
 
 import emailjs from "@emailjs/browser";
 
-import Button from "./Button";
+import Button from "@/components/utils/Button";
 
 const emailService = import.meta.env.VITE_EMAIL_SERVICE;
 const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
 const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+const animation = {
+    hide: { y: 8, opacity: 0 },
+    show: {
+        y: 0,
+        opacity: 1,
+    },
+};
 
 export default function FormComponent() {
     const { name, setName, email, setEmail, message, setMessage } =
@@ -43,9 +53,17 @@ export default function FormComponent() {
     };
 
     return (
-        <div className="max-w-[500px] w-full">
+        <m.div
+            initial="hide"
+            animate="show"
+            transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
+            className="max-w-[500px] w-full"
+        >
             <Form.Root onSubmit={sendEmail}>
-                <div className="flex flex-col w-full mx-auto gap-4">
+                <m.div
+                    className="flex flex-col w-full mx-auto gap-4"
+                    variants={animation}
+                >
                     <Form.Field name="text">
                         <div className="flex items-center justify-between">
                             <Form.Label className="text-sm font-medium py-2 text-white">
@@ -119,8 +137,8 @@ export default function FormComponent() {
                             Enviar
                         </Button>
                     </Form.Submit>
-                </div>
+                </m.div>
             </Form.Root>
-        </div>
+        </m.div>
     );
 }

@@ -8,10 +8,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Provider from "@/contexts/Provider";
 
 // Components
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Container from "@/components/Container";
-import Cursor from "@/components/Cursor";
+import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
+import Container from "@/components/ui/Container";
+import Cursor from "@/components/utils/Cursor";
+import AnimateEnter from "@/components/utils/AnimateEnter";
 
 // Routes
 import { AllRoutes } from "@/routes";
@@ -24,15 +25,14 @@ const root = ReactDOM.createRoot(
 root.render(
     <Router>
         <Cursor />
-
-        <Provider>
-            <Header />
-
-            <Container>
-                <AllRoutes />
-            </Container>
-
-            <Footer />
-        </Provider>
+        <AnimateEnter>
+            <Provider>
+                <Header />
+                <Container>
+                    <AllRoutes />
+                </Container>
+                <Footer />
+            </Provider>
+        </AnimateEnter>
     </Router>
 );

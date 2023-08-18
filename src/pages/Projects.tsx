@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 
 import { projects } from "@/data/projects";
-import ProjectItem from "@/components/ProjectItem";
+
+import AnimateEnter from "@/components/utils/AnimateEnter";
+import ProjectsContent from "@/components/utils/ProjectsContent";
 
 export default function Projects({ title }) {
     useEffect(() => {
@@ -11,7 +13,7 @@ export default function Projects({ title }) {
 
     return (
         <main className="w-full min-h-screen py-16">
-            <section className="py-9 mx-auto flex flex-col justify-center w-full">
+            <AnimateEnter className="py-9 mx-auto flex flex-col justify-center w-full">
                 <div className="mb-8 space-y-4">
                     <h1 className="text-4xl font-extrabold">
                         Trabalho, hobby & open source.
@@ -26,30 +28,8 @@ export default function Projects({ title }) {
                         na qual desenvolvi.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 gap-8">
-                    {projects.map(
-                        ({
-                            id,
-                            src,
-                            title,
-                            description,
-                            techs,
-                            code,
-                            visit,
-                        }) => (
-                            <ProjectItem
-                                key={id}
-                                src={src}
-                                title={title}
-                                description={description}
-                                techs={techs}
-                                code={code}
-                                visit={visit}
-                            />
-                        )
-                    )}
-                </div>
-            </section>
+                <ProjectsContent data={projects} />
+            </AnimateEnter>
         </main>
     );
 }

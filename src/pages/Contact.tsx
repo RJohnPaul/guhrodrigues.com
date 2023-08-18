@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 
-import Toast from "@/components/Toast";
+import Toast from "@/components/utils/Toast";
 
-import FormComponent from "@/components/FormComponent";
+import FormComponent from "@/components/ui/FormComponent";
+
+import AnimateEnter from "@/components/utils/AnimateEnter";
 
 export default function Contact({ title }) {
     useEffect(() => {
@@ -13,7 +15,7 @@ export default function Contact({ title }) {
     return (
         <>
             <main className="w-full sm:h-full md:min-h-[calc(100vh_-_85px)] flex items-center py-16">
-                <section className="gap-8 py-9">
+                <AnimateEnter className="gap-8 py-9">
                     <div className="mb-8 space-y-4">
                         <h1 className="text-4xl font-extrabold">
                             Mande um e-mail. Como nos velhos tempos.
@@ -32,7 +34,7 @@ export default function Contact({ title }) {
                     </div>
 
                     <FormComponent />
-                </section>
+                </AnimateEnter>
             </main>
 
             <Toast />

@@ -27,3 +27,8 @@ export interface SocialsProps {
     name?: string;
     icon?: JSX.Element;
 }
+
+export interface AnimateEnterProps {
+    children: React.ReactNode;
+    className?: string;
+}

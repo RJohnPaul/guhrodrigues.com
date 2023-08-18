@@ -1,5 +1,16 @@
+import { m } from "framer-motion";
+
+import Button from "@/components/utils/Button";
+
 import { ChevronRight } from "lucide-react";
-import Button from "./Button";
+
+const animation = {
+    hide: { x: -8, opacity: 0 },
+    show: {
+        x: 0,
+        opacity: 1,
+    },
+};
 
 export default function ProjectItem({
     src,
@@ -10,7 +21,10 @@ export default function ProjectItem({
     visit,
 }) {
     return (
-        <section className="relative flex sm:flex-col lg:flex-row border border-neutral-800 rounded-xl h-full overflow-hidden">
+        <m.section
+            variants={animation}
+            className="relative flex sm:flex-col lg:flex-row border border-neutral-800 rounded-xl h-full overflow-hidden"
+        >
             <div className="absolute top-0 right-5 w-80 h-[1px] bg-gradient-to-l from-transparent via-primary/50 via-10% to-transparent" />
             <figure className="overflow-hidden sm:rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl">
                 <img
@@ -55,6 +69,6 @@ export default function ProjectItem({
                     </a>
                 </div>
             </article>
-        </section>
+        </m.section>
     );
 }

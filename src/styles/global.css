@@ -23,10 +23,6 @@
         @apply font-poppins bg-background outline-none md:cursor-none;
     }
 
-    main {
-        @apply animate-fade-in;
-    }
-
     h1 {
         @apply text-primary;
     }
