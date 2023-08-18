@@ -5,9 +5,9 @@ import Button from "@/components/utils/Button";
 import { ChevronRight } from "lucide-react";
 
 const animation = {
-    hide: { x: -8, opacity: 0 },
+    hide: { y: -8, opacity: 0 },
     show: {
-        x: 0,
+        y: 0,
         opacity: 1,
     },
 };
