@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
+import Button from "@/components/utils/Button";
+
 import { MoveLeft } from "lucide-react";
 
 export default function NotFound({ title }) {
@@ -19,13 +21,13 @@ export default function NotFound({ title }) {
                     </p>
                     <div className="flex items-center gap-4 justify-center">
                         <Link to="/">
-                            <button className="group/icon w-full flex items-center justify-center py-2 px-3 gap-1.5 font-medium text-sm text-neutral-400 hover:text-primary duration-300">
+                            <Button ghost className="rounded-xl group gap-1.5">
                                 <MoveLeft
-                                    className="group-hover/icon:-translate-x-1 duration-300 transition-transform"
-                                    size={16}
+                                    className="group-hover:-translate-x-0.5 duration-300 transition-transform"
+                                    size={20}
                                 />
                                 voltar
-                            </button>
+                            </Button>
                         </Link>
                     </div>
                 </div>

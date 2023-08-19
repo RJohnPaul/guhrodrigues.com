@@ -28,6 +28,7 @@ export default function Projects({ title }) {
                         na qual desenvolvi.
                     </p>
                 </div>
+
                 <ProjectsContent projects={projects} />
             </AnimateEnter>
         </main>
