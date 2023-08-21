@@ -14,7 +14,7 @@ export default function Contact({ title }) {
 
     return (
         <>
-            <main className="w-full sm:h-full md:min-h-[calc(100vh_-_85px)] flex items-center py-16">
+            <main className="w-full min-h-[calc(100vh_-_85px)] flex items-center py-16">
                 <AnimateEnter className="gap-8 py-9">
                     <div className="mb-8 space-y-4">
                         <h1 className="text-4xl font-extrabold">
@@ -25,10 +25,8 @@ export default function Contact({ title }) {
                             <span className="text-primary">
                                 dar um feedback
                             </span>{" "}
-                            sobre este website, me{" "}
-                            <span className="text-primary">
-                                mande uma mensagem
-                            </span>
+                            sobre este website, vamos{" "}
+                            <span className="text-primary">trocar um papo</span>
                             .
                         </p>
                     </div>

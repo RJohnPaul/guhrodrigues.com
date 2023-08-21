@@ -16,7 +16,7 @@
     }
 
     ::selection {
-        @apply text-primary bg-neutral-800/60;
+        @apply text-emerald-300 bg-emerald-300/10;
     }
 
     body {
