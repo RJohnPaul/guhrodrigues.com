@@ -78,7 +78,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="w-full p-2.5 text-sm text-white bg-neutral-950 border border-neutral-800 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
+                                className="w-full p-2.5 text-sm text-neutral-400 bg-background border border-neutral-700 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
                                 type="text"
                                 autoComplete="off"
                                 required
@@ -101,7 +101,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="w-full p-2.5 text-sm text-white bg-neutral-950 border border-neutral-800 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
+                                className="w-full p-2.5 text-sm text-neutral-400 bg-background border border-neutral-700 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
                                 type="email"
                                 autoComplete="off"
                                 required
@@ -124,7 +124,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <textarea
-                                className="w-full p-2.5 text-sm text-white bg-neutral-950 border border-neutral-800 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
+                                className="w-full p-2.5 text-sm text-neutral-400 bg-background border border-neutral-700 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
                                 autoComplete="off"
                                 required
                                 value={message}
