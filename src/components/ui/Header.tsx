@@ -26,16 +26,14 @@ export default function Header() {
 
     return (
         <header
-            className={`flex w-full h-[70px] z-50 fixed top-0 bg-background md:border-b ${
+            className={`flex w-full h-[70px] z-50 fixed bg-background md:border-b ${
                 pageScrolled
                     ? "md:border-neutral-800 md:bg-background/60 md:backdrop-blur-[5px]"
                     : "border-transparent"
             }`}
         >
-            <nav className="max-w-5xl w-full mx-auto px-6 justify-between top-0 flex items-center gap-10">
-                <Link to="/">
-                    <img src={logo} width={25} loading="lazy" alt="Logo" />
-                </Link>
+            <nav className="max-w-5xl w-full mx-auto px-6 justify-between flex items-center">
+                <img src={logo} width={25} loading="lazy" alt="Logo" />
 
                 <LinksMenuNav />
 

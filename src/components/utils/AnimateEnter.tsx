@@ -8,7 +8,7 @@ export default function AnimateEnter({
 }: AnimateEnterProps) {
     return (
         <LazyMotion features={domAnimation}>
-            <m.section
+            <m.div
                 className={className}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -16,7 +16,7 @@ export default function AnimateEnter({
                 transition={{ delay: 0.3 }}
             >
                 {children}
-            </m.section>
+            </m.div>
         </LazyMotion>
     );
 }

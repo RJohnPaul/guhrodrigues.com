@@ -18,7 +18,7 @@ export default function Contact({ title }) {
                 <AnimateEnter className="gap-8 py-9">
                     <div className="mb-8 space-y-4">
                         <h1 className="text-4xl font-extrabold">
-                            Mande um e-mail. Como nos velhos tempos.
+                            Mande um email. Como nos velhos tempos.
                         </h1>
                         <p className="text-neutral-400">
                             Caso se interessou pelo meu trabalho ou queira{" "}
