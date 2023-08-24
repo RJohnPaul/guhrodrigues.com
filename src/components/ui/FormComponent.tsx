@@ -57,7 +57,7 @@ export default function FormComponent() {
             initial="hide"
             animate="show"
             transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
-            className="max-w-[500px] w-full"
+            className="max-w-md w-full"
         >
             <Form.Root onSubmit={sendEmail}>
                 <m.div
@@ -66,7 +66,7 @@ export default function FormComponent() {
                 >
                     <Form.Field name="text">
                         <div className="flex items-center justify-between">
-                            <Form.Label className="text-sm font-medium py-2 text-neutral-400">
+                            <Form.Label className="text-sm font-medium py-2 text-primary">
                                 Nome
                             </Form.Label>
                             <Form.Message
@@ -78,7 +78,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="w-full p-2.5 text-sm text-neutral-400 bg-background border border-neutral-700 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
+                                className="w-full p-2.5 text-sm text-primary bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-primary duration-300"
                                 type="text"
                                 autoComplete="off"
                                 required
@@ -89,19 +89,19 @@ export default function FormComponent() {
                     </Form.Field>
                     <Form.Field name="question">
                         <div className="flex items-center justify-between">
-                            <Form.Label className="text-sm font-medium py-2 text-neutral-400">
-                                E-mail
+                            <Form.Label className="text-sm font-medium py-2 text-primary">
+                                Email
                             </Form.Label>
                             <Form.Message
                                 className="text-sm font-medium text-red-500 opacity-80"
                                 match="valueMissing"
                             >
-                                Insira um e-mail
+                                Insira um Email
                             </Form.Message>
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="w-full p-2.5 text-sm text-neutral-400 bg-background border border-neutral-700 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
+                                className="w-full p-2.5 text-sm text-primary bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-primary duration-300"
                                 type="email"
                                 autoComplete="off"
                                 required
@@ -112,7 +112,7 @@ export default function FormComponent() {
                     </Form.Field>
                     <Form.Field name="question">
                         <div className="flex items-center justify-between">
-                            <Form.Label className="text-sm font-medium py-2 text-neutral-400">
+                            <Form.Label className="text-sm font-medium py-2 text-primary">
                                 Mensagem
                             </Form.Label>
                             <Form.Message
@@ -124,7 +124,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <textarea
-                                className="w-full p-2.5 text-sm text-neutral-400 bg-background border border-neutral-700 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-2 focus:ring-neutral-800 duration-300"
+                                className="w-full p-2.5 text-sm text-primary bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-primary duration-300"
                                 autoComplete="off"
                                 required
                                 value={message}
