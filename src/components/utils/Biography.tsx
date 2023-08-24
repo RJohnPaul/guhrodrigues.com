@@ -27,23 +27,23 @@ export default function Biography() {
                 .
             </m.p>
             <m.p className="text-md text-neutral-400" variants={animation}>
-                Atualmente atuo com{" "}
-                <span className="text-primary">TypeScript</span> juntamente ao{" "}
-                <span className="text-primary">React</span>, assim utilizo
-                frequentemente várias bibliotecas para facilitar a agilidade e
-                manter{" "}
+                Sou{" "}
                 <span className="text-primary">
-                    altos padrões de qualidade em meu código
-                </span>
-                .
+                    fanático pela criação de interfaces
+                </span>{" "}
+                — a web é um meio infinito de oportunidades e criatividade da
+                qual se pode aproveitar.
             </m.p>
             <m.p className="text-md text-neutral-400" variants={animation}>
-                Possuo{" "}
-                <span className="text-primary">+2 anos de experiência</span> em
-                desenvolvimento web e estou sempre{" "}
-                <span className="text-primary">em busca de desafios</span> e{" "}
-                <span className="text-primary">oportunidades</span> para crescer
+                Estou sempre{" "}
+                <span className="text-primary">em busca de conhecimento</span>{" "}
+                por meio de projetos novos, desafios e assim crescer
                 profissionalmente.
+            </m.p>
+            <m.p className="text-md text-neutral-400" variants={animation}>
+                <span className="text-primary">Interfaces minimalistas</span>,
+                dark mode e projetos paralelos me encantam. Desfrutar de músicas
+                é uma <span className="text-primary">terapia para mim</span>.
             </m.p>
         </m.div>
     );

@@ -21,16 +21,15 @@ export default function About({ title }) {
                 <AnimateEnter className="w-full m-auto py-8">
                     <div className="mb-8">
                         <h1 className="text-4xl font-extrabold">
-                            Sobre mim. Meu conhecimento.
+                            Quem sou & minha jornada pessoal.
                         </h1>
                     </div>
-                    <div className="flex sm:flex-col lg:flex-row justify-between gap-12">
-                        <figure className="w-full">
+                    <div className="flex sm:flex-col lg:flex-row justify-between gap-16">
+                        <figure>
                             <img
                                 src={author}
-                                width={350}
                                 loading="lazy"
-                                className="rounded-lg"
+                                className="rounded-lg w-[350px] lg:w-[700px]"
                                 alt="Gustavo"
                             />
                         </figure>
