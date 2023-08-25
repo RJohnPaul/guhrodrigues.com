@@ -1,10 +1,12 @@
 import { useContext } from "react";
 
-import { NavLink } from "react-router-dom";
-
 import AppContext from "@/contexts/AppContext";
 
-import Socials from "@/components/utils/Socials";
+import { NavLink } from "react-router-dom";
+
+import { navLinks } from "@/data/header";
+
+import NavSocials from "@/components/utils/NavSocials";
 
 export default function LinksMenuNav() {
     const { showMenu, setShowMenu } = useContext(AppContext);
@@ -20,64 +22,30 @@ export default function LinksMenuNav() {
                 showMenu
                     ? "flex w-full left-0 z-[-1] bg-background"
                     : "-left-full"
-            } h-screen md:h-auto sm:fixed md:static flex sm:flex-col md:flex-row md:items-center gap-4 md:gap-8 top-[70px] md:top-0 p-6 md:p-0 duration-300`}
+            } h-screen md:h-auto sm:fixed md:static flex sm:flex-col md:flex-row md:items-center gap-4 md:gap-1 top-[70px] md:top-0 p-6 md:p-0 duration-300`}
         >
-            <li className="text-neutral-400 text-4xl md:text-base">
-                <NavLink
-                    to="/"
-                    onClick={handleCloseMenu}
-                    className={({ isActive }) =>
-                        isActive
-                            ? "relative md:pb-1.5 text-primary after:content-[''] md:after:w-5 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0"
-                            : "relative md:pb-1.5 after:content-[''] after:w-0 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 after:duration-300 md:hover:after:w-5"
-                    }
+            {navLinks.map(({ id, path, name }) => (
+                <li
+                    key={id}
+                    className="text-4xl font-semibold md:font-medium md:text-sm"
                 >
-                    Início
-                </NavLink>
-            </li>
-            <li className="text-neutral-400 text-4xl md:text-base">
-                <NavLink
-                    to="/about"
-                    onClick={handleCloseMenu}
-                    className={({ isActive }) =>
-                        isActive
-                            ? "relative md:pb-1.5 text-primary after:content-[''] md:after:w-5 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0"
-                            : "relative md:pb-1.5 after:content-[''] after:w-0 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 after:duration-300 md:hover:after:w-5"
-                    }
-                >
-                    Sobre
-                </NavLink>
-            </li>
-            <li className="text-neutral-400 text-4xl md:text-base">
-                <NavLink
-                    to="/projects"
-                    onClick={handleCloseMenu}
-                    className={({ isActive }) =>
-                        isActive
-                            ? "relative md:pb-1.5 text-primary after:content-[''] md:after:w-5 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0"
-                            : "relative md:pb-1.5 after:content-[''] after:w-0 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 after:duration-300 md:hover:after:w-5"
-                    }
-                >
-                    Projetos
-                </NavLink>
-            </li>
-            <li className="md:hidden text-neutral-400 text-4xl md:text-base">
-                <NavLink
-                    to="/contact"
-                    onClick={handleCloseMenu}
-                    className={({ isActive }) =>
-                        isActive
-                            ? "relative md:pb-1.5 text-primary after:content-[''] md:after:w-5 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0"
-                            : "relative md:pb-1.5 after:content-[''] after:w-0 after:h-[1px] after:block after:bg-primary after:left-[40%] after:-translate-x-[30%] after:absolute after:bottom-0 after:duration-300 md:hover:after:w-5"
-                    }
-                >
-                    Contato
-                </NavLink>
-            </li>
+                    <NavLink
+                        to={path}
+                        onClick={handleCloseMenu}
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-primary md:bg-neutral-800 md:py-2.5 md:px-3 md:rounded-lg"
+                                : "text-neutral-400 md:duration-500 md:text-primary md:py-2.5 md:px-3 md:rounded-lg md:hover:bg-neutral-900"
+                        }
+                    >
+                        {name}
+                    </NavLink>
+                </li>
+            ))}
 
             <span className="block md:hidden h-0.5 w-full bg-neutral-800 my-4" />
 
-            <Socials />
+            <NavSocials />
         </ul>
     );
 }

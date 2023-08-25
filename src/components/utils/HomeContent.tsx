@@ -41,7 +41,7 @@ export default function HomeContent() {
                 variants={animation}
             >
                 <Link to="/projects">
-                    <Button ghost className="rounded-xl group gap-1.5">
+                    <Button ghost className="rounded-lg group gap-1.5">
                         Veja meus projetos
                         <MoveRight
                             className="group-hover:translate-x-0.5 duration-300 transition-transform"

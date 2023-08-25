@@ -1,14 +1,18 @@
 export interface ContextProps {
     showMenu: boolean;
     setShowMenu: (newState: boolean) => void;
-    pageScrolled: boolean;
-    setPageScrolled: (newState: boolean) => void;
     name: string;
     setName: React.Dispatch<React.SetStateAction<string>>;
     email: string;
     setEmail: React.Dispatch<React.SetStateAction<string>>;
     message: string;
     setMessage: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export interface NavLinksProps {
+    id: number;
+    path: string;
+    name: string;
 }
 
 export interface ProjectsProps {

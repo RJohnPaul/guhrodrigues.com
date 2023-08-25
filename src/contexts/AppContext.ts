@@ -5,8 +5,6 @@ import { ContextProps } from "@/types";
 const initialValues = {
     showMenu: false,
     setShowMenu: () => undefined,
-    pageScrolled: false,
-    setPageScrolled: () => undefined,
     name: "",
     setName: () => undefined,
     email: "",

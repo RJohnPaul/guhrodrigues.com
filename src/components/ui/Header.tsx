@@ -1,41 +1,37 @@
-import { useContext, useEffect } from "react";
-import AppContext from "@/contexts/AppContext";
+import { useState, useEffect } from "react";
 
 import LinksMenuNav from "./LinksMenuNav.tsx";
 import MobileButton from "./MobileButton.tsx";
-import ContactButton from "./ContactButton.tsx";
 
 import logo from "@/assets/images/logo.svg";
 
 export default function Header() {
-    const { pageScrolled, setPageScrolled } = useContext(AppContext);
+    const [position, setPosition] = useState(window.scrollY);
+    const [visible, setVisible] = useState(true);
 
     useEffect(() => {
-        const handlePageScrolled = () => {
-            if (window.scrollY > 20) {
-                setPageScrolled(true);
-            } else {
-                setPageScrolled(false);
-            }
+        const handleScroll = () => {
+            let scrolling = window.scrollY;
+
+            setVisible(position > scrolling);
+            setPosition(scrolling);
         };
 
-        window.addEventListener("scroll", handlePageScrolled);
-    }, []);
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [position]);
 
     return (
         <header
-            className={`flex w-full h-[70px] z-50 fixed bg-background md:border-b ${
-                pageScrolled
-                    ? "md:border-neutral-800 md:bg-background/60 md:backdrop-blur-[5px]"
-                    : "border-transparent"
-            }`}
+            className={`flex w-full h-[80px] z-50 fixed bg-background ${
+                visible ? "md:top-0" : "md:-top-20"
+            } top-0 duration-500`}
         >
             <nav className="max-w-5xl w-full mx-auto px-6 justify-between flex items-center">
                 <img src={logo} width={25} loading="lazy" alt="Logo" />
 
                 <LinksMenuNav />
-
-                <ContactButton />
 
                 <MobileButton />
             </nav>
