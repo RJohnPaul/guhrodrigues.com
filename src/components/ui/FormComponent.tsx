@@ -66,11 +66,11 @@ export default function FormComponent() {
                 >
                     <Form.Field name="text">
                         <div className="flex items-center justify-between">
-                            <Form.Label className="text-sm font-medium py-2 text-primary">
+                            <Form.Label className="text-sm font-medium py-2 text-neutral-400">
                                 Nome
                             </Form.Label>
                             <Form.Message
-                                className="text-sm font-medium text-red-500 opacity-80"
+                                className="text-xs font-medium text-red-500"
                                 match="valueMissing"
                             >
                                 Insira um nome
@@ -78,7 +78,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="w-full p-2.5 text-sm text-primary bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-primary duration-300"
+                                className="w-full p-2.5 text-sm text-neutral-400 bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-600 duration-300"
                                 type="text"
                                 autoComplete="off"
                                 required
@@ -89,19 +89,19 @@ export default function FormComponent() {
                     </Form.Field>
                     <Form.Field name="question">
                         <div className="flex items-center justify-between">
-                            <Form.Label className="text-sm font-medium py-2 text-primary">
+                            <Form.Label className="text-sm font-medium py-2 text-neutral-400">
                                 Email
                             </Form.Label>
                             <Form.Message
-                                className="text-sm font-medium text-red-500 opacity-80"
+                                className="text-xs font-medium text-red-500"
                                 match="valueMissing"
                             >
-                                Insira um Email
+                                Insira um email
                             </Form.Message>
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="w-full p-2.5 text-sm text-primary bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-primary duration-300"
+                                className="w-full p-2.5 text-sm text-neutral-400 bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-600 duration-300"
                                 type="email"
                                 autoComplete="off"
                                 required
@@ -112,11 +112,11 @@ export default function FormComponent() {
                     </Form.Field>
                     <Form.Field name="question">
                         <div className="flex items-center justify-between">
-                            <Form.Label className="text-sm font-medium py-2 text-primary">
+                            <Form.Label className="text-sm font-medium py-2 text-neutral-400">
                                 Mensagem
                             </Form.Label>
                             <Form.Message
-                                className="text-sm font-medium text-red-500 opacity-80"
+                                className="text-xs font-medium text-red-500"
                                 match="valueMissing"
                             >
                                 Insira uma mensagem
@@ -124,7 +124,7 @@ export default function FormComponent() {
                         </div>
                         <Form.Control asChild>
                             <textarea
-                                className="w-full p-2.5 text-sm text-primary bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-primary duration-300"
+                                className="w-full p-2.5 text-sm text-neutral-400 bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-600 duration-300"
                                 autoComplete="off"
                                 required
                                 value={message}
