@@ -32,7 +32,7 @@ export default function Biography() {
                     fanático pela criação de interfaces
                 </span>{" "}
                 — a web é um meio infinito de oportunidades e criatividade da
-                qual se pode aproveitar.
+                qual se pode mergulhar.
             </m.p>
             <m.p className="text-md text-neutral-400" variants={animation}>
                 Estou sempre{" "}
