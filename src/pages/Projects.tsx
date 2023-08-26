@@ -12,7 +12,7 @@ export default function Projects({ title }) {
     }, [title]);
 
     return (
-        <article className="w-full py-24">
+        <article className="w-full py-20">
             <AnimateEnter className="py-9 mx-auto flex flex-col justify-center w-full">
                 <div className="mb-8 space-y-4">
                     <h1 className="text-4xl font-extrabold">

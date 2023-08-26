@@ -14,7 +14,7 @@ export default function Contact({ title }) {
 
     return (
         <>
-            <article className="w-full min-h-[calc(100vh_-_85px)] flex items-center py-24">
+            <article className="w-full min-h-[calc(100vh_-_85px)] flex items-center py-20">
                 <AnimateEnter className="gap-8 py-9">
                     <div className="mb-8 space-y-4">
                         <h1 className="text-4xl font-extrabold">

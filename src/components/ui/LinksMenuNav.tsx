@@ -27,7 +27,7 @@ export default function LinksMenuNav() {
             {navLinks.map(({ id, path, name }) => (
                 <li
                     key={id}
-                    className="text-4xl font-semibold md:font-normal md:text-sm"
+                    className="text-4xl font-semibold md:font-medium md:text-sm"
                 >
                     <NavLink
                         to={path}

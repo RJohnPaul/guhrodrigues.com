@@ -39,7 +39,7 @@ export default function ProjectItem({
                     <h3 className="font-bold text-xl text-primary py-2">
                         {title}
                     </h3>
-                    <span className="max-w-full text-[13.5px] text-neutral-400 font-medium py-2">
+                    <span className="max-w-full text-sm text-neutral-400 font-medium py-2">
                         {description}
                     </span>
                 </div>
