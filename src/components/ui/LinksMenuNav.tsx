@@ -27,15 +27,15 @@ export default function LinksMenuNav() {
             {navLinks.map(({ id, path, name }) => (
                 <li
                     key={id}
-                    className="text-4xl font-semibold md:font-medium md:text-sm"
+                    className="text-4xl font-semibold md:font-normal md:text-sm"
                 >
                     <NavLink
                         to={path}
                         onClick={handleCloseMenu}
                         className={({ isActive }) =>
                             isActive
-                                ? "text-primary md:bg-neutral-800 md:py-2.5 md:px-3 md:rounded-lg"
-                                : "text-neutral-400 md:duration-500 md:text-primary md:py-2.5 md:px-3 md:rounded-lg md:hover:bg-neutral-900"
+                                ? "text-primary md:bg-neutral-800 md:py-2.5 md:px-4 md:rounded-md"
+                                : "text-neutral-400 md:duration-500 md:text-primary md:py-2.5 md:px-4 md:rounded-md md:hover:bg-neutral-900"
                         }
                     >
                         {name}
