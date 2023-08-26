@@ -34,7 +34,7 @@ export default function ProjectItem({
                     alt={title}
                 />
             </figure>
-            <article className="flex flex-col sm:text-center sm:items-center lg:text-start lg:items-start justify-center w-full py-5 px-10">
+            <div className="flex flex-col sm:text-center sm:items-center lg:text-start lg:items-start justify-center w-full py-5 px-10">
                 <div className="flex flex-col justify-center">
                     <h3 className="font-bold text-xl text-primary py-2">
                         {title}
@@ -68,7 +68,7 @@ export default function ProjectItem({
                         </Button>
                     </a>
                 </div>
-            </article>
+            </div>
         </m.section>
     );
 }
