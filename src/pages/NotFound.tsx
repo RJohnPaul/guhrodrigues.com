@@ -13,7 +13,7 @@ export default function NotFound({ title }) {
     }, [title]);
 
     return (
-        <main className="w-full relative h-[90vh] flex text-center items-center justify-center">
+        <article className="w-full relative h-[90vh] flex text-center items-center justify-center">
             <section className="flex flex-col items-center justify-center p-8">
                 <div className="flex flex-col gap-4 text-center">
                     <p className="text-primary md:text-[20px] font-medium mb-1">
@@ -32,6 +32,6 @@ export default function NotFound({ title }) {
                     </div>
                 </div>
             </section>
-        </main>
+        </article>
     );
 }

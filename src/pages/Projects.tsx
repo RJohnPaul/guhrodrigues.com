@@ -12,7 +12,7 @@ export default function Projects({ title }) {
     }, [title]);
 
     return (
-        <main className="w-full min-h-screen py-16">
+        <article className="w-full py-24">
             <AnimateEnter className="py-9 mx-auto flex flex-col justify-center w-full">
                 <div className="mb-8 space-y-4">
                     <h1 className="text-4xl font-extrabold">
@@ -31,6 +31,6 @@ export default function Projects({ title }) {
 
                 <ProjectsContent projects={projects} />
             </AnimateEnter>
-        </main>
+        </article>
     );
 }

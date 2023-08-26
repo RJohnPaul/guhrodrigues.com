@@ -17,7 +17,7 @@ export default function About({ title }) {
 
     return (
         <>
-            <main className="w-full sm:h-full lg:min-h-[calc(100vh_-_85px)] flex items-center py-16">
+            <article className="w-full sm:h-full lg:min-h-[calc(100vh_-_85px)] flex items-center py-24">
                 <AnimateEnter className="w-full m-auto py-8">
                     <div className="mb-8">
                         <h1 className="text-4xl font-extrabold">
@@ -40,7 +40,7 @@ export default function About({ title }) {
                         </div>
                     </div>
                 </AnimateEnter>
-            </main>
+            </article>
 
             <Toast />
         </>

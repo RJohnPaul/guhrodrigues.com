@@ -13,6 +13,7 @@ import typescript from "@/assets/images/skills/typescript.svg";
 import javascript from "@/assets/images/skills/javascript.svg";
 import styledComponents from "@/assets/images/skills/styledcomponents.svg";
 import tailwind from "@/assets/images/skills/tailwindcss.svg";
+import framer from "@/assets/images/skills/framer.svg";
 
 import { ProjectsProps } from "@/types";
 
@@ -42,8 +43,8 @@ export const projects: ProjectsProps[] = [
         src: portfolio,
         title: "guhrodrigues",
         description:
-            "Portfólio pessoal construído com o intuito de mostrar meus projetos e contar um pouco sobre mim.",
-        techs: [react, typescript, tailwind],
+            "Canto pessoal da internet desenvolvido para mostrar um pouco de mim e dos meus projetos.",
+        techs: [react, typescript, tailwind, framer],
         code: "https://github.com/guhrodriguess/guhrodrigues",
         visit: "https://guhrodrigues.vercel.app",
     },
