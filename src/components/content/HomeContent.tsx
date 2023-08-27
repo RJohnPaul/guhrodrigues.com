@@ -1,6 +1,6 @@
 import { m } from "framer-motion";
 
-import Button from "../utils/Button";
+import Button from "@/components/utils/Button";
 
 import { Link } from "react-router-dom";
 

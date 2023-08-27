@@ -1,4 +1,4 @@
-import FormComponent from "../ui/FormComponent";
+import FormComponent from "@/components/ui/FormComponent";
 
 export default function ContactContent() {
     return (
