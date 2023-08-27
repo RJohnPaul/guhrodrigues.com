@@ -5,7 +5,10 @@ import Button from "@/components/utils/Button";
 import { ChevronRight } from "lucide-react";
 
 const animation = {
-    hide: { y: -8, opacity: 0 },
+    hide: {
+        y: -8,
+        opacity: 0,
+    },
     show: {
         y: 0,
         opacity: 1,

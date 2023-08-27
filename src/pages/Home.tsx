@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import AnimateEnter from "@/components/utils/AnimateEnter";
-import HomeContent from "@/components/utils/HomeContent";
+import HomeContent from "@/components/content/HomeContent";
 
 export default function Home({ title }) {
     useEffect(() => {

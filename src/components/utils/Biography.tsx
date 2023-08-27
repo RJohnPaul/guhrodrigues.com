@@ -1,7 +1,10 @@
 import { m } from "framer-motion";
 
 const animation = {
-    hide: { x: -8, opacity: 0 },
+    hide: {
+        x: -8,
+        opacity: 0,
+    },
     show: {
         x: 0,
         opacity: 1,

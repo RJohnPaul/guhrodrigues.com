@@ -1,9 +1,7 @@
 import { useEffect } from "react";
 
-import { projects } from "@/data/projects";
-
 import AnimateEnter from "@/components/utils/AnimateEnter";
-import ProjectsContent from "@/components/utils/ProjectsContent";
+import ProjectsContent from "@/components/content/ProjectsContent";
 
 export default function Projects({ title }) {
     useEffect(() => {
@@ -14,22 +12,7 @@ export default function Projects({ title }) {
     return (
         <article className="w-full py-20">
             <AnimateEnter className="py-9 mx-auto flex flex-col justify-center w-full">
-                <div className="mb-8 space-y-4">
-                    <h1 className="text-4xl font-extrabold">
-                        Trabalho, hobby & open source.
-                    </h1>
-                    <p className="text-neutral-400">
-                        Sou fanático em criar{" "}
-                        <span className="text-primary">projetos pessoais</span>.
-                        Nesta página você pode navegar para{" "}
-                        <span className="text-primary">
-                            {projects.length} sites
-                        </span>{" "}
-                        na qual desenvolvi.
-                    </p>
-                </div>
-
-                <ProjectsContent projects={projects} />
+                <ProjectsContent />
             </AnimateEnter>
         </article>
     );

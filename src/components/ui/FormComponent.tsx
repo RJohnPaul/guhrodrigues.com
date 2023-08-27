@@ -16,7 +16,10 @@ const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
 const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
 const animation = {
-    hide: { y: 8, opacity: 0 },
+    hide: {
+        y: 8,
+        opacity: 0,
+    },
     show: {
         y: 0,
         opacity: 1,
