@@ -17,7 +17,7 @@ export const socials: SocialsProps[] = [
     },
     {
         id: 3,
-        href: "https://www.instagram.com/gustavinrm",
+        href: "https://www.instagram.com/guhrdss",
         name: "Instagram",
         icon: <Instagram size={18} />,
     },
