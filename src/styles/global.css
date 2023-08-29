@@ -3,47 +3,39 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply scroll-smooth;
-    }
+  html {
+    @apply scroll-smooth;
+  }
 
-    ::-webkit-scrollbar {
-        @apply w-0.5;
-    }
+  ::-webkit-scrollbar {
+    @apply w-0.5;
+  }
 
-    ::-webkit-scrollbar-thumb {
-        @apply bg-neutral-500 rounded-2xl;
-    }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-500 rounded-2xl;
+  }
 
-    ::selection {
-        @apply text-emerald-300 bg-emerald-300/10;
-    }
+  ::selection {
+    @apply text-emerald-300 bg-emerald-300/10;
+  }
 
-    body {
-        @apply font-poppins bg-background outline-none md:cursor-none;
-    }
+  body {
+    @apply font-poppins bg-background outline-none;
+  }
 
-    h1 {
-        @apply text-primary;
-    }
+  h1 {
+    @apply text-primary;
+  }
 
-    p {
-        @apply font-medium;
-    }
+  p {
+    @apply font-medium;
+  }
 
-    :is(header, nav, img, a, button, input, label, textarea) {
-        @apply select-none md:cursor-none;
-    }
+  :is(header, nav, img, a, button, input, label, textarea) {
+    @apply select-none;
+  }
 
-    li {
-        @apply list-none;
-    }
-
-    .cursor {
-        @apply fixed border-2 border-neutral-700 rounded-[50%] mix-blend-screen pointer-events-none -translate-x-[50%] -translate-y-[50%] z-[999999] backdrop-blur-[1px] bg-background cursor-none ease-in-out transition-multiple;
-    }
-
-    .cursor.pointer {
-        @apply hidden opacity-0 ease-in-out transition-multiple;
-    }
+  li {
+    @apply list-none;
+  }
 }

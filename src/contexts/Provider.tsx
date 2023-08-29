@@ -1,23 +1,33 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import AppContext from "./AppContext";
 
 export default function Provider({ children }) {
-    const [showMenu, setShowMenu] = useState(false);
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+  const [showMenu, setShowMenu] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [position, setPosition] = useState(window.scrollY);
+  const [visible, setVisible] = useState(true);
 
-    const value = {
-        showMenu,
-        setShowMenu,
-        name,
-        setName,
-        email,
-        setEmail,
-        message,
-        setMessage,
-    };
+  const value = {
+    showMenu,
+    setShowMenu,
+    name,
+    setName,
+    email,
+    setEmail,
+    message,
+    setMessage,
+    position,
+    setPosition,
+    visible,
+    setVisible,
+  };
 
-    return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+}
+
+export function useHooks() {
+	return useContext(AppContext)
 }
