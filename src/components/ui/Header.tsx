@@ -6,7 +6,7 @@ import MobileButton from "./MobileButton";
 import logo from "@/assets/images/logo.svg";
 
 export default function Header() {
-	const { visible } = useHandleScroll();
+  const { visible } = useHandleScroll();
 
   return (
     <header
