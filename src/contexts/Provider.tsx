@@ -29,5 +29,5 @@ export default function Provider({ children }) {
 }
 
 export function useHooks() {
-	return useContext(AppContext)
+  return useContext(AppContext);
 }
