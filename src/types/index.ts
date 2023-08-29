@@ -7,10 +7,10 @@ export interface ContextProps {
   setEmail: React.Dispatch<React.SetStateAction<string>>;
   message: string;
   setMessage: React.Dispatch<React.SetStateAction<string>>;
-	position: number;
-	setPosition: React.Dispatch<React.SetStateAction<number>>;
-	visible: boolean;
-	setVisible: React.Dispatch<React.SetStateAction<boolean>>
+  position: number;
+  setPosition: React.Dispatch<React.SetStateAction<number>>;
+  visible: boolean;
+  setVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface NavLinksProps {
