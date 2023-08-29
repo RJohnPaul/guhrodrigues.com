@@ -36,7 +36,7 @@ export default function HomeContent() {
           Desenvolvedor Web & Estudante de T.I
         </p>
         <p className="sm:text-sm md:text-md text-neutral-400">
-          Fanático pela criação de interfaces.
+          Fanático pela criação de interfaces
         </p>
       </m.div>
       <m.div

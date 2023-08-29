@@ -5,7 +5,7 @@ export default function ContactContent() {
     <>
       <div className="mb-8 space-y-4">
         <h1 className="text-4xl font-bold">
-          Mande um email. Como nos velhos tempos.
+          Mande um email, como nos velhos tempos
         </h1>
         <p className="text-neutral-300">
           Caso se interessou pelo meu trabalho ou queira{" "}

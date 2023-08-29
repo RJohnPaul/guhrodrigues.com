@@ -31,7 +31,7 @@ export default function LinksMenuNav() {
             className={({ isActive }) =>
               isActive
                 ? "text-primary md:bg-neutral-800 md:py-2 md:px-3 md:rounded-md"
-                : "text-neutral-400 md:duration-500 md:py-2 md:px-3 md:rounded-md md:hover:bg-neutral-900"
+                : "text-neutral-400 hover:text-primary md:duration-500 md:py-2 md:px-3 md:rounded-md md:hover:bg-neutral-900"
             }
           >
             {name}
