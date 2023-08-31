@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.tsx"],
+  content: ["./src/**/*.tsx"],
   theme: {
     extend: {
       colors: {
@@ -10,9 +10,6 @@ module.exports = {
         foreground: colors.neutral[300],
         background: "#08070B",
         input: "#131415",
-      },
-      transitionProperty: {
-        multiple: "width, height, opacity",
       },
     },
     screens: {
