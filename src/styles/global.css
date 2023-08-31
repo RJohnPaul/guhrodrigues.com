@@ -27,10 +27,6 @@
     @apply text-primary;
   }
 
-  p {
-    @apply font-medium;
-  }
-
   :is(header, nav, img, a, button, input, label, textarea) {
     @apply select-none;
   }
