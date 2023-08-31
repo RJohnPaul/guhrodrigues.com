@@ -5,7 +5,7 @@ import "@/styles/global.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Provider
-import Provider from "@/contexts/Provider";
+import Provider from "@/hooks/Provider";
 
 // Components
 import Header from "@/components/ui/Header";

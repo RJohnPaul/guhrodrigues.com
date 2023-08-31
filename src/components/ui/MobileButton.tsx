@@ -1,5 +1,5 @@
 import { Equal, X } from "lucide-react";
-import { useHooks } from "@/contexts/Provider";
+import { useHooks } from "@/hooks/Provider";
 
 export default function MobileButton() {
   const { showMenu, setShowMenu } = useHooks();

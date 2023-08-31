@@ -1,4 +1,4 @@
-import { useHooks } from "@/contexts/Provider";
+import { useHooks } from "@/hooks/Provider";
 import { useEffect } from "react";
 
 export function useHandleScroll() {

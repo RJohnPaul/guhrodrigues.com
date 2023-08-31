@@ -1,6 +1,6 @@
 import { m } from "framer-motion";
 
-import { useHooks } from "@/contexts/Provider";
+import { useHooks } from "@/hooks/Provider";
 
 import { successAlert } from "@/components/utils/Toast";
 
@@ -61,17 +61,14 @@ export default function FormComponent() {
       className="max-w-md w-full"
     >
       <Form.Root onSubmit={sendEmail}>
-        <m.div
-          className="flex flex-col w-full mx-auto gap-4"
-          variants={animation}
-        >
+        <m.div className="flex flex-col mx-auto gap-4" variants={animation}>
           <Form.Field name="text">
             <div className="flex items-center justify-between">
               <Form.Label className="text-sm font-medium py-2 text-neutral-400">
                 Nome
               </Form.Label>
               <Form.Message
-                className="text-xs font-medium text-red-500"
+                className="text-xs font-medium text-red-500/70"
                 match="valueMissing"
               >
                 Insira um nome
@@ -79,12 +76,13 @@ export default function FormComponent() {
             </div>
             <Form.Control asChild>
               <input
-                className="w-full p-2.5 text-sm text-neutral-400 bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-600 duration-300"
+                className="w-full p-2 text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
                 type="text"
                 autoComplete="off"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                placeholder="Jordan Walke"
               />
             </Form.Control>
           </Form.Field>
@@ -94,7 +92,7 @@ export default function FormComponent() {
                 Email
               </Form.Label>
               <Form.Message
-                className="text-xs font-medium text-red-500"
+                className="text-xs font-medium text-red-500/70"
                 match="valueMissing"
               >
                 Insira um email
@@ -102,12 +100,13 @@ export default function FormComponent() {
             </div>
             <Form.Control asChild>
               <input
-                className="w-full p-2.5 text-sm text-neutral-400 bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-600 duration-300"
+                className="w-full p-2 text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
                 type="email"
                 autoComplete="off"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                placeholder="jordan@walke.com"
               />
             </Form.Control>
           </Form.Field>
@@ -117,7 +116,7 @@ export default function FormComponent() {
                 Mensagem
               </Form.Label>
               <Form.Message
-                className="text-xs font-medium text-red-500"
+                className="text-xs font-medium text-red-500/70"
                 match="valueMissing"
               >
                 Insira uma mensagem
@@ -125,16 +124,17 @@ export default function FormComponent() {
             </div>
             <Form.Control asChild>
               <textarea
-                className="w-full p-2.5 text-sm text-neutral-400 bg-neutral-950 border border-neutral-600 rounded-xl outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-600 duration-300"
+                className="w-full p-2 h-20 text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
                 autoComplete="off"
                 required
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                placeholder="Como posso ajudá-lo?"
               />
             </Form.Control>
           </Form.Field>
           <Form.Submit asChild>
-            <Button type="submit" className="rounded-xl">
+            <Button type="submit" className="rounded-lg">
               Enviar
             </Button>
           </Form.Submit>

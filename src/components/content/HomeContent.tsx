@@ -32,10 +32,10 @@ export default function HomeContent() {
         className="flex flex-col justify-center gap-2"
         variants={animation}
       >
-        <p className="sm:text-sm md:text-md text-primary">
+        <p className="sm:text-sm md:text-md text-primary font-medium">
           Desenvolvedor Web & Estudante de T.I
         </p>
-        <p className="sm:text-sm md:text-md text-neutral-400">
+        <p className="sm:text-sm md:text-md text-neutral-400 font-medium">
           Fanático pela criação de interfaces
         </p>
       </m.div>

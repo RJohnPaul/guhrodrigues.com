@@ -9,30 +9,24 @@ export default function ProjectsContent() {
     <>
       <div className="mb-8 space-y-4">
         <h1 className="text-4xl font-bold">Trabalho, hobby & open source</h1>
-        <p className="text-neutral-300">
+        <p className="text-foreground">
           Sou fanático em criar{" "}
-          <span className="text-primary">projetos pessoais</span>. Nesta página
-          você pode navegar para{" "}
-          <span className="text-primary">{projects.length} sites</span> na qual
-          desenvolvi.
+          <span className="text-primary font-medium">projetos pessoais</span>.
+          Nesta página você pode navegar para{" "}
+          <span className="text-primary font-medium">
+            {projects.length} sites
+          </span>{" "}
+          na qual desenvolvi.
         </p>
       </div>
       <m.div
         initial="hide"
         animate="show"
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
-        className="grid grid-cols-1 gap-8"
+        className="grid md:grid-cols-2 gap-8"
       >
-        {projects.map(({ id, src, title, description, techs, code, visit }) => (
-          <ProjectItem
-            key={id}
-            src={src}
-            title={title}
-            description={description}
-            techs={techs}
-            code={code}
-            visit={visit}
-          />
+        {projects.map((props) => (
+          <ProjectItem key={props.id} {...props} />
         ))}
       </m.div>
     </>

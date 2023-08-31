@@ -1,4 +1,4 @@
-import { useHooks } from "@/contexts/Provider";
+import { useHooks } from "@/hooks/Provider";
 
 import { NavLink } from "react-router-dom";
 

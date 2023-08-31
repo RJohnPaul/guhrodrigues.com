@@ -26,10 +26,10 @@ export default function ProjectItem({
   return (
     <m.section
       variants={animation}
-      className="relative flex sm:flex-col lg:flex-row border border-neutral-800 rounded-xl h-full overflow-hidden"
+      className="relative flex flex-col border border-neutral-800 rounded-xl h-full overflow-hidden"
     >
-      <div className="absolute top-0 right-5 w-80 h-[1px] bg-gradient-to-l from-transparent via-primary/50 via-10% to-transparent" />
-      <figure className="overflow-hidden sm:rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl">
+      <div className="absolute top-0 right-5 w-80 h-px bg-gradient-to-l from-transparent via-primary/50 via-10% to-transparent" />
+      <figure className="overflow-hidden rounded-t-xl">
         <img
           src={src}
           loading="lazy"
@@ -37,10 +37,10 @@ export default function ProjectItem({
           alt={title}
         />
       </figure>
-      <div className="flex flex-col sm:text-center sm:items-center lg:text-start lg:items-start justify-center w-full py-5 px-10">
-        <div className="flex flex-col justify-center">
-          <h3 className="font-bold text-xl text-primary py-2">{title}</h3>
-          <span className="max-w-full text-sm text-neutral-300 font-medium py-2">
+      <div className="flex flex-col items-center text-center md:items-start md:text-start w-full py-7 px-10 space-y-2">
+        <div className="flex flex-col justify-center space-y-2">
+          <h3 className="font-bold text-xl text-primary">{title}</h3>
+          <span className="max-w-full text-sm text-foreground">
             {description}
           </span>
         </div>
@@ -55,7 +55,7 @@ export default function ProjectItem({
             />
           ))}
         </div>
-        <div className="flex flex-wrap justify-center gap-2 py-2">
+        <div className="flex flex-wrap justify-center gap-2">
           <a href={visit} target="_blank">
             <Button>
               Visitar
