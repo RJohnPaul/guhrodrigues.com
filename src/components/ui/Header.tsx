@@ -4,6 +4,9 @@ import LinksMenuNav from "./LinksMenuNav";
 import MobileButton from "./MobileButton";
 
 import logo from "@/assets/images/logo.svg";
+import { Link } from "react-router-dom";
+
+import MenuBar from "./MenuBar";
 
 export default function Header() {
   const { visible } = useHandleScroll();
@@ -15,12 +18,16 @@ export default function Header() {
       } top-0 duration-500`}
     >
       <nav className="max-w-5xl w-full mx-auto px-6 justify-between flex items-center">
-        <img src={logo} width={25} loading="lazy" alt="Logo" />
+        <Link to="/">
+          <img src={logo} width={25} alt="Logo" />
+        </Link>
 
         <LinksMenuNav />
 
         <MobileButton />
       </nav>
+
+      <MenuBar />
     </header>
   );
 }
