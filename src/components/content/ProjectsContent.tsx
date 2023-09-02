@@ -8,7 +8,7 @@ export default function ProjectsContent() {
   return (
     <>
       <div className="mb-8 space-y-4">
-        <h1 className="text-4xl font-bold">Trabalho, hobby & open source</h1>
+        <h1 className="text-4xl font-title">Trabalho, hobby & open source</h1>
         <p className="text-foreground">
           Sou fanático em criar{" "}
           <span className="text-primary font-medium">projetos pessoais</span>.

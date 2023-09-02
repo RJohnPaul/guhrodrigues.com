@@ -25,7 +25,7 @@ export default function HomeContent() {
       transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       className="flex flex-col gap-4 text-center"
     >
-      <m.h1 className="text-5xl py-1 font-bold" variants={animation}>
+      <m.h1 className="text-5xl py-1 font-title" variants={animation}>
         Gustavo Rodrigues
       </m.h1>
       <m.div
@@ -39,10 +39,7 @@ export default function HomeContent() {
           Fanático pela criação de interfaces
         </p>
       </m.div>
-      <m.div
-        className="flex items-center gap-4 justify-center"
-        variants={animation}
-      >
+      <m.div className="flex items-center justify-center" variants={animation}>
         <Link to="/projects">
           <Button ghost className="rounded-lg group gap-1.5">
             Veja meus projetos

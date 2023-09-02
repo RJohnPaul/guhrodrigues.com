@@ -4,7 +4,7 @@ export default function ContactContent() {
   return (
     <>
       <div className="mb-8 space-y-4">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-4xl font-title">
           Mande um email, como nos velhos tempos
         </h1>
         <p className="text-foreground">
