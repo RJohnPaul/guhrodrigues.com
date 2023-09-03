@@ -26,9 +26,11 @@ root.render(
     <AnimateEnter>
       <Provider>
         <Header />
+
         <Container>
           <AllRoutes />
         </Container>
+
         <Footer />
       </Provider>
     </AnimateEnter>
