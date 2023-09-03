@@ -30,22 +30,25 @@ export default function Biography() {
         .
       </m.p>
       <m.p className="text-md text-foreground font-normal" variants={animation}>
-        Gosto de criar experiências únicas e fluidas para o usuário. Atualmente
-        interessado em{" "}
-        <span className="text-primary font-medium">TypeScript e C</span>.
+        Sou{" "}
+        <span className="text-primary font-medium">
+          fanático pela criação de interfaces
+        </span>{" "}
+        que encantam e facilitam a vida das pessoas.
       </m.p>
       <m.p className="text-md text-foreground font-normal" variants={animation}>
-        Estou sempre{" "}
+        Minha jornada no mundo digital é uma busca constante pela fusão perfeita
+        entre{" "}
         <span className="text-primary font-medium">
-          em busca de conhecimento
-        </span>{" "}
-        por meio de projetos novos, desafios e assim crescer profissionalmente.
+          estética e funcionalidade
+        </span>
+        .
       </m.p>
       <m.p className="text-md text-foreground font-normal" variants={animation}>
         <span className="text-primary font-medium">
           Interfaces minimalistas
         </span>
-        , dark mode e projetos paralelos me encantam. Desfrutar de músicas é uma{" "}
+        , dark mode e a tecnologia me encantam. Desfrutar de músicas é uma{" "}
         <span className="text-primary font-medium">terapia para mim</span>.
       </m.p>
     </m.div>
