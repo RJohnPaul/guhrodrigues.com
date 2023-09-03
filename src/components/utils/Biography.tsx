@@ -30,12 +30,9 @@ export default function Biography() {
         .
       </m.p>
       <m.p className="text-md text-foreground font-normal" variants={animation}>
-        Sou{" "}
-        <span className="text-primary font-medium">
-          fanático pela criação de interfaces
-        </span>{" "}
-        — a web é um meio infinito de oportunidades e criatividade da qual se
-        pode mergulhar.
+        Sempre explorando maneiras de criar experiências únicas e fluidas.
+        Atualmente interessado em{" "}
+        <span className="text-primary font-medium">TypeScript e C</span>.
       </m.p>
       <m.p className="text-md text-foreground font-normal" variants={animation}>
         Estou sempre{" "}
