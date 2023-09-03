@@ -30,8 +30,8 @@ export default function Biography() {
         .
       </m.p>
       <m.p className="text-md text-foreground font-normal" variants={animation}>
-        Sempre explorando maneiras de criar experiências únicas e fluidas.
-        Atualmente interessado em{" "}
+        Gosto de criar experiências únicas e fluidas para o usuário. Atualmente
+        interessado em{" "}
         <span className="text-primary font-medium">TypeScript e C</span>.
       </m.p>
       <m.p className="text-md text-foreground font-normal" variants={animation}>
