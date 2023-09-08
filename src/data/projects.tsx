@@ -27,7 +27,7 @@ export const projects: ProjectsProps[] = [
     title: "ShareSpace",
     description:
       "Descubra e compartilhe prompts. Transforme suas ideias em obras-primas.",
-    techs: [nextjs, typescript, mongo, nextauth, shadcn],
+    techs: [nextjs, typescript, mongo, nextauth, tailwind, shadcn],
     code: "https://github.com/guhrodriguess/sharespace",
     visit: "https://sharespacelab.vercel.app",
   },
