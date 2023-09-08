@@ -1,12 +1,17 @@
+import sharespace from "@/assets/images/projects/sharespace.png";
 import swiftmart from "@/assets/images/projects/swiftmart.png";
 import moviecorn from "@/assets/images/projects/moviecorn.png";
 import crypto from "@/assets/images/projects/crypto.png";
 import weather from "@/assets/images/projects/weather.png";
-import toDo from "@/assets/images/projects/to-do.png";
+import todo from "@/assets/images/projects/todo.png";
 import musicplayer from "@/assets/images/projects/musicplayer.png";
 
 import html from "@/assets/images/skills/html.svg";
 import css from "@/assets/images/skills/css.svg";
+import nextjs from "@/assets/images/skills/nextjs.svg";
+import shadcn from "@/assets/images/skills/shadcn.svg";
+import mongo from "@/assets/images/skills/mongo.svg";
+import nextauth from "@/assets/images/skills/nextauth.svg";
 import react from "@/assets/images/skills/react.svg";
 import typescript from "@/assets/images/skills/typescript.svg";
 import javascript from "@/assets/images/skills/javascript.svg";
@@ -18,6 +23,16 @@ import { ProjectsProps } from "@/types";
 export const projects: ProjectsProps[] = [
   {
     id: 1,
+    src: sharespace,
+    title: "ShareSpace",
+    description:
+      "Descubra e compartilhe prompts. Transforme suas ideias em obras-primas.",
+    techs: [nextjs, typescript, mongo, nextauth, shadcn],
+    code: "https://github.com/guhrodriguess/sharespace",
+    visit: "https://sharespacelab.vercel.app",
+  },
+  {
+    id: 2,
     src: swiftmart,
     title: "SwiftMart",
     description:
@@ -27,7 +42,7 @@ export const projects: ProjectsProps[] = [
     visit: "https://swiftmartstore.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     src: moviecorn,
     title: "MovieCorn",
     description:
@@ -58,7 +73,7 @@ export const projects: ProjectsProps[] = [
   },
   {
     id: 6,
-    src: toDo,
+    src: todo,
     title: "Todo",
     description:
       "Projeto desenvolvido para criar e armazenar tarefas com o uso do localStorage.",
