@@ -9,6 +9,7 @@ export default function Provider({ children }) {
   const [message, setMessage] = useState("");
   const [position, setPosition] = useState(window.scrollY);
   const [visible, setVisible] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
 
   const value = {
     showMenu,
@@ -23,6 +24,8 @@ export default function Provider({ children }) {
     setPosition,
     visible,
     setVisible,
+    submitting,
+    setSubmitting,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

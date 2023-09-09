@@ -11,6 +11,8 @@ export interface ContextProps {
   setPosition: React.Dispatch<React.SetStateAction<number>>;
   visible: boolean;
   setVisible: React.Dispatch<React.SetStateAction<boolean>>;
+  submitting: boolean;
+  setSubmitting: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface NavLinksProps {

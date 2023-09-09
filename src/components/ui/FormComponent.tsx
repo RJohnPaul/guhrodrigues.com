@@ -9,6 +9,7 @@ import * as Form from "@radix-ui/react-form";
 import emailjs from "@emailjs/browser";
 
 import Button from "@/components/utils/Button";
+import { useState } from "react";
 
 const emailService = import.meta.env.VITE_EMAIL_SERVICE;
 const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
@@ -26,10 +27,20 @@ const animation = {
 };
 
 export default function FormComponent() {
-  const { name, setName, email, setEmail, message, setMessage } = useHooks();
+  const {
+    name,
+    setName,
+    email,
+    setEmail,
+    message,
+    setMessage,
+    submitting,
+    setSubmitting,
+  } = useHooks();
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitting(true);
 
     const templateParams = {
       from_name: name,
@@ -50,6 +61,7 @@ export default function FormComponent() {
         setName("");
         setEmail("");
         setMessage("");
+        setSubmitting(false);
       });
   };
 
@@ -134,8 +146,8 @@ export default function FormComponent() {
             </Form.Control>
           </Form.Field>
           <Form.Submit asChild>
-            <Button type="submit" className="rounded-lg">
-              Enviar
+            <Button type="submit" className="rounded-lg" disabled={submitting}>
+              {submitting ? <span>Enviar...</span> : <span>Enviar</span>}
             </Button>
           </Form.Submit>
         </m.div>

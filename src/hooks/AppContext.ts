@@ -15,6 +15,8 @@ const initialValues = {
   setPosition: () => undefined,
   visible: true,
   setVisible: () => undefined,
+  submitting: true,
+  setSubmitting: () => undefined,
 };
 
 const AppContext = createContext<ContextProps>(initialValues);
