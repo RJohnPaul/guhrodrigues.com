@@ -9,7 +9,6 @@ import * as Form from "@radix-ui/react-form";
 import emailjs from "@emailjs/browser";
 
 import Button from "@/components/utils/Button";
-import { useState } from "react";
 
 const emailService = import.meta.env.VITE_EMAIL_SERVICE;
 const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
