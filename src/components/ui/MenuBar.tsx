@@ -4,7 +4,7 @@ import { useHooks } from "@/hooks/Provider";
 
 import { navLinks } from "@/data/header";
 
-export default function MenuBar() {
+export function MenuBar() {
   const { showMenu, setShowMenu } = useHooks();
 
   const handleCloseMenu = () => {

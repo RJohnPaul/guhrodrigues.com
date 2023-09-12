@@ -6,11 +6,7 @@ type ButtonProps = ComponentProps<"button"> & {
   ghost?: boolean;
 };
 
-export default function Button({
-  ghost = false,
-  className,
-  ...props
-}: ButtonProps) {
+export function Button({ ghost = false, className, ...props }: ButtonProps) {
   return (
     <button
       data-ghost={ghost}

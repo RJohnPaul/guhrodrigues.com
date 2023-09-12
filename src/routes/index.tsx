@@ -1,10 +1,10 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import Home from "@/pages/Home";
-import About from "@/pages/About";
-import Projects from "@/pages/Projects";
-import Contact from "@/pages/Contact";
-import NotFound from "@/pages/NotFound";
+import { Home } from "@/pages/Home";
+import { About } from "@/pages/About";
+import { Projects } from "@/pages/Projects";
+import { Contact } from "@/pages/Contact";
+import { NotFound } from "@/pages/NotFound";
 
 export function AllRoutes() {
   return (

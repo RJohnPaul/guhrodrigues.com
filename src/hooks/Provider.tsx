@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 
 import AppContext from "./AppContext";
 
-export default function Provider({ children }) {
+export function Provider({ children }) {
   const [showMenu, setShowMenu] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

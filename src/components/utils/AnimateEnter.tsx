@@ -2,10 +2,7 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 
 import { AnimateEnterProps } from "@/types";
 
-export default function AnimateEnter({
-  children,
-  className,
-}: AnimateEnterProps) {
+export function AnimateEnter({ children, className }: AnimateEnterProps) {
   return (
     <LazyMotion features={domAnimation}>
       <m.div

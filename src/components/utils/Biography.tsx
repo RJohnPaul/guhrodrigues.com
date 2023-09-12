@@ -11,7 +11,7 @@ const animation = {
   },
 };
 
-export default function Biography() {
+export function Biography() {
   return (
     <m.div
       initial="hide"

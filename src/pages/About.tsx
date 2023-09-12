@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 
-import Toast from "@/components/utils/Toast";
+import { Toast } from "@/components/utils/Toast";
 
-import AnimateEnter from "@/components/utils/AnimateEnter";
-import AboutContent from "@/components/content/AboutContent";
+import { AnimateEnter } from "@/components/utils/AnimateEnter";
+import { AboutContent } from "@/components/content/AboutContent";
 
-export default function About({ title }) {
+export function About({ title }) {
   useEffect(() => {
     document.title = title;
     window.scrollTo(0, 0);

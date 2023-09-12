@@ -1,14 +1,13 @@
 import { useHandleScroll } from "@/hooks/handleScroll";
 
-import LinksMenuNav from "./LinksMenuNav";
-import MobileButton from "./MobileButton";
+import { MenuBar } from "./MenuBar";
+import { LinksMenuNav } from "./LinksMenuNav";
+import { MobileButton } from "./MobileButton";
 
 import logo from "@/assets/images/logo.svg";
 import { Link } from "react-router-dom";
 
-import MenuBar from "./MenuBar";
-
-export default function Header() {
+export function Header() {
   const { visible } = useHandleScroll();
 
   return (

@@ -1,6 +1,6 @@
 import { m } from "framer-motion";
 
-import Button from "@/components/utils/Button";
+import { Button } from "@/components/utils/Button";
 
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const animation = {
   },
 };
 
-export default function HomeContent() {
+export function HomeContent() {
   return (
     <m.div
       initial="hide"

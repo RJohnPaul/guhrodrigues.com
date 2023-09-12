@@ -1,6 +1,6 @@
 import { socials } from "@/data/socials";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="max-w-5xl w-full mx-auto p-6">
       <div className="flex items-center sm:justify-center md:justify-between">

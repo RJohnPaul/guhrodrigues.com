@@ -1,9 +1,9 @@
 import author from "@/assets/images/author.jpeg";
 
-import Biography from "@/components/utils/Biography";
-import DownloadButton from "@/components/ui/DownloadButton";
+import { Biography } from "@/components/utils/Biography";
+import { DownloadButton } from "@/components/ui/DownloadButton";
 
-export default function AboutContent() {
+export function AboutContent() {
   return (
     <>
       <div className="mb-8">

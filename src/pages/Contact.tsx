@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 
-import AnimateEnter from "@/components/utils/AnimateEnter";
-import ContactContent from "@/components/content/ContactContent";
-import Toast from "@/components/utils/Toast";
+import { AnimateEnter } from "@/components/utils/AnimateEnter";
+import { ContactContent } from "@/components/content/ContactContent";
+import { Toast } from "@/components/utils/Toast";
 
-export default function Contact({ title }) {
+export function Contact({ title }) {
   useEffect(() => {
     document.title = title;
     window.scrollTo(0, 0);

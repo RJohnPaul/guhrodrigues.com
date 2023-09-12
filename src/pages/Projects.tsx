@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
-import AnimateEnter from "@/components/utils/AnimateEnter";
-import ProjectsContent from "@/components/content/ProjectsContent";
+import { AnimateEnter } from "@/components/utils/AnimateEnter";
+import { ProjectsContent } from "@/components/content/ProjectsContent";
 
-export default function Projects({ title }) {
+export function Projects({ title }) {
   useEffect(() => {
     document.title = title;
     window.scrollTo(0, 0);

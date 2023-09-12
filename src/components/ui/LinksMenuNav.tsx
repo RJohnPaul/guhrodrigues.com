@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import { navLinks } from "@/data/header";
 
-export default function LinksMenuNav() {
+export function LinksMenuNav() {
   return (
     <ul className="sm:hidden md:flex items-center gap-4 md:gap-2 top-0 p-6 md:p-0 duration-300">
       {navLinks.map(({ id, path, name }) => (

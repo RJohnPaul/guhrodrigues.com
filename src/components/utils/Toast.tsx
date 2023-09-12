@@ -3,7 +3,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { CheckCircle2 } from "lucide-react";
 
-export default function Toast() {
+export function Toast() {
   return (
     <ToastContainer
       position="bottom-right"

@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
-import AnimateEnter from "@/components/utils/AnimateEnter";
-import HomeContent from "@/components/content/HomeContent";
+import { AnimateEnter } from "@/components/utils/AnimateEnter";
+import { HomeContent } from "@/components/content/HomeContent";
 
-export default function Home({ title }) {
+export function Home({ title }) {
   useEffect(() => {
     document.title = title;
     window.scrollTo(0, 0);

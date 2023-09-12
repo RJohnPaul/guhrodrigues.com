@@ -1,6 +1,6 @@
-import FormComponent from "@/components/ui/FormComponent";
+import { FormComponent } from "@/components/ui/FormComponent";
 
-export default function ContactContent() {
+export function ContactContent() {
   return (
     <>
       <div className="mb-8 space-y-4">

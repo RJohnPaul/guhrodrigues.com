@@ -8,7 +8,7 @@ import * as Form from "@radix-ui/react-form";
 
 import emailjs from "@emailjs/browser";
 
-import Button from "@/components/utils/Button";
+import { Button } from "@/components/utils/Button";
 
 const emailService = import.meta.env.VITE_EMAIL_SERVICE;
 const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
@@ -25,7 +25,7 @@ const animation = {
   },
 };
 
-export default function FormComponent() {
+export function FormComponent() {
   const {
     name,
     setName,
@@ -135,7 +135,7 @@ export default function FormComponent() {
             </div>
             <Form.Control asChild>
               <textarea
-                className="w-full p-2 h-20 text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
+                className="w-full resize-none p-2 h-20 text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
                 autoComplete="off"
                 required
                 value={message}

@@ -7,7 +7,7 @@ import { successAlert } from "@/components/utils/Toast";
 
 import resume from "@/assets/docs/resume.pdf";
 
-export default function DownloadButton() {
+export function DownloadButton() {
   const downloadRef = useRef<any>();
 
   return (

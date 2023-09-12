@@ -2,11 +2,11 @@ import { useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
-import Button from "@/components/utils/Button";
+import { Button } from "@/components/utils/Button";
 
 import { MoveLeft } from "lucide-react";
 
-export default function NotFound({ title }) {
+export function NotFound({ title }) {
   useEffect(() => {
     document.title = title;
     window.scrollTo(0, 0);

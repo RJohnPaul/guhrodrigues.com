@@ -2,9 +2,9 @@ import { m } from "framer-motion";
 
 import { projects } from "@/data/projects";
 
-import ProjectItem from "@/components/ui/ProjectItem";
+import { ProjectItem } from "@/components/ui/ProjectItem";
 
-export default function ProjectsContent() {
+export function ProjectsContent() {
   return (
     <>
       <div className="mb-8 space-y-4">

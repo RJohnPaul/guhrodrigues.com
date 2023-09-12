@@ -5,13 +5,13 @@ import "@/styles/global.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Provider
-import Provider from "@/hooks/Provider";
+import { Provider } from "@/hooks/Provider";
 
 // Components
-import Header from "@/components/ui/Header";
-import Footer from "@/components/ui/Footer";
-import Container from "@/components/ui/Container";
-import AnimateEnter from "@/components/utils/AnimateEnter";
+import { Header } from "@/components/ui/Header";
+import { Footer } from "@/components/ui/Footer";
+import { Container } from "@/components/ui/Container";
+import { AnimateEnter } from "@/components/utils/AnimateEnter";
 
 // Routes
 import { AllRoutes } from "@/routes";
