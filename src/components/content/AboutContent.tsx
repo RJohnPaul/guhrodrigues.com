@@ -1,5 +1,6 @@
 import author from "@/assets/images/author.jpeg";
 
+import { Title } from "@/components/utils/Title";
 import { Biography } from "@/components/utils/Biography";
 import { DownloadButton } from "@/components/ui/DownloadButton";
 
@@ -7,7 +8,7 @@ export function AboutContent() {
   return (
     <>
       <div className="mb-8">
-        <h1 className="text-4xl font-title">Sobre mim</h1>
+        <Title variant="title">Sobre mim</Title>
       </div>
       <div className="flex sm:flex-col lg:flex-row justify-between gap-16">
         <figure className="lg:order-2">

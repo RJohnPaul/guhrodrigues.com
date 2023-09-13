@@ -3,13 +3,15 @@ import { m } from "framer-motion";
 import { projects } from "@/data/projects";
 
 import { ProjectItem } from "@/components/ui/ProjectItem";
+import { Title } from "@/components/utils/Title";
+import { Typography } from "@/components/utils/Typography";
 
 export function ProjectsContent() {
   return (
     <>
       <div className="mb-8 space-y-4">
-        <h1 className="text-4xl font-title">Trabalho, hobby & open source</h1>
-        <p className="text-foreground">
+        <Title variant="title">Trabalho, hobby & open source</Title>
+        <Typography>
           Sou fanático em criar{" "}
           <span className="text-primary font-medium">projetos pessoais</span>.
           Nesta página você pode navegar para{" "}
@@ -17,7 +19,7 @@ export function ProjectsContent() {
             {projects.length} sites
           </span>{" "}
           na qual desenvolvi.
-        </p>
+        </Typography>
       </div>
       <m.div
         initial="hide"

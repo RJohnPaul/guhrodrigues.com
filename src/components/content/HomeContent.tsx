@@ -1,10 +1,12 @@
-import { m } from "framer-motion";
-
-import { Button } from "@/components/utils/Button";
-
 import { Link } from "react-router-dom";
 
+import { m } from "framer-motion";
+
 import { MoveRight } from "lucide-react";
+
+import { Button } from "@/components/utils/Button";
+import { Title } from "@/components/utils/Title";
+import { Typography } from "@/components/utils/Typography";
 
 const animation = {
   hide: {
@@ -25,23 +27,25 @@ export function HomeContent() {
       transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       className="flex flex-col gap-4 text-center"
     >
-      <m.h1 className="text-5xl py-1 font-title" variants={animation}>
-        Gustavo Rodrigues
-      </m.h1>
+      <m.div variants={animation}>
+        <Title variant="title" size="xxl">
+          Gustavo Rodrigues
+        </Title>
+      </m.div>
       <m.div
         className="flex flex-col justify-center gap-2"
         variants={animation}
       >
-        <p className="sm:text-sm md:text-md text-primary font-medium">
+        <Typography variant="primary" className="sm:text-sm md:text-md">
           Desenvolvedor Web & Estudante de T.I
-        </p>
-        <p className="sm:text-sm md:text-md text-neutral-400 font-medium">
+        </Typography>
+        <Typography variant="muted" className="sm:text-sm md:text-md">
           Fanático pela criação de interfaces
-        </p>
+        </Typography>
       </m.div>
       <m.div className="flex items-center justify-center" variants={animation}>
         <Link to="/projects">
-          <Button ghost className="rounded-lg group gap-1.5">
+          <Button variant="ghost" className="group">
             Veja meus projetos
             <MoveRight
               className="group-hover:translate-x-0.5 duration-300 transition-transform"

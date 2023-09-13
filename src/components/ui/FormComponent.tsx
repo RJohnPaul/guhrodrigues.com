@@ -1,18 +1,15 @@
 import { m } from "framer-motion";
 
-import { useHooks } from "@/hooks/Provider";
-
-import { successAlert } from "@/components/utils/Toast";
-
 import * as Form from "@radix-ui/react-form";
 
 import emailjs from "@emailjs/browser";
 
-import { Button } from "@/components/utils/Button";
+import { useHooks } from "@/hooks/Provider";
 
-const emailService = import.meta.env.VITE_EMAIL_SERVICE;
-const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
-const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+import { emailService, emailTemplate, publicKey } from "@/utils";
+
+import { successAlert } from "@/components/utils/Toast";
+import { Button } from "@/components/utils/Button";
 
 const animation = {
   hide: {
@@ -135,7 +132,7 @@ export function FormComponent() {
             </div>
             <Form.Control asChild>
               <textarea
-                className="w-full resize-none p-2 h-20 text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
+                className="w-full p-2 h-20 resize-none leading-relaxed text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
                 autoComplete="off"
                 required
                 value={message}
@@ -145,7 +142,7 @@ export function FormComponent() {
             </Form.Control>
           </Form.Field>
           <Form.Submit asChild>
-            <Button type="submit" className="rounded-lg" disabled={submitting}>
+            <Button type="submit" disabled={submitting}>
               {submitting ? <span>Enviar...</span> : <span>Enviar</span>}
             </Button>
           </Form.Submit>

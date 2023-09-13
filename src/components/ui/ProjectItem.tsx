@@ -1,8 +1,9 @@
 import { m } from "framer-motion";
 
-import { Button } from "@/components/utils/Button";
-
 import { ChevronRight } from "lucide-react";
+
+import { Button } from "@/components/utils/Button";
+import { Typography } from "@/components/utils/Typography";
 
 const animation = {
   hide: {
@@ -33,9 +34,7 @@ export function ProjectItem({ src, title, description, techs, code, visit }) {
       <div className="flex flex-col items-center text-center md:items-start md:text-start w-full py-7 px-10 space-y-2">
         <div className="flex flex-col justify-center space-y-2">
           <h3 className="font-bold text-xl text-primary">{title}</h3>
-          <span className="max-w-full text-sm text-foreground">
-            {description}
-          </span>
+          <Typography size="sm">{description}</Typography>
         </div>
         <div className="flex gap-3 py-3">
           {techs.map((tech: string) => (
@@ -50,13 +49,13 @@ export function ProjectItem({ src, title, description, techs, code, visit }) {
         </div>
         <div className="flex flex-wrap justify-center gap-2">
           <a href={visit} target="_blank">
-            <Button>
+            <Button size="rounded">
               Visitar
               <ChevronRight size={14} />
             </Button>
           </a>
           <a href={code} target="_blank">
-            <Button ghost>
+            <Button variant="ghost" size="rounded">
               Repositório
               <ChevronRight size={14} />
             </Button>

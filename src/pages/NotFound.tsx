@@ -2,9 +2,10 @@ import { useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
-import { Button } from "@/components/utils/Button";
-
 import { MoveLeft } from "lucide-react";
+
+import { Typography } from "@/components/utils/Typography";
+import { Button } from "@/components/utils/Button";
 
 export function NotFound({ title }) {
   useEffect(() => {
@@ -16,12 +17,12 @@ export function NotFound({ title }) {
     <article className="w-full relative h-[90vh] flex text-center items-center justify-center">
       <section className="flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
-          <p className="text-primary md:text-[20px] font-medium mb-1">
+          <Typography>
             A página que você está tentando acessar não existe.
-          </p>
+          </Typography>
           <div className="flex items-center gap-4 justify-center">
             <Link to="/">
-              <Button ghost className="rounded-xl group gap-1.5">
+              <Button variant="ghost" className="group">
                 <MoveLeft
                   className="group-hover:-translate-x-0.5 duration-300 transition-transform"
                   size={20}
