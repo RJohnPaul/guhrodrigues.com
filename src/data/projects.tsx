@@ -9,6 +9,7 @@ import musicplayer from "@/assets/images/projects/musicplayer.png";
 import html from "@/assets/images/skills/html.svg";
 import css from "@/assets/images/skills/css.svg";
 import nextjs from "@/assets/images/skills/nextjs.svg";
+import vite from "@/assets/images/skills/vite.svg";
 import shadcn from "@/assets/images/skills/shadcn.svg";
 import mongo from "@/assets/images/skills/mongo.svg";
 import nextauth from "@/assets/images/skills/nextauth.svg";
@@ -37,7 +38,7 @@ export const projects: ProjectsProps[] = [
     title: "SwiftMart",
     description:
       "Simulação de e-commerce na qual utiliza a API do Mercado Livre para a listagem dos produtos.",
-    techs: [react, typescript, styledComponents],
+    techs: [vite, react, typescript, styledComponents],
     code: "https://github.com/guhrodriguess/swiftmart",
     visit: "https://swiftmartstore.vercel.app",
   },
@@ -47,7 +48,7 @@ export const projects: ProjectsProps[] = [
     title: "MovieCorn",
     description:
       "Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries.",
-    techs: [react, typescript, styledComponents],
+    techs: [vite, react, typescript, styledComponents],
     code: "https://github.com/guhrodriguess/moviecorn",
     visit: "https://moviecorn.vercel.app",
   },
@@ -57,7 +58,7 @@ export const projects: ProjectsProps[] = [
     title: "Crypto",
     description:
       "Sistema de criptografia e descriptografia realizado para um trabalho escolar.",
-    techs: [react, tailwind],
+    techs: [vite, react, tailwind],
     code: "https://github.com/guhrodriguess/crypto",
     visit: "https://crypto-shield.vercel.app/",
   },
@@ -67,7 +68,7 @@ export const projects: ProjectsProps[] = [
     title: "Weather",
     description:
       "Aplicação para mostrar a previsão do tempo utilizando a Open Weather API.",
-    techs: [react, tailwind],
+    techs: [vite, react, tailwind],
     code: "https://github.com/guhrodriguess/weather",
     visit: "https://earth-weather.vercel.app",
   },
