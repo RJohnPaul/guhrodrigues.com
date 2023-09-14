@@ -2,6 +2,8 @@ import { m } from "framer-motion";
 
 import { ChevronRight } from "lucide-react";
 
+import { ProjectsProps } from "@/types";
+
 import { Button } from "@/components/utils/Button";
 import { Typography } from "@/components/utils/Typography";
 
@@ -16,7 +18,14 @@ const animation = {
   },
 };
 
-export function ProjectItem({ src, title, description, techs, code, visit }) {
+export function ProjectItem({
+  src,
+  title,
+  description,
+  techs,
+  code,
+  visit,
+}: ProjectsProps) {
   return (
     <m.section
       variants={animation}
