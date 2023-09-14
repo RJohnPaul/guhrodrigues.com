@@ -48,18 +48,29 @@ export function ProjectItem({ src, title, description, techs, code, visit }) {
           ))}
         </div>
         <div className="flex flex-wrap justify-center gap-2">
-          <a href={visit} target="_blank">
-            <Button size="rounded">
-              Visitar
-              <ChevronRight size={14} />
-            </Button>
-          </a>
-          <a href={code} target="_blank">
-            <Button variant="ghost" size="rounded">
-              Repositório
-              <ChevronRight size={14} />
-            </Button>
-          </a>
+          {visit && code ? (
+            <>
+              <a href={visit} target="_blank">
+                <Button size="rounded">
+                  Visitar
+                  <ChevronRight size={14} />
+                </Button>
+              </a>
+              <a href={code} target="_blank">
+                <Button variant="ghost" size="rounded">
+                  Repositório
+                  <ChevronRight size={14} />
+                </Button>
+              </a>
+            </>
+          ) : (
+            <a href={code} target="_blank">
+              <Button size="rounded">
+                Repositório
+                <ChevronRight size={14} />
+              </Button>
+            </a>
+          )}
         </div>
       </div>
     </m.section>

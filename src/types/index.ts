@@ -29,7 +29,7 @@ export interface ProjectsProps {
   description: string;
   techs: string[];
   code: string;
-  visit: string;
+  visit?: string;
 }
 
 export interface SocialsProps {

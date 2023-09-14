@@ -1,4 +1,5 @@
 import sharespace from "@/assets/images/projects/sharespace.png";
+import quickchat from "@/assets/images/projects/quickchat.png";
 import swiftmart from "@/assets/images/projects/swiftmart.png";
 import moviecorn from "@/assets/images/projects/moviecorn.png";
 import crypto from "@/assets/images/projects/crypto.png";
@@ -13,6 +14,7 @@ import vite from "@/assets/images/skills/vite.svg";
 import shadcn from "@/assets/images/skills/shadcn.svg";
 import mongo from "@/assets/images/skills/mongo.svg";
 import nextauth from "@/assets/images/skills/nextauth.svg";
+import openai from "@/assets/images/skills/openai.svg";
 import react from "@/assets/images/skills/react.svg";
 import typescript from "@/assets/images/skills/typescript.svg";
 import javascript from "@/assets/images/skills/javascript.svg";
@@ -27,13 +29,22 @@ export const projects: ProjectsProps[] = [
     src: sharespace,
     title: "ShareSpace",
     description:
-      "Descubra e compartilhe prompts. Transforme suas ideias em obras-primas.",
+      "Descubra e compartilhe prompts, transforme suas ideias em obras-primas.",
     techs: [nextjs, typescript, mongo, nextauth, tailwind, shadcn],
     code: "https://github.com/guhrodriguess/sharespace",
     visit: "https://sharespacelab.vercel.app",
   },
   {
     id: 2,
+    src: quickchat,
+    title: "QuickChat",
+    description:
+      "Chatbot feito com o Vercel SDK, assim tornando-o uma experiência interativa, inteligente e agradável.",
+    techs: [nextjs, typescript, openai, tailwind, shadcn],
+    code: "https://github.com/guhrodriguess/quickchat",
+  },
+  {
+    id: 3,
     src: swiftmart,
     title: "SwiftMart",
     description:
@@ -43,7 +54,7 @@ export const projects: ProjectsProps[] = [
     visit: "https://swiftmartstore.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     src: moviecorn,
     title: "MovieCorn",
     description:
@@ -53,7 +64,7 @@ export const projects: ProjectsProps[] = [
     visit: "https://moviecorn.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     src: crypto,
     title: "Crypto",
     description:
@@ -63,7 +74,7 @@ export const projects: ProjectsProps[] = [
     visit: "https://crypto-shield.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     src: weather,
     title: "Weather",
     description:
@@ -73,7 +84,7 @@ export const projects: ProjectsProps[] = [
     visit: "https://earth-weather.vercel.app",
   },
   {
-    id: 6,
+    id: 7,
     src: todo,
     title: "Todo",
     description:
@@ -83,7 +94,7 @@ export const projects: ProjectsProps[] = [
     visit: "https://guhrodriguess.github.io/to-do",
   },
   {
-    id: 7,
+    id: 8,
     src: musicplayer,
     title: "Music Player",
     description:
