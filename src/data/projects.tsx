@@ -20,6 +20,7 @@ import typescript from "@/assets/images/skills/typescript.svg";
 import javascript from "@/assets/images/skills/javascript.svg";
 import styledComponents from "@/assets/images/skills/styledcomponents.svg";
 import tailwind from "@/assets/images/skills/tailwindcss.svg";
+import framer from "@/assets/images/skills/framer.svg"
 
 import { ProjectsProps } from "@/types";
 
@@ -30,7 +31,7 @@ export const projects: ProjectsProps[] = [
     title: "ShareSpace",
     description:
       "Descubra e compartilhe prompts, transforme suas ideias em obras-primas.",
-    techs: [nextjs, typescript, mongo, nextauth, tailwind, shadcn],
+    techs: [nextjs, typescript, mongo, nextauth, tailwind, shadcn, framer],
     code: "https://github.com/guhrodriguess/sharespace",
     visit: "https://sharespacelab.vercel.app",
   },
