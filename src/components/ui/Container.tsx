@@ -1,3 +1,7 @@
-export function Container({ children }: { children: React.ReactNode }) {
-  return <main className="max-w-5xl w-full mx-auto px-6">{children}</main>;
+import { ComponentProps } from "react";
+
+type ContainerProps = ComponentProps<"main">;
+
+export function Container({ ...props }: ContainerProps) {
+  return <main className="max-w-5xl w-full mx-auto px-6" {...props} />;
 }
