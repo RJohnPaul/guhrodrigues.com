@@ -43,3 +43,8 @@ export interface AnimateEnterProps {
   children: React.ReactNode;
   className?: string;
 }
+
+export interface TooltipProps {
+  text: string;
+  children: React.ReactNode;
+}
