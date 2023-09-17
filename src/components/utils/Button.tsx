@@ -8,7 +8,7 @@ const button = tv({
     variant: {
       default: "bg-primary text-black text-sm hover:bg-primary/70",
       ghost: "text-neutral-400 hover:text-primary hover:bg-neutral-800",
-      dark: "text-primary bg-gradient-to-br from-black via-black to-zinc-700 border border-zinc-700",
+      dark: "text-neutral-400 bg-background border border-zinc-700",
       muted: "text-neutral-400",
     },
     size: {
