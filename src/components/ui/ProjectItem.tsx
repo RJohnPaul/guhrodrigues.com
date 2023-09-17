@@ -36,7 +36,7 @@ export function ProjectItem({
         <img
           src={src}
           loading="lazy"
-          className="max-w-5xl w-full"
+          className="max-w-[1024px] w-full max-h-[280px] h-full object-cover"
           alt={title}
         />
       </figure>
