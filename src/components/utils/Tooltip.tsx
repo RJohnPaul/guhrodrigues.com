@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { TooltipProps } from "@/types";
-import { Globe2 } from "lucide-react";
+import { Globe } from "lucide-react";
 
 export function Tooltip({ children, text }: TooltipProps) {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,7 +20,7 @@ export function Tooltip({ children, text }: TooltipProps) {
         }`}
       >
         <span className="text-emerald-600">
-          <Globe2 size={14} />
+          <Globe size={14} />
         </span>
         <span>{text}</span>
       </div>
