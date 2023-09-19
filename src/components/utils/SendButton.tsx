@@ -12,24 +12,19 @@ export function SendButton({ submitting }) {
   return (
     <Button
       type="submit"
-      onMouseEnter={() => emailRef.current?.play()}
-      onMouseLeave={() => emailRef.current?.stop()}
       disabled={submitting}
       className="disabled:bg-primary/70"
     >
       {submitting ? (
-        <span>Enviando...</span>
+        <Lottie
+          lottieRef={emailRef}
+          animationData={emailIcon}
+          style={{ width: 20, height: 20 }}
+          autoplay={true}
+          loop={true}
+        />
       ) : (
-        <>
-          <span>Enviar</span>
-          <Lottie
-            lottieRef={emailRef}
-            animationData={emailIcon}
-            style={{ width: 14, height: 14 }}
-            autoplay={false}
-            loop={false}
-          />
-        </>
+        <span>Enviar</span>
       )}
     </Button>
   );
