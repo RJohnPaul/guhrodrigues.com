@@ -20,7 +20,7 @@ import typescript from "@/assets/images/skills/typescript.svg";
 import javascript from "@/assets/images/skills/javascript.svg";
 import styledComponents from "@/assets/images/skills/styledcomponents.svg";
 import tailwind from "@/assets/images/skills/tailwindcss.svg";
-import framer from "@/assets/images/skills/framer.svg"
+import framer from "@/assets/images/skills/framer.svg";
 
 import { ProjectsProps } from "@/types";
 
@@ -40,7 +40,7 @@ export const projects: ProjectsProps[] = [
     src: quickchat,
     title: "QuickChat",
     description:
-      "Chatbot feito com o Vercel SDK, assim tornando-o uma experiência interativa, inteligente e agradável.",
+      "Chatbot feito com Vercel SDK, assim tornando-o uma experiência interativa, inteligente e agradável.",
     techs: [nextjs, typescript, openai, tailwind, shadcn],
     code: "https://github.com/guhrodriguess/quickchat",
   },

@@ -8,8 +8,9 @@ import { useHooks } from "@/hooks/Provider";
 
 import { emailService, emailTemplate, publicKey } from "@/utils";
 
+import { SendButton } from "@/components/utils/SendButton";
+
 import { successAlert } from "@/components/utils/Toast";
-import { Button } from "@/components/utils/Button";
 
 const animation = {
   hide: {
@@ -142,9 +143,7 @@ export function FormComponent() {
             </Form.Control>
           </Form.Field>
           <Form.Submit asChild>
-            <Button type="submit" disabled={submitting}>
-              {submitting ? <span>Enviar...</span> : <span>Enviar</span>}
-            </Button>
+            <SendButton submitting={submitting} />
           </Form.Submit>
         </m.div>
       </Form.Root>
