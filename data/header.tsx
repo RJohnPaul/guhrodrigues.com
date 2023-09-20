@@ -1,7 +1,6 @@
-'use client'
+import { User2, Braces, Mail } from 'lucide-react'
 
 import { NavLinksProps } from '@/types'
-import { User2, Braces, Mail } from 'lucide-react'
 
 export const navLinks: NavLinksProps[] = [
   {
