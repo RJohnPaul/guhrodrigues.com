@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   try {
     await resend.sendEmail({
       from: process.env.RESEND_FROM ?? '',
-      to: email,
+      to: process.env.RESEND_TO ?? '',
       subject: message,
       text: `Você recebeu uma mensagem de ${name} com o e-mail ${email}`,
     })
