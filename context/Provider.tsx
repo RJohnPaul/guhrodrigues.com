@@ -13,7 +13,6 @@ export function Provider({ children }: { children: React.ReactNode }) {
   const [visible, setVisible] = useState(true)
   const [submitting, setSubmitting] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
-  const [date, setDate] = useState<Date>(new Date())
 
   const value = {
     showMenu,
@@ -32,8 +31,6 @@ export function Provider({ children }: { children: React.ReactNode }) {
     setSubmitting,
     isVisible,
     setIsVisible,
-    date,
-    setDate,
   }
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
