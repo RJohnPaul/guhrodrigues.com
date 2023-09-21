@@ -17,6 +17,8 @@ export interface ContextProps {
   setSubmitting: React.Dispatch<React.SetStateAction<boolean>>
   isVisible: boolean
   setIsVisible: React.Dispatch<React.SetStateAction<boolean>>
+  hovered: string
+  setHovered: React.Dispatch<React.SetStateAction<string>>
 }
 
 export interface NavLinksProps {

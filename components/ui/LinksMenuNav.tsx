@@ -1,29 +1,47 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import { navLinks } from '@/data/header'
-
+import { m } from 'framer-motion'
 import clsx from 'clsx'
+
+import { useHooks } from '@/context/Provider'
+import { navLinks } from '@/data/header'
 
 export function LinksMenuNav() {
   const pathname = usePathname()
+  const { hovered, setHovered } = useHooks()
 
   return (
-    <ul className="sm:hidden md:flex items-center gap-4 md:gap-2 top-0 p-6 md:p-0 duration-300">
-      {navLinks.map((props) => {
-        const isActive = props.path === pathname
+    <ul className="sm:hidden md:flex">
+      {navLinks.map(({ id, name, path }) => {
+        const isActive = path === pathname
+        const isHovered = hovered === path
 
         return (
-          <li key={props.id} className="text-sm font-medium">
+          <li key={id}>
             <Link
-              href={props.path}
-              className={clsx('py-2 px-3 rounded-md duration-300', {
-                'text-primary bg-neutral-800': isActive,
-                'text-neutral-400 hover:text-primary hover:bg-neutral-900':
-                  !isActive,
+              href={path}
+              className={clsx('rounded-lg text-sm font-medium', {
+                'text-primary': isActive,
+                'text-neutral-400': !isActive,
               })}
             >
-              {props.name}
+              <m.span
+                onHoverStart={() => setHovered(path)}
+                onHoverEnd={() => setHovered('')}
+                className="relative px-3 py-2"
+              >
+                {isHovered && (
+                  <m.span
+                    className="absolute rounded-lg bg-neutral-800 inset-0 z-[-1]"
+                    layoutId="ul"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  />
+                )}
+                {name}
+              </m.span>
             </Link>
           </li>
         )

@@ -19,6 +19,8 @@ const initialValues = {
   setSubmitting: () => undefined,
   isVisible: false,
   setIsVisible: () => undefined,
+  hovered: '',
+  setHovered: () => undefined,
 }
 
 const AppContext = createContext<ContextProps>(initialValues)
