@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     'Brazil',
   ],
   openGraph: {
-    description: 'Design Engineer.',
+    description: 'Desenvolvedor Web',
     images: [
       {
         alt: 'Gustavo Rodrigues',
