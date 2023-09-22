@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import { m } from 'framer-motion'
+import { motion } from 'framer-motion'
 import clsx from 'clsx'
 
 import { useHooks } from '@/context/Provider'
@@ -26,13 +26,13 @@ export function LinksMenuNav() {
                 'text-neutral-400': !isActive,
               })}
             >
-              <m.span
+              <motion.span
                 onHoverStart={() => setHovered(path)}
                 onHoverEnd={() => setHovered('')}
                 className="relative px-3 py-2"
               >
                 {isHovered && (
-                  <m.span
+                  <motion.span
                     className="absolute rounded-lg bg-neutral-800 inset-0 z-[-1]"
                     layoutId="ul"
                     initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ export function LinksMenuNav() {
                   />
                 )}
                 {name}
-              </m.span>
+              </motion.span>
             </Link>
           </li>
         )
