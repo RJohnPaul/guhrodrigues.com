@@ -65,7 +65,7 @@ export function ProjectItem({
             <h3 className="font-bold text-xl text-primary">{title}</h3>
             <Typography size="sm">{description}</Typography>
           </div>
-          <div className="flex pb-1 gap-3">
+          <div className="flex pb-3 gap-3">
             {techs.map((tech, index) => (
               <Image
                 key={index}
