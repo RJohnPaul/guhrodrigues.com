@@ -39,7 +39,7 @@ export function ProjectItem({
       variants={animation}
       onHoverStart={() => setHovered(id)}
       onHoverEnd={() => setHovered('')}
-      className="cursor-pointer"
+      className="cursor-pointer select-auto"
     >
       <section className="relative flex flex-col rounded-xl">
         {isHovered && (
