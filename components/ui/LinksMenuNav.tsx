@@ -21,7 +21,7 @@ export function LinksMenuNav() {
           <li key={id}>
             <Link
               href={path}
-              className={clsx('rounded-lg text-sm font-medium', {
+              className={clsx('text-sm font-medium', {
                 'text-primary': isActive,
                 'text-neutral-400': !isActive,
               })}
@@ -34,7 +34,7 @@ export function LinksMenuNav() {
                 {isHovered && (
                   <motion.span
                     className="absolute rounded-lg bg-neutral-800 inset-0 z-[-1]"
-                    layoutId="ul"
+                    layoutId="nav"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

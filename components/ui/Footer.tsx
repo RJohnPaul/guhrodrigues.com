@@ -8,15 +8,10 @@ export function Footer() {
     <footer className="max-w-5xl w-full mx-auto h-20">
       <div className="flex items-center sm:justify-center md:justify-between h-full px-6">
         <div className="flex gap-3">
-          {socials.map((props) => (
-            <a
-              key={props.id}
-              href={props.href}
-              target="_blank"
-              rel="noreferrer"
-            >
+          {socials.map(({ id, href, icon }) => (
+            <a key={id} href={href} target="_blank" rel="noreferrer">
               <Button variant="dark" size="icon">
-                {props.icon}
+                {icon}
               </Button>
             </a>
           ))}
