@@ -2,6 +2,8 @@
 
 import Link from 'next/link'
 
+import clsx from 'clsx'
+
 import { useHooks } from '@/context/Provider'
 import { useMenuAnimation } from '@/hooks/menuAnimation'
 
@@ -19,28 +21,30 @@ export function MenuBar() {
 
   return (
     <div
-      className={`fixed right-0 z-50 w-32 mx-6 p-1 my-[70px] flex flex-col bg-background border border-neutral-800 rounded-lg duration-300 ${
-        showMenu
-          ? 'top-0 visible opacity-100 scale-100'
-          : 'invisible opacity-0 scale-50'
-      }`}
+      className={clsx(
+        'fixed right-0 z-50 w-32 mx-6 p-1 my-[70px] flex flex-col bg-background border border-neutral-800 rounded-lg duration-300',
+        {
+          'top-0 visible opacity-100 scale-100': showMenu,
+          'invisible opacity-0 scale-50': !showMenu,
+        },
+      )}
       ref={scope}
     >
       <ul
-        style={{
-          pointerEvents: showMenu ? 'auto' : 'none',
-        }}
+        className={`${
+          showMenu ? 'pointer-events-auto' : 'pointer-events-none'
+        }`}
       >
-        {navLinks.map((props) => (
+        {navLinks.map(({ id, path, icon, name }) => (
           <Link
-            key={props.id}
-            href={props.path}
+            key={id}
+            href={path}
             className="px-2 py-2.5 flex items-center gap-4 text-sm text-primary"
             onClick={handleCloseMenu}
           >
-            <span>{props.icon}</span>
+            <span>{icon}</span>
 
-            {props.name}
+            {name}
           </Link>
         ))}
       </ul>
