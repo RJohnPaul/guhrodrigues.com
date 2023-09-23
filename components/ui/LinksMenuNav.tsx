@@ -21,8 +21,8 @@ export function LinksMenuNav() {
           <li key={id}>
             <Link
               href={path}
-              className={clsx('text-sm font-medium', {
-                'text-primary': isActive,
+              className={clsx('text-sm', {
+                'text-primary font-medium': isActive,
                 'text-neutral-400': !isActive,
               })}
             >
