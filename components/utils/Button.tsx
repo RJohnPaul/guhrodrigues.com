@@ -13,7 +13,6 @@ const button = tv({
     },
     size: {
       default: 'rounded-lg',
-      rounded: 'rounded-full',
       lg: 'rounded-lg p-0',
       icon: 'rounded-full p-2',
     },

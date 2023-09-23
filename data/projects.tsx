@@ -32,7 +32,6 @@ export const projects: ProjectsProps[] = [
     description:
       'Descubra e compartilhe prompts, transforme suas ideias em obras-primas.',
     techs: [nextjs, typescript, mongo, nextauth, tailwind, shadcn, framer],
-    code: 'https://github.com/guhrodriguess/sharespace',
     visit: 'https://sharespacelab.vercel.app',
   },
   {
@@ -42,7 +41,7 @@ export const projects: ProjectsProps[] = [
     description:
       'Chatbot feito com Vercel SDK, assim tornando-o uma experiência interativa, inteligente e agradável.',
     techs: [nextjs, typescript, openai, tailwind, shadcn],
-    code: 'https://github.com/guhrodriguess/quickchat',
+    visit: 'https://github.com/guhrodriguess/quickchat',
   },
   {
     id: 3,
@@ -51,7 +50,6 @@ export const projects: ProjectsProps[] = [
     description:
       'Simulação de e-commerce na qual utiliza a API do Mercado Livre para a listagem dos produtos.',
     techs: [vite, react, typescript, styledComponents],
-    code: 'https://github.com/guhrodriguess/swiftmart',
     visit: 'https://swiftmartstore.vercel.app',
   },
   {
@@ -61,7 +59,6 @@ export const projects: ProjectsProps[] = [
     description:
       'Aplicação onde é utilizada a TMDb API para mostrar uma biblioteca de filmes e séries.',
     techs: [vite, react, typescript, styledComponents],
-    code: 'https://github.com/guhrodriguess/moviecorn',
     visit: 'https://moviecorn.vercel.app',
   },
   {
@@ -71,7 +68,6 @@ export const projects: ProjectsProps[] = [
     description:
       'Sistema de criptografia e descriptografia realizado para um trabalho escolar.',
     techs: [vite, react, tailwind],
-    code: 'https://github.com/guhrodriguess/crypto',
     visit: 'https://crypto-shield.vercel.app/',
   },
   {
@@ -81,7 +77,6 @@ export const projects: ProjectsProps[] = [
     description:
       'Aplicação para mostrar a previsão do tempo utilizando a Open Weather API.',
     techs: [vite, react, tailwind],
-    code: 'https://github.com/guhrodriguess/weather',
     visit: 'https://earth-weather.vercel.app',
   },
   {
@@ -91,7 +86,6 @@ export const projects: ProjectsProps[] = [
     description:
       'Projeto desenvolvido para criar e armazenar tarefas com o uso do localStorage.',
     techs: [html, css, javascript],
-    code: 'https://github.com/guhrodriguess/to-do',
     visit: 'https://guhrodriguess.github.io/to-do',
   },
   {
@@ -101,7 +95,6 @@ export const projects: ProjectsProps[] = [
     description:
       'A música sempre está presente em minha vida, então nesse site você pode ouvir minhas músicas favoritas.',
     techs: [html, css, javascript],
-    code: 'https://github.com/guhrodriguess/music-player',
     visit: 'https://guhrodriguess.github.io/music-player',
   },
 ]

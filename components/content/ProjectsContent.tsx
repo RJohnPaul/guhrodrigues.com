@@ -27,7 +27,7 @@ export function ProjectsContent() {
         initial="hide"
         animate="show"
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
-        className="grid md:grid-cols-2 gap-8"
+        className="grid md:grid-cols-2"
       >
         {projects.map((props) => (
           <ProjectItem key={props.id} {...props} />
