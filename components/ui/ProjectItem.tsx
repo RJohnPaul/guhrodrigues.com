@@ -39,9 +39,10 @@ export function ProjectItem({
       <figure className="overflow-hidden rounded-t-xl">
         <Image
           src={src}
-          loading="lazy"
           className="max-w-[1024px] w-full max-h-[280px] h-full object-cover"
           alt={title}
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
         />
       </figure>
       <div className="flex flex-col items-center text-center md:items-start md:text-start w-full py-7 px-10 space-y-2">
