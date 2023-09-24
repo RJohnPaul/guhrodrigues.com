@@ -54,7 +54,7 @@ export function ProjectItem({
         <figure className="overflow-hidden rounded-t-xl px-2 mt-4">
           <Image
             src={src}
-            className="max-w-[450px] w-full mx-auto max-h-[280px] h-full object-cover rounded-xl"
+            className="max-w-[420px] w-full md:mx-auto max-h-[280px] h-full object-cover rounded-xl"
             alt={title}
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
@@ -63,7 +63,9 @@ export function ProjectItem({
         <div className="flex flex-col w-full py-4 px-5 space-y-4">
           <div className="flex flex-col justify-center space-y-2">
             <h3 className="font-bold text-xl text-primary">{title}</h3>
-            <Typography size="sm">{description}</Typography>
+            <Typography size="sm" className="max-w-[420px] w-full">
+              {description}
+            </Typography>
           </div>
           <div className="flex pb-3 gap-3">
             {techs.map((tech, index) => (
