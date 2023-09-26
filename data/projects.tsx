@@ -93,7 +93,7 @@ export const projects: ProjectsProps[] = [
     src: musicplayer,
     title: 'Music Player',
     description:
-      'A música sempre está presente em minha vida, então nesse site você pode ouvir minhas músicas favoritas.',
+      'A música sempre está presente em minha vida, nesse site você pode ouvir minhas músicas favoritas.',
     techs: [html, css, javascript],
     visit: 'https://guhrodriguess.github.io/music-player',
   },

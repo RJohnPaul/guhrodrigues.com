@@ -12,11 +12,11 @@ export function AboutContent() {
       <div className="mb-8">
         <Title variant="title">Sobre mim</Title>
       </div>
-      <div className="flex sm:flex-col lg:flex-row justify-between gap-16">
+      <div className="flex sm:flex-col lg:flex-row justify-between gap-12">
         <figure className="lg:order-2">
           <Image
             src={author}
-            className="rounded-lg w-[350px] lg:w-[700px]"
+            className="rounded-lg max-w-full max-h-full"
             alt="Gustavo"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"

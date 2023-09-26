@@ -36,11 +36,8 @@ export function Biography() {
         <span className="text-primary font-medium">
           fanático pela criação de interfaces
         </span>{' '}
-        que encantam e facilitam a vida das pessoas.
-      </m.p>
-      <m.p className="text-md text-foreground" variants={animation}>
-        Minha jornada no mundo digital é uma busca constante pela fusão perfeita
-        entre{' '}
+        que encantam e facilitam a vida das pessoas. Minha jornada no mundo
+        digital é uma busca constante pela fusão perfeita entre{' '}
         <span className="text-primary font-medium">
           estética e funcionalidade
         </span>
