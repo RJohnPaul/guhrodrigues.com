@@ -7,7 +7,7 @@ export function ContactContent() {
     <>
       <div className="mb-8 space-y-4">
         <Title variant="title">Mande um email, como nos velhos tempos</Title>
-        <Typography className="leading-loose">
+        <Typography size="sm" className="leading-loose">
           <span className="text-primary font-medium">
             Gosto muito de interagir
           </span>{' '}
