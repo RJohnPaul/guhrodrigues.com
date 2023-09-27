@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import author from '@/assets/images/author.jpeg'
+import author from '@/assets/images/author.jpg'
 
 import { Title } from '@/components/utils/Title'
 import { Biography } from '@/components/ui/Biography'
