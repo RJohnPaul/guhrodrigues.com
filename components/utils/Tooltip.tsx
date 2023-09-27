@@ -14,7 +14,7 @@ export function Tooltip({ children, text }: TooltipProps) {
       className="relative select-none"
     >
       <div
-        className={`-top-9 absolute w-[140px] flex items-center gap-1.5 bg-background border border-neutral-800 text-foreground font-medium rounded-lg text-xs py-1.5 px-2 -right-3 xl:-right-10 xl:-translate-x-0.5 duration-150 ${
+        className={`-top-9 -right-3 xl:-right-11 xl:-translate-x-6 absolute w-[100px] flex items-center gap-1.5 bg-background border border-neutral-800 text-foreground font-medium rounded-lg text-xs py-1.5 px-2 duration-150 ${
           isVisible
             ? 'visible opacity-100 scale-100'
             : 'invisible opacity-0 scale-50'
