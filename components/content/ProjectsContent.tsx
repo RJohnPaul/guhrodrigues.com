@@ -13,7 +13,7 @@ export function ProjectsContent() {
     <>
       <div className="mb-8 space-y-4">
         <Title variant="title">Trabalho, hobby & open source</Title>
-        <Typography size="sm" className="leading-loose">
+        <Typography className="leading-[1.8]">
           Sou fanático em criar{' '}
           <span className="text-primary font-medium">projetos pessoais</span>.
           Nesta página você pode navegar para{' '}
