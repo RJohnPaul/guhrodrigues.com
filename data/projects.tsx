@@ -39,7 +39,7 @@ export const projects: ProjectsProps[] = [
     src: quickchat,
     title: 'QuickChat',
     description:
-      'Chatbot feito com Vercel SDK, assim tornando-o uma experiência interativa, inteligente e agradável.',
+      'Chatbot feito com Vercel SDK, assim tornando-o uma experiência inteligente e agradável.',
     techs: [nextjs, typescript, openai, tailwind, shadcn],
     visit: 'https://github.com/guhrodriguess/quickchat',
   },
@@ -93,7 +93,7 @@ export const projects: ProjectsProps[] = [
     src: musicplayer,
     title: 'Music Player',
     description:
-      'A música sempre está presente em minha vida, nesse site você pode ouvir minhas músicas favoritas.',
+      'A música sempre está presente em minha vida, ouça minhas músicas favoritas.',
     techs: [html, css, javascript],
     visit: 'https://guhrodriguess.github.io/music-player',
   },
