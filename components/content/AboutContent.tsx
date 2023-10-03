@@ -17,8 +17,8 @@ export function AboutContent() {
       </div>
       <div className="flex sm:flex-col md:flex-row justify-between gap-12">
         <motion.figure
-          initial={{ scale: 0, rotate: 100, opacity: 0 }}
-          animate={{ scale: 1, rotate: 0, opacity: 1 }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
           transition={{
             type: 'spring',
             stiffness: 260,
