@@ -1,13 +1,13 @@
 'use client'
 
-import { LazyMotion, domAnimation, m } from 'framer-motion'
+import { LazyMotion, domAnimation, motion } from 'framer-motion'
 
 import { AnimateEnterProps } from '@/types'
 
 export function AnimateEnter({ children, className }: AnimateEnterProps) {
   return (
     <LazyMotion features={domAnimation}>
-      <m.div
+      <motion.div
         className={className}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -15,7 +15,7 @@ export function AnimateEnter({ children, className }: AnimateEnterProps) {
         transition={{ delay: 0.3 }}
       >
         {children}
-      </m.div>
+      </motion.div>
     </LazyMotion>
   )
 }

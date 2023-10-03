@@ -1,6 +1,6 @@
 'use client'
 
-import { m } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const animation = {
   hide: {
@@ -15,13 +15,13 @@ const animation = {
 
 export function Biography() {
   return (
-    <m.div
+    <motion.div
       initial="hide"
       animate="show"
       transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       className="leading-8 space-y-4"
     >
-      <m.p className="text-md text-foreground" variants={animation}>
+      <motion.p className="text-md text-foreground" variants={animation}>
         Meu nome é{' '}
         <span className="text-primary font-medium">Gustavo Rodrigues</span>, sou{' '}
         <span className="text-primary font-medium">Desenvolvedor Web</span> e
@@ -30,30 +30,33 @@ export function Biography() {
           Técnico em Informática para Internet
         </span>
         .
-      </m.p>
-      <m.p className="text-md text-foreground" variants={animation}>
+      </motion.p>
+      <motion.p className="text-md text-foreground" variants={animation}>
         Minha jornada no mundo digital é uma busca constante pela fusão perfeita
         entre{' '}
         <span className="text-primary font-medium">
           estética e funcionalidade
         </span>
         .
-      </m.p>
-      <m.p className="text-md text-foreground" variants={animation}>
+      </motion.p>
+      <motion.p className="text-md text-foreground" variants={animation}>
         Adoro aprender novas tecnologias desde que descobri a programação.
         Atualmente desenvolvo minhas aplicações com{' '}
         <span className="text-primary font-medium">
           Next.js, React, TypeScript, JavaScript e Node.js
         </span>
         .
-      </m.p>
-      <m.p className="text-md text-foreground font-normal" variants={animation}>
+      </motion.p>
+      <motion.p
+        className="text-md text-foreground font-normal"
+        variants={animation}
+      >
         <span className="text-primary font-medium">
           Interfaces minimalistas
         </span>
         , dark mode e a tecnologia me encantam. Desfrutar de músicas é uma{' '}
         <span className="text-primary font-medium">terapia para mim</span>.
-      </m.p>
-    </m.div>
+      </motion.p>
+    </motion.div>
   )
 }

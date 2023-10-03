@@ -1,11 +1,33 @@
 'use client'
 
-import { m } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { projects } from '@/data/projects'
 
 import { PageDescription } from '@/components/utils/PageDescription'
 import { ProjectItem } from '@/components/ui/ProjectItem'
+
+const wrapper = {
+  hide: {
+    opacity: 1,
+    scale: 0,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+  },
+}
+
+const item = {
+  hide: {
+    y: 20,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+  },
+}
 
 export function ProjectsContent() {
   return (
@@ -14,16 +36,19 @@ export function ProjectsContent() {
         title="Trabalho, hobby, conhecimento & open source."
         description="Sou fanático pela criação de novos projetos, pois é a maior chave para ganhar conhecimento. Nesta página você pode navegar para 8 sites na qual desenvolvi."
       />
-      <m.ul
+      <motion.ul
+        variants={wrapper}
         initial="hide"
         animate="show"
-        transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
+        transition={{ delayChildren: 0.7, staggerChildren: 0.09 }}
         className="grid md:grid-cols-2 place-items-center gap-4"
       >
         {projects.map((props) => (
-          <ProjectItem key={props.id} {...props} />
+          <motion.li key={props.id} variants={item}>
+            <ProjectItem {...props} />
+          </motion.li>
         ))}
-      </m.ul>
+      </motion.ul>
     </>
   )
 }

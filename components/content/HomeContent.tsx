@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 
-import { m } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { MoveRight } from 'lucide-react'
 
 import { Button } from '@/components/utils/Button'
@@ -22,16 +22,18 @@ const animation = {
 
 export function HomeContent() {
   return (
-    <m.div
+    <motion.div
       initial="hide"
       animate="show"
       transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       className="flex flex-col gap-4 text-center"
     >
-      <m.div variants={animation}>
-        <Title variant="title">Gustavo Rodrigues</Title>
-      </m.div>
-      <m.div
+      <motion.div variants={animation}>
+        <Title variant="title" size="xxl">
+          Gustavo Rodrigues
+        </Title>
+      </motion.div>
+      <motion.div
         className="flex flex-col justify-center gap-2"
         variants={animation}
       >
@@ -41,8 +43,11 @@ export function HomeContent() {
         <Typography variant="muted" className="sm:text-sm md:text-md">
           Fanático pela criação de interfaces
         </Typography>
-      </m.div>
-      <m.div className="flex items-center justify-center" variants={animation}>
+      </motion.div>
+      <motion.div
+        className="flex items-center justify-center"
+        variants={animation}
+      >
         <Link href="/projects">
           <Button variant="ghost" className="group">
             Veja meus projetos
@@ -52,7 +57,7 @@ export function HomeContent() {
             />
           </Button>
         </Link>
-      </m.div>
-    </m.div>
+      </motion.div>
+    </motion.div>
   )
 }

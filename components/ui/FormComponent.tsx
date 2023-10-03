@@ -1,6 +1,6 @@
 'use client'
 
-import { m } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import * as Form from '@radix-ui/react-form'
 
@@ -59,14 +59,17 @@ export function FormComponent() {
   }
 
   return (
-    <m.div
+    <motion.div
       initial="hide"
       animate="show"
       transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       className="max-w-md w-full"
     >
       <Form.Root onSubmit={sendEmail}>
-        <m.div className="flex flex-col mx-auto gap-4" variants={animation}>
+        <motion.div
+          className="flex flex-col mx-auto gap-4"
+          variants={animation}
+        >
           <Form.Field name="text">
             <div className="flex items-center justify-between">
               <Form.Label className="text-sm font-medium py-2 text-neutral-400">
@@ -141,8 +144,8 @@ export function FormComponent() {
           <Form.Submit asChild>
             <SendButton submitting={submitting} />
           </Form.Submit>
-        </m.div>
+        </motion.div>
       </Form.Root>
-    </m.div>
+    </motion.div>
   )
 }
