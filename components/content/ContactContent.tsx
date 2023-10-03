@@ -1,23 +1,14 @@
+import { PageDescription } from '@/components/utils/PageDescription'
 import { FormComponent } from '@/components/ui/FormComponent'
-import { Title } from '../utils/Title'
-import { Typography } from '@/components/utils/Typography'
 
 export function ContactContent() {
   return (
     <>
-      <div className="mb-8 space-y-4">
-        <Title variant="title">Mande um email, como nos velhos tempos</Title>
-        <Typography className="leading-[1.8]">
-          <span className="text-primary font-medium">
-            Gosto muito de interagir
-          </span>{' '}
-          com programadores, criadores e estudantes da tecnologia. Caso se
-          interessou pelo meu trabalho ou queira{' '}
-          <span className="text-primary font-medium">dar um feedback</span>{' '}
-          sobre este website, vamos{' '}
-          <span className="text-primary font-medium">trocar um papo</span>.
-        </Typography>
-      </div>
+      <PageDescription
+        title="Mande um email, como nos velhos tempos."
+        description="Gosto muito de interagir com programadores, criadores e estudantes da tecnologia. Caso se
+				interessou pelo meu trabalho ou queira dar um feedback sobre este website, vamos trocar um papo."
+      />
 
       <FormComponent />
     </>

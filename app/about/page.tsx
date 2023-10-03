@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <article className="w-full sm:h-full md:min-h-[calc(100vh_-_85px)] flex items-center py-20">
+      <article className="w-full sm:h-full md:min-h-[calc(100vh_-_85px)] flex items-center py-24">
         <AnimateEnter className="w-full m-auto py-8">
           <AboutContent />
         </AnimateEnter>

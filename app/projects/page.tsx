@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <article className="w-full py-20">
+    <article className="w-full py-24">
       <AnimateEnter className="py-9 mx-auto flex flex-col justify-center w-full">
         <ProjectsContent />
       </AnimateEnter>

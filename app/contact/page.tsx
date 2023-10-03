@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      <article className="w-full min-h-[calc(100vh_-_85px)] flex items-center py-20">
+      <article className="w-full min-h-[calc(100vh_-_85px)] flex items-center py-24">
         <AnimateEnter className="gap-8 py-9">
           <ContactContent />
         </AnimateEnter>

@@ -17,10 +17,10 @@ export function Header() {
   return (
     <header
       className={`flex w-full h-[70px] z-50 fixed bg-background ${
-        visible ? 'md:top-0' : 'md:-top-20'
+        visible ? 'md:top-0' : 'md:-top-16'
       } top-0 duration-500`}
     >
-      <nav className="max-w-[910px] w-full mx-auto px-6 justify-between flex items-center">
+      <nav className="max-w-[960px] w-full mx-auto px-6 justify-between flex items-center">
         <Link href="/">
           <Image src={logo} width={25} alt="Logo" />
         </Link>

@@ -29,9 +29,7 @@ export function HomeContent() {
       className="flex flex-col gap-4 text-center"
     >
       <m.div variants={animation}>
-        <Title variant="title" size="xxl">
-          Gustavo Rodrigues
-        </Title>
+        <Title variant="title">Gustavo Rodrigues</Title>
       </m.div>
       <m.div
         className="flex flex-col justify-center gap-2"
