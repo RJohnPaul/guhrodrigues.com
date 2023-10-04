@@ -3,6 +3,7 @@
 import Link from 'next/link'
 
 import { MobileHeaderImage } from './MobileHeaderImage'
+import { DesktopHeaderImage } from './DesktopHeaderImage'
 import { Title } from '@/components/utils/Title'
 import { Typography } from '@/components/utils/Typography'
 import { NavItems } from './NavItems'
@@ -10,15 +11,14 @@ import { Divider } from '@/components/utils/Divider'
 import { Clock } from '@/components/utils/Clock'
 import { MobileButton } from './MobileButton'
 import { MenuBar } from './MenuBar'
-import { DesktopHeaderImage } from './DesktopHeaderImage'
 
 export function Header() {
   return (
     <header className="sticky top-0 z-10 h-20 lg:h-auto flex self-start lg:flex-col w-full lg:max-w-[230px] lg:w-1/2 bg-background lg:bg-transparent">
       <div className="flex items-center lg:items-start gap-2 lg:gap-0.5 lg:flex-col w-full">
-        <DesktopHeaderImage />
         <MobileHeaderImage />
 
+        <DesktopHeaderImage />
         <div className="hidden lg:block">
           <Link href="/">
             <Title variant="title" className="text-md lg:text-xl">
