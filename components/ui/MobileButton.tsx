@@ -26,7 +26,7 @@ export function MobileButton() {
       size="lg"
       className="lg:hidden transition-transform active:scale-75 p-0"
     >
-      {showMenu ? <X size={26} /> : <Equal size={26} />}
+      {showMenu ? <X size={28} /> : <Equal size={28} />}
     </Button>
   )
 }
