@@ -62,8 +62,6 @@ export function Header() {
       <Divider className="hidden lg:block" />
 
       <div className="hidden lg:block space-y-2">
-        <Clock />
-
         <Typography variant="muted" className="text-xs font-medium">
           © {new Date().getFullYear()} —{' '}
           <a
@@ -76,6 +74,8 @@ export function Header() {
             </span>
           </a>
         </Typography>
+
+        <Clock />
       </div>
 
       <MobileButton />
