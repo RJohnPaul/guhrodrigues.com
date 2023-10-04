@@ -19,7 +19,7 @@ export default function Contact() {
       <section className="space-y-6">
         <Title variant="title">Contato</Title>
         <Typography className="leading-relaxed">
-          Sinta-se à vontade para entrar em contato e vamos conversar sobre como
+          Sinta-se à vontade para entrar em contato e conversaremos sobre como
           podemos trabalhar juntos.
         </Typography>
         <div>
