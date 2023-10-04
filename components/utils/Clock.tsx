@@ -21,7 +21,7 @@ export function Clock() {
   }, [])
 
   return (
-    <Tooltip text="São Paulo">
+    <Tooltip text="São Paulo · Brasil">
       <Typography variant="muted" size="sm" className="sm:hidden md:block">
         {date.toLocaleString('pt-BR', {
           hour: '2-digit',

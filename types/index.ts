@@ -9,23 +9,19 @@ export interface ContextProps {
   setEmail: React.Dispatch<React.SetStateAction<string>>
   message: string
   setMessage: React.Dispatch<React.SetStateAction<string>>
-  position: number
-  setPosition: React.Dispatch<React.SetStateAction<number>>
   visible: boolean
   setVisible: React.Dispatch<React.SetStateAction<boolean>>
   submitting: boolean
   setSubmitting: React.Dispatch<React.SetStateAction<boolean>>
   isVisible: boolean
   setIsVisible: React.Dispatch<React.SetStateAction<boolean>>
-  hovered: string
-  setHovered: React.Dispatch<React.SetStateAction<string>>
 }
 
 export interface NavLinksProps {
   id: number
   path: string
   name: string
-  icon?: JSX.Element
+  icon: JSX.Element
 }
 
 export interface ProjectsProps {

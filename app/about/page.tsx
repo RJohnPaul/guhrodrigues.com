@@ -1,9 +1,14 @@
+import { Title } from '@/components/utils/Title'
 import { Metadata } from 'next'
 
+import author from '@/assets/images/author.jpg'
+import Image from 'next/image'
+import { Biography } from '@/components/ui/Biography'
+import { DownloadButton } from '@/components/ui/DownloadButton'
+import { Divider } from '@/components/utils/Divider'
+import { Stack } from '@/components/ui/Stack'
 import { Toast } from '@/components/utils/Toast'
-
 import { AnimateEnter } from '@/components/utils/AnimateEnter'
-import { AboutContent } from '@/components/content/AboutContent'
 
 export const metadata: Metadata = {
   title: 'Sobre',
@@ -12,14 +17,31 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <>
-      <article className="w-full sm:h-full md:min-h-[calc(100vh_-_85px)] flex items-center py-24">
-        <AnimateEnter className="w-full m-auto py-8">
-          <AboutContent />
-        </AnimateEnter>
-      </article>
+    <AnimateEnter>
+      <section>
+        <Title variant="title">Sobre mim</Title>
+        <div className="flex my-6 sm:flex-col md:flex-row lg:items-center justify-between gap-12">
+          <figure className="md:order-2">
+            <Image
+              src={author}
+              className="rounded-lg w-[400px] md:w-[1000px]"
+              alt="Gustavo"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARIAAACbCAYAAACu/xSHAAAAAXNSR0IArs4c6QAABDpJREFUeF7t1LEJACAQBEFtVjC0/0DBFjYdcz8Yjp17nTs8AgQIBIEpJEHPVwIEvoCQGAIBAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAlngAUxXXNDwFIdGAAAAAElFTkSuQmCC"
+              priority
+            />
+          </figure>
+
+          <Biography />
+        </div>
+        <div className="w-fit mb-6">
+          <DownloadButton />
+        </div>
+      </section>
+      <Divider />
+      <Stack />
 
       <Toast />
-    </>
+    </AnimateEnter>
   )
 }

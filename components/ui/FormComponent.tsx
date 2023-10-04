@@ -1,7 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
-
 import * as Form from '@radix-ui/react-form'
 
 import { useHooks } from '@/context/Provider'
@@ -9,17 +7,6 @@ import { useHooks } from '@/context/Provider'
 import { SendButton } from '@/components/utils/SendButton'
 
 import { successAlert, errorAlert } from '@/components/utils/Toast'
-
-const animation = {
-  hide: {
-    y: 8,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-  },
-}
 
 export function FormComponent() {
   const {
@@ -59,17 +46,9 @@ export function FormComponent() {
   }
 
   return (
-    <motion.div
-      initial="hide"
-      animate="show"
-      transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
-      className="max-w-md w-full"
-    >
+    <div className="max-w-md w-full">
       <Form.Root onSubmit={sendEmail}>
-        <motion.div
-          className="flex flex-col mx-auto gap-4"
-          variants={animation}
-        >
+        <div className="flex flex-col mx-auto gap-4">
           <Form.Field name="text">
             <div className="flex items-center justify-between">
               <Form.Label className="text-sm font-medium py-2 text-neutral-400">
@@ -144,8 +123,8 @@ export function FormComponent() {
           <Form.Submit asChild>
             <SendButton submitting={submitting} />
           </Form.Submit>
-        </motion.div>
+        </div>
       </Form.Root>
-    </motion.div>
+    </div>
   )
 }

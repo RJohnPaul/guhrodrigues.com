@@ -11,16 +11,12 @@ const initialValues = {
   setEmail: () => undefined,
   message: '',
   setMessage: () => undefined,
-  position: 0,
-  setPosition: () => undefined,
   visible: true,
   setVisible: () => undefined,
   submitting: true,
   setSubmitting: () => undefined,
   isVisible: false,
   setIsVisible: () => undefined,
-  hovered: '',
-  setHovered: () => undefined,
 }
 
 const AppContext = createContext<ContextProps>(initialValues)

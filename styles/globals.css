@@ -8,7 +8,7 @@
   }
 
   ::-webkit-scrollbar {
-    @apply w-0.5;
+    @apply w-1;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -19,15 +19,11 @@
     @apply text-emerald-300 bg-emerald-300/10;
   }
 
-  body {
-    @apply font-poppins bg-background outline-none;
-  }
-
   h1 {
     @apply text-primary;
   }
 
-  :is(header, nav, img, a, button, input, label, textarea) {
+  :is(nav, img, button, input, label, textarea) {
     @apply select-none;
   }
 

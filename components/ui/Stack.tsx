@@ -1,44 +1,35 @@
-'use client'
-
 import Image from 'next/image'
 
-import { motion } from 'framer-motion'
+import { Code2 } from 'lucide-react'
 
-import author from '@/assets/images/author.jpg'
+import { stack } from '@/data/stack'
 
 import { Title } from '@/components/utils/Title'
-import { Biography } from '@/components/ui/Biography'
+import { Typography } from '@/components/utils/Typography'
 
-export function AboutContent() {
+export function Stack() {
   return (
-    <>
-      <div className="mb-8">
-        <Title variant="title">Sobre mim</Title>
+    <section className="my-6">
+      <div className="space-y-2">
+        <Title variant="title" size="xl" className="flex items-center gap-2">
+          <Code2 size={18} />
+          Habilidades
+        </Title>
+        <Typography>Meu conhecimento técnico.</Typography>
       </div>
-      <div className="flex sm:flex-col md:flex-row justify-between gap-12">
-        <motion.figure
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{
-            type: 'spring',
-            stiffness: 260,
-            damping: 40,
-            delay: 0.1,
-          }}
-          className="md:order-2"
-        >
+      <div className="flex flex-wrap items-center gap-3 my-4">
+        {stack.map(({ id, src, name }) => (
           <Image
-            src={author}
-            className="rounded-lg w-[400px] md:w-[900px]"
-            alt="Gustavo"
+            key={id}
+            src={src}
+            width={30}
+            className="grayscale hover:grayscale-0 duration-300"
+            alt={name}
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARIAAACbCAYAAACu/xSHAAAAAXNSR0IArs4c6QAABDpJREFUeF7t1LEJACAQBEFtVjC0/0DBFjYdcz8Yjp17nTs8AgQIBIEpJEHPVwIEvoCQGAIBAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAllASDKhAwQICIkNECCQBYQkEzpAgICQ2AABAlngAUxXXNDwFIdGAAAAAElFTkSuQmCC"
-            priority
           />
-        </motion.figure>
-
-        <Biography />
+        ))}
       </div>
-    </>
+    </section>
   )
 }

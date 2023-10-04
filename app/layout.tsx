@@ -3,10 +3,7 @@ import { Poppins, Kanit } from 'next/font/google'
 import '@/styles/globals.css'
 
 import { Provider } from '@/context/Provider'
-import { AnimateEnter } from '@/components/utils/AnimateEnter'
 import { Header } from '@/components/ui/Header'
-import { Footer } from '@/components/ui/Footer'
-import { Container } from '@/components/ui/Container'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -16,7 +13,7 @@ const poppins = Poppins({
 
 const kanit = Kanit({
   subsets: ['latin'],
-  weight: ['600'],
+  weight: ['400'],
   variable: '--font-title',
 })
 
@@ -77,14 +74,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${poppins.variable} ${kanit.variable}`}>
-        <AnimateEnter>
+      <body
+        className={`${poppins.variable} ${kanit.variable} font-poppins bg-background outline-none`}
+      >
+        <div className="hidden lg:block absolute right-[400px] -top-[650px] z-[-999] w-[900px] h-[250px] rounded-full bg-emerald-400 blur-[350px]" />
+        <div className="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row lg:gap-10 lg:py-32">
           <Provider>
             <Header />
-            <Container>{children}</Container>
-            <Footer />
+            {children}
           </Provider>
-        </AnimateEnter>
+        </div>
       </body>
     </html>
   )

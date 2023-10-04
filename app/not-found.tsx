@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <article className="w-full relative h-[90vh] flex text-center items-center justify-center">
+    <main className="flex items-center justify-center max-w-[854px] py-8 lg:w-4/5 lg:py-0">
       <section className="flex flex-col items-center justify-center p-8">
         <div className="flex flex-col gap-4 text-center">
           <Typography>
@@ -32,6 +32,6 @@ export default function NotFound() {
           </div>
         </div>
       </section>
-    </article>
+    </main>
   )
 }

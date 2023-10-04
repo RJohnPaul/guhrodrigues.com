@@ -1,7 +1,11 @@
 import { Metadata } from 'next'
 
+import { Title } from '@/components/utils/Title'
+import { Typography } from '@/components/utils/Typography'
+import { FormComponent } from '@/components/ui/FormComponent'
+import { Socials } from '@/components/ui/Socials'
+import { Divider } from '@/components/utils/Divider'
 import { AnimateEnter } from '@/components/utils/AnimateEnter'
-import { ContactContent } from '@/components/content/ContactContent'
 import { Toast } from '@/components/utils/Toast'
 
 export const metadata: Metadata = {
@@ -11,14 +15,37 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <>
-      <article className="w-full min-h-[calc(100vh_-_85px)] flex items-center py-24">
-        <AnimateEnter className="gap-8 py-9">
-          <ContactContent />
-        </AnimateEnter>
-      </article>
+    <AnimateEnter>
+      <section className="space-y-6">
+        <Title variant="title">Contato</Title>
+        <Typography className="leading-relaxed">
+          Sinta-se à vontade para entrar em contato e vamos conversar sobre como
+          podemos trabalhar juntos.
+        </Typography>
+        <div>
+          <Title variant="title" size="xl">
+            Minhas redes sociais
+          </Title>
+          <Socials />
+        </div>
+      </section>
+
+      <Divider />
+
+      <section className="space-y-4 my-6">
+        <Title variant="title" size="xl">
+          Mande um email, como nos velhos tempos.
+        </Title>
+        <Typography>
+          Gosto muito de interagir com programadores, criadores e estudantes da
+          tecnologia. Caso se interessou pelo meu trabalho ou queira dar um
+          feedback sobre este website, vamos trocar um papo.
+        </Typography>
+
+        <FormComponent />
+      </section>
 
       <Toast />
-    </>
+    </AnimateEnter>
   )
 }

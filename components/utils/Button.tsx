@@ -8,13 +8,13 @@ const button = tv({
     variant: {
       default: 'bg-primary text-black text-sm hover:bg-primary/70',
       ghost: 'text-neutral-400 hover:text-primary hover:bg-neutral-800',
-      dark: 'text-neutral-400 bg-background border border-zinc-700',
+      dark: 'font-medium text-neutral-400 bg-background border border-neutral-800',
       muted: 'text-neutral-400',
     },
     size: {
       default: 'rounded-lg',
-      lg: 'rounded-lg p-0',
-      icon: 'rounded-full p-2',
+      lg: 'rounded-lg',
+      social: 'py-2 px-2.5 rounded-lg',
     },
   },
   defaultVariants: {

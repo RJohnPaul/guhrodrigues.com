@@ -24,7 +24,7 @@ export function MobileButton() {
       onClick={handleMenu}
       variant="muted"
       size="lg"
-      className="md:hidden transition-transform active:scale-75"
+      className="lg:hidden transition-transform active:scale-75 p-0"
     >
       {showMenu ? <X size={26} /> : <Equal size={26} />}
     </Button>

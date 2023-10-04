@@ -1,7 +1,7 @@
 import { ComponentProps } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 
-const button = tv({
+const typography = tv({
   variants: {
     variant: {
       default: 'text-foreground font-normal',
@@ -19,7 +19,7 @@ const button = tv({
   },
 })
 
-type TypographyProps = ComponentProps<'p'> & VariantProps<typeof button>
+type TypographyProps = ComponentProps<'p'> & VariantProps<typeof typography>
 
 export function Typography({
   variant,
@@ -27,5 +27,5 @@ export function Typography({
   className,
   ...props
 }: TypographyProps) {
-  return <p className={button({ variant, size, className })} {...props} />
+  return <p className={typography({ variant, size, className })} {...props} />
 }

@@ -1,7 +1,10 @@
 import { Metadata } from 'next'
 
+import { Title } from '@/components/utils/Title'
+import { Typography } from '@/components/utils/Typography'
+import { projects } from '@/data/projects'
+import { ProjectItem } from '@/components/ui/ProjectItem'
 import { AnimateEnter } from '@/components/utils/AnimateEnter'
-import { ProjectsContent } from '@/components/content/ProjectsContent'
 
 export const metadata: Metadata = {
   title: 'Projetos',
@@ -10,10 +13,24 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <article className="w-full py-24">
-      <AnimateEnter className="py-9 mx-auto flex flex-col justify-center w-full">
-        <ProjectsContent />
-      </AnimateEnter>
-    </article>
+    <AnimateEnter>
+      <section>
+        <Title variant="title">
+          Trabalho, hobby, conhecimento & open source.
+        </Title>
+        <Typography className="leading-relaxed my-6">
+          Sou fanático pela criação de novos projetos, pois é a maior chave para
+          ganhar conhecimento. Nesta página você pode navegar para 8 sites na
+          qual desenvolvi.
+        </Typography>
+      </section>
+      <ul className="grid md:grid-cols-2 place-items-center gap-4">
+        {projects.map((props) => (
+          <li key={props.id}>
+            <ProjectItem {...props} />
+          </li>
+        ))}
+      </ul>
+    </AnimateEnter>
   )
 }
