@@ -16,7 +16,7 @@ export default function Projects() {
     <AnimateEnter>
       <section>
         <Title variant="title">
-          Trabalho, hobby, conhecimento & open source.
+          Trabalho, hobby, conhecimento & open source
         </Title>
         <Typography className="leading-relaxed my-6">
           Sou fanático pela criação de novos projetos, pois é a maior chave para

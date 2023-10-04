@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <AnimateEnter>
       <section>
-        <Title variant="title">Unindo Estética e Funcionalidade.</Title>
+        <Title variant="title">Unindo Estética e Funcionalidade</Title>
         <Typography className="leading-relaxed my-6">
           Olá, me chamo Gustavo! Como desenvolvedor web, meu objetivo é criar
           experiências digitais que combinem perfeitamente a estética elegante
