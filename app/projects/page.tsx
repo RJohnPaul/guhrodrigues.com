@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <AnimateEnter>
+    <AnimateEnter className="max-w-[854px] py-8 lg:w-4/5 lg:py-0">
       <section>
         <Title variant="title">
           Trabalho, hobby, conhecimento & open source

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <AnimateEnter>
+    <AnimateEnter className="max-w-[854px] py-8 lg:w-4/5 lg:py-0">
       <section>
         <Title variant="title">Sobre mim</Title>
         <div className="flex my-6 sm:flex-col md:flex-row lg:items-center justify-between gap-12">

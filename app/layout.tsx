@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Poppins, Kanit } from 'next/font/google'
 import '@/styles/globals.css'
 
+import { Texture } from '@/components/utils/Texture'
+import { Blur } from '@/components/utils/Blur'
+import { AnimateEnter } from '@/components/utils/AnimateEnter'
 import { Provider } from '@/context/Provider'
 import { Header } from '@/components/ui/Header'
 
@@ -77,13 +80,14 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${kanit.variable} font-poppins bg-background outline-none`}
       >
-        <div className="hidden lg:block absolute right-[400px] -top-[650px] z-[-999] w-[900px] h-[250px] rounded-full bg-emerald-400 blur-[350px]" />
-        <div className="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row lg:gap-10 lg:py-32">
+        <Texture />
+        <Blur />
+        <AnimateEnter className="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row lg:gap-10 lg:py-32">
           <Provider>
             <Header />
             {children}
           </Provider>
-        </div>
+        </AnimateEnter>
       </body>
     </html>
   )

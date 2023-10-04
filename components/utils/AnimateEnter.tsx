@@ -15,11 +15,11 @@ const animation = {
   },
 }
 
-export function AnimateEnter({ children }: AnimateEnterProps) {
+export function AnimateEnter({ children, className }: AnimateEnterProps) {
   return (
     <LazyMotion features={domAnimation}>
       <motion.main
-        className="max-w-[854px] py-8 lg:w-4/5 lg:py-0"
+        className={className}
         initial="hide"
         animate="show"
         variants={animation}
