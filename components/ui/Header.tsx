@@ -11,6 +11,7 @@ import { Divider } from '@/components/utils/Divider'
 import { Clock } from '@/components/utils/Clock'
 import { MobileButton } from './MobileButton'
 import { MenuBar } from './MenuBar'
+import Link from 'next/link'
 
 export function Header() {
   return (
@@ -29,9 +30,11 @@ export function Header() {
           </div>
         </div>
         <div>
-          <Title variant="title" size="xl" className="hidden md:block">
-            Gustavo Rodrigues
-          </Title>
+          <Link href="/">
+            <Title variant="title" className="text-md lg:text-xl">
+              Gustavo Rodrigues
+            </Title>
+          </Link>
           <a
             href="https://github.com/guhrodriguess"
             target="_blank"
