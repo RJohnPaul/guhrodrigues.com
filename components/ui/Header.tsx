@@ -1,6 +1,9 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
+
+import { Laptop2 } from 'lucide-react'
 
 import logo from '@/assets/images/logo.svg'
 
@@ -11,7 +14,6 @@ import { Divider } from '@/components/utils/Divider'
 import { Clock } from '@/components/utils/Clock'
 import { MobileButton } from './MobileButton'
 import { MenuBar } from './MenuBar'
-import Link from 'next/link'
 
 export function Header() {
   return (
@@ -54,14 +56,16 @@ export function Header() {
           </Typography>
         </div>
       </div>
+
       <Divider className="hidden lg:block" />
+
       <nav className="hidden lg:flex flex-col gap-1">
         <NavItems />
       </nav>
 
       <Divider className="hidden lg:block" />
 
-      <div className="hidden lg:block space-y-2">
+      <div className="hidden lg:flex justify-between items-center gap-2">
         <Typography variant="muted" className="text-xs font-medium">
           © {new Date().getFullYear()} —{' '}
           <a

@@ -1,12 +1,16 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
-import { Typography } from './Typography'
+import Lottie from 'lottie-react'
+
+import clockIcon from '@/assets/static/clock.json'
+
 import { Tooltip } from './Tooltip'
 
 export function Clock() {
   const [date, setDate] = useState<Date>(new Date())
+  const clockRef = useRef<any>()
 
   function refreshClock() {
     setDate(new Date())
@@ -20,15 +24,21 @@ export function Clock() {
     }
   }, [])
 
+  const hour = date.toLocaleString('pt-BR', {
+    hour: '2-digit',
+    minute: 'numeric',
+    second: 'numeric',
+  })
+
   return (
-    <Tooltip text="São Paulo · Brasil">
-      <Typography variant="muted" size="sm" className="sm:hidden md:block">
-        {date.toLocaleString('pt-BR', {
-          hour: '2-digit',
-          minute: 'numeric',
-          second: 'numeric',
-        })}
-      </Typography>
+    <Tooltip text={`${hour} GMT-3`}>
+      <Lottie
+        lottieRef={clockRef}
+        animationData={clockIcon}
+        style={{ width: 20, height: 20 }}
+        autoplay={true}
+        loop={true}
+      />
     </Tooltip>
   )
 }

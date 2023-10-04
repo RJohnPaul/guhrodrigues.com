@@ -14,7 +14,7 @@ export default function Home() {
     <AnimateEnter>
       <section>
         <Title variant="title">Gustavo Rodrigues</Title>
-        <Typography className="flex items-center gap-2 my-2 font-medium">
+        <Typography variant="muted" className="flex items-center gap-2 my-2">
           <span className="text-emerald-600">
             <Globe size={16} />
           </span>
