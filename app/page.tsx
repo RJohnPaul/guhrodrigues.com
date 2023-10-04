@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <AnimateEnter>
       <section>
-        <Title variant="title">Unindo Estética e Funcionalidade</Title>
+        <Title variant="title">Gustavo Rodrigues</Title>
         <Typography className="leading-relaxed my-6">
-          Olá, me chamo Gustavo! Como desenvolvedor web, meu objetivo é criar
-          experiências digitais que combinem perfeitamente a estética elegante
-          com a funcionalidade excepcional. Minha paixão é transformar ideias em
-          interfaces de usuário intuitivas e visualmente atraentes, garantindo
-          que cada projeto conte uma história única e envolvente na web.
+          Como desenvolvedor web, meu objetivo é criar experiências digitais que
+          combinem perfeitamente a estética elegante com a funcionalidade
+          excepcional. Minha paixão é transformar ideias em interfaces de
+          usuário intuitivas e visualmente atraentes, garantindo que cada
+          projeto conte uma história única e envolvente na web.
         </Typography>
       </section>
       <Divider />
