@@ -1,16 +1,25 @@
+import Link from 'next/link'
+
+import { Globe } from 'lucide-react'
+
 import { LatestProjects } from '@/components/ui/LatestProjects'
 import { AnimateEnter } from '@/components/utils/AnimateEnter'
 import { Button } from '@/components/utils/Button'
 import { Divider } from '@/components/utils/Divider'
 import { Title } from '@/components/utils/Title'
 import { Typography } from '@/components/utils/Typography'
-import Link from 'next/link'
 
 export default function Home() {
   return (
     <AnimateEnter>
       <section>
         <Title variant="title">Gustavo Rodrigues</Title>
+        <Typography className="flex items-center gap-2 my-2">
+          <span className="text-emerald-600">
+            <Globe size={16} />
+          </span>
+          São Paulo, Brasil
+        </Typography>
         <Typography className="leading-relaxed my-6">
           Como desenvolvedor web, meu objetivo é criar experiências digitais que
           combinem perfeitamente a estética elegante com a funcionalidade
