@@ -1,4 +1,4 @@
-## guhrodrigues
+## guhrodrigues.com
 
 Personal portfolio with minimalist design. Developed to show a bit of me and my projects.
 
