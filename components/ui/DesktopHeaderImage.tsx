@@ -27,7 +27,7 @@ export function DesktopHeaderImage() {
   return (
     <div
       className={clsx(
-        'hidden lg:block group relative p-5 my-2 -ml-1 rounded-full border bg-background border-neutral-800 ease-in-out duration-500',
+        'hidden lg:block group relative p-5 mb-2 -ml-1 rounded-full border bg-background border-neutral-800 ease-in-out duration-500',
         {
           'scale-90': isScrolled,
           'scale-100': !isScrolled,
