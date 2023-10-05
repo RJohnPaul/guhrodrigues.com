@@ -1,10 +1,39 @@
+'use client'
+
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
+
+import clsx from 'clsx'
 
 import logo from '@/assets/images/logo.svg'
 
 export function DesktopHeaderImage() {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    function handleScroll() {
+      const scrollTop = window.scrollY
+
+      setIsScrolled(scrollTop > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <div className="hidden lg:block group relative p-5 my-2 rounded-full border bg-background border-neutral-800">
+    <div
+      className={clsx(
+        'hidden lg:block group relative p-5 my-2 -ml-1 rounded-full border bg-background border-neutral-800 ease-in-out duration-500',
+        {
+          'scale-90': isScrolled,
+          'scale-100': !isScrolled,
+        },
+      )}
+    >
       <div className="overflow-hidden">
         <Image
           src={logo}

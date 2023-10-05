@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 
 import { MobileHeaderImage } from './MobileHeaderImage'
@@ -14,7 +12,7 @@ import { MenuBar } from './MenuBar'
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-10 h-20 lg:h-auto flex self-start lg:flex-col w-full lg:max-w-[230px] lg:w-1/2 bg-background lg:bg-transparent">
+    <header className="sticky top-0 z-10 h-20 lg:h-auto lg:py-8 flex self-start lg:flex-col w-full lg:max-w-[230px] lg:w-1/2 bg-background lg:bg-transparent">
       <div className="flex items-center lg:items-start gap-2 lg:gap-0.5 lg:flex-col w-full">
         <MobileHeaderImage />
 

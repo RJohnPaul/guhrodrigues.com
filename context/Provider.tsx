@@ -9,11 +9,9 @@ export function Provider({ children }: { children: React.ReactNode }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [position, setPosition] = useState(0)
   const [visible, setVisible] = useState(true)
   const [submitting, setSubmitting] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
-  const [hovered, setHovered] = useState('')
 
   const value = {
     showMenu,
@@ -24,16 +22,12 @@ export function Provider({ children }: { children: React.ReactNode }) {
     setEmail,
     message,
     setMessage,
-    position,
-    setPosition,
     visible,
     setVisible,
     submitting,
     setSubmitting,
     isVisible,
     setIsVisible,
-    hovered,
-    setHovered,
   }
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
