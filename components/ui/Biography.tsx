@@ -13,7 +13,7 @@ export function Biography() {
       <p className="text-md text-foreground">
         Adoro aprender novas tecnologias desde que descobri a programação.
         Atualmente desenvolvo minhas aplicações com Next.js, React, TypeScript,
-        JavaScript e Node.js .
+        Node.js e JavaScript.
       </p>
       <p className="text-md text-foreground font-normal">
         Interfaces minimalistas , dark mode e a tecnologia me encantam.

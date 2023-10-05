@@ -80,14 +80,14 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${kanit.variable} font-poppins bg-background outline-none`}
       >
-        <Texture />
-        <Blur />
         <AnimateEnter className="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row lg:gap-10 lg:py-32">
           <Provider>
             <Header />
             {children}
           </Provider>
         </AnimateEnter>
+        <Texture />
+        <Blur />
       </body>
     </html>
   )
