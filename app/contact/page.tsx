@@ -34,7 +34,7 @@ export default function Contact() {
 
       <section className="space-y-4 my-6">
         <Title variant="title" size="xl">
-          Mande um email, como nos velhos tempos.
+          Mande um email, como nos velhos tempos
         </Title>
         <Typography>
           Gosto muito de interagir com programadores, criadores e estudantes da
