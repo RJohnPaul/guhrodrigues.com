@@ -32,7 +32,7 @@ export default function Contact() {
 
       <Divider />
 
-      <section className="space-y-4 my-6">
+      <section className="space-y-4">
         <Title variant="title" size="xl">
           Mande um email, como nos velhos tempos
         </Title>
@@ -44,8 +44,6 @@ export default function Contact() {
 
         <FormComponent />
       </section>
-
-      <Toast />
     </AnimateEnter>
   )
 }

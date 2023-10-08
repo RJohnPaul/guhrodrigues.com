@@ -35,14 +35,14 @@ export default function About() {
 
           <Biography />
         </div>
-        <div className="w-fit mb-6">
+        <div className="w-fit">
           <DownloadButton />
         </div>
       </section>
-      <Divider />
-      <Stack />
 
-      <Toast />
+      <Divider />
+
+      <Stack />
     </AnimateEnter>
   )
 }

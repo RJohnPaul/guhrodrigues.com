@@ -36,7 +36,7 @@ export function LatestProjects() {
           />
         </Link>
       </div>
-      <ul className="grid md:grid-cols-2 place-items-center gap-4 my-6">
+      <ul className="grid md:grid-cols-2 place-items-center gap-4 mt-6">
         {projects.slice(0, 2).map((props) => (
           <li key={props.id}>
             <ProjectItem {...props} />

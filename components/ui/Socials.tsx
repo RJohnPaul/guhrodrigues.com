@@ -6,11 +6,7 @@ export function Socials() {
     <div className="flex flex-wrap gap-3 mt-4 mb-6">
       {socials.map(({ id, href, icon, name }) => (
         <a key={id} href={href} target="_blank" rel="noreferrer">
-          <Button
-            variant="dark"
-            size="social"
-            className="hover:bg-neutral-800 hover:text-primary duration-300"
-          >
+          <Button variant="dark" size="social">
             {icon}
             <span>{name}</span>
           </Button>

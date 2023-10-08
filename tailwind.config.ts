@@ -21,6 +21,9 @@ const config: Config = {
       lg: '1024px',
       xl: '1280px',
     },
+    lineHeight: {
+      relaxed: '1.8',
+    },
     fontFamily: {
       poppins: 'var(--font-default)',
       title: 'var(--font-title)',

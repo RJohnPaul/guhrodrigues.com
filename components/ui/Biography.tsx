@@ -1,6 +1,6 @@
 export function Biography() {
   return (
-    <div className="leading-[1.8] space-y-3">
+    <div className="leading-relaxed space-y-3">
       <p className="text-md text-foreground">
         Meu nome é Gustavo Rodrigues, sou Desenvolvedor Web e estudante de
         Técnico em Informática para Internet .

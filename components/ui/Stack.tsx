@@ -9,7 +9,7 @@ import { Typography } from '@/components/utils/Typography'
 
 export function Stack() {
   return (
-    <section className="my-6">
+    <section>
       <div className="space-y-2">
         <Title variant="title" size="xl" className="flex items-center gap-2">
           <Code2 size={18} />
@@ -17,7 +17,7 @@ export function Stack() {
         </Title>
         <Typography>Meu conhecimento técnico.</Typography>
       </div>
-      <div className="flex flex-wrap items-center gap-3 my-4">
+      <div className="flex flex-wrap items-center gap-3 mt-4">
         {stack.map(({ id, src, name }) => (
           <Image
             key={id}

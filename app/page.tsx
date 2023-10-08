@@ -14,26 +14,30 @@ export default function Home() {
     <AnimateEnter className="max-w-[854px] py-8 lg:w-4/5">
       <section>
         <Title variant="title">Gustavo Rodrigues</Title>
-        <Typography variant="muted" className="flex items-center gap-2 my-2">
+        <Typography variant="muted" className="flex items-center gap-2 mt-2">
           <span className="text-emerald-600">
             <Globe size={16} />
           </span>
           São Paulo, Brasil
         </Typography>
-        <Typography className="leading-relaxed my-6">
+        <Typography className="leading-relaxed mt-6">
           Como desenvolvedor web, meu objetivo é criar experiências digitais que
           combinem perfeitamente a estética elegante com a funcionalidade
-          excepcional. Minha paixão é transformar ideias em interfaces de
-          usuário intuitivas e visualmente atraentes, garantindo que cada
-          projeto conte uma história única e envolvente na web.
+          excepcional. Minha paixão é transformar código em experiências
+          incríveis, garantindo que cada projeto conte uma história única e
+          envolvente na web.
         </Typography>
       </section>
+
       <Divider />
+
       <section>
         <LatestProjects />
       </section>
+
       <Divider />
-      <section className="flex flex-col gap-4 p-5 bg-neutral-900 border border-neutral-800 rounded-lg my-6">
+
+      <section className="flex flex-col gap-4 p-5 bg-neutral-900 border border-neutral-800 rounded-lg">
         <Title variant="title" size="xl">
           Vamos trabalhar juntos!
         </Title>
@@ -41,7 +45,7 @@ export default function Home() {
           Caso se interessou pelo meu trabalho ou queira dar um feedback sobre
           este website, vamos trocar um papo.
         </Typography>
-        <Link href="/contact">
+        <Link href="/contact" className="w-fit">
           <Button>Contate-me</Button>
         </Link>
       </section>

@@ -43,13 +43,13 @@ export function Header() {
         </div>
       </div>
 
-      <Divider className="hidden lg:block" />
+      <Divider className="hidden lg:block my-3" />
 
       <nav className="hidden lg:flex flex-col gap-1">
         <NavItems />
       </nav>
 
-      <Divider className="hidden lg:block" />
+      <Divider className="hidden lg:block my-3" />
 
       <div className="hidden lg:flex justify-between items-center gap-2">
         <Typography variant="muted" className="text-xs font-medium">
