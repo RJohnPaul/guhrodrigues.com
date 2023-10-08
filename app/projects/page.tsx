@@ -1,8 +1,9 @@
 import { Metadata } from 'next'
 
+import { projects } from '@/data/projects'
+
 import { Title } from '@/components/utils/Title'
 import { Typography } from '@/components/utils/Typography'
-import { projects } from '@/data/projects'
 import { ProjectItem } from '@/components/ui/ProjectItem'
 import { AnimateEnter } from '@/components/utils/AnimateEnter'
 

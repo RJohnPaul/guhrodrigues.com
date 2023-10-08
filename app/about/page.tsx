@@ -1,8 +1,9 @@
-import { Title } from '@/components/utils/Title'
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 import author from '@/assets/images/author.jpg'
-import Image from 'next/image'
+
+import { Title } from '@/components/utils/Title'
 import { Biography } from '@/components/ui/Biography'
 import { DownloadButton } from '@/components/ui/DownloadButton'
 import { Divider } from '@/components/utils/Divider'

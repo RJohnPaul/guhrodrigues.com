@@ -13,6 +13,7 @@ export async function POST(request: Request) {
       subject: message,
       text: `Você recebeu uma mensagem de ${name} com o e-mail ${email}`,
     })
+
     return NextResponse.json(
       {
         status: 'Ok',
@@ -25,6 +26,7 @@ export async function POST(request: Request) {
     if (e instanceof Error) {
       console.log(`Failed to send email: ${e.message}`)
     }
+
     return NextResponse.json(
       {
         error: 'Internal server error.',

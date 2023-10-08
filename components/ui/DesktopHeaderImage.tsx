@@ -38,7 +38,7 @@ export function DesktopHeaderImage() {
         <Image
           src={logo}
           alt="Gustavo"
-          className="w-10 scale-100 group-hover:scale-105 ease-in-out duration-300"
+          className="w-9 scale-100 group-hover:scale-105 ease-in-out duration-300"
         />
       </div>
       <div className="absolute w-4 h-4 rounded-full bg-emerald-600 bottom-1 right-1">
