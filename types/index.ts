@@ -55,8 +55,3 @@ export interface SendEmailProps {
   email: string
   name: string
 }
-
-export interface PageDescriptionProps {
-  title: string
-  description: string
-}
