@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import { MobileHeaderImage } from './MobileHeaderImage'
 import { DesktopHeaderImage } from './DesktopHeaderImage'
 import { Title } from '@/components/utils/Title'
@@ -18,15 +16,14 @@ export function Header() {
 
         <DesktopHeaderImage />
         <div className="hidden lg:block">
-          <Link href="/">
-            <Title variant="title" className="text-md lg:text-xl">
-              Gustavo Rodrigues
-            </Title>
-          </Link>
+          <Title variant="title" className="text-md lg:text-xl">
+            Gustavo Rodrigues
+          </Title>
           <a
             href="https://github.com/guhrodriguess"
             target="_blank"
             rel="noreferrer"
+            className="block w-fit"
           >
             <Typography
               variant="muted"
