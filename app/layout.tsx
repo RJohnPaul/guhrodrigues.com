@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   publisher: 'Gustavo Rodrigues',
   twitter: {
     card: 'summary_large_image',
-    site: '@guhrdss',
+    site: '@guhrodrrigues',
     title: 'Gustavo Rodrigues',
   },
 }
