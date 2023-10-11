@@ -6,7 +6,7 @@ import { NavItems } from './NavItems'
 import { Divider } from '@/components/utils/Divider'
 import { Clock } from '@/components/utils/Clock'
 import { MobileButton } from './MobileButton'
-import { MenuBar } from './MenuBar'
+import { MobileMenu } from './MobileMenu'
 
 export function Header() {
   return (
@@ -66,7 +66,7 @@ export function Header() {
       </div>
 
       <MobileButton />
-      <MenuBar />
+      <MobileMenu />
     </header>
   )
 }

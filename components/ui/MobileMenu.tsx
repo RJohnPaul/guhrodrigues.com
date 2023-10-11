@@ -7,9 +7,9 @@ import clsx from 'clsx'
 import { useHooks } from '@/context/Provider'
 import { useMenuAnimation } from '@/hooks/menuAnimation'
 
-import { navLinks } from '@/data/header'
+import { navLinks } from '@/data/mobile-menu'
 
-export function MenuBar() {
+export function MobileMenu() {
   const { showMenu, setShowMenu } = useHooks()
 
   const scope = useMenuAnimation(showMenu)
