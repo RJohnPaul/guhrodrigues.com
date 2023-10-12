@@ -4,9 +4,9 @@ import * as Form from '@radix-ui/react-form'
 
 import { useHooks } from '@/context/Provider'
 
-import { SendButton } from '@/components/utils/SendButton'
+import { SendButton } from '@/components/ui/SendButton'
 
-import { Toast, successAlert, errorAlert } from '@/components/utils/Toast'
+import { Toast, successAlert, errorAlert } from '@/components/ui/Toast'
 
 export function FormComponent() {
   const {
@@ -127,7 +127,6 @@ export function FormComponent() {
           </div>
         </Form.Root>
       </div>
-
       <Toast />
     </>
   )

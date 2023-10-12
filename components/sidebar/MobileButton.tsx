@@ -4,8 +4,6 @@ import { Equal, X } from 'lucide-react'
 
 import { useHooks } from '@/context/Provider'
 
-import { Button } from '@/components/utils/Button'
-
 export function MobileButton() {
   const { showMenu, setShowMenu } = useHooks()
 
@@ -13,19 +11,20 @@ export function MobileButton() {
     setShowMenu((prevstate) => !prevstate)
 
     if (!showMenu) {
-      document.body.style.overflow = 'hidden'
+      document.documentElement.style.overflow = 'hidden'
+      document.documentElement.style.paddingRight = '4px'
     } else {
-      document.body.style.overflow = 'auto'
+      document.documentElement.style.overflow = ''
+      document.documentElement.style.paddingRight = ''
     }
   }
 
   return (
-    <Button
+    <button
       onClick={handleMenu}
-      variant="muted"
-      className="lg:hidden transition-transform active:scale-75 p-0"
+      className="text-neutral-400 active:scale-75 transition-transform lg:hidden"
     >
       {showMenu ? <X size={28} /> : <Equal size={28} />}
-    </Button>
+    </button>
   )
 }

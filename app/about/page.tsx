@@ -31,16 +31,13 @@ export default function About() {
               priority
             />
           </figure>
-
           <Biography />
         </div>
         <div className="w-fit">
           <DownloadButton />
         </div>
       </section>
-
       <Divider />
-
       <Stack />
     </AnimateEnter>
   )

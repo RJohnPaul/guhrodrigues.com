@@ -12,7 +12,7 @@ import aboutIcon from '@/assets/static/about.json'
 import projectsIcon from '@/assets/static/projects.json'
 import contactIcon from '@/assets/static/contact.json'
 
-export function NavItems() {
+export function Navigation() {
   const homeRef = useRef<any>()
   const aboutRef = useRef<any>()
   const projectsRef = useRef<any>()
@@ -21,7 +21,7 @@ export function NavItems() {
   const pathname = usePathname()
 
   return (
-    <>
+    <nav className="hidden lg:flex flex-col gap-1">
       <Link
         href="/"
         onMouseEnter={() => homeRef.current?.play()}
@@ -102,6 +102,6 @@ export function NavItems() {
         />
         <span className="text-sm">Contato</span>
       </Link>
-    </>
+    </nav>
   )
 }

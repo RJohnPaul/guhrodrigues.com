@@ -16,13 +16,15 @@ export function MobileMenu() {
 
   const handleCloseMenu = () => {
     setShowMenu(false)
-    document.body.style.overflow = 'auto'
+
+    document.documentElement.style.overflow = ''
+    document.documentElement.style.paddingRight = ''
   }
 
   return (
     <div
       className={clsx(
-        'fixed right-0 z-50 w-32 mx-6 p-1 my-[70px] flex flex-col bg-background border border-neutral-800 rounded-lg duration-300',
+        'fixed right-0 z-50 w-32 mx-10 p-1 my-[70px] flex flex-col bg-background border border-neutral-800 rounded-lg duration-300',
         {
           'top-0 visible opacity-100 scale-100': showMenu,
           'invisible opacity-0 scale-50': !showMenu,

@@ -6,7 +6,7 @@ import Lottie from 'lottie-react'
 
 import emailIcon from '@/assets/static/email.json'
 
-import { Button } from './Button'
+import { Button } from '../utils/Button'
 
 export function SendButton({ submitting }: { submitting: boolean }) {
   const emailRef = useRef<any>()

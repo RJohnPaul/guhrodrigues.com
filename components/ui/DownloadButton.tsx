@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import Lottie from 'lottie-react'
 import downloadIcon from '@/assets/static/download.json'
 
-import { Toast, successAlert } from '@/components/utils/Toast'
+import { Toast, successAlert } from '@/components/ui/Toast'
 
 import { Button } from '@/components/utils/Button'
 
@@ -32,7 +32,6 @@ export function DownloadButton() {
           Download C.V
         </Button>
       </a>
-
       <Toast />
     </>
   )

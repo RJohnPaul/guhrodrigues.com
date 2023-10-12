@@ -2,11 +2,12 @@ import type { Metadata } from 'next'
 import { Poppins, Kanit } from 'next/font/google'
 import '@/styles/globals.css'
 
-import { Texture } from '@/components/utils/Texture'
-import { Blur } from '@/components/utils/Blur'
-import { AnimateEnter } from '@/components/utils/AnimateEnter'
 import { Provider } from '@/context/Provider'
-import { Header } from '@/components/ui/Header'
+
+import { Texture } from '@/components/ui/Texture'
+import { Blur } from '@/components/ui/Blur'
+import { AnimateEnter } from '@/components/utils/AnimateEnter'
+import { Sidebar } from '@/components/sidebar/Sidebar'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -82,7 +83,7 @@ export default function RootLayout({
       >
         <AnimateEnter className="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row lg:gap-10 lg:py-24">
           <Provider>
-            <Header />
+            <Sidebar />
             {children}
           </Provider>
         </AnimateEnter>

@@ -28,15 +28,11 @@ export default function Home() {
           envolvente na web.
         </Typography>
       </section>
-
       <Divider />
-
       <section>
         <LatestProjects />
       </section>
-
       <Divider />
-
       <section className="flex flex-col gap-4 p-5 bg-neutral-900 border border-neutral-800 rounded-lg">
         <Title variant="title" size="xl">
           Vamos trabalhar juntos!

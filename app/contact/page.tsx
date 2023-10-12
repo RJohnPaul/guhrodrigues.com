@@ -28,9 +28,7 @@ export default function Contact() {
           <Socials />
         </div>
       </section>
-
       <Divider />
-
       <section className="space-y-4">
         <Title variant="title" size="xl">
           Mande um email, como nos velhos tempos
@@ -40,7 +38,6 @@ export default function Contact() {
           tecnologia. Caso se interessou pelo meu trabalho ou queira dar um
           feedback sobre este website, vamos trocar um papo.
         </Typography>
-
         <FormComponent />
       </section>
     </AnimateEnter>
