@@ -8,7 +8,6 @@ import { Biography } from '@/components/ui/Biography'
 import { DownloadButton } from '@/components/ui/DownloadButton'
 import { Divider } from '@/components/utils/Divider'
 import { Stack } from '@/components/ui/Stack'
-import { Toast } from '@/components/utils/Toast'
 import { AnimateEnter } from '@/components/utils/AnimateEnter'
 
 export const metadata: Metadata = {

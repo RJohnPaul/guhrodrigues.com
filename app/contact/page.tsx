@@ -6,7 +6,6 @@ import { FormComponent } from '@/components/ui/FormComponent'
 import { Socials } from '@/components/ui/Socials'
 import { Divider } from '@/components/utils/Divider'
 import { AnimateEnter } from '@/components/utils/AnimateEnter'
-import { Toast } from '@/components/utils/Toast'
 
 export const metadata: Metadata = {
   title: 'Contato',
