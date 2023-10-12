@@ -11,6 +11,8 @@ import node from '@/assets/images/skills/nodejs.svg'
 import styledComponents from '@/assets/images/skills/styledcomponents.svg'
 import tailwind from '@/assets/images/skills/tailwindcss.svg'
 import framer from '@/assets/images/skills/framer.svg'
+import mui from '@/assets/images/skills/mui.svg'
+import mysql from '@/assets/images/skills/mysql.svg'
 
 export const stack = [
   {
@@ -50,31 +52,41 @@ export const stack = [
   },
   {
     id: 8,
+    src: mysql,
+    name: 'MySQL',
+  },
+  {
+    id: 9,
     src: tailwind,
     name: 'Tailwind',
   },
   {
-    id: 9,
+    id: 10,
     src: styledComponents,
     name: 'Styled Components',
   },
   {
-    id: 10,
+    id: 11,
+    src: mui,
+    name: 'MUI',
+  },
+  {
+    id: 12,
     src: shadcn,
     name: 'shadcn/ui',
   },
   {
-    id: 11,
+    id: 13,
     src: framer,
     name: 'Framer',
   },
   {
-    id: 12,
+    id: 14,
     src: html,
     name: 'HTML',
   },
   {
-    id: 13,
+    id: 15,
     src: css,
     name: 'CSS',
   },
