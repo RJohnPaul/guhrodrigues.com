@@ -33,7 +33,7 @@ export function FormComponent() {
       }),
     })
       .then(() => {
-        successAlert('E-mail enviado :D')
+        successAlert('E-mail enviado ツ')
 
         setName('')
         setEmail('')

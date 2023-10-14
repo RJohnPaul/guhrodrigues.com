@@ -1,4 +1,4 @@
-import { toast, ToastContainer } from 'react-toastify'
+import { toast, ToastContainer, Slide } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 import { CheckCircle2, XCircle } from 'lucide-react'
@@ -7,14 +7,16 @@ export function Toast() {
   return (
     <ToastContainer
       position="bottom-center"
-      autoClose={3000}
+      autoClose={5000}
       newestOnTop={false}
       hideProgressBar={true}
+      transition={Slide}
       toastStyle={{
         backgroundColor: '#222',
         color: '#d4d4d4',
         borderRadius: '0.5rem',
         fontSize: '14px',
+        fontWeight: 500,
         border: '1px solid #333',
         userSelect: 'none',
         width: '250px',

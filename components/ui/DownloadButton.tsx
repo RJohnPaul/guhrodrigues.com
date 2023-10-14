@@ -15,9 +15,9 @@ export function DownloadButton() {
   return (
     <>
       <a
-        href="/resume.pdf"
-        download="Gustavo Rodrigues.pdf"
-        onClick={() => successAlert('Currículo instalado :D')}
+        href="/Gustavo Rodrigues.pdf"
+        download
+        onClick={() => successAlert('Currículo instalado ツ')}
         onMouseEnter={() => downloadRef.current?.play()}
         onMouseLeave={() => downloadRef.current?.stop()}
       >
