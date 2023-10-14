@@ -33,7 +33,7 @@ export function FormComponent() {
       }),
     })
       .then(() => {
-        successAlert('E-mail enviado!')
+        successAlert('E-mail enviado :D')
 
         setName('')
         setEmail('')
@@ -41,7 +41,7 @@ export function FormComponent() {
         setSubmitting(false)
       })
       .catch(() => {
-        errorAlert('E-mail não enviado!')
+        errorAlert('E-mail não enviado :(')
       })
   }
 
