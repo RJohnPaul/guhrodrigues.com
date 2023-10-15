@@ -15,10 +15,9 @@ export function MobileMenu() {
   const scope = useMenuAnimation(showMenu)
 
   const handleCloseMenu = () => {
-    setShowMenu(false)
-
     document.documentElement.style.overflow = ''
-    document.documentElement.style.paddingRight = ''
+
+    setShowMenu(false)
   }
 
   return (

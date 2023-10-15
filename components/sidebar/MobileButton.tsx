@@ -12,10 +12,8 @@ export function MobileButton() {
 
     if (!showMenu) {
       document.documentElement.style.overflow = 'hidden'
-      document.documentElement.style.paddingRight = '4px'
     } else {
       document.documentElement.style.overflow = ''
-      document.documentElement.style.paddingRight = ''
     }
   }
 

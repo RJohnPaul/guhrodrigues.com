@@ -17,7 +17,6 @@ export function MobileProfile() {
           />
         </div>
       </Link>
-
       <MobileButton />
     </>
   )
