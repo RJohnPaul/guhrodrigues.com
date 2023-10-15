@@ -13,6 +13,10 @@ export const metadata: Metadata = {
 }
 
 export default function Projects() {
+  function getTotalProjects() {
+    return projects.length
+  }
+
   return (
     <AnimateEnter className="max-w-[854px] py-8 lg:w-4/5">
       <section>
@@ -21,8 +25,8 @@ export default function Projects() {
         </Title>
         <Typography className="leading-relaxed my-6">
           Sou fanático pela criação de novos projetos, pois é a maior chave para
-          ganhar conhecimento. Nesta página você pode navegar para 8 sites na
-          qual desenvolvi.
+          ganhar conhecimento. Nesta página você pode navegar para{' '}
+          {getTotalProjects()} na qual desenvolvi.
         </Typography>
       </section>
       <ul className="grid md:grid-cols-2 place-items-center gap-4">
