@@ -1,9 +1,9 @@
-import { useHooks } from '@/context/Provider'
+import { useHooks } from "@/context/Provider";
 
-import { TooltipProps } from '@/types'
+import { TooltipProps } from "@/types";
 
 export function Tooltip({ children, text }: TooltipProps) {
-  const { isVisible, setIsVisible } = useHooks()
+  const { isVisible, setIsVisible } = useHooks();
 
   return (
     <div
@@ -12,10 +12,10 @@ export function Tooltip({ children, text }: TooltipProps) {
       className="relative select-none"
     >
       <div
-        className={`absolute right-0 -bottom-9 w-[7.5rem] flex items-center justify-center bg-background border border-neutral-800 text-foreground font-medium rounded-lg text-xs py-1 px-2 duration-150 ${
+        className={`absolute -bottom-9 right-0 flex w-[7.5rem] items-center justify-center rounded-lg border border-neutral-800 bg-background px-2 py-1 text-xs font-medium text-foreground duration-150 ${
           isVisible
-            ? 'visible opacity-100 scale-100'
-            : 'invisible opacity-0 scale-50'
+            ? "visible scale-100 opacity-100"
+            : "invisible scale-50 opacity-0"
         }`}
       >
         <span>{text}</span>
@@ -23,5 +23,5 @@ export function Tooltip({ children, text }: TooltipProps) {
 
       {children}
     </div>
-  )
+  );
 }

@@ -1,17 +1,17 @@
-import { Clock } from '../ui/Clock'
-import { Typography } from '../utils/Typography'
+import { Clock } from "../ui/Clock";
+import { Typography } from "../utils/Typography";
 
 export function SidebarFooter() {
   return (
-    <div className="hidden lg:flex justify-between items-center gap-2">
+    <div className="hidden items-center justify-between gap-2 lg:flex">
       <Typography variant="muted" className="text-xs font-medium">
-        © {new Date().getFullYear()} —{' '}
+        © {new Date().getFullYear()} —{" "}
         <a
           href="https://github.com/guhrodriguess/guhrodrigues.com"
           target="_blank"
           rel="noreferrer"
         >
-          <span className="hover:text-foreground duration-300">
+          <span className="duration-300 hover:text-foreground">
             Gustavo Rodrigues
           </span>
         </a>
@@ -19,5 +19,5 @@ export function SidebarFooter() {
 
       <Clock />
     </div>
-  )
+  );
 }

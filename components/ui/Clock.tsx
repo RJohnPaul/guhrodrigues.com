@@ -1,34 +1,34 @@
-'use client'
+"use client";
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect } from "react";
 
-import Lottie from 'lottie-react'
+import Lottie from "lottie-react";
 
-import clockIcon from '@/assets/static/clock.json'
+import clockIcon from "@/assets/static/clock.json";
 
-import { Tooltip } from './Tooltip'
+import { Tooltip } from "./Tooltip";
 
 export function Clock() {
-  const [date, setDate] = useState<Date>(new Date())
-  const clockRef = useRef<any>()
+  const [date, setDate] = useState<Date>(new Date());
+  const clockRef = useRef<any>();
 
   function refreshClock() {
-    setDate(new Date())
+    setDate(new Date());
   }
 
   useEffect(() => {
-    const timerId = setInterval(refreshClock, 1000)
+    const timerId = setInterval(refreshClock, 1000);
 
     return () => {
-      clearInterval(timerId)
-    }
-  }, [])
+      clearInterval(timerId);
+    };
+  }, []);
 
-  const hour = date.toLocaleString('pt-BR', {
-    hour: '2-digit',
-    minute: 'numeric',
-    second: 'numeric',
-  })
+  const hour = date.toLocaleString("pt-BR", {
+    hour: "2-digit",
+    minute: "numeric",
+    second: "numeric",
+  });
 
   return (
     <Tooltip text={`${hour} GMT-3`}>
@@ -40,5 +40,5 @@ export function Clock() {
         loop={true}
       />
     </Tooltip>
-  )
+  );
 }

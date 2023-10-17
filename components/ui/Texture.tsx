@@ -1,6 +1,6 @@
 export function Texture() {
   return (
-    <svg className="fixed top-0 left-0 z-[999] w-full h-screen opacity-25 brightness-[60%] contrast-[60%] pointer-events-none">
+    <svg className="pointer-events-none fixed left-0 top-0 z-[999] h-screen w-full opacity-25 brightness-[60%] contrast-[60%]">
       <filter id="noise">
         <feTurbulence
           type="fractalNoise"
@@ -12,5 +12,5 @@ export function Texture() {
       </filter>
       <rect width="100%" height="100%" filter="url(#noise)"></rect>
     </svg>
-  )
+  );
 }

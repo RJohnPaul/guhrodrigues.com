@@ -1,35 +1,35 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useRef } from 'react'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useRef } from "react";
 
-import Lottie from 'lottie-react'
-import clsx from 'clsx'
+import Lottie from "lottie-react";
+import clsx from "clsx";
 
-import homeIcon from '@/assets/static/home.json'
-import aboutIcon from '@/assets/static/about.json'
-import projectsIcon from '@/assets/static/projects.json'
-import contactIcon from '@/assets/static/contact.json'
+import homeIcon from "@/assets/static/home.json";
+import aboutIcon from "@/assets/static/about.json";
+import projectsIcon from "@/assets/static/projects.json";
+import contactIcon from "@/assets/static/contact.json";
 
 export function Navigation() {
-  const homeRef = useRef<any>()
-  const aboutRef = useRef<any>()
-  const projectsRef = useRef<any>()
-  const contactRef = useRef<any>()
+  const homeRef = useRef<any>();
+  const aboutRef = useRef<any>();
+  const projectsRef = useRef<any>();
+  const contactRef = useRef<any>();
 
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
-    <nav className="hidden lg:flex flex-col gap-1">
+    <nav className="hidden flex-col gap-1 lg:flex">
       <Link
         href="/"
         onMouseEnter={() => homeRef.current?.play()}
         onMouseLeave={() => homeRef.current?.stop()}
         className={clsx(
-          'flex items-center gap-2 text-foreground hover:bg-neutral-800 px-2.5 py-2 rounded-lg duration-300',
+          "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
           {
-            'bg-neutral-800 text-primary': pathname === '/',
+            "bg-neutral-800 text-primary": pathname === "/",
           },
         )}
       >
@@ -47,9 +47,9 @@ export function Navigation() {
         onMouseEnter={() => aboutRef.current?.play()}
         onMouseLeave={() => aboutRef.current?.stop()}
         className={clsx(
-          'flex items-center gap-2 text-foreground hover:bg-neutral-800 px-2.5 py-2 rounded-lg duration-300',
+          "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
           {
-            'bg-neutral-800 text-primary': pathname === '/about',
+            "bg-neutral-800 text-primary": pathname === "/about",
           },
         )}
       >
@@ -67,9 +67,9 @@ export function Navigation() {
         onMouseEnter={() => projectsRef.current?.play()}
         onMouseLeave={() => projectsRef.current?.stop()}
         className={clsx(
-          'flex items-center gap-2 text-foreground hover:bg-neutral-800 px-2.5 py-2 rounded-lg duration-300',
+          "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
           {
-            'bg-neutral-800 text-primary': pathname === '/projects',
+            "bg-neutral-800 text-primary": pathname === "/projects",
           },
         )}
       >
@@ -87,9 +87,9 @@ export function Navigation() {
         onMouseEnter={() => contactRef.current?.play()}
         onMouseLeave={() => contactRef.current?.stop()}
         className={clsx(
-          'flex items-center gap-2 text-foreground hover:bg-neutral-800 px-2.5 py-2 rounded-lg duration-300',
+          "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
           {
-            'bg-neutral-800 text-primary': pathname === '/contact',
+            "bg-neutral-800 text-primary": pathname === "/contact",
           },
         )}
       >
@@ -103,5 +103,5 @@ export function Navigation() {
         <span className="text-sm">Contato</span>
       </Link>
     </nav>
-  )
+  );
 }

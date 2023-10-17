@@ -1,3 +1,3 @@
-declare module 'lottie-react'
-declare module '*.jpg'
-declare module '*.svg'
+declare module "lottie-react";
+declare module "*.jpg";
+declare module "*.svg";

@@ -1,6 +1,6 @@
 export function Biography() {
   return (
-    <div className="leading-relaxed space-y-3">
+    <div className="space-y-3 leading-relaxed">
       <p className="text-md text-foreground">
         Meu nome é Gustavo Rodrigues, sou Desenvolvedor Web e estudante de
         Técnico em Informática para Internet.
@@ -15,10 +15,10 @@ export function Biography() {
         Atualmente desenvolvo minhas aplicações com Next.js, React, TypeScript,
         Node.js e JavaScript.
       </p>
-      <p className="text-md text-foreground font-normal">
+      <p className="text-md font-normal text-foreground">
         Interfaces minimalistas, dark mode e a tecnologia me encantam. Desfrutar
         de músicas é uma terapia para mim.
       </p>
     </div>
-  )
+  );
 }

@@ -1,18 +1,18 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { useRef } from 'react'
-import Lottie from 'lottie-react'
+import Link from "next/link";
+import { useRef } from "react";
+import Lottie from "lottie-react";
 
-import { projects } from '@/data/projects'
+import { projects } from "@/data/projects";
 
-import arrowIcon from '@/assets/static/arrow.json'
+import arrowIcon from "@/assets/static/arrow.json";
 
-import { Title } from '@/components/utils/Title'
-import { ProjectItem } from './ProjectItem'
+import { Title } from "@/components/utils/Title";
+import { ProjectItem } from "./ProjectItem";
 
 export function LatestProjects() {
-  const arrowRef = useRef<any>()
+  const arrowRef = useRef<any>();
 
   return (
     <>
@@ -22,7 +22,7 @@ export function LatestProjects() {
         </Title>
         <Link
           href="/projects"
-          className="flex items-center gap-1 text-foreground text-xs font-medium hover:text-primary duration-300"
+          className="flex items-center gap-1 text-xs font-medium text-foreground duration-300 hover:text-primary"
           onMouseEnter={() => arrowRef.current?.play()}
           onMouseLeave={() => arrowRef.current?.stop()}
         >
@@ -36,7 +36,7 @@ export function LatestProjects() {
           />
         </Link>
       </div>
-      <ul className="grid md:grid-cols-2 place-items-center gap-4 mt-6">
+      <ul className="mt-6 grid place-items-center gap-4 md:grid-cols-2">
         {projects.slice(0, 2).map((props) => (
           <li key={props.id}>
             <ProjectItem {...props} />
@@ -44,5 +44,5 @@ export function LatestProjects() {
         ))}
       </ul>
     </>
-  )
+  );
 }

@@ -1,17 +1,17 @@
-'use client'
+"use client";
 
-import { useState, useContext } from 'react'
+import { useState, useContext } from "react";
 
-import AppContext from './AppContext'
+import AppContext from "./AppContext";
 
 export function Provider({ children }: { children: React.ReactNode }) {
-  const [showMenu, setShowMenu] = useState(false)
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [visible, setVisible] = useState(true)
-  const [submitting, setSubmitting] = useState(false)
-  const [isVisible, setIsVisible] = useState(false)
+  const [showMenu, setShowMenu] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [visible, setVisible] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const value = {
     showMenu,
@@ -28,11 +28,11 @@ export function Provider({ children }: { children: React.ReactNode }) {
     setSubmitting,
     isVisible,
     setIsVisible,
-  }
+  };
 
-  return <AppContext.Provider value={value}>{children}</AppContext.Provider>
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 
 export function useHooks() {
-  return useContext(AppContext)
+  return useContext(AppContext);
 }

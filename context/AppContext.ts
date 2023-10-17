@@ -1,15 +1,15 @@
-import { createContext } from 'react'
+import { createContext } from "react";
 
-import { ContextProps } from '@/types'
+import { ContextProps } from "@/types";
 
 const initialValues = {
   showMenu: false,
   setShowMenu: () => undefined,
-  name: '',
+  name: "",
   setName: () => undefined,
-  email: '',
+  email: "",
   setEmail: () => undefined,
-  message: '',
+  message: "",
   setMessage: () => undefined,
   visible: true,
   setVisible: () => undefined,
@@ -17,8 +17,8 @@ const initialValues = {
   setSubmitting: () => undefined,
   isVisible: false,
   setIsVisible: () => undefined,
-}
+};
 
-const AppContext = createContext<ContextProps>(initialValues)
+const AppContext = createContext<ContextProps>(initialValues);
 
-export default AppContext
+export default AppContext;

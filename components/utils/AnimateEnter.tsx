@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { LazyMotion, domAnimation, motion } from 'framer-motion'
+import { LazyMotion, domAnimation, motion } from "framer-motion";
 
-import { AnimateEnterProps } from '@/types'
+import { AnimateEnterProps } from "@/types";
 
 const animation = {
   hide: {
@@ -13,7 +13,7 @@ const animation = {
     y: 0,
     opacity: 1,
   },
-}
+};
 
 export function AnimateEnter({ children, className }: AnimateEnterProps) {
   return (
@@ -28,5 +28,5 @@ export function AnimateEnter({ children, className }: AnimateEnterProps) {
         {children}
       </motion.main>
     </LazyMotion>
-  )
+  );
 }

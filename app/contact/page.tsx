@@ -1,16 +1,16 @@
-import { Metadata } from 'next'
+import { Metadata } from "next";
 
-import { Title } from '@/components/utils/Title'
-import { Typography } from '@/components/utils/Typography'
-import { FormComponent } from '@/components/ui/FormComponent'
-import { Socials } from '@/components/ui/Socials'
-import { Divider } from '@/components/utils/Divider'
-import { AnimateEnter } from '@/components/utils/AnimateEnter'
+import { Title } from "@/components/utils/Title";
+import { Typography } from "@/components/utils/Typography";
+import { FormComponent } from "@/components/ui/FormComponent";
+import { Socials } from "@/components/ui/Socials";
+import { Divider } from "@/components/utils/Divider";
+import { AnimateEnter } from "@/components/utils/AnimateEnter";
 
 export const metadata: Metadata = {
-  title: 'Contato',
-  description: 'Mande um email, como nos velhos tempos',
-}
+  title: "Contato",
+  description: "Mande um email, como nos velhos tempos",
+};
 
 export default function Contact() {
   return (
@@ -41,5 +41,5 @@ export default function Contact() {
         <FormComponent />
       </section>
     </AnimateEnter>
-  )
+  );
 }

@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import { motion, useMotionTemplate, useMotionValue } from 'framer-motion'
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
-import { ProjectsProps } from '@/types'
+import { ProjectsProps } from "@/types";
 
-import { Typography } from '@/components/utils/Typography'
+import { Typography } from "@/components/utils/Typography";
 
 export function ProjectItem({
   src,
@@ -16,22 +16,22 @@ export function ProjectItem({
   techs,
   visit,
 }: ProjectsProps) {
-  const mouseX = useMotionValue(0)
-  const mouseY = useMotionValue(0)
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
 
   return (
     <Link
       href={visit}
       target="_blank"
       onMouseMove={(e) => {
-        const { left, top } = e.currentTarget.getBoundingClientRect()
+        const { left, top } = e.currentTarget.getBoundingClientRect();
 
-        mouseX.set(e.clientX - left)
-        mouseY.set(e.clientY - top)
+        mouseX.set(e.clientX - left);
+        mouseY.set(e.clientY - top);
       }}
       className="group relative flex flex-col items-center rounded-xl border border-zinc-800 p-2"
     >
-      <div className="absolute top-0 right-5 w-80 h-px bg-gradient-to-l from-transparent via-primary/30 via-10% to-transparent" />
+      <div className="absolute right-5 top-0 h-px w-80 bg-gradient-to-l from-transparent via-primary/30 via-10% to-transparent" />
       <motion.div
         className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
@@ -48,19 +48,19 @@ export function ProjectItem({
         <figure>
           <Image
             src={src}
-            className="max-w-[1024px] w-full max-h-[280px] h-full object-cover rounded-md"
+            className="h-full max-h-[280px] w-full max-w-[1024px] rounded-md object-cover"
             alt={title}
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
             priority
           />
         </figure>
-        <div className="flex flex-col w-full py-4 px-3 space-y-4">
+        <div className="flex w-full flex-col space-y-4 px-3 py-4">
           <div className="flex flex-col justify-center space-y-2">
-            <h3 className="text-xl text-primary font-title">{title}</h3>
+            <h3 className="font-title text-xl text-primary">{title}</h3>
             <Typography
               size="sm"
-              className="max-w-[420px] w-full leading-[1.8]"
+              className="w-full max-w-[420px] leading-[1.8]"
             >
               {description}
             </Typography>
@@ -81,5 +81,5 @@ export function ProjectItem({
         </div>
       </div>
     </Link>
-  )
+  );
 }

@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { useRef } from 'react'
+import { useRef } from "react";
 
-import Lottie from 'lottie-react'
+import Lottie from "lottie-react";
 
-import emailIcon from '@/assets/static/email.json'
+import emailIcon from "@/assets/static/email.json";
 
-import { Button } from '../utils/Button'
+import { Button } from "../utils/Button";
 
 export function SendButton({ submitting }: { submitting: boolean }) {
-  const emailRef = useRef<any>()
+  const emailRef = useRef<any>();
 
   return (
     <Button
@@ -29,5 +29,5 @@ export function SendButton({ submitting }: { submitting: boolean }) {
         <span>Enviar</span>
       )}
     </Button>
-  )
+  );
 }

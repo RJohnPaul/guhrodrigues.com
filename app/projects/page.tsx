@@ -1,20 +1,20 @@
-import { Metadata } from 'next'
+import { Metadata } from "next";
 
-import { projects } from '@/data/projects'
+import { projects } from "@/data/projects";
 
-import { Title } from '@/components/utils/Title'
-import { Typography } from '@/components/utils/Typography'
-import { ProjectItem } from '@/components/ui/ProjectItem'
-import { AnimateEnter } from '@/components/utils/AnimateEnter'
+import { Title } from "@/components/utils/Title";
+import { Typography } from "@/components/utils/Typography";
+import { ProjectItem } from "@/components/ui/ProjectItem";
+import { AnimateEnter } from "@/components/utils/AnimateEnter";
 
 export const metadata: Metadata = {
-  title: 'Projetos',
-  description: 'Canto pessoal da internet, onde mostra todos os meus projetos.',
-}
+  title: "Projetos",
+  description: "Canto pessoal da internet, onde mostra todos os meus projetos.",
+};
 
 export default function Projects() {
   function getTotalProjects() {
-    return projects.length
+    return projects.length;
   }
 
   return (
@@ -23,13 +23,13 @@ export default function Projects() {
         <Title variant="title">
           Trabalho, hobby, conhecimento & open source
         </Title>
-        <Typography className="leading-relaxed my-6">
+        <Typography className="my-6 leading-relaxed">
           Sou fanático pela criação de novos projetos, pois é a maior chave para
-          ganhar conhecimento. Nesta página você pode navegar para{' '}
+          ganhar conhecimento. Nesta página você pode navegar para{" "}
           {getTotalProjects()} aplicações na qual desenvolvi.
         </Typography>
       </section>
-      <ul className="grid md:grid-cols-2 place-items-center gap-4">
+      <ul className="grid place-items-center gap-4 md:grid-cols-2">
         {projects.map((props) => (
           <li key={props.id}>
             <ProjectItem {...props} />
@@ -37,5 +37,5 @@ export default function Projects() {
         ))}
       </ul>
     </AnimateEnter>
-  )
+  );
 }

@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-import * as Form from '@radix-ui/react-form'
+import * as Form from "@radix-ui/react-form";
 
-import { useHooks } from '@/context/Provider'
+import { useHooks } from "@/context/Provider";
 
-import { SendButton } from '@/components/ui/SendButton'
+import { SendButton } from "@/components/ui/SendButton";
 
-import { Toast, successAlert, errorAlert } from '@/components/ui/Toast'
+import { Toast, successAlert, errorAlert } from "@/components/ui/Toast";
 
 export function FormComponent() {
   const {
@@ -18,14 +18,14 @@ export function FormComponent() {
     setMessage,
     submitting,
     setSubmitting,
-  } = useHooks()
+  } = useHooks();
 
   async function sendEmail(e: React.FormEvent) {
-    e.preventDefault()
-    setSubmitting(true)
+    e.preventDefault();
+    setSubmitting(true);
 
-    await fetch('/api/send', {
-      method: 'POST',
+    await fetch("/api/send", {
+      method: "POST",
       body: JSON.stringify({
         email,
         name,
@@ -33,26 +33,26 @@ export function FormComponent() {
       }),
     })
       .then(() => {
-        successAlert('E-mail enviado ツ')
+        successAlert("E-mail enviado ツ");
 
-        setName('')
-        setEmail('')
-        setMessage('')
-        setSubmitting(false)
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSubmitting(false);
       })
       .catch(() => {
-        errorAlert('E-mail não enviado :(')
-      })
+        errorAlert("E-mail não enviado :(");
+      });
   }
 
   return (
     <>
-      <div className="max-w-md w-full">
+      <div className="w-full max-w-md">
         <Form.Root onSubmit={sendEmail}>
-          <div className="flex flex-col mx-auto gap-4">
+          <div className="mx-auto flex flex-col gap-4">
             <Form.Field name="text">
               <div className="flex items-center justify-between">
-                <Form.Label className="text-sm font-medium py-2 text-neutral-400">
+                <Form.Label className="py-2 text-sm font-medium text-neutral-400">
                   Nome
                 </Form.Label>
                 <Form.Message
@@ -64,7 +64,7 @@ export function FormComponent() {
               </div>
               <Form.Control asChild>
                 <input
-                  className="w-full p-2 text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
+                  className="w-7xl bg-tertiary w-full appearance-none rounded-lg border border-neutral-700 bg-input p-2 text-sm text-neutral-400 outline-none duration-300 placeholder:text-neutral-400 focus:ring-1 focus:ring-neutral-700"
                   type="text"
                   autoComplete="off"
                   required
@@ -76,7 +76,7 @@ export function FormComponent() {
             </Form.Field>
             <Form.Field name="question">
               <div className="flex items-center justify-between">
-                <Form.Label className="text-sm font-medium py-2 text-neutral-400">
+                <Form.Label className="py-2 text-sm font-medium text-neutral-400">
                   Email
                 </Form.Label>
                 <Form.Message
@@ -88,7 +88,7 @@ export function FormComponent() {
               </div>
               <Form.Control asChild>
                 <input
-                  className="w-full p-2 text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
+                  className="w-7xl bg-tertiary w-full appearance-none rounded-lg border border-neutral-700 bg-input p-2 text-sm text-neutral-400 outline-none duration-300 placeholder:text-neutral-400 focus:ring-1 focus:ring-neutral-700"
                   type="email"
                   autoComplete="off"
                   required
@@ -100,7 +100,7 @@ export function FormComponent() {
             </Form.Field>
             <Form.Field name="question">
               <div className="flex items-center justify-between">
-                <Form.Label className="text-sm font-medium py-2 text-neutral-400">
+                <Form.Label className="py-2 text-sm font-medium text-neutral-400">
                   Mensagem
                 </Form.Label>
                 <Form.Message
@@ -112,7 +112,7 @@ export function FormComponent() {
               </div>
               <Form.Control asChild>
                 <textarea
-                  className="w-full p-2 h-20 resize-none leading-relaxed text-sm text-neutral-400 placeholder:text-neutral-400 bg-input border border-neutral-700 rounded-lg outline-none appearance-none w-7xl bg-tertiary focus:ring-1 focus:ring-neutral-700 duration-300"
+                  className="w-7xl bg-tertiary h-20 w-full resize-none appearance-none rounded-lg border border-neutral-700 bg-input p-2 text-sm leading-relaxed text-neutral-400 outline-none duration-300 placeholder:text-neutral-400 focus:ring-1 focus:ring-neutral-700"
                   autoComplete="off"
                   required
                   value={message}
@@ -129,5 +129,5 @@ export function FormComponent() {
       </div>
       <Toast />
     </>
-  )
+  );
 }

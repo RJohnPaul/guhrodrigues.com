@@ -1,23 +1,23 @@
-'use client'
+"use client";
 
-import { useRef } from 'react'
+import { useRef } from "react";
 
-import Lottie from 'lottie-react'
-import downloadIcon from '@/assets/static/download.json'
+import Lottie from "lottie-react";
+import downloadIcon from "@/assets/static/download.json";
 
-import { Toast, successAlert } from '@/components/ui/Toast'
+import { Toast, successAlert } from "@/components/ui/Toast";
 
-import { Button } from '@/components/utils/Button'
+import { Button } from "@/components/utils/Button";
 
 export function DownloadButton() {
-  const downloadRef = useRef<any>()
+  const downloadRef = useRef<any>();
 
   return (
     <>
       <a
         href="/Gustavo Rodrigues.pdf"
         download
-        onClick={() => successAlert('Currículo instalado ツ')}
+        onClick={() => successAlert("Currículo instalado ツ")}
         onMouseEnter={() => downloadRef.current?.play()}
         onMouseLeave={() => downloadRef.current?.stop()}
       >
@@ -34,5 +34,5 @@ export function DownloadButton() {
       </a>
       <Toast />
     </>
-  )
+  );
 }
