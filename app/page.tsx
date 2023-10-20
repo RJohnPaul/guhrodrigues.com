@@ -11,7 +11,7 @@ import { Typography } from "@/components/utils/Typography";
 
 export default function Home() {
   return (
-    <AnimateEnter className="max-w-[854px] py-8 lg:w-4/5">
+    <AnimateEnter className="max-w-[854px] pt-8 lg:w-4/5">
       <section>
         <Title variant="title">Gustavo Rodrigues</Title>
         <Typography variant="muted" className="mt-2 flex items-center gap-2">

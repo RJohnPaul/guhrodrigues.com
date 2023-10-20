@@ -18,11 +18,9 @@ export default function Projects() {
   }
 
   return (
-    <AnimateEnter className="max-w-[854px] py-8 lg:w-4/5">
+    <AnimateEnter className="max-w-[854px] pt-8 lg:w-4/5">
       <section>
-        <Title variant="title">
-          Trabalho, hobby, conhecimento & open source
-        </Title>
+        <Title variant="title">Trabalho, hobby & open source</Title>
         <Typography className="my-6 leading-relaxed">
           Sou fanático pela criação de novos projetos, pois é a maior chave para
           ganhar conhecimento. Nesta página você pode navegar para{" "}

@@ -48,7 +48,7 @@ export const stack = [
   {
     id: 7,
     src: mongo,
-    name: "Mongo",
+    name: "MongoDB",
   },
   {
     id: 8,
@@ -58,7 +58,7 @@ export const stack = [
   {
     id: 9,
     src: tailwind,
-    name: "Tailwind",
+    name: "Tailwind CSS",
   },
   {
     id: 10,

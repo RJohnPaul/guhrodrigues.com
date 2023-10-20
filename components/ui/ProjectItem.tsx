@@ -60,19 +60,18 @@ export function ProjectItem({
             <h3 className="font-title text-xl text-primary">{title}</h3>
             <Typography
               size="sm"
-              className="w-full max-w-[420px] leading-[1.8]"
+              className="w-full max-w-[420px] leading-[1.7]"
             >
               {description}
             </Typography>
           </div>
-          <div className="flex flex-wrap gap-3 pb-3">
+          <div className="flex flex-wrap gap-3">
             {techs.map((tech, index) => (
               <Image
                 key={index}
                 src={tech}
                 width={22}
                 alt="Techs"
-                className="grayscale"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
               />

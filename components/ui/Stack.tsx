@@ -17,19 +17,23 @@ export function Stack() {
         </Title>
         <Typography>Meu conhecimento técnico.</Typography>
       </div>
-      <div className="mt-4 flex flex-wrap items-center gap-3">
+      <ul className="mt-4 flex flex-wrap items-center gap-3">
         {stack.map(({ id, src, name }) => (
-          <Image
+          <li
             key={id}
-            src={src}
-            width={30}
-            className="grayscale duration-300 hover:grayscale-0"
-            alt={name}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-          />
+            className="flex items-center gap-2 rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2"
+          >
+            <Image
+              src={src}
+              width={18}
+              alt={name}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
+            />
+            <Typography size="sm">{name}</Typography>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

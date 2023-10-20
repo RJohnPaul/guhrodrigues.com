@@ -82,7 +82,7 @@ export const projects: ProjectsProps[] = [
   {
     id: 7,
     src: todo,
-    title: "Todo",
+    title: "To-do",
     description:
       "Projeto desenvolvido para criar e armazenar tarefas com o uso do localStorage.",
     techs: [html, css, javascript],
