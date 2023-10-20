@@ -11,7 +11,7 @@ export function Biography() {
       </p>
       <p className="text-md text-foreground">
         Embora eu concentre a maior parte do meu tempo no trabalho de front-end,
-        também tenho experiência em back-end com Node.js.
+        possuo também experiência em back-end com Node.js.
       </p>
       <p className="text-md font-normal text-foreground">
         Interfaces minimalistas, dark mode e transformar código em experiências
