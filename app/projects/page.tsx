@@ -18,7 +18,7 @@ export default function Projects() {
   }
 
   return (
-    <AnimateEnter className="max-w-[854px] pt-8 lg:w-4/5">
+    <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section>
         <Title variant="title">Trabalho, hobby & open source</Title>
         <Typography className="my-6 leading-relaxed">

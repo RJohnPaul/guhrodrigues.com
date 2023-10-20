@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <AnimateEnter className="max-w-[854px] pt-8 lg:w-4/5">
+    <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section className="space-y-6">
         <Title variant="title">Contato</Title>
         <Typography className="leading-relaxed">
