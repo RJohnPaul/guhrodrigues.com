@@ -6,18 +6,16 @@ export function Biography() {
         Técnico em Informática para Internet.
       </p>
       <p className="text-md text-foreground">
-        Comecei em 2021 na programação com HTML, CSS e JavaScript. No ano
-        seguinte, minha paixão só cresceu e ficou claro que essa seria minha
-        profissão definitiva.
+        Adoro aprender novas tecnologias desde que descobri a programação.
+        Atualmente desenvolvo minhas aplicações com TypeScript, Next.js e React.
       </p>
       <p className="text-md text-foreground">
-        Adoro aprender novas tecnologias desde que descobri a programação.
-        Atualmente desenvolvo minhas aplicações com Next.js, React, TypeScript,
-        Node.js e JavaScript.
+        Embora eu concentre a maior parte do meu tempo no trabalho de front-end,
+        também tenho experiência em back-end com Node.js.
       </p>
       <p className="text-md font-normal text-foreground">
-        Interfaces minimalistas, dark mode e a tecnologia me encantam. Desfrutar
-        de músicas é uma terapia para mim.
+        Interfaces minimalistas, dark mode e transformar código em experiências
+        únicas me encantam. Desfrutar de músicas é uma terapia para mim.
       </p>
     </div>
   );
