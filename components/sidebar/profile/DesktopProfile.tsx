@@ -38,13 +38,13 @@ export function DesktopProfile() {
           },
         )}
       >
-        <div className="overflow-hidden">
+        <figure className="overflow-hidden">
           <Image
             src={logo}
             alt="Gustavo"
             className="w-9 scale-100 duration-300 ease-in-out group-hover:scale-105"
           />
-        </div>
+        </figure>
         <div className="absolute bottom-1 right-1 h-4 w-4 rounded-full bg-emerald-600">
           <div className="absolute -right-0 bottom-0 z-[11] h-4 w-4 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
         </div>

@@ -14,6 +14,9 @@ const config: Config = {
         background: "#08070B",
         input: "#131415",
       },
+      backgroundImage: {
+        "globe-pattern": "url('/globe-pattern.svg')",
+      },
     },
     screens: {
       sm: "100px",
