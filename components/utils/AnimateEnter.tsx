@@ -6,7 +6,7 @@ import { AnimateEnterProps } from "@/types";
 
 const animation = {
   hide: {
-    y: 20,
+    y: 50,
     opacity: 0,
   },
   show: {
@@ -23,7 +23,7 @@ export function AnimateEnter({ children, className }: AnimateEnterProps) {
         initial="hide"
         animate="show"
         variants={animation}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.4 }}
       >
         {children}
       </motion.main>
