@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 import Lottie from "lottie-react";
 
-import emailIcon from "@/assets/static/email.json";
+import emailIcon from "@/assets/icons/email.json";
 
 import { Button } from "../utils/Button";
 

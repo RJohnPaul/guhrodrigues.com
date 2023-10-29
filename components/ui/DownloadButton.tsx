@@ -3,7 +3,7 @@
 import { useRef } from "react";
 
 import Lottie from "lottie-react";
-import downloadIcon from "@/assets/static/download.json";
+import downloadIcon from "@/assets/icons/download.json";
 
 import { Toast, successAlert } from "@/components/ui/Toast";
 

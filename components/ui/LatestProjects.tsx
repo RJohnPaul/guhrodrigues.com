@@ -6,7 +6,7 @@ import Lottie from "lottie-react";
 
 import { projects } from "@/data/projects";
 
-import arrowIcon from "@/assets/static/arrow.json";
+import arrowIcon from "@/assets/icons/arrow.json";
 
 import { Title } from "@/components/utils/Title";
 import { ProjectItem } from "./ProjectItem";

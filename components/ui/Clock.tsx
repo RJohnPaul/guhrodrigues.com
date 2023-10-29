@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 
 import Lottie from "lottie-react";
 
-import clockIcon from "@/assets/static/clock.json";
+import clockIcon from "@/assets/icons/clock.json";
 
 import { Tooltip } from "./Tooltip";
 

@@ -6,6 +6,7 @@ import { CheckCircle2, XCircle } from "lucide-react";
 export function Toast() {
   return (
     <ToastContainer
+      className="flex items-center justify-center"
       position="bottom-center"
       autoClose={5000}
       newestOnTop={false}
