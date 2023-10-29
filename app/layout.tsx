@@ -18,7 +18,7 @@ const poppins = Poppins({
 const kanit = Kanit({
   subsets: ["latin"],
   weight: ["400"],
-  variable: "--font-title",
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {

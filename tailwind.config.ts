@@ -29,7 +29,7 @@ const config: Config = {
     },
     fontFamily: {
       poppins: "var(--font-default)",
-      title: "var(--font-title)",
+      mono: "var(--font-mono)",
     },
   },
   plugins: [],

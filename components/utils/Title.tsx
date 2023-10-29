@@ -5,7 +5,7 @@ const title = tv({
   variants: {
     variant: {
       default: "text-primary font-bold",
-      title: "font-title",
+      title: "font-mono",
     },
     size: {
       default: "text-4xl",
