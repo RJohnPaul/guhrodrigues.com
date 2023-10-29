@@ -75,9 +75,9 @@ export default function ProjectPage({ params }: { params: any }) {
                 <a
                   href={visit}
                   target="_blank"
-                  className="flex items-center gap-2 font-mono text-sm"
+                  className="font-mono flex items-center gap-2 text-base"
                 >
-                  <Eye size={16} className="text-primary" />
+                  <Eye size={18} className="text-primary" />
                   <span className="text-emerald-500 hover:text-emerald-400">
                     Visualizar
                   </span>
@@ -88,9 +88,9 @@ export default function ProjectPage({ params }: { params: any }) {
             <a
               href={code}
               target="_blank"
-              className="flex items-center gap-2 font-mono text-sm"
+              className="font-mono flex items-center gap-2 text-base"
             >
-              <Github size={16} className="text-primary" />
+              <Github size={18} className="text-primary" />
               <span className="text-emerald-500 hover:text-emerald-400">
                 Código fonte
               </span>
@@ -109,14 +109,14 @@ export default function ProjectPage({ params }: { params: any }) {
         </figure>
       </section>
       <section className="mt-6">
-        <article className="space-y-4">
-          <div className="space-y-2">
+        <article className="space-y-6">
+          <div className="space-y-4">
             <Title variant="title" size="xl">
               Descrição
             </Title>
             <Typography className="leading-relaxed">{description}</Typography>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-4">
             <Title variant="title" size="xl">
               Tecnologias utilizadas
             </Title>
