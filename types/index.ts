@@ -30,12 +30,10 @@ export interface ProjectProps {
   title: string;
   smallDescription: string;
   description: string;
-  techs: [
-    {
-      image: StaticImageData;
-      name: string;
-    },
-  ];
+  techs: Array<{
+    image: StaticImageData;
+    name: string;
+  }>;
   code: string;
   visit?: string;
   slug: string;
