@@ -24,13 +24,21 @@ export interface NavLinksProps {
   icon: JSX.Element;
 }
 
-export interface ProjectsProps {
+export interface ProjectProps {
   id: number;
-  src: StaticImageData;
+  image: StaticImageData;
   title: string;
+  smallDescription: string;
   description: string;
-  techs: string[];
-  visit: string;
+  techs: [
+    {
+      image: StaticImageData;
+      name: string;
+    },
+  ];
+  code: string;
+  visit?: string;
+  slug: string;
 }
 
 export interface SocialsProps {

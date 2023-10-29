@@ -7,10 +7,10 @@ import { useRef } from "react";
 import Lottie from "lottie-react";
 import clsx from "clsx";
 
-import homeIcon from "@/assets/static/home.json";
-import aboutIcon from "@/assets/static/about.json";
-import projectsIcon from "@/assets/static/projects.json";
-import contactIcon from "@/assets/static/contact.json";
+import homeIcon from "@/assets/icons/home.json";
+import aboutIcon from "@/assets/icons/about.json";
+import projectsIcon from "@/assets/icons/projects.json";
+import contactIcon from "@/assets/icons/contact.json";
 
 export function Navigation() {
   const homeRef = useRef<any>();

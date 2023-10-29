@@ -5,24 +5,19 @@ import Link from "next/link";
 
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
-import { ProjectsProps } from "@/types";
+import { ProjectProps } from "@/types";
 
 import { Typography } from "@/components/utils/Typography";
 
-export function ProjectItem({
-  src,
-  title,
-  description,
-  techs,
-  visit,
-}: ProjectsProps) {
+export function ProjectItem(props: ProjectProps) {
+  const { image, title, smallDescription, techs, slug } = props;
+
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
   return (
     <Link
-      href={visit}
-      target="_blank"
+      href={`/projects/${slug}`}
       onMouseMove={(e) => {
         const { left, top } = e.currentTarget.getBoundingClientRect();
 
@@ -47,7 +42,7 @@ export function ProjectItem({
       <div className="relative flex flex-col">
         <figure>
           <Image
-            src={src}
+            src={image}
             className="h-full max-h-[280px] w-full max-w-[1024px] rounded-md object-cover"
             alt={title}
             placeholder="blur"
@@ -57,19 +52,19 @@ export function ProjectItem({
         </figure>
         <div className="flex w-full flex-col space-y-4 px-3 py-4">
           <div className="flex flex-col justify-center space-y-2">
-            <h3 className="font-title text-xl text-primary">{title}</h3>
+            <h3 className="font-mono text-xl text-primary">{title}</h3>
             <Typography
               size="sm"
               className="w-full max-w-[420px] leading-[1.7]"
             >
-              {description}
+              {smallDescription}
             </Typography>
           </div>
           <div className="flex flex-wrap gap-3">
             {techs.map((tech, index) => (
               <Image
                 key={index}
-                src={tech}
+                src={tech.image}
                 width={22}
                 alt="Techs"
                 placeholder="blur"

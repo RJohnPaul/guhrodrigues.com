@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   description: "Canto pessoal da internet, onde mostra todos os meus projetos.",
 };
 
-export default function Projects() {
-  function getTotalProjects() {
-    return projects.length;
-  }
+function getTotalProjects() {
+  return projects.length;
+}
 
+export default function Projects() {
   return (
     <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section>
