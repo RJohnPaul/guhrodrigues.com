@@ -26,7 +26,10 @@ export const metadata: Metadata = {
   category: "developer",
   creator: "Gustavo Rodrigues",
   description: "Desenvolvedor Web",
-  title: "Gustavo Rodrigues",
+  title: {
+    default: "Gustavo Rodrigues",
+    template: "%s · Gustavo Rodrigues",
+  },
   icons: {
     apple: "/favicon.svg",
     icon: "/favicon.svg",
