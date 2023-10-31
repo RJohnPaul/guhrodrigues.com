@@ -75,7 +75,7 @@ export default function ProjectPage({ params }: { params: any }) {
                 <a
                   href={visit}
                   target="_blank"
-                  className="font-mono flex items-center gap-2 text-base"
+                  className="flex items-center gap-2 font-mono text-base"
                 >
                   <Eye size={18} className="text-primary" />
                   <span className="text-emerald-500 hover:text-emerald-400">
@@ -88,7 +88,7 @@ export default function ProjectPage({ params }: { params: any }) {
             <a
               href={code}
               target="_blank"
-              className="font-mono flex items-center gap-2 text-base"
+              className="flex items-center gap-2 font-mono text-base"
             >
               <Github size={18} className="text-primary" />
               <span className="text-emerald-500 hover:text-emerald-400">

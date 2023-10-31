@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 import clsx from "clsx";
 
-import logo from "@/assets/images/logo.svg";
+import author from "@/assets/images/author.jpg";
 
 import { Title } from "@/components/utils/Title";
 import { Typography } from "@/components/utils/Typography";
@@ -30,24 +30,18 @@ export function DesktopProfile() {
   return (
     <>
       <div
-        className={clsx(
-          "group relative -ml-1 mb-2 hidden rounded-full border border-neutral-800 bg-background p-5 duration-500 ease-in-out lg:block",
-          {
-            "scale-90": isScrolled,
-            "scale-100": !isScrolled,
-          },
-        )}
+        className={clsx("-ml-1 mb-2 duration-500 ease-in-out max-lg:hidden", {
+          "scale-90": isScrolled,
+          "scale-100": !isScrolled,
+        })}
       >
-        <figure className="overflow-hidden">
+        <figure className="h-[100px] w-[100px] overflow-hidden rounded-full">
           <Image
-            src={logo}
+            src={author}
             alt="Gustavo"
-            className="w-9 scale-100 duration-300 ease-in-out group-hover:scale-105"
+            className="duration-500 ease-in-out hover:scale-105"
           />
         </figure>
-        <div className="absolute bottom-1 right-1 h-4 w-4 rounded-full bg-emerald-600">
-          <div className="absolute -right-0 bottom-0 z-[11] h-4 w-4 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
-        </div>
       </div>
       <div className="hidden lg:block">
         <Title variant="title" className="text-md lg:text-xl">
@@ -67,9 +61,14 @@ export function DesktopProfile() {
           </Typography>
         </a>
       </div>
-      <div className="mb-1 mt-3 hidden lg:block">
-        <Typography className="hidden text-sm lg:block">
-          Desenvolvedor Web
+      <div className="mb-1 mt-3 flex items-center gap-2 max-lg:hidden">
+        <div>
+          <div className="h-2.5 w-2.5 rounded-full bg-emerald-600">
+            <div className="z-[11] h-2.5 w-2.5 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
+          </div>
+        </div>
+        <Typography size="sm" variant="muted">
+          Disponível para contratação
         </Typography>
       </div>
     </>
