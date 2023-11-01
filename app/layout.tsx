@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description: "Desenvolvedor Web",
   title: {
     default: "Gustavo Rodrigues",
-    template: "%s · Gustavo Rodrigues",
+    template: "%s | Gustavo Rodrigues",
   },
   icons: {
     apple: "/favicon.ico",
