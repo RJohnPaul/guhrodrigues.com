@@ -66,7 +66,6 @@ export const metadata: Metadata = {
       },
     ],
     locale: "pt-BR",
-    siteName: "Gustavo Rodrigues — Transformando código em experiências únicas",
     title: "Gustavo Rodrigues — Transformando código em experiências únicas",
     type: "website",
     url: "https://guhrodrigues.com",
