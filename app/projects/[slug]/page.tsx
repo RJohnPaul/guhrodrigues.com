@@ -133,7 +133,9 @@ export default function ProjectPage({ params }: { params: any }) {
                     placeholder="blur"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
                   />
-                  <Typography size="sm">{tech.name}</Typography>
+                  <Typography size="sm" className="font-medium">
+                    {tech.name}
+                  </Typography>
                 </li>
               ))}
             </ul>

@@ -30,7 +30,9 @@ export function Stack() {
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
             />
-            <Typography size="sm">{name}</Typography>
+            <Typography size="sm" className="font-medium">
+              {name}
+            </Typography>
           </li>
         ))}
       </ul>
