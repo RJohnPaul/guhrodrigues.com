@@ -5,7 +5,6 @@ import "@/styles/globals.css";
 import { Provider } from "@/context/Provider";
 
 import { Texture } from "@/components/ui/Texture";
-import { Blur } from "@/components/ui/Blur";
 import { AnimateEnter } from "@/components/utils/AnimateEnter";
 import { Sidebar } from "@/components/sidebar/Sidebar";
 
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
     "Criando experiências digitais que combinem perfeitamente a estética elegante com a funcionalidade excepcional. Minha paixão é transformar código em experiências incríveis, garantindo que cada projeto conte uma história única e envolvente na web.",
   title: {
     default: "Gustavo Rodrigues — Transformando código em experiências únicas",
-    template: "%s — Gustavo Rodrigues",
+    template: "%s | Gustavo Rodrigues",
   },
   icons: {
     apple: "/favicon.ico",
@@ -95,7 +94,6 @@ export default function RootLayout({
           </Provider>
         </AnimateEnter>
         <Texture />
-        <Blur />
       </body>
     </html>
   );
