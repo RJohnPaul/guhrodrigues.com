@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { Provider } from "@/context/Provider";
 
 import { Texture } from "@/components/ui/Texture";
+import { Blur } from "@/components/ui/Blur";
 import { AnimateEnter } from "@/components/utils/AnimateEnter";
 import { Sidebar } from "@/components/sidebar/Sidebar";
 
@@ -94,6 +95,7 @@ export default function RootLayout({
           </Provider>
         </AnimateEnter>
         <Texture />
+        <Blur />
       </body>
     </html>
   );
