@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 import { useHooks } from "@/context/Provider";
 import { useMenuAnimation } from "@/hooks/menuAnimation";
@@ -22,7 +22,7 @@ export function MobileMenu() {
 
   return (
     <div
-      className={clsx(
+      className={cn(
         "fixed right-0 z-50 mx-9 my-[70px] flex w-32 flex-col rounded-lg border border-neutral-800 bg-background p-1 duration-300",
         {
           "visible top-0 scale-100 opacity-100": showMenu,

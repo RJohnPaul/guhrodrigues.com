@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 import author from "@/assets/images/author.jpg";
 
@@ -30,7 +30,7 @@ export function DesktopProfile() {
   return (
     <>
       <div
-        className={clsx("-ml-1 mb-2 duration-500 ease-in-out max-lg:hidden", {
+        className={cn("-ml-1 mb-2 duration-500 ease-in-out max-lg:hidden", {
           "scale-90": isScrolled,
           "scale-100": !isScrolled,
         })}

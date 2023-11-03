@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { useRef } from "react";
 
 import Lottie from "lottie-react";
-import clsx from "clsx";
+
+import { cn } from "@/lib/utils";
 
 import homeIcon from "@/assets/icons/home.json";
 import aboutIcon from "@/assets/icons/about.json";
@@ -26,7 +27,7 @@ export function Navigation() {
         href="/"
         onMouseEnter={() => homeRef.current?.play()}
         onMouseLeave={() => homeRef.current?.stop()}
-        className={clsx(
+        className={cn(
           "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
           {
             "bg-neutral-800 text-primary": pathname === "/",
@@ -46,7 +47,7 @@ export function Navigation() {
         href="/about"
         onMouseEnter={() => aboutRef.current?.play()}
         onMouseLeave={() => aboutRef.current?.stop()}
-        className={clsx(
+        className={cn(
           "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
           {
             "bg-neutral-800 text-primary": pathname === "/about",
@@ -66,7 +67,7 @@ export function Navigation() {
         href="/projects"
         onMouseEnter={() => projectsRef.current?.play()}
         onMouseLeave={() => projectsRef.current?.stop()}
-        className={clsx(
+        className={cn(
           "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
           {
             "bg-neutral-800 text-primary": pathname === "/projects",
@@ -86,7 +87,7 @@ export function Navigation() {
         href="/contact"
         onMouseEnter={() => contactRef.current?.play()}
         onMouseLeave={() => contactRef.current?.stop()}
-        className={clsx(
+        className={cn(
           "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
           {
             "bg-neutral-800 text-primary": pathname === "/contact",
