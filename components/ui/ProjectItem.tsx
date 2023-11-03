@@ -53,10 +53,7 @@ export function ProjectItem(props: ProjectProps) {
         <div className="flex w-full flex-col space-y-4 px-3 py-4">
           <div className="flex flex-col justify-center space-y-2">
             <h3 className="font-mono text-xl text-primary">{title}</h3>
-            <Typography
-              size="sm"
-              className="w-full max-w-[420px] leading-[1.7]"
-            >
+            <Typography size="sm" className="leading-[1.7]">
               {smallDescription}
             </Typography>
           </div>

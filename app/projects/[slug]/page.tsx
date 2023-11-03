@@ -78,7 +78,7 @@ export default function ProjectPage({ params }: { params: any }) {
                   className="flex items-center gap-2 font-mono text-base"
                 >
                   <Eye size={18} className="text-primary" />
-                  <span className="text-emerald-500 hover:text-emerald-400">
+                  <span className="text-emerald-500 duration-300 hover:text-emerald-400">
                     Visualizar
                   </span>
                 </a>
@@ -91,7 +91,7 @@ export default function ProjectPage({ params }: { params: any }) {
               className="flex items-center gap-2 font-mono text-base"
             >
               <Github size={18} className="text-primary" />
-              <span className="text-emerald-500 hover:text-emerald-400">
+              <span className="text-emerald-500 duration-300 hover:text-emerald-400">
                 Código fonte
               </span>
             </a>
