@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     template: "%s | Gustavo Rodrigues",
   },
   icons: {
-    apple: "/favicon.ico",
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    apple: "/favicon.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
   },
   keywords: [
     "Next.js",
