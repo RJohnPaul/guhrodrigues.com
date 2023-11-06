@@ -33,7 +33,7 @@ export default function Contact() {
         <Title variant="title" size="xl">
           Mande um email, como nos velhos tempos
         </Title>
-        <Typography>
+        <Typography className="leading-relaxed">
           Gosto muito de interagir com programadores, criadores e estudantes da
           tecnologia. Caso se interessou pelo meu trabalho ou queira dar um
           feedback sobre este website, vamos trocar um papo.
