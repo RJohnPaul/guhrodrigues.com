@@ -19,7 +19,7 @@ export function Biography() {
       </Typography>
       <Typography className="leading-relaxed">
         Me mantenho sempre atualizado com as últimas tendências do mercado,
-        estou compromentido em fazer a diferença em qualquer projeto que estou
+        estou comprometido em fazer a diferença em qualquer projeto que estou
         inserido. Interfaces minimalistas, dark mode e transformar código em
         experiências únicas me encantam. Desfrutar de músicas é uma terapia para
         mim.
