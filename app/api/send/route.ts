@@ -8,8 +8,8 @@ export async function POST(request: Request) {
 
   try {
     await resend.sendEmail({
-      from: process.env.RESEND_FROM ?? "",
-      to: process.env.RESEND_TO ?? "",
+      from: process.env.RESEND_FROM as string,
+      to: process.env.RESEND_TO as string,
       subject: message,
       text: `Você recebeu uma mensagem de ${name} com o e-mail ${email}`,
     });
