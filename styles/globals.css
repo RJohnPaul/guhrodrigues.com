@@ -35,3 +35,13 @@
 body {
   -webkit-tap-highlight-color: transparent;
 }
+
+@media (min-width: 1025px) {
+  body {
+    background: radial-gradient(
+      ellipse 70% 50% at 50% -25%,
+      rgba(52, 211, 153, 0.25) 0,
+      rgba(8, 7, 11, 0)
+    );
+  }
+}
