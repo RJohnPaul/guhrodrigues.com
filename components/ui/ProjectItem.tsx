@@ -43,7 +43,7 @@ export function ProjectItem(props: ProjectProps) {
         <figure>
           <Image
             src={image}
-            className="h-full max-h-[280px] w-full max-w-[1024px] rounded-md object-cover"
+            className="rounded-md"
             alt={title}
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"

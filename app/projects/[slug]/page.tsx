@@ -114,7 +114,13 @@ export default function ProjectPage({ params }: { params: any }) {
             <Title variant="title" size="xl">
               Descrição
             </Title>
-            <Typography className="leading-relaxed">{description}</Typography>
+            <div className="space-y-2">
+              {description.map((desc, index) => (
+                <Typography key={index} className="leading-relaxed">
+                  {desc.content}
+                </Typography>
+              ))}
+            </div>
           </div>
           <div className="space-y-4">
             <Title variant="title" size="xl">

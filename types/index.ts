@@ -29,11 +29,13 @@ export interface ProjectProps {
   image: StaticImageData;
   title: string;
   smallDescription: string;
-  description: string;
-  techs: Array<{
+  description: {
+    content: string;
+  }[];
+  techs: {
     image: StaticImageData;
     name: string;
-  }>;
+  }[];
   code: string;
   visit?: string;
   slug: string;
