@@ -1,6 +1,6 @@
 import { useHooks } from "@/context/Provider";
 
-import { TooltipProps } from "@/types";
+import { TooltipProps } from "@/types/tooltip";
 
 export function Tooltip({ children, text }: TooltipProps) {
   const { isVisible, setIsVisible } = useHooks();

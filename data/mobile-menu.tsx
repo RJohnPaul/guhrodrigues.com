@@ -1,6 +1,6 @@
 import { User2, Braces, Mail } from "lucide-react";
 
-import { NavLinksProps } from "@/types";
+import { NavLinksProps } from "@/types/nav-links";
 
 export const navLinks: NavLinksProps[] = [
   {

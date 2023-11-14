@@ -2,7 +2,7 @@
 
 import { LazyMotion, domAnimation, motion } from "framer-motion";
 
-import { AnimateEnterProps } from "@/types";
+import { AnimateEnterProps } from "@/types/animate-enter";
 
 const animation = {
   hide: {

@@ -22,9 +22,9 @@ import styledComponents from "@/assets/images/skills/styledcomponents.svg";
 import tailwind from "@/assets/images/skills/tailwindcss.svg";
 import framer from "@/assets/images/skills/framer.svg";
 
-import { ProjectProps } from "@/types";
+import { ProjectsProps } from "@/types/projects";
 
-export const projects: ProjectProps[] = [
+export const projects: ProjectsProps[] = [
   {
     id: 1,
     image: sharespace,

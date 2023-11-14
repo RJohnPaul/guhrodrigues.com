@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-import { ContextProps } from "@/types";
+import { ContextProps } from "@/types/context";
 
 const initialValues = {
   showMenu: false,

@@ -1,6 +1,6 @@
 import { Github, Linkedin, Instagram } from "lucide-react";
 
-import { SocialsProps } from "@/types";
+import { SocialsProps } from "@/types/socials";
 
 export const socials: SocialsProps[] = [
   {

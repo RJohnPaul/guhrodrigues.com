@@ -5,11 +5,11 @@ import Link from "next/link";
 
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
-import { ProjectProps } from "@/types";
+import { ProjectsProps } from "@/types/projects";
 
 import { Typography } from "@/components/utils/Typography";
 
-export function ProjectItem(props: ProjectProps) {
+export function ProjectItem(props: ProjectsProps) {
   const { image, title, smallDescription, techs, slug } = props;
 
   const mouseX = useMotionValue(0);
