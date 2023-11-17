@@ -4,10 +4,10 @@ import { Globe } from "lucide-react";
 
 import { LatestProjects } from "@/components/ui/LatestProjects";
 import { AnimateEnter } from "@/components/utils/AnimateEnter";
-import { Button } from "@/components/utils/Button";
 import { Divider } from "@/components/utils/Divider";
 import { Title } from "@/components/utils/Title";
 import { Typography } from "@/components/utils/Typography";
+import { ContactButton } from "@/components/ui/ContactButton";
 
 export default function Home() {
   return (
@@ -41,9 +41,7 @@ export default function Home() {
           Caso se interessou pelo meu trabalho ou queira dar um feedback sobre
           este website, vamos trocar um papo.
         </Typography>
-        <Link href="/contact" className="w-fit">
-          <Button>Contate-me</Button>
-        </Link>
+        <ContactButton />
       </section>
     </AnimateEnter>
   );

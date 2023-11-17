@@ -17,6 +17,22 @@ const config: Config = {
       backgroundImage: {
         "globe-pattern": "url('/globe-pattern.svg')",
       },
+      animation: {
+        flip: "flip 6s infinite steps(2, end)",
+        rotate: "rotate 3s linear infinite both",
+      },
+      keyframes: {
+        flip: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        rotate: {
+          to: {
+            transform: "rotate(90deg)",
+          },
+        },
+      },
     },
     screens: {
       sm: "100px",
