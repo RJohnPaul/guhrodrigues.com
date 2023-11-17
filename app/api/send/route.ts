@@ -10,8 +10,8 @@ export async function POST(request: Request) {
     await resend.sendEmail({
       from: process.env.RESEND_FROM as string,
       to: process.env.RESEND_TO as string,
-      subject: message,
-      text: `Você recebeu uma mensagem de ${name} com o e-mail ${email}`,
+      subject: `Você recebeu uma mensagem de ${name} do e-mail ${email}`,
+      text: message,
     });
 
     return NextResponse.json(
