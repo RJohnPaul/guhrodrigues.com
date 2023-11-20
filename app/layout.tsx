@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     "Criando experiências digitais que combinem perfeitamente a estética elegante com a funcionalidade excepcional. Minha paixão é transformar código em experiências incríveis, garantindo que cada projeto conte uma história única e envolvente na web.",
   title: {
-    default: "Gustavo Rodrigues — Transformando código em experiências únicas",
+    default: "Gustavo Rodrigues – Transformando código em experiências únicas",
     template: "%s | Gustavo Rodrigues",
   },
   icons: {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
       },
     ],
     locale: "pt-BR",
-    title: "Gustavo Rodrigues — Transformando código em experiências únicas",
+    title: "Gustavo Rodrigues – Transformando código em experiências únicas",
     type: "website",
     url: "https://guhrodrigues.com",
   },
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@guhrodrrigues",
-    title: "Gustavo Rodrigues — Transformando código em experiências únicas",
+    title: "Gustavo Rodrigues – Transformando código em experiências únicas",
   },
 };
 
