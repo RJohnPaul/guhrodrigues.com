@@ -9,7 +9,8 @@ import { AnimateEnter } from "@/components/utils/AnimateEnter";
 
 export const metadata: Metadata = {
   title: "Contato",
-  description: "Mande um email, como nos velhos tempos",
+  description:
+    "Sinta-se à vontade para entrar em contato e conversaremos sobre como podemos trabalhar juntos.",
 };
 
 export default function Contact() {
