@@ -55,7 +55,7 @@ export function DesktopProfile() {
         >
           <Typography
             variant="muted"
-            className="text-sm duration-300 hover:text-foreground"
+            className="select-none text-sm duration-300 hover:text-foreground"
           >
             @guhrodriguess
           </Typography>

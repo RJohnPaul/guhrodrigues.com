@@ -5,9 +5,10 @@ import { useRef } from "react";
 import Lottie from "lottie-react";
 import downloadIcon from "@/assets/icons/download.json";
 
-import { Toast, successAlert } from "@/components/ui/Toast";
+import toast from "react-hot-toast";
 
 import { Button } from "@/components/utils/Button";
+import { Toast } from "./Toast";
 
 export function DownloadButton() {
   const downloadRef = useRef<any>();
@@ -17,7 +18,7 @@ export function DownloadButton() {
       <a
         href="/Gustavo Rodrigues.pdf"
         download
-        onClick={() => successAlert("Currículo instalado :D")}
+        onClick={() => toast.success("Instalado")}
         onMouseEnter={() => downloadRef.current?.play()}
         onMouseLeave={() => downloadRef.current?.stop()}
       >

@@ -1,12 +1,13 @@
 "use client";
 
 import * as Form from "@radix-ui/react-form";
+import toast from "react-hot-toast";
 
 import { useHooks } from "@/context/Provider";
 
 import { SendButton } from "@/components/ui/SendButton";
 
-import { Toast, successAlert, errorAlert } from "@/components/ui/Toast";
+import { Toast } from "@/components/ui/Toast";
 
 export function FormComponent() {
   const {
@@ -33,7 +34,7 @@ export function FormComponent() {
       }),
     })
       .then(() => {
-        successAlert("E-mail enviado :D");
+        toast.success("Enviado");
 
         setName("");
         setEmail("");
@@ -41,7 +42,7 @@ export function FormComponent() {
         setSubmitting(false);
       })
       .catch(() => {
-        errorAlert("E-mail não enviado :(");
+        toast.error("Não enviado");
       });
   }
 
