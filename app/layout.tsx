@@ -51,17 +51,20 @@ export const metadata: Metadata = {
     "Brazil",
     "Vercel",
     "FullStack",
-    "Tech",
+    "Technology",
+    "Desenvolvedor Web",
+    "Desenvolvedor Front-end",
+    "Desenvolvedor FullStack",
   ],
   openGraph: {
     description:
       "Criando experiências digitais que combinem perfeitamente a estética elegante com a funcionalidade excepcional. Minha paixão é transformar código em experiências incríveis, garantindo que cada projeto conte uma história única e envolvente na web.",
     images: [
       {
-        alt: "Gustavo Rodrigues",
+        width: 1920,
         height: 1080,
         url: "https://i.imgur.com/wWEktB3.png",
-        width: 1920,
+        alt: "Gustavo Rodrigues",
       },
     ],
     locale: "pt-BR",
