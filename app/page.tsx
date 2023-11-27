@@ -12,15 +12,11 @@ export default function Home() {
     <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section>
         <Title variant="title">Gustavo Rodrigues</Title>
-        <Typography
-          size="sm"
-          className="relative mt-2 flex w-fit items-center gap-2 overflow-hidden rounded-lg border border-neutral-800 px-2 py-1.5 font-medium text-emerald-400/90"
-        >
-          <span className="text-emerald-400/95">
+        <Typography variant="muted" className="mt-2 flex items-center gap-2">
+          <span className="text-emerald-600">
             <Globe size={16} />
           </span>
           São Paulo, Brasil
-          <div className="absolute right-5 top-0 h-px w-80 bg-gradient-to-l from-transparent via-primary/30 via-10% to-transparent" />
         </Typography>
         <Typography className="mt-3 leading-relaxed">
           Como desenvolvedor web, meu objetivo é criar experiências digitais que
