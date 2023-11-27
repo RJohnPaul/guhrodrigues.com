@@ -22,7 +22,7 @@ export default function Home() {
           São Paulo, Brasil
           <div className="absolute right-5 top-0 h-px w-80 bg-gradient-to-l from-transparent via-primary/30 via-10% to-transparent" />
         </Typography>
-        <Typography className="mt-6 leading-relaxed">
+        <Typography className="mt-3 leading-relaxed">
           Como desenvolvedor web, meu objetivo é criar experiências digitais que
           combinem perfeitamente a estética elegante com a funcionalidade
           excepcional. Minha paixão é transformar código em experiências
