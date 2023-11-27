@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef } from "react";
+
 import Lottie from "lottie-react";
 
 import { projects } from "@/data/projects";
@@ -22,7 +23,7 @@ export function LatestProjects() {
         </Title>
         <Link
           href="/projects"
-          className="flex items-center gap-1 text-xs font-medium text-foreground duration-300 hover:text-primary"
+          className="flex select-none items-center gap-1 text-xs font-medium text-foreground duration-300 hover:text-primary"
           onMouseEnter={() => arrowRef.current?.play()}
           onMouseLeave={() => arrowRef.current?.stop()}
         >
