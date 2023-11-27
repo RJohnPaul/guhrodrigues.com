@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins, Kanit } from "next/font/google";
 import "@/styles/globals.css";
 
+import { cn } from "@/lib/utils";
+
 import { Provider } from "@/context/Provider";
 
 import { AnimateEnter } from "@/components/utils/AnimateEnter";
@@ -88,7 +90,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins.variable} ${kanit.variable} bg-background font-poppins outline-none`}
+        className={cn(
+          "bg-background font-poppins outline-none",
+          poppins.variable,
+          kanit.variable,
+        )}
       >
         <AnimateEnter className="mx-auto flex max-w-6xl flex-col px-8 lg:flex-row lg:gap-10 lg:py-24">
           <Provider>
