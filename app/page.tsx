@@ -18,7 +18,7 @@ export default function Home() {
           </span>
           São Paulo, Brasil
         </Typography>
-        <Typography className="mt-3 leading-relaxed">
+        <Typography className="mt-4 leading-relaxed">
           Como desenvolvedor web, meu objetivo é criar experiências digitais que
           combinem perfeitamente a estética elegante com a funcionalidade
           excepcional. Minha paixão é transformar código em experiências
