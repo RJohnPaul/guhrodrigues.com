@@ -8,7 +8,7 @@ import downloadIcon from "@/assets/icons/download.json";
 import toast from "react-hot-toast";
 
 import { Button } from "@/components/utils/Button";
-import { Toast } from "./Toast";
+import { Toast, ToastMessage } from "./Toast";
 
 export function DownloadButton() {
   const downloadRef = useRef<any>();
@@ -18,7 +18,14 @@ export function DownloadButton() {
       <a
         href="/Gustavo Rodrigues.pdf"
         download
-        onClick={() => toast.success("Instalado")}
+        onClick={() =>
+          toast.success(
+            <ToastMessage
+              title="Instalado"
+              message="Currículo baixado com sucesso."
+            />,
+          )
+        }
         onMouseEnter={() => downloadRef.current?.play()}
         onMouseLeave={() => downloadRef.current?.stop()}
       >

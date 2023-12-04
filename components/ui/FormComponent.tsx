@@ -7,7 +7,7 @@ import { useHooks } from "@/context/Provider";
 
 import { SendButton } from "@/components/ui/SendButton";
 
-import { Toast } from "@/components/ui/Toast";
+import { Toast, ToastMessage } from "@/components/ui/Toast";
 
 export function FormComponent() {
   const {
@@ -34,7 +34,12 @@ export function FormComponent() {
       }),
     })
       .then(() => {
-        toast.success("Enviado");
+        toast.success(
+          <ToastMessage
+            title="Enviado"
+            message="E-mail destinado com sucesso."
+          />,
+        );
 
         setName("");
         setEmail("");
@@ -42,7 +47,12 @@ export function FormComponent() {
         setSubmitting(false);
       })
       .catch(() => {
-        toast.error("Não enviado");
+        toast.error(
+          <ToastMessage
+            title="Não enviado"
+            message="Ocorreu um erro ao enviar este e-mail."
+          />,
+        );
       });
   }
 

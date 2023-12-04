@@ -18,3 +18,18 @@ export function Toast() {
     />
   );
 }
+
+export function ToastMessage({
+  title,
+  message,
+}: {
+  title: string;
+  message: string;
+}) {
+  return (
+    <div className="flex flex-col">
+      <div>{title}</div>
+      <div className="text-sm text-neutral-400">{message}</div>
+    </div>
+  );
+}
