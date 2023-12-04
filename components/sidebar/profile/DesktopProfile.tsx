@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
 
 import { cn } from "@/lib/utils";
@@ -9,6 +8,7 @@ import author from "@/assets/images/author.jpg";
 
 import { Title } from "@/components/utils/Title";
 import { Typography } from "@/components/utils/Typography";
+import { Image } from "@/components/utils/Image";
 
 export function DesktopProfile() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,13 +35,9 @@ export function DesktopProfile() {
           "scale-100": !isScrolled,
         })}
       >
-        <figure className="h-[100px] w-[100px] overflow-hidden rounded-full">
-          <Image
-            src={author}
-            alt="Gustavo"
-            className="duration-500 ease-in-out hover:scale-105"
-          />
-        </figure>
+        <div className="h-[100px] w-[100px] overflow-hidden rounded-full">
+          <Image src={author} alt="Gustavo" zoomHover={true} />
+        </div>
       </div>
       <div className="hidden lg:block">
         <Title variant="title" className="text-md lg:text-xl">

@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 
 import { Undo2, Eye, Github } from "lucide-react";
@@ -10,6 +9,7 @@ import { projects } from "@/data/projects";
 import { AnimateEnter } from "@/components/utils/AnimateEnter";
 import { Separator } from "@/components/utils/Separator";
 import { Title } from "@/components/utils/Title";
+import { Image } from "@/components/utils/Image";
 import { Typography } from "@/components/utils/Typography";
 
 export async function generateMetadata({
@@ -51,8 +51,7 @@ export default function ProjectPage({ params }: { params: any }) {
     notFound();
   }
 
-  const { title, smallDescription, visit, code, techs, image, description } =
-    project;
+  const { title, visit, code, techs, image, description } = project;
 
   return (
     <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
@@ -96,16 +95,9 @@ export default function ProjectPage({ params }: { params: any }) {
             </a>
           </div>
         </div>
-        <figure className="overflow-hidden rounded-md">
-          <Image
-            src={image}
-            className="duration-500 hover:scale-110"
-            alt={title}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-            priority
-          />
-        </figure>
+        <div className="overflow-hidden rounded-md">
+          <Image src={image} alt={title} zoomHover={true} />
+        </div>
       </section>
       <section className="mt-6">
         <article className="space-y-6">
@@ -126,13 +118,7 @@ export default function ProjectPage({ params }: { params: any }) {
                   key={index}
                   className="flex items-center gap-2 rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2"
                 >
-                  <Image
-                    src={tech.image}
-                    width={18}
-                    alt={tech.name}
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-                  />
+                  <Image src={tech.image} width={18} alt={tech.name} />
                   <Typography size="sm" className="font-medium">
                     {tech.name}
                   </Typography>

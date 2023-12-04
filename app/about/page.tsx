@@ -1,7 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
-
-import author from "@/assets/images/author.jpg";
 
 import { AnimateEnter } from "@/components/utils/AnimateEnter";
 import { Title } from "@/components/utils/Title";

@@ -1,9 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+
+import { Image } from "@/components/utils/Image";
 
 import { ProjectsProps } from "@/types/projects";
 
@@ -40,16 +41,7 @@ export function ProjectItem(props: ProjectsProps) {
         }}
       />
       <div className="relative flex flex-col">
-        <figure>
-          <Image
-            src={image}
-            className="rounded-md"
-            alt={title}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-            priority
-          />
-        </figure>
+        <Image src={image} className="rounded-md" alt={title} />
         <div className="flex w-full flex-col space-y-4 px-3 py-4">
           <div className="flex flex-col justify-center space-y-2">
             <h3 className="font-mono text-xl text-primary">{title}</h3>
@@ -57,16 +49,9 @@ export function ProjectItem(props: ProjectsProps) {
               {smallDescription}
             </Typography>
           </div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             {techs.map((tech, index) => (
-              <Image
-                key={index}
-                src={tech.image}
-                width={22}
-                alt="Techs"
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-              />
+              <Image key={index} src={tech.image} width={22} alt={tech.name} />
             ))}
           </div>
         </div>

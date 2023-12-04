@@ -1,11 +1,10 @@
-import Image from "next/image";
-
 import { Code2 } from "lucide-react";
 
 import { stack } from "@/data/stack";
 
 import { Title } from "@/components/utils/Title";
 import { Typography } from "@/components/utils/Typography";
+import { Image } from "@/components/utils/Image";
 
 export function Stack() {
   return (
@@ -23,13 +22,7 @@ export function Stack() {
             key={id}
             className="flex items-center gap-2 rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2"
           >
-            <Image
-              src={src}
-              width={18}
-              alt={name}
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-            />
+            <Image src={src} width={18} alt={name} />
             <Typography size="sm" className="font-medium">
               {name}
             </Typography>

@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import author from "@/assets/images/author.jpg";
 
+import { Image } from "@/components/utils/Image";
 import { MobileButton } from "../MobileButton";
 
 export function MobileProfile() {
