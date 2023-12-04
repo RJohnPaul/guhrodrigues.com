@@ -67,7 +67,6 @@ export default function ProjectPage({ params }: { params: any }) {
         <div className="space-y-4">
           <div className="space-y-2">
             <Title variant="title">{title}</Title>
-            <Typography>{smallDescription}</Typography>
           </div>
           <div className="flex items-center gap-2">
             {visit && (
@@ -110,17 +109,12 @@ export default function ProjectPage({ params }: { params: any }) {
       </section>
       <section className="mt-6">
         <article className="space-y-6">
-          <div className="space-y-4">
-            <Title variant="title" size="xl">
-              Descrição
-            </Title>
-            <div className="space-y-2">
-              {description.map((desc, index) => (
-                <Typography key={index} className="leading-relaxed">
-                  {desc.content}
-                </Typography>
-              ))}
-            </div>
+          <div className="space-y-2">
+            {description.map((desc, index) => (
+              <Typography key={index} className="leading-relaxed">
+                {desc.content}
+              </Typography>
+            ))}
           </div>
           <div className="space-y-4">
             <Title variant="title" size="xl">
