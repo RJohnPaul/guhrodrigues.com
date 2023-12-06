@@ -44,6 +44,8 @@ export const metadata: Metadata = {
     "TypeScript",
     "TailwindCSS",
     "Framer Motion",
+    "Resend",
+    "Radix",
     "Design",
     "Frontend",
     "Developer",
@@ -57,6 +59,7 @@ export const metadata: Metadata = {
     "Desenvolvedor Web",
     "Desenvolvedor Front-end",
     "Desenvolvedor FullStack",
+    "São Paulo",
   ],
   openGraph: {
     description:
