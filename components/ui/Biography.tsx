@@ -4,25 +4,21 @@ export function Biography() {
   return (
     <div className="space-y-3">
       <Typography className="leading-relaxed">
-        Olá! Meu nome é Gustavo Rodrigues, sou desenvolvedor web e estudante de
-        técnico em informática para internet. Possuo +2 anos de experiência em
-        desenvolvimento web. Sou hábil em TypeScript, JavaScript e proficiente
-        em Next.js e React.
+        Ei! Eu sou Gustavo Rodrigues, um desenvolvedor web com residência na
+        área de São Paulo. Atualmente, estou cursando técnico em informática
+        para internet, complementando minha formação acadêmica.
       </Typography>
       <Typography className="leading-relaxed">
-        Meu objetivo é criar experiências digitais que combinem perfeitamente a
-        estética elegante com a funcionalidade excepcional. Minha paixão é
-        transformar código em experiências incríveis, garantindo que cada
-        projeto conte uma história única e envolvente na web. Embora eu
-        concentre a maior parte do meu tempo no trabalho de front-end, C# e
-        Prisma fazem eu me interessar por back-end.
+        Ao longo de mais de dois anos de estudo no campo do desenvolvimento web,
+        adquiri significativa experiência na criação de soluções digitais. Meu
+        foco atual está direcionado para a exploração de design systems, a
+        elaboração de interfaces inovadoras e a capacidade de transformar
+        códigos em experiências de usuário verdadeiramente excepcionais.
       </Typography>
       <Typography className="leading-relaxed">
-        Me mantenho sempre atualizado com as últimas tendências do mercado,
-        estou comprometido em fazer a diferença em qualquer projeto que estou
-        inserido. Interfaces minimalistas, dark mode e transformar código em
-        experiências únicas me encantam. Desfrutar de músicas é uma terapia para
-        mim.
+        Busco manter-me constantemente atualizado com as últimas tendências do
+        mercado, demonstrando um comprometimento em fazer a diferença em todos
+        os projetos nos quais estou envolvido.
       </Typography>
     </div>
   );

@@ -1,5 +1,3 @@
-import { Globe } from "lucide-react";
-
 import { AnimateEnter } from "@/components/utils/AnimateEnter";
 import { Title } from "@/components/utils/Title";
 import { Typography } from "@/components/utils/Typography";
@@ -10,20 +8,13 @@ import { ContactButton } from "@/components/ui/ContactButton";
 export default function Home() {
   return (
     <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
-      <section>
+      <section className="space-y-4">
         <Title variant="title">Gustavo Rodrigues</Title>
-        <Typography variant="muted" className="mt-2 flex items-center gap-2">
-          <span className="text-emerald-600">
-            <Globe size={16} />
-          </span>
-          São Paulo, Brasil
-        </Typography>
-        <Typography className="mt-4 leading-relaxed">
-          Como desenvolvedor web, meu objetivo é criar experiências digitais que
-          combinem perfeitamente a estética elegante com a funcionalidade
-          excepcional. Minha paixão é transformar código em experiências
-          incríveis, garantindo que cada projeto conte uma história única e
-          envolvente na web.
+        <Typography className="leading-relaxed">
+          Como desenvolvedor web, almejo criar experiências digitais que
+          harmonizem de maneira impecável a estética elegante com uma
+          funcionalidade excepcional. Minha verdadeira paixão reside em
+          transformar códigos em experiências extraordinárias.
         </Typography>
       </section>
       <Divider />
