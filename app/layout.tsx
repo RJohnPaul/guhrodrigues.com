@@ -91,7 +91,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         className={cn(
-          "bg-background font-poppins outline-none",
+          "min-h-screen bg-background font-poppins outline-none",
           poppins.variable,
           kanit.variable,
         )}
