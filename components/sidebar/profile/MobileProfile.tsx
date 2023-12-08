@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import author from "@/assets/images/author.jpg";
+import author from "@/assets/images/author.png";
 
 import { Image } from "@/components/utils/Image";
 import { MobileButton } from "../MobileButton";
