@@ -26,13 +26,16 @@ export const metadata: Metadata = {
   authors: [{ name: "Gustavo Rodrigues", url: "https://guhrodrigues.com" }],
   category: "developer",
   creator: "Gustavo Rodrigues",
-  title: "Gustavo Rodrigues – Transformando código em experiências únicas",
+  title: {
+    default: "Gustavo Rodrigues – Transformando código em experiências únicas",
+    template: "%s · Gustavo Rodrigues",
+  },
   description:
     "Criando experiências digitais que combinem perfeitamente a estética elegante com a funcionalidade excepcional. Minha paixão é transformar código em experiências incríveis, garantindo que cada projeto conte uma história única e envolvente na web.",
   icons: {
-    apple: "/favicon.ico",
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    apple: "/favicon.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
   },
   keywords: [
     "Next.js",
