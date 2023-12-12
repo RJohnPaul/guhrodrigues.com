@@ -15,7 +15,7 @@ export function MobileProfile() {
         </figure>
       </Link>
       <div className="flex items-center gap-1 lg:hidden">
-        <CommandMenuButton />
+        <CommandMenuButton iconClassName="w-5 h-5" />
         <MobileButton />
       </div>
     </>

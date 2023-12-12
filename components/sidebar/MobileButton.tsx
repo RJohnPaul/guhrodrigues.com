@@ -21,7 +21,7 @@ export function MobileButton() {
 
   return (
     <Button variant="ghost" size="icon" onClick={handleMenu}>
-      {showMenu ? <X className="h-6 w-6" /> : <Equal className="h-6 w-6" />}
+      {showMenu ? <X className="h-7 w-7" /> : <Equal className="h-7 w-7" />}
     </Button>
   );
 }
