@@ -4,6 +4,8 @@ import { Equal, X } from "lucide-react";
 
 import { useHooks } from "@/context/Provider";
 
+import { Button } from "../utils/Button";
+
 export function MobileButton() {
   const { showMenu, setShowMenu } = useHooks();
 
@@ -18,11 +20,8 @@ export function MobileButton() {
   };
 
   return (
-    <button
-      onClick={handleMenu}
-      className="text-neutral-400 transition-transform active:scale-75 lg:hidden"
-    >
-      {showMenu ? <X size={28} /> : <Equal size={28} />}
-    </button>
+    <Button variant="ghost" size="icon" onClick={handleMenu}>
+      {showMenu ? <X className="h-6 w-6" /> : <Equal className="h-6 w-6" />}
+    </Button>
   );
 }

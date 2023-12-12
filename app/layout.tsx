@@ -9,6 +9,8 @@ import { Provider } from "@/context/Provider";
 import { AnimateEnter } from "@/components/utils/AnimateEnter";
 import { Sidebar } from "@/components/sidebar/Sidebar";
 import { Texture } from "@/components/ui/Texture";
+import { CommandMenu } from "@/components/command/CommandMenu";
+import { Toast } from "@/components/ui/Toast";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -101,10 +103,12 @@ export default function RootLayout({
       >
         <AnimateEnter className="mx-auto flex max-w-6xl flex-col px-8 lg:flex-row lg:gap-10 lg:py-24">
           <Provider>
+            <CommandMenu />
             <Sidebar />
             {children}
           </Provider>
         </AnimateEnter>
+        <Toast />
         <Texture />
       </body>
     </html>

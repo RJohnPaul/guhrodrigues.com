@@ -18,15 +18,9 @@ const config: Config = {
         "globe-pattern": "url('/globe-pattern.svg')",
       },
       animation: {
-        flip: "flip 6s infinite steps(2, end)",
         rotate: "rotate 3s linear infinite both",
       },
       keyframes: {
-        flip: {
-          to: {
-            transform: "rotate(360deg)",
-          },
-        },
         rotate: {
           to: {
             transform: "rotate(90deg)",
@@ -48,6 +42,6 @@ const config: Config = {
       mono: "var(--font-mono)",
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

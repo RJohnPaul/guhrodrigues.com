@@ -17,6 +17,8 @@ const initialValues = {
   setSubmitting: () => undefined,
   isVisible: false,
   setIsVisible: () => undefined,
+  showCommandMenu: false,
+  setShowCommandMenu: () => undefined,
 };
 
 const AppContext = createContext<ContextProps>(initialValues);

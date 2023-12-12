@@ -1,5 +1,6 @@
-import { Clock } from "../ui/Clock";
 import { Typography } from "../utils/Typography";
+import { Clock } from "../ui/Clock";
+import { CommandMenuButton } from "../command/CommandMenuButton";
 
 export function SidebarFooter() {
   return (
@@ -16,8 +17,10 @@ export function SidebarFooter() {
           </span>
         </a>
       </Typography>
-
-      <Clock />
+      <div className="flex items-center gap-1">
+        <CommandMenuButton />
+        <Clock />
+      </div>
     </div>
   );
 }

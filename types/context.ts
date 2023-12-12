@@ -13,4 +13,6 @@ export interface ContextProps {
   setSubmitting: React.Dispatch<React.SetStateAction<boolean>>;
   isVisible: boolean;
   setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
+  showCommandMenu: boolean;
+  setShowCommandMenu: React.Dispatch<React.SetStateAction<boolean>>;
 }

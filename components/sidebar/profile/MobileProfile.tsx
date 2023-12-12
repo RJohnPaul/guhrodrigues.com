@@ -4,6 +4,7 @@ import author from "@/assets/images/author.png";
 
 import { Image } from "@/components/utils/Image";
 import { MobileButton } from "../MobileButton";
+import { CommandMenuButton } from "@/components/command/CommandMenuButton";
 
 export function MobileProfile() {
   return (
@@ -13,7 +14,10 @@ export function MobileProfile() {
           <Image src={author} alt="Gustavo" />
         </figure>
       </Link>
-      <MobileButton />
+      <div className="flex items-center gap-1 lg:hidden">
+        <CommandMenuButton />
+        <MobileButton />
+      </div>
     </>
   );
 }
