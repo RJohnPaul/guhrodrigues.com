@@ -117,7 +117,7 @@ export function CommandMenu() {
             setShowCommandMenu(false);
 
             try {
-              navigator.clipboard.writeText(window.location.href);
+              await navigator.clipboard.writeText(window.location.href);
               toast.success(
                 <ToastMessage
                   title="Copiado"
