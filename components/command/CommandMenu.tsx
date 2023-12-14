@@ -36,13 +36,9 @@ export function CommandMenu() {
 
   const router = useRouter();
 
-  const openLink = useCallback(
-    (url: string) => {
-      window.open(url, "_blank");
-      setShowCommandMenu(false);
-    },
-    [setShowCommandMenu],
-  );
+  const openLink = useCallback((url: string) => {
+    window.open(url, "_blank");
+  }, []);
 
   function forwardToRoute(route: string) {
     router.push(route);
