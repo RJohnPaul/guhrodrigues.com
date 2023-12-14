@@ -32,9 +32,10 @@ export function MobileMenu() {
       ref={scope}
     >
       <ul
-        className={`${
-          showMenu ? "pointer-events-auto" : "pointer-events-none"
-        }`}
+        className={cn({
+          "pointer-events-auto": showMenu,
+          "pointer-events-none": !showMenu,
+        })}
       >
         {navLinks.map(({ id, path, icon, name }) => (
           <Link
