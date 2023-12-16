@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import { cn } from "@/lib/utils";
 
-import author from "@/assets/images/author.png";
+import author from "@/assets/images/author.jpg";
 
 import { Title } from "@/components/utils/Title";
 import { Typography } from "@/components/utils/Typography";

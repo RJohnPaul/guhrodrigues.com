@@ -9,7 +9,7 @@ import { Button } from "../utils/Button";
 export function MobileButton() {
   const { showMenu, setShowMenu } = useHooks();
 
-  const handleMenu = () => {
+  function handleMenu() {
     setShowMenu((prevstate) => !prevstate);
 
     if (!showMenu) {
