@@ -124,7 +124,7 @@ export function CommandMenu() {
               toast.error(
                 <ToastMessage
                   title="Não copiado"
-                  message="Não foi possível."
+                  message="Erro ao copiar link."
                 />,
               );
             }
