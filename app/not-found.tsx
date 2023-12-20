@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MoveLeft } from "lucide-react";
 
 import { Typography } from "@/components/Elements/Typography";
-import { Button } from "@/components/Button";
+import { Button } from "@/components/Elements/Button";
 
 export const metadata: Metadata = {
   title: "Not Found",

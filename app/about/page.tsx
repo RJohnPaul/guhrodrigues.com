@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { AnimateEnter } from "@/components/Elements/AnimateEnter";
 import { Title } from "@/components/Elements/Title";
 import { Biography } from "@/components/Elements/Biography";
-import { DownloadButton } from "@/components/Button/components/DownloadButton";
+import { DownloadButton } from "@/components/Elements/DownloadButton";
 import { Divider } from "@/components/Elements/Divider";
 import { Stack } from "@/components/Elements/Stack";
 

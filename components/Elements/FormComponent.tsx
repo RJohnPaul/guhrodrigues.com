@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 import { useHooks } from "@/contexts/Provider";
 
-import { SendButton } from "@/components/Button/components/SendButton";
+import { SendButton } from "@/components/Elements/SendButton";
 
 import { ToastMessage } from "@/components/Elements/Toast";
 

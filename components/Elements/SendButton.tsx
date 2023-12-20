@@ -6,7 +6,7 @@ import Lottie from "lottie-react";
 
 import emailIcon from "@/assets/icons/email.json";
 
-import { Button } from "../Button";
+import { Button } from "./Button";
 
 type SendButtonProps = {
   submitting: boolean;

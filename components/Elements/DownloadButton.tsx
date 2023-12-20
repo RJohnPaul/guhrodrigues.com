@@ -7,8 +7,8 @@ import downloadIcon from "@/assets/icons/download.json";
 
 import toast from "react-hot-toast";
 
-import { Button } from "@/components/Button";
-import { ToastMessage } from "../../Elements/Toast";
+import { Button } from "@/components/Elements/Button";
+import { ToastMessage } from "./Toast";
 
 const DownloadButton = () => {
   const downloadRef = useRef<any>();

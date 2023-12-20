@@ -3,7 +3,7 @@ import { Title } from "@/components/Elements/Title";
 import { Typography } from "@/components/Elements/Typography";
 import { Divider } from "@/components/Elements/Divider";
 import { LatestProjects } from "@/components/Elements/LatestProjects";
-import { ContactButton } from "@/components/Button/components/ContactButton";
+import { ContactButton } from "@/components/Elements/ContactButton";
 
 const HomePage = () => {
   return (
