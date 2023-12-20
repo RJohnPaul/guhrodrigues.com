@@ -14,11 +14,11 @@ const MobileMenu = () => {
 
   const scope = useMenuAnimation(showMenu);
 
-  function handleCloseMenu() {
+  const handleCloseMenu = () => {
     document.documentElement.style.overflow = "";
 
     setShowMenu(false);
-  }
+  };
 
   return (
     <div

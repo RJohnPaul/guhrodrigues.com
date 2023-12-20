@@ -22,7 +22,7 @@ const Stack = () => {
             key={name}
             className="flex items-center gap-2 rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2"
           >
-            <Image src={src} width={18} alt={name} />
+            <Image src={src} width={20} alt={name} />
             <Typography size="sm" className="font-medium">
               {name}
             </Typography>

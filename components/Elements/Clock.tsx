@@ -12,9 +12,9 @@ const Clock = () => {
   const [date, setDate] = useState<Date>(new Date());
   const clockRef = useRef<any>();
 
-  function refreshClock() {
+  const refreshClock = () => {
     setDate(new Date());
-  }
+  };
 
   useEffect(() => {
     const timerId = setInterval(refreshClock, 1000);

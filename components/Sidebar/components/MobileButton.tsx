@@ -9,15 +9,15 @@ import { Button } from "@/components/Elements/Button";
 const MobileButton = () => {
   const { showMenu, setShowMenu } = useHooks();
 
-  function handleMenu() {
-    setShowMenu((prevstate) => !prevstate);
-
+  const handleMenu = () => {
     if (!showMenu) {
       document.documentElement.style.overflow = "hidden";
     } else {
       document.documentElement.style.overflow = "";
     }
-  }
+
+    setShowMenu((prevstate) => !prevstate);
+  };
 
   return (
     <Button variant="ghost" size="icon" onClick={handleMenu}>

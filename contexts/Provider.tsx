@@ -6,31 +6,31 @@ import AppContext from "./AppContext";
 
 const Provider = ({ children }: { children: React.ReactNode }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showCommandMenu, setShowCommandMenu] = useState(false);
+  const [isToastVisible, setIsToastVisible] = useState(false);
+  const [isExpandPhotoVisible, setIsExpandPhotoVisible] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [visible, setVisible] = useState(true);
   const [submitting, setSubmitting] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-  const [showCommandMenu, setShowCommandMenu] = useState(false);
 
   const value = {
     showMenu,
     setShowMenu,
+    showCommandMenu,
+    setShowCommandMenu,
     name,
     setName,
     email,
     setEmail,
     message,
     setMessage,
-    visible,
-    setVisible,
     submitting,
     setSubmitting,
-    isVisible,
-    setIsVisible,
-    showCommandMenu,
-    setShowCommandMenu,
+    isToastVisible,
+    setIsToastVisible,
+    isExpandPhotoVisible,
+    setIsExpandPhotoVisible,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

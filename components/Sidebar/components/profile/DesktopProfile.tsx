@@ -9,16 +9,25 @@ import author from "@/assets/images/author.jpg";
 import { Title } from "@/components/Elements/Title";
 import { Typography } from "@/components/Elements/Typography";
 import { Image } from "@/components/Elements/Image";
+import { useHooks } from "@/contexts/Provider";
 
 const DesktopProfile = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const { setIsExpandPhotoVisible } = useHooks();
+
+  const handleExpandPhoto = () => {
+    document.documentElement.style.overflow = "hidden";
+
+    setIsExpandPhotoVisible(true);
+  };
+
   useEffect(() => {
-    function handleScroll() {
+    const handleScroll = () => {
       const scrollTop = window.scrollY;
 
       setIsScrolled(scrollTop > 0);
-    }
+    };
 
     window.addEventListener("scroll", handleScroll);
 
@@ -35,7 +44,10 @@ const DesktopProfile = () => {
           "scale-100": !isScrolled,
         })}
       >
-        <div className="h-[100px] w-[100px] overflow-hidden rounded-full">
+        <div
+          className="h-[100px] w-[100px] cursor-zoom-in overflow-hidden rounded-full"
+          onClick={handleExpandPhoto}
+        >
           <Image src={author} alt="Gustavo" zoomHover={true} />
         </div>
       </div>

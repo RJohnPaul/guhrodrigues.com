@@ -47,18 +47,18 @@ const CommandMenu = () => {
     window.open(url, "_blank");
   }, []);
 
-  function forwardToRoute(route: string) {
+  const forwardToRoute = (route: string) => {
     router.push(route);
     setShowCommandMenu(false);
-  }
+  };
 
   useEffect(() => {
-    function down(e: KeyboardEvent) {
+    const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setShowCommandMenu((prevState) => !prevState);
       }
-    }
+    };
 
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
