@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { Provider } from "@/contexts/Provider";
 
 import { AnimateEnter } from "@/components/Elements/AnimateEnter";
-import { Sidebar } from "@/components/Sidebar";
+import { Sidebar } from "@/components/Sidebar/Sidebar";
 import { Texture } from "@/components/Elements/Texture";
 import { CommandMenu } from "@/components/CommandMenu";
 import { Toast } from "@/components/Elements/Toast";
