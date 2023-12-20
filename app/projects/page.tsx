@@ -2,21 +2,21 @@ import { Metadata } from "next";
 
 import { projects } from "@/data/projects";
 
-import { Title } from "@/components/utils/Title";
-import { Typography } from "@/components/utils/Typography";
-import { ProjectItem } from "@/components/ui/ProjectItem";
-import { AnimateEnter } from "@/components/utils/AnimateEnter";
+import { Title } from "@/components/Elements/Title";
+import { Typography } from "@/components/Elements/Typography";
+import { ProjectItem } from "@/components/Elements/ProjectItem";
+import { AnimateEnter } from "@/components/Elements/AnimateEnter";
 
 export const metadata: Metadata = {
   title: "Projetos",
   description: "Canto pessoal da internet, onde mostra todos os meus projetos.",
 };
 
-function getTotalProjects() {
-  return projects.length;
-}
+const ProjectsPage = () => {
+  const getTotalProjects = () => {
+    return projects.length;
+  };
 
-export default function Projects() {
   return (
     <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section>
@@ -29,11 +29,13 @@ export default function Projects() {
       </section>
       <ul className="grid place-items-center gap-4 md:grid-cols-2">
         {projects.map((props) => (
-          <li key={props.id}>
+          <li key={props.title}>
             <ProjectItem {...props} />
           </li>
         ))}
       </ul>
     </AnimateEnter>
   );
-}
+};
+
+export default ProjectsPage;

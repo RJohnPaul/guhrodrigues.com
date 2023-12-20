@@ -3,15 +3,15 @@ import Link from "next/link";
 
 import { MoveLeft } from "lucide-react";
 
-import { Typography } from "@/components/utils/Typography";
-import { Button } from "@/components/utils/Button";
+import { Typography } from "@/components/Elements/Typography";
+import { Button } from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Not Found",
   description: "A página que você está tentando acessar não existe.",
 };
 
-export default function NotFound() {
+const NotFoundPage = () => {
   return (
     <main className="flex max-w-[854px] items-center justify-center py-8 lg:w-4/5 lg:py-0">
       <section className="flex flex-col items-center justify-center p-8">
@@ -34,4 +34,6 @@ export default function NotFound() {
       </section>
     </main>
   );
-}
+};
+
+export default NotFoundPage;

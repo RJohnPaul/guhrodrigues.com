@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-import { Title } from "@/components/utils/Title";
-import { Typography } from "@/components/utils/Typography";
-import { FormComponent } from "@/components/ui/FormComponent";
-import { Socials } from "@/components/ui/Socials";
-import { Divider } from "@/components/utils/Divider";
-import { AnimateEnter } from "@/components/utils/AnimateEnter";
+import { Title } from "@/components/Elements/Title";
+import { Typography } from "@/components/Elements/Typography";
+import { FormComponent } from "@/components/Elements/FormComponent";
+import { Socials } from "@/components/Elements/Socials";
+import { Divider } from "@/components/Elements/Divider";
+import { AnimateEnter } from "@/components/Elements/AnimateEnter";
 
 export const metadata: Metadata = {
   title: "Contato",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Sinta-se à vontade para entrar em contato e conversaremos sobre como podemos trabalhar juntos.",
 };
 
-export default function Contact() {
+const ContactPage = () => {
   return (
     <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section className="space-y-6">
@@ -43,4 +43,6 @@ export default function Contact() {
       </section>
     </AnimateEnter>
   );
-}
+};
+
+export default ContactPage;

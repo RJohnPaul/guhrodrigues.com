@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request: Request) {
+const POST = async (request: Request) => {
   const { email, message, name } = await request.json();
 
   try {
@@ -36,4 +36,6 @@ export async function POST(request: Request) {
       },
     );
   }
-}
+};
+
+export { POST };

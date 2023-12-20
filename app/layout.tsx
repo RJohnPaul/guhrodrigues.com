@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import { Poppins, Kanit } from "next/font/google";
+
 import "@/styles/globals.css";
 
 import { cn } from "@/lib/utils";
 
-import { Provider } from "@/context/Provider";
+import { Provider } from "@/contexts/Provider";
 
-import { AnimateEnter } from "@/components/utils/AnimateEnter";
-import { Sidebar } from "@/components/sidebar/Sidebar";
-import { Texture } from "@/components/ui/Texture";
-import { CommandMenu } from "@/components/command/CommandMenu";
-import { Toast } from "@/components/ui/Toast";
+import { AnimateEnter } from "@/components/Elements/AnimateEnter";
+import { Sidebar } from "@/components/Sidebar";
+import { Texture } from "@/components/Elements/Texture";
+import { CommandMenu } from "@/components/CommandMenu";
+import { Toast } from "@/components/Elements/Toast";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,10 +29,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Gustavo Rodrigues", url: "https://guhrodrigues.com" }],
   category: "developer",
   creator: "Gustavo Rodrigues",
-  title: {
-    default: "Gustavo Rodrigues – Transformando código em experiências únicas",
-    template: "%s · Gustavo Rodrigues",
-  },
+  title: "Gustavo Rodrigues",
   description:
     "Criando experiências digitais que combinem perfeitamente a estética elegante com a funcionalidade excepcional. Minha paixão é transformar código em experiências incríveis, garantindo que cada projeto conte uma história única e envolvente na web.",
   icons: {
@@ -87,11 +85,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
+type RootLayoutProps = {
   children: React.ReactNode;
-}) {
+};
+
+const RootLayout = (props: RootLayoutProps) => {
+  const { children } = props;
+
   return (
     <html lang="pt-BR">
       <body
@@ -113,4 +113,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

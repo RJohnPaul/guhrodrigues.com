@@ -1,11 +1,11 @@
-import { AnimateEnter } from "@/components/utils/AnimateEnter";
-import { Title } from "@/components/utils/Title";
-import { Typography } from "@/components/utils/Typography";
-import { Divider } from "@/components/utils/Divider";
-import { LatestProjects } from "@/components/ui/LatestProjects";
-import { ContactButton } from "@/components/ui/ContactButton";
+import { AnimateEnter } from "@/components/Elements/AnimateEnter";
+import { Title } from "@/components/Elements/Title";
+import { Typography } from "@/components/Elements/Typography";
+import { Divider } from "@/components/Elements/Divider";
+import { LatestProjects } from "@/components/Elements/LatestProjects";
+import { ContactButton } from "@/components/Button/components/ContactButton";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section className="space-y-4">
@@ -34,4 +34,6 @@ export default function Home() {
       </section>
     </AnimateEnter>
   );
-}
+};
+
+export default HomePage;

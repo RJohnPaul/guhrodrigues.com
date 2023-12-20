@@ -1,18 +1,18 @@
 import { Metadata } from "next";
 
-import { AnimateEnter } from "@/components/utils/AnimateEnter";
-import { Title } from "@/components/utils/Title";
-import { Biography } from "@/components/ui/Biography";
-import { DownloadButton } from "@/components/ui/DownloadButton";
-import { Divider } from "@/components/utils/Divider";
-import { Stack } from "@/components/ui/Stack";
+import { AnimateEnter } from "@/components/Elements/AnimateEnter";
+import { Title } from "@/components/Elements/Title";
+import { Biography } from "@/components/Elements/Biography";
+import { DownloadButton } from "@/components/Button/components/DownloadButton";
+import { Divider } from "@/components/Elements/Divider";
+import { Stack } from "@/components/Elements/Stack";
 
 export const metadata: Metadata = {
   title: "Sobre",
   description: "Conheça um pouco de mim e das minhas paixões.",
 };
 
-export default function About() {
+const AboutPage = () => {
   return (
     <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section>
@@ -28,4 +28,6 @@ export default function About() {
       <Stack />
     </AnimateEnter>
   );
-}
+};
+
+export default AboutPage;

@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 import sharespace from "@/assets/images/projects/sharespace.png";
 import quickchat from "@/assets/images/projects/quickchat.png";
 import swiftmart from "@/assets/images/projects/swiftmart.png";
@@ -22,11 +24,24 @@ import styledComponents from "@/assets/images/skills/styledcomponents.svg";
 import tailwind from "@/assets/images/skills/tailwindcss.svg";
 import framer from "@/assets/images/skills/framer.svg";
 
-import { ProjectsProps } from "@/types/projects";
+type Projects = Array<{
+  image: StaticImageData;
+  title: string;
+  smallDescription: string;
+  description: Array<{
+    content: string;
+  }>;
+  techs: Array<{
+    image: StaticImageData;
+    name: string;
+  }>;
+  code: string;
+  visit?: string;
+  slug: string;
+}>;
 
-export const projects: ProjectsProps[] = [
+const projects: Projects = [
   {
-    id: 1,
     image: sharespace,
     title: "ShareSpace",
     smallDescription:
@@ -76,7 +91,6 @@ export const projects: ProjectsProps[] = [
     slug: "sharespace",
   },
   {
-    id: 2,
     image: quickchat,
     title: "QuickChat",
     smallDescription: "Chatbot com uma experiência inteligente e agradável.",
@@ -120,7 +134,6 @@ export const projects: ProjectsProps[] = [
     slug: "quickchat",
   },
   {
-    id: 3,
     image: swiftmart,
     title: "SwiftMart",
     smallDescription:
@@ -154,7 +167,6 @@ export const projects: ProjectsProps[] = [
     slug: "swiftmart",
   },
   {
-    id: 4,
     image: moviecorn,
     title: "MovieCorn",
     smallDescription:
@@ -188,7 +200,6 @@ export const projects: ProjectsProps[] = [
     slug: "moviecorn",
   },
   {
-    id: 5,
     image: crypto,
     title: "Crypto",
     smallDescription:
@@ -222,7 +233,6 @@ export const projects: ProjectsProps[] = [
     slug: "crypto",
   },
   {
-    id: 6,
     image: weather,
     title: "Weather",
     smallDescription:
@@ -256,7 +266,6 @@ export const projects: ProjectsProps[] = [
     slug: "weather",
   },
   {
-    id: 7,
     image: todo,
     title: "To-do",
     smallDescription:
@@ -290,7 +299,6 @@ export const projects: ProjectsProps[] = [
     slug: "to-do",
   },
   {
-    id: 8,
     image: musicplayer,
     title: "Music Player",
     smallDescription:
@@ -324,3 +332,5 @@ export const projects: ProjectsProps[] = [
     slug: "music-player",
   },
 ];
+
+export { projects };

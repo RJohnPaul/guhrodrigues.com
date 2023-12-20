@@ -6,17 +6,17 @@ import { Undo2, Eye, Github } from "lucide-react";
 
 import { projects } from "@/data/projects";
 
-import { AnimateEnter } from "@/components/utils/AnimateEnter";
-import { Separator } from "@/components/utils/Separator";
-import { Title } from "@/components/utils/Title";
-import { Image } from "@/components/utils/Image";
-import { Typography } from "@/components/utils/Typography";
+import { AnimateEnter } from "@/components/Elements/AnimateEnter";
+import { Separator } from "@/components/Elements/Separator";
+import { Title } from "@/components/Elements/Title";
+import { Image } from "@/components/Elements/Image";
+import { Typography } from "@/components/Elements/Typography";
 
-export async function generateMetadata({
+export const generateMetadata = async ({
   params,
 }: {
   params: any;
-}): Promise<Metadata | undefined> {
+}): Promise<Metadata | undefined> => {
   const project = projects.find((project) => project.slug === params.slug);
 
   if (!project) {
@@ -42,9 +42,9 @@ export async function generateMetadata({
       title,
     },
   };
-}
+};
 
-export default function ProjectPage({ params }: { params: any }) {
+const ProjectPage = ({ params }: { params: any }) => {
   const project = projects.find((project) => project.slug === params.slug);
 
   if (!project) {
@@ -130,4 +130,6 @@ export default function ProjectPage({ params }: { params: any }) {
       </section>
     </AnimateEnter>
   );
-}
+};
+
+export default ProjectPage;
