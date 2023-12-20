@@ -44,11 +44,14 @@ const DesktopProfile = () => {
           "scale-100": !isScrolled,
         })}
       >
-        <div
-          className="h-[100px] w-[100px] cursor-zoom-in overflow-hidden rounded-full"
-          onClick={handleExpandPhoto}
-        >
-          <Image src={author} alt="Gustavo" zoomHover={true} />
+        <div className="h-[100px] w-[100px] overflow-hidden rounded-full">
+          <Image
+            src={author}
+            alt="Gustavo"
+            zoomHover={true}
+            className="cursor-zoom-in"
+            onClick={handleExpandPhoto}
+          />
         </div>
       </div>
       <div className="hidden lg:block">
