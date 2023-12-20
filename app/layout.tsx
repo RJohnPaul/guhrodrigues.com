@@ -8,10 +8,10 @@ import { cn } from "@/lib/utils";
 import { Provider } from "@/contexts/Provider";
 
 import { AnimateEnter } from "@/components/Elements/AnimateEnter";
-import { Sidebar } from "@/components/Sidebar/Sidebar";
-import { Texture } from "@/components/Elements/Texture";
 import { CommandMenu } from "@/components/CommandMenu";
+import { Sidebar } from "@/components/Sidebar";
 import { Toast } from "@/components/Elements/Toast";
+import { Texture } from "@/components/Elements/Texture";
 
 const poppins = Poppins({
   subsets: ["latin"],
