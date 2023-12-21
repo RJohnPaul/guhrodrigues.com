@@ -1,5 +1,3 @@
-"use client";
-
 import { Equal, X } from "lucide-react";
 
 import { useHooks } from "@/contexts/Provider";

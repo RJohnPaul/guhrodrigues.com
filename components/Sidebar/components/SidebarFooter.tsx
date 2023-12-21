@@ -1,6 +1,6 @@
-import { Typography } from "../../Elements/Typography";
-import { Clock } from "../../Elements/Clock";
-import { CommandMenuButton } from "../../CommandMenu/components/CommandMenuButton";
+import { Typography } from "@/components/Elements/Typography";
+import { Clock } from "@/components/Elements/Clock";
+import { CommandMenuButton } from "@/components/CommandMenu/components/CommandMenuButton";
 
 const SidebarFooter = () => {
   return (

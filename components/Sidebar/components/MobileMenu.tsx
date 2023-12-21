@@ -1,11 +1,9 @@
-"use client";
-
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 
 import { useHooks } from "@/contexts/Provider";
-import { useMenuAnimation } from "@/components/Sidebar/hooks/menuAnimation";
+import { useMenuAnimation } from "@/components/Sidebar/hooks/useMenuAnimation";
 
 import { navLinks } from "@/data/mobile-menu";
 
