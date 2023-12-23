@@ -7,18 +7,9 @@ import author from "@/assets/images/author.jpg";
 import { Title } from "@/components/Elements/Title";
 import { Typography } from "@/components/Elements/Typography";
 import { Image } from "@/components/Elements/Image";
-import { useHooks } from "@/contexts/Provider";
 
 const DesktopProfile = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const { setIsExpandPhotoVisible } = useHooks();
-
-  const handleExpandPhoto = () => {
-    document.documentElement.style.overflow = "hidden";
-
-    setIsExpandPhotoVisible(true);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,13 +34,7 @@ const DesktopProfile = () => {
         })}
       >
         <div className="h-[100px] w-[100px] overflow-hidden rounded-full">
-          <Image
-            src={author}
-            alt="Gustavo"
-            zoomHover={true}
-            className="cursor-zoom-in"
-            onClick={handleExpandPhoto}
-          />
+          <Image src={author} alt="Gustavo" zoomHover={true} />
         </div>
       </div>
       <div className="hidden lg:block">

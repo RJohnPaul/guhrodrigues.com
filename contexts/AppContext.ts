@@ -7,8 +7,6 @@ type Context = {
   setShowCommandMenu: React.Dispatch<React.SetStateAction<boolean>>;
   isToastVisible: boolean;
   setIsToastVisible: React.Dispatch<React.SetStateAction<boolean>>;
-  isExpandPhotoVisible: boolean;
-  setIsExpandPhotoVisible: React.Dispatch<React.SetStateAction<boolean>>;
   name: string;
   setName: React.Dispatch<React.SetStateAction<string>>;
   email: string;
@@ -26,8 +24,6 @@ const initialValues = {
   setShowCommandMenu: () => undefined,
   isToastVisible: false,
   setIsToastVisible: () => undefined,
-  isExpandPhotoVisible: false,
-  setIsExpandPhotoVisible: () => undefined,
   name: "",
   setName: () => undefined,
   email: "",
