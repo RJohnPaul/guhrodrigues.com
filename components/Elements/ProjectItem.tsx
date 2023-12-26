@@ -5,8 +5,8 @@ import { StaticImageData } from "next/image";
 
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
-import { Image } from "@/components/Elements/Image";
-import { Typography } from "@/components/Elements/Typography";
+import { Image } from "@/components/elements/Image";
+import { Typography } from "@/components/elements/Typography";
 
 type Project = {
   image: StaticImageData;

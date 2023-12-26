@@ -1,9 +1,9 @@
 "use client";
 
 import { Navigation } from "./components/Navigation";
-import { Divider } from "@/components/Elements/Divider";
+import { Divider } from "@/components/elements/Divider";
 import { ProfileHeader } from "./components/profile/ProfileHeader";
-import { SidebarFooter } from "./components/SidebarFooter";
+import { SidebarFooter } from "./components/sidebarFooter";
 import { MobileMenu } from "./components/MobileMenu";
 import { useIsMobile } from "./hooks/useIsMobile";
 

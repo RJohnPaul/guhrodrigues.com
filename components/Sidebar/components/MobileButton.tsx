@@ -2,7 +2,7 @@ import { Equal, X } from "lucide-react";
 
 import { useHooks } from "@/contexts/Provider";
 
-import { Button } from "@/components/Elements/Button";
+import { Button } from "@/components/elements/Button";
 
 const MobileButton = () => {
   const { showMenu, setShowMenu } = useHooks();

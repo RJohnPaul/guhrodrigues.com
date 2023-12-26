@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 import toast from "react-hot-toast";
-import { ToastMessage } from "../Elements/Toast";
+import { ToastMessage } from "../elements/Toast";
 
 import {
   CommandDialog,
@@ -27,7 +27,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/components/CommandMenu/components/CommandMenuComponents";
+} from "@/components/command/components/CommandMenuComponents";
 
 type Groups = Array<{
   heading: string;

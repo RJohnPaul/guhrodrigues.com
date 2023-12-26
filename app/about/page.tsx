@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-import { AnimateEnter } from "@/components/Elements/AnimateEnter";
-import { Title } from "@/components/Elements/Title";
-import { Biography } from "@/components/Elements/Biography";
-import { DownloadButton } from "@/components/Elements/DownloadButton";
-import { Divider } from "@/components/Elements/Divider";
-import { Stack } from "@/components/Elements/Stack";
+import { AnimateEnter } from "@/components/elements/AnimateEnter";
+import { Title } from "@/components/elements/Title";
+import { Biography } from "@/components/elements/Biography";
+import { DownloadButton } from "@/components/elements/DownloadButton";
+import { Divider } from "@/components/elements/Divider";
+import { Stack } from "@/components/elements/Stack";
 
 export const metadata: Metadata = {
   title: "Sobre",

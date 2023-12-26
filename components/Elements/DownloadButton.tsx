@@ -7,7 +7,7 @@ import downloadIcon from "@/assets/icons/download.json";
 
 import toast from "react-hot-toast";
 
-import { Button } from "@/components/Elements/Button";
+import { Button } from "@/components/elements/Button";
 import { ToastMessage } from "./Toast";
 
 const DownloadButton = () => {

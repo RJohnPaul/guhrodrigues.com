@@ -3,7 +3,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 import { useHooks } from "@/contexts/Provider";
-import { useMenuAnimation } from "@/components/Sidebar/hooks/useMenuAnimation";
+import { useMenuAnimation } from "@/components/sidebar/hooks/useMenuAnimation";
 
 import { navLinks } from "@/data/mobile-menu";
 

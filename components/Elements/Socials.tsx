@@ -1,6 +1,6 @@
 import { socials } from "@/data/socials";
 
-import { Button } from "@/components/Elements/Button";
+import { Button } from "@/components/elements/Button";
 
 const Socials = () => {
   return (

@@ -4,9 +4,9 @@ import { cn } from "@/lib/utils";
 
 import author from "@/assets/images/author.jpg";
 
-import { Title } from "@/components/Elements/Title";
-import { Typography } from "@/components/Elements/Typography";
-import { Image } from "@/components/Elements/Image";
+import { Title } from "@/components/elements/Title";
+import { Typography } from "@/components/elements/Typography";
+import { Image } from "@/components/elements/Image";
 
 const DesktopProfile = () => {
   const [isScrolled, setIsScrolled] = useState(false);

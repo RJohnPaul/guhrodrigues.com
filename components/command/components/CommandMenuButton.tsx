@@ -6,7 +6,7 @@ import { useHooks } from "@/contexts/Provider";
 
 import { cn } from "@/lib/utils";
 
-import { Button } from "@/components/Elements/Button";
+import { Button } from "@/components/elements/Button";
 
 type CommandMenuButtonProps = {
   className?: string;

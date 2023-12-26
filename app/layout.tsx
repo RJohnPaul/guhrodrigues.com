@@ -7,11 +7,11 @@ import { cn } from "@/lib/utils";
 
 import { Provider } from "@/contexts/Provider";
 
-import { AnimateEnter } from "@/components/Elements/AnimateEnter";
-import { CommandMenu } from "@/components/CommandMenu";
-import { Sidebar } from "@/components/Sidebar";
-import { Toast } from "@/components/Elements/Toast";
-import { Texture } from "@/components/Elements/Texture";
+import { AnimateEnter } from "@/components/elements/AnimateEnter";
+import { CommandMenu } from "@/components/command";
+import { Sidebar } from "@/components/sidebar";
+import { Toast } from "@/components/elements/Toast";
+import { Texture } from "@/components/elements/Texture";
 
 const poppins = Poppins({
   subsets: ["latin"],

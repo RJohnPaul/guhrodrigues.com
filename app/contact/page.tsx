@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-import { Title } from "@/components/Elements/Title";
-import { Typography } from "@/components/Elements/Typography";
-import { FormComponent } from "@/components/Elements/FormComponent";
-import { Socials } from "@/components/Elements/Socials";
-import { Divider } from "@/components/Elements/Divider";
-import { AnimateEnter } from "@/components/Elements/AnimateEnter";
+import { Title } from "@/components/elements/Title";
+import { Typography } from "@/components/elements/Typography";
+import { FormComponent } from "@/components/elements/FormComponent";
+import { Socials } from "@/components/elements/Socials";
+import { Divider } from "@/components/elements/Divider";
+import { AnimateEnter } from "@/components/elements/AnimateEnter";
 
 export const metadata: Metadata = {
   title: "Contato",

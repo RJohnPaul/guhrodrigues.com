@@ -6,9 +6,9 @@ import toast from "react-hot-toast";
 
 import { useHooks } from "@/contexts/Provider";
 
-import { SendButton } from "@/components/Elements/SendButton";
+import { SendButton } from "@/components/elements/SendButton";
 
-import { ToastMessage } from "@/components/Elements/Toast";
+import { ToastMessage } from "@/components/elements/Toast";
 
 const FormComponent = () => {
   const {

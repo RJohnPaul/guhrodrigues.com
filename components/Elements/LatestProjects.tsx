@@ -9,7 +9,7 @@ import { projects } from "@/data/projects";
 
 import arrowIcon from "@/assets/icons/arrow.json";
 
-import { Title } from "@/components/Elements/Title";
+import { Title } from "@/components/elements/Title";
 import { ProjectItem } from "./ProjectItem";
 
 const LatestProjects = () => {

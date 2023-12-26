@@ -1,7 +1,7 @@
-import { useIsMobile } from "@/components/Sidebar/hooks/useIsMobile";
+import { useIsMobile } from "@/components/sidebar/hooks/useIsMobile";
 
-import { DesktopProfile } from "@/components/Sidebar/components/profile/DesktopProfile";
-import { MobileProfile } from "@/components/Sidebar/components/profile/MobileProfile";
+import { DesktopProfile } from "@/components/sidebar/components/profile/DesktopProfile";
+import { MobileProfile } from "@/components/sidebar/components/profile/MobileProfile";
 
 const ProfileHeader = () => {
   const isMobile = useIsMobile();

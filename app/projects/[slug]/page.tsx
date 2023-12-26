@@ -6,11 +6,11 @@ import { Undo2, Eye, Github } from "lucide-react";
 
 import { projects } from "@/data/projects";
 
-import { AnimateEnter } from "@/components/Elements/AnimateEnter";
-import { Separator } from "@/components/Elements/Separator";
-import { Title } from "@/components/Elements/Title";
-import { Image } from "@/components/Elements/Image";
-import { Typography } from "@/components/Elements/Typography";
+import { AnimateEnter } from "@/components/elements/AnimateEnter";
+import { Separator } from "@/components/elements/Separator";
+import { Title } from "@/components/elements/Title";
+import { Image } from "@/components/elements/Image";
+import { Typography } from "@/components/elements/Typography";
 
 export const generateMetadata = async ({
   params,

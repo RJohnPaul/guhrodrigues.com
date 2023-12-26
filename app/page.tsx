@@ -1,9 +1,9 @@
-import { AnimateEnter } from "@/components/Elements/AnimateEnter";
-import { Title } from "@/components/Elements/Title";
-import { Typography } from "@/components/Elements/Typography";
-import { Divider } from "@/components/Elements/Divider";
-import { LatestProjects } from "@/components/Elements/LatestProjects";
-import { ContactButton } from "@/components/Elements/ContactButton";
+import { AnimateEnter } from "@/components/elements/AnimateEnter";
+import { Title } from "@/components/elements/Title";
+import { Typography } from "@/components/elements/Typography";
+import { Divider } from "@/components/elements/Divider";
+import { LatestProjects } from "@/components/elements/LatestProjects";
+import { ContactButton } from "@/components/elements/ContactButton";
 
 const HomePage = () => {
   return (

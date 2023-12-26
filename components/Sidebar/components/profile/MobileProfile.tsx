@@ -2,9 +2,9 @@ import Link from "next/link";
 
 import author from "@/assets/images/author.jpg";
 
-import { Image } from "@/components/Elements/Image";
-import { MobileButton } from "@/components/Sidebar/components/MobileButton";
-import { CommandMenuButton } from "@/components/CommandMenu/components/CommandMenuButton";
+import { Image } from "@/components/elements/Image";
+import { MobileButton } from "@/components/sidebar/components/MobileButton";
+import { CommandMenuButton } from "@/components/command/components/CommandMenuButton";
 
 const MobileProfile = () => {
   return (

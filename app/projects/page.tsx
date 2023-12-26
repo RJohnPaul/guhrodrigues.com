@@ -2,10 +2,10 @@ import { Metadata } from "next";
 
 import { projects } from "@/data/projects";
 
-import { Title } from "@/components/Elements/Title";
-import { Typography } from "@/components/Elements/Typography";
-import { ProjectItem } from "@/components/Elements/ProjectItem";
-import { AnimateEnter } from "@/components/Elements/AnimateEnter";
+import { Title } from "@/components/elements/Title";
+import { Typography } from "@/components/elements/Typography";
+import { ProjectItem } from "@/components/elements/ProjectItem";
+import { AnimateEnter } from "@/components/elements/AnimateEnter";
 
 export const metadata: Metadata = {
   title: "Projetos",
