@@ -3,7 +3,7 @@
 import { Navigation } from "./components/Navigation";
 import { Divider } from "@/components/elements/Divider";
 import { ProfileHeader } from "./components/profile/ProfileHeader";
-import { SidebarFooter } from "./components/sidebarFooter";
+import { SidebarFooter } from "./components/SidebarFooter";
 import { MobileMenu } from "./components/MobileMenu";
 import { useIsMobile } from "./hooks/useIsMobile";
 
