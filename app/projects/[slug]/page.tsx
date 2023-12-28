@@ -69,30 +69,30 @@ const ProjectPage = ({ params }: { params: any }) => {
           </div>
           <div className="flex items-center gap-2">
             {visit && (
-              <>
-                <a
-                  href={visit}
-                  target="_blank"
-                  className="flex items-center gap-2 font-mono text-base"
-                >
-                  <Eye size={18} className="text-primary" />
-                  <span className="text-emerald-500 duration-300 hover:text-emerald-400">
-                    Visualizar
-                  </span>
-                </a>
-                <Separator />
-              </>
+              <a
+                href={visit}
+                target="_blank"
+                className="flex items-center gap-2 font-mono text-base"
+              >
+                <Eye size={18} className="text-primary" />
+                <span className="text-emerald-500 duration-300 hover:text-emerald-400">
+                  Visualizar
+                </span>
+              </a>
             )}
-            <a
-              href={code}
-              target="_blank"
-              className="flex items-center gap-2 font-mono text-base"
-            >
-              <Github size={18} className="text-primary" />
-              <span className="text-emerald-500 duration-300 hover:text-emerald-400">
-                Código fonte
-              </span>
-            </a>
+            {visit && code && <Separator />}
+            {code && (
+              <a
+                href={code}
+                target="_blank"
+                className="flex items-center gap-2 font-mono text-base"
+              >
+                <Github size={18} className="text-primary" />
+                <span className="text-emerald-500 duration-300 hover:text-emerald-400">
+                  Código fonte
+                </span>
+              </a>
+            )}
           </div>
         </div>
         <div className="overflow-hidden rounded-md">
@@ -118,7 +118,7 @@ const ProjectPage = ({ params }: { params: any }) => {
                   key={index}
                   className="flex items-center gap-2 rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2"
                 >
-                  <Image src={tech.image} width={18} alt={tech.name} />
+                  <Image src={tech.image} width={20} alt={tech.name} />
                   <Typography size="sm" className="font-medium">
                     {tech.name}
                   </Typography>

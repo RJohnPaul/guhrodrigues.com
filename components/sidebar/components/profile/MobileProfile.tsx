@@ -10,9 +10,9 @@ const MobileProfile = () => {
   return (
     <>
       <Link href="/">
-        <figure className="h-10 w-10 overflow-hidden rounded-full lg:hidden">
+        <div className="h-10 w-10 overflow-hidden rounded-full lg:hidden">
           <Image src={author} alt="Gustavo" />
-        </figure>
+        </div>
       </Link>
       <div className="flex items-center gap-1 lg:hidden">
         <CommandMenuButton iconClassName="w-5 h-5" />

@@ -13,6 +13,7 @@ import node from "@/assets/images/skills/nodejs.svg";
 import styledComponents from "@/assets/images/skills/styledcomponents.svg";
 import tailwind from "@/assets/images/skills/tailwindcss.svg";
 import framer from "@/assets/images/skills/framer.svg";
+import radix from "@/assets/images/skills/radix.svg";
 import mui from "@/assets/images/skills/mui.svg";
 import mysql from "@/assets/images/skills/mysql.svg";
 
@@ -73,6 +74,10 @@ const stack: Stack = [
   {
     src: framer,
     name: "Framer",
+  },
+  {
+    src: radix,
+    name: "Radix UI",
   },
   {
     src: html,

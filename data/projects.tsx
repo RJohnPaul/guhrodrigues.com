@@ -1,7 +1,8 @@
 import { StaticImageData } from "next/image";
 
-import sharespace from "@/assets/images/projects/sharespace.png";
 import quickchat from "@/assets/images/projects/quickchat.png";
+import marybin from "@/assets/images/projects/mary-bin.png";
+import sharespace from "@/assets/images/projects/sharespace.png";
 import swiftmart from "@/assets/images/projects/swiftmart.png";
 import moviecorn from "@/assets/images/projects/moviecorn.png";
 import crypto from "@/assets/images/projects/crypto.png";
@@ -12,6 +13,7 @@ import musicplayer from "@/assets/images/projects/musicplayer.png";
 import html from "@/assets/images/skills/html.svg";
 import css from "@/assets/images/skills/css.svg";
 import nextjs from "@/assets/images/skills/nextjs.svg";
+import radix from "@/assets/images/skills/radix.svg";
 import vite from "@/assets/images/skills/vite.svg";
 import shadcn from "@/assets/images/skills/shadcn.svg";
 import mongo from "@/assets/images/skills/mongo.svg";
@@ -35,12 +37,91 @@ type Projects = Array<{
     image: StaticImageData;
     name: string;
   }>;
-  code: string;
+  code?: string;
   visit?: string;
   slug: string;
 }>;
 
 const projects: Projects = [
+  {
+    image: marybin,
+    title: "Mary Bin",
+    smallDescription:
+      "Website realizado para a Mary Bin, empresa especializada em derivados do milho.",
+    description: [
+      {
+        content:
+          "Desenvolvi esse website para a Mary Bin, uma empresa dedicada à produção de derivados do milho e que contém diversos sabores de sorvetes, açaí, salgados, refrigerantes e café expresso.",
+      },
+      {
+        content:
+          "Este projeto foi meticulosamente construído com as tecnologias mais avançadas, incluindo Next.js, TypeScript, Tailwind CSS e Radix UI, visando proporcionar uma experiência digital única e cativante.",
+      },
+    ],
+    techs: [
+      {
+        image: nextjs,
+        name: "Next.js",
+      },
+      {
+        image: typescript,
+        name: "TypeScript",
+      },
+      {
+        image: tailwind,
+        name: "Tailwind CSS",
+      },
+      {
+        image: radix,
+        name: "Radix UI",
+      },
+    ],
+    visit: "https://marybin.com.br/",
+    slug: "mary-bin",
+  },
+  {
+    image: quickchat,
+    title: "QuickChat",
+    smallDescription: "Chatbot com uma experiência inteligente e agradável.",
+    description: [
+      {
+        content:
+          "Chatbot que faz uso da API da OpenAI em conjunto com a Vercel SDK para fornecer interações de conversação eficientes e automatizadas.",
+      },
+      {
+        content:
+          "Esta aplicação tem o potencial de ser uma ferramenta valiosa em várias aplicações, desde atendimento ao cliente automatizado até assistência em tarefas específicas.",
+      },
+      {
+        content:
+          "O QuickChat permite que os usuários tenham conversas naturais com um assistente virtual, alimentado pela tecnologia de IA da OpenAI.",
+      },
+    ],
+    techs: [
+      {
+        image: nextjs,
+        name: "Next.js",
+      },
+      {
+        image: typescript,
+        name: "TypeScript",
+      },
+      {
+        image: openai,
+        name: "OpenAI API",
+      },
+      {
+        image: tailwind,
+        name: "Tailwind CSS",
+      },
+      {
+        image: shadcn,
+        name: "shadcn/ui",
+      },
+    ],
+    code: "https://github.com/guhrodriguess/quickchat",
+    slug: "quickchat",
+  },
   {
     image: sharespace,
     title: "ShareSpace",
@@ -89,49 +170,6 @@ const projects: Projects = [
     code: "https://github.com/guhrodriguess/sharespace",
     visit: "https://sharespacelab.vercel.app",
     slug: "sharespace",
-  },
-  {
-    image: quickchat,
-    title: "QuickChat",
-    smallDescription: "Chatbot com uma experiência inteligente e agradável.",
-    description: [
-      {
-        content:
-          "Chatbot que faz uso da API da OpenAI em conjunto com a Vercel SDK para fornecer interações de conversação eficientes e automatizadas.",
-      },
-      {
-        content:
-          "Esta aplicação tem o potencial de ser uma ferramenta valiosa em várias aplicações, desde atendimento ao cliente automatizado até assistência em tarefas específicas.",
-      },
-      {
-        content:
-          "O QuickChat permite que os usuários tenham conversas naturais com um assistente virtual, alimentado pela tecnologia de IA da OpenAI.",
-      },
-    ],
-    techs: [
-      {
-        image: nextjs,
-        name: "Next.js",
-      },
-      {
-        image: typescript,
-        name: "TypeScript",
-      },
-      {
-        image: openai,
-        name: "OpenAI API",
-      },
-      {
-        image: tailwind,
-        name: "Tailwind CSS",
-      },
-      {
-        image: shadcn,
-        name: "shadcn/ui",
-      },
-    ],
-    code: "https://github.com/guhrodriguess/quickchat",
-    slug: "quickchat",
   },
   {
     image: swiftmart,
@@ -226,6 +264,10 @@ const projects: Projects = [
       {
         image: tailwind,
         name: "Tailwind CSS",
+      },
+      {
+        image: radix,
+        name: "Radix UI",
       },
     ],
     code: "https://github.com/guhrodriguess/crypto",
