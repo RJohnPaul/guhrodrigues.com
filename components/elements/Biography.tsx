@@ -1,12 +1,39 @@
 import { Typography } from "./Typography";
 
 const Biography = () => {
+  const getAge = () => {
+    const now = new Date();
+    const dateOfBirth = new Date("2005-11-10");
+    const yearOfBirth = dateOfBirth.getFullYear();
+    const currentYear = now.getFullYear();
+
+    let age = currentYear - yearOfBirth;
+
+    if (
+      now.getMonth() < dateOfBirth.getMonth() ||
+      (now.getMonth() === dateOfBirth.getMonth() &&
+        now.getDate() < dateOfBirth.getDate())
+    ) {
+      age--;
+    }
+
+    return age;
+  };
+
   return (
     <div className="space-y-3">
       <Typography className="leading-relaxed">
-        Ei! Eu sou Gustavo Rodrigues, um desenvolvedor web com residência na
-        área de São Paulo. Atualmente, estou cursando técnico em informática
-        para internet, complementando minha formação acadêmica.
+        Ei! Me chamo Gustavo Rodrigues, sou um desenvolvedor web de {getAge()}{" "}
+        anos com residência na área de São Paulo. Sou formado em Técnico em
+        Informática para Internet pela{" "}
+        <a
+          href="https://www.cps.sp.gov.br/etec/"
+          target="blank"
+          className="text-primary underline decoration-primary/50 underline-offset-4 duration-300 hover:decoration-primary"
+        >
+          ETEC
+        </a>
+        .
       </Typography>
       <Typography className="leading-relaxed">
         Ao longo de mais de dois anos de estudo no campo do desenvolvimento web,
