@@ -36,18 +36,20 @@ const EmailTemplate = (props: EmailTemplate) => {
                 width="60"
                 height="60"
                 alt="Logo Gustavo Rodrigues"
-                className="my-0 rounded-md"
+                className="mx-auto my-0 rounded-md"
               />
             </Section>
-            <Heading className="m-0 mt-[20px] p-0 text-[24px] font-normal text-black">
-              <strong>{name}</strong>
+            <Heading className="m-0 my-[26px] p-0 text-center text-[24px] font-normal leading-[24px] text-black">
+              Mensagem de <strong>{name}</strong>
             </Heading>
             <Text className="text-[14px] leading-[24px] text-black">
-              {message},
+              {message}
             </Text>
             <Hr className="mx-0 my-[26px] w-full border border-solid border-[#eaeaea]" />
             <Text className="text-[12px] leading-[24px] text-[#666666]">
-              Enviado por: <span className="text-black">{email}</span>
+              Esta mensagem foi destinada a{" "}
+              <span className="text-black">guhrodrigues</span> por{" "}
+              <span className="text-black">{email}</span>.
             </Text>
           </Container>
         </Body>
