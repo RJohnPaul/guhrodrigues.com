@@ -10,7 +10,7 @@ const SidebarFooter = () => {
         <a
           href="https://github.com/guhrodriguess/guhrodrigues.com"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <span className="duration-300 hover:text-foreground">
             Gustavo Rodrigues

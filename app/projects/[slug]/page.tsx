@@ -72,6 +72,7 @@ const ProjectPage = ({ params }: { params: any }) => {
               <a
                 href={visit}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 font-mono text-base"
               >
                 <Eye size={18} className="text-primary" />
@@ -85,6 +86,7 @@ const ProjectPage = ({ params }: { params: any }) => {
               <a
                 href={code}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 font-mono text-base"
               >
                 <Github size={18} className="text-primary" />

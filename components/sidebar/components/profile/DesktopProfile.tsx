@@ -44,7 +44,7 @@ const DesktopProfile = () => {
         <a
           href="https://github.com/guhrodriguess"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="block w-fit"
         >
           <Typography
