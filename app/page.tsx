@@ -13,10 +13,13 @@ const HomePage = () => {
       <section className="space-y-4">
         <Title variant="title">Gustavo Rodrigues</Title>
         <Typography className="leading-relaxed">
-          Como desenvolvedor web, almejo criar experiências digitais que
-          harmonizem de maneira impecável a estética elegante com uma
-          funcionalidade excepcional. Minha verdadeira paixão reside em
-          transformar códigos em experiências extraordinárias.
+          Como <span className="text-primary/80">desenvolvedor web</span>,
+          almejo criar experiências digitais que harmonizem de maneira impecável
+          a estética elegante com uma funcionalidade excepcional. Minha
+          verdadeira paixão reside em{" "}
+          <span className="text-primary/80">
+            transformar códigos em experiências extraordinárias.
+          </span>
         </Typography>
       </section>
       <Divider />
@@ -29,8 +32,10 @@ const HomePage = () => {
           Vamos trabalhar juntos!
         </Title>
         <Typography className="max-w-xl leading-relaxed">
-          Caso se interessou pelo meu trabalho ou queira dar um feedback sobre
-          este website, vamos trocar um papo.
+          Se você se interessou pelo meu trabalho ou deseja fornecer feedback
+          sobre este website,{" "}
+          <span className="text-primary/80">estou aberto a trocar ideias</span>{" "}
+          e discutir qualquer aspecto que possa ser relevante.
         </Typography>
         <Button className="w-fit">
           Contate-me

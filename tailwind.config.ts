@@ -23,15 +23,9 @@ const config: Config = {
           "linear-gradient(90deg, #0E0F11, transparent 20%, transparent 80%, #0E0F11)",
       },
       animation: {
-        rotate: "rotate 3s linear infinite both",
         slide: "slide 100s linear infinite",
       },
       keyframes: {
-        rotate: {
-          to: {
-            transform: "rotate(90deg)",
-          },
-        },
         slide: {
           from: {
             transform: "translateX(0)",

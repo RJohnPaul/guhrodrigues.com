@@ -23,9 +23,11 @@ const Biography = () => {
   return (
     <div className="space-y-3">
       <Typography className="leading-relaxed">
-        Ei! Me chamo Gustavo Rodrigues, sou um desenvolvedor web de {getAge()}{" "}
-        anos com residência na área de São Paulo. Sou formado em Técnico em
-        Informática para Internet pela{" "}
+        Ei! Me chamo Gustavo Rodrigues, sou um{" "}
+        <span className="text-primary/80">desenvolvedor web</span> de{" "}
+        <span className="text-primary/80">{getAge()} anos</span> com residência
+        na área de <span className="text-primary/80">São Paulo</span>. Sou
+        formado em Técnico em Informática para Internet pela{" "}
         <a
           href="https://www.cps.sp.gov.br/etec/"
           target="_blank"
@@ -37,16 +39,21 @@ const Biography = () => {
         .
       </Typography>
       <Typography className="leading-relaxed">
-        Ao longo de mais de dois anos de estudo no campo do desenvolvimento web,
-        adquiri significativa experiência na criação de soluções digitais. Meu
-        foco atual está direcionado para a exploração de design systems, a
-        elaboração de interfaces inovadoras e a capacidade de transformar
-        códigos em experiências de usuário verdadeiramente excepcionais.
+        Ao longo de mais de{" "}
+        <span className="text-primary/80">dois anos de estudo</span> no campo do
+        desenvolvimento web, adquiri significativa experiência na criação de
+        soluções digitais. Meu foco atual está direcionado para a exploração de
+        <span className="text-primary/80">design systems</span>, na elaboração
+        de <span className="text-primary/80">interfaces inovadoras</span> e na
+        capacidade de transformar códigos em experiências de usuário
+        verdadeiramente excepcionais.
       </Typography>
       <Typography className="leading-relaxed">
-        Busco manter-me constantemente atualizado com as últimas tendências do
-        mercado, demonstrando um comprometimento em fazer a diferença em todos
-        os projetos nos quais estou envolvido.
+        <span className="text-primary/80">
+          Busco manter-me constantemente atualizado
+        </span>{" "}
+        com as últimas tendências do mercado, demonstrando um comprometimento em
+        fazer a diferença em todos os projetos nos quais estou envolvido.
       </Typography>
     </div>
   );

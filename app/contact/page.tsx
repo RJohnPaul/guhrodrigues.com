@@ -19,8 +19,10 @@ const ContactPage = () => {
       <section className="space-y-6">
         <Title variant="title">Contato</Title>
         <Typography className="leading-relaxed">
-          Sinta-se à vontade para entrar em contato e conversaremos sobre como
-          podemos trabalhar juntos.
+          <span className="text-primary/80">
+            Sinta-se à vontade para entrar em contato
+          </span>{" "}
+          e conversaremos sobre como podemos trabalhar juntos.
         </Typography>
         <div>
           <Title variant="title" size="xl">
@@ -35,9 +37,12 @@ const ContactPage = () => {
           Mande um email, como nos velhos tempos
         </Title>
         <Typography className="leading-relaxed">
-          Gosto muito de interagir com programadores, criadores e estudantes da
-          tecnologia. Caso se interessou pelo meu trabalho ou queira dar um
-          feedback sobre este website, vamos trocar um papo.
+          Se meu trabalho despertou seu interesse ou se você gostaria de
+          compartilhar feedback sobre este website,{" "}
+          <span className="text-primary/80">
+            ficarei aberto em trocar ideias
+          </span>
+          .
         </Typography>
         <FormComponent />
       </section>

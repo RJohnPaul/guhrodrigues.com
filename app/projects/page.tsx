@@ -22,9 +22,16 @@ const ProjectsPage = () => {
       <section>
         <Title variant="title">Trabalho, hobby & open source</Title>
         <Typography className="my-6 leading-relaxed">
-          Sou fanático pela criação de novos projetos, pois é a maior chave para
-          ganhar conhecimento. Nesta página você pode navegar para{" "}
-          {getTotalProjects()} aplicações na qual desenvolvi.
+          Sou{" "}
+          <span className="text-primary/80">
+            fanático pela criação de novos projetos
+          </span>
+          , pois é a maior chave para ganhar conhecimento. Nesta página você
+          pode navegar para{" "}
+          <span className="text-primary/80">
+            {getTotalProjects()} aplicações
+          </span>{" "}
+          na qual desenvolvi.
         </Typography>
       </section>
       <ul className="grid place-items-center gap-4 md:grid-cols-2">
