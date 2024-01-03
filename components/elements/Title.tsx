@@ -9,6 +9,7 @@ const title = tv({
     },
     size: {
       default: "text-4xl",
+      lg: "text-lg",
       xl: "text-xl",
       xxl: "text-5xl",
     },

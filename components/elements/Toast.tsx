@@ -14,8 +14,8 @@ const Toast = () => {
       toastOptions={{
         duration: 5000,
         style: {
-          border: "1px solid #333",
-          background: "#222",
+          border: "1px solid #2D2E30",
+          background: "#15161A",
           color: "#fff",
           fontSize: "15px",
         },
@@ -29,8 +29,8 @@ const ToastMessage = (props: ToastMessageProps) => {
 
   return (
     <div className="flex flex-col">
-      <div>{title}</div>
-      <div className="text-sm text-neutral-400">{message}</div>
+      <div className="text-primary/80">{title}</div>
+      <div className="text-sm text-foreground">{message}</div>
     </div>
   );
 };

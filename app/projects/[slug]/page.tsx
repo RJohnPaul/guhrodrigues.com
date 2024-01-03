@@ -75,7 +75,7 @@ const ProjectPage = ({ params }: { params: any }) => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 font-mono text-base"
               >
-                <Eye size={18} className="text-primary" />
+                <Eye size={18} className="text-primary/70" />
                 <span className="text-emerald-500 duration-300 hover:text-emerald-400">
                   Visualizar
                 </span>
@@ -89,7 +89,7 @@ const ProjectPage = ({ params }: { params: any }) => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 font-mono text-base"
               >
-                <Github size={18} className="text-primary" />
+                <Github size={18} className="text-primary/70" />
                 <span className="text-emerald-500 duration-300 hover:text-emerald-400">
                   Código fonte
                 </span>
@@ -118,7 +118,7 @@ const ProjectPage = ({ params }: { params: any }) => {
               {techs.map((tech, index) => (
                 <li
                   key={index}
-                  className="flex items-center gap-2 rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2"
+                  className="border-border/50 bg-muted flex items-center gap-2 rounded-lg border px-3 py-2"
                 >
                   <Image src={tech.image} width={20} alt={tech.name} />
                   <Typography size="sm" className="font-medium">

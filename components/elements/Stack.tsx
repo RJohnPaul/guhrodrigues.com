@@ -1,6 +1,6 @@
 import { Code2 } from "lucide-react";
 
-import { stack } from "@/data/stack";
+import { stacks } from "@/data/stacks";
 
 import { Title } from "@/components/elements/Title";
 import { Typography } from "@/components/elements/Typography";
@@ -14,13 +14,13 @@ const Stack = () => {
           <Code2 size={18} />
           Habilidades
         </Title>
-        <Typography>Meu conhecimento técnico.</Typography>
+        <Typography>Meu conhecimento técnico</Typography>
       </div>
       <ul className="mt-4 flex flex-wrap items-center gap-3">
-        {stack.map(({ src, name }) => (
+        {stacks.map(({ src, name }) => (
           <li
             key={name}
-            className="flex items-center gap-2 rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2"
+            className="border-border/50 bg-muted flex items-center gap-2 rounded-lg border px-3 py-2"
           >
             <Image src={src} width={20} alt={name} />
             <Typography size="sm" className="font-medium">

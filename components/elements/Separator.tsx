@@ -7,7 +7,7 @@ type SeparatorProps = {
 const Separator = (props: SeparatorProps) => {
   const { className } = props;
 
-  return <div className={twMerge("mx-1 h-4 w-px bg-neutral-800", className)} />;
+  return <div className={twMerge("bg-divider mx-1 h-4 w-px", className)} />;
 };
 
 export { Separator };

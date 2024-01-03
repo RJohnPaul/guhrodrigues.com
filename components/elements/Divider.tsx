@@ -7,9 +7,7 @@ type DividerProps = {
 const Divider = (props: DividerProps) => {
   const { className } = props;
 
-  return (
-    <div className={twMerge("my-6 h-px w-full bg-neutral-800", className)} />
-  );
+  return <div className={twMerge("bg-divider my-6 h-px w-full", className)} />;
 };
 
 export { Divider };

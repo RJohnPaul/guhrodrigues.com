@@ -55,9 +55,9 @@ const Navigation = () => {
           onMouseEnter={() => ref.current?.play()}
           onMouseLeave={() => ref.current?.stop()}
           className={cn(
-            "flex items-center gap-2 rounded-lg px-2.5 py-2 text-foreground duration-300 hover:bg-neutral-800",
+            "flex items-center gap-2 rounded-lg border border-transparent px-2.5 py-2 text-foreground duration-300 hover:bg-[#15161A]",
             {
-              "bg-neutral-800 text-primary": href === pathname,
+              "border-border/50 bg-muted text-primary/80": href === pathname,
             },
           )}
         >

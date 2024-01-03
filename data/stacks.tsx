@@ -10,19 +10,26 @@ import react from "@/assets/images/skills/react.svg";
 import typescript from "@/assets/images/skills/typescript.svg";
 import javascript from "@/assets/images/skills/javascript.svg";
 import node from "@/assets/images/skills/nodejs.svg";
-import styledComponents from "@/assets/images/skills/styledcomponents.svg";
+import styled_components from "@/assets/images/skills/styled-components.svg";
 import tailwind from "@/assets/images/skills/tailwindcss.svg";
 import framer from "@/assets/images/skills/framer.svg";
 import radix from "@/assets/images/skills/radix.svg";
 import mui from "@/assets/images/skills/mui.svg";
 import mysql from "@/assets/images/skills/mysql.svg";
+import prisma from "@/assets/images/skills/prisma.svg";
+import express from "@/assets/images/skills/express.svg";
+import react_router from "@/assets/images/skills/react-router.svg";
+import next_auth from "@/assets/images/skills/next-auth.svg";
+import git from "@/assets/images/skills/git.svg";
+import vitest from "@/assets/images/skills/vitest.svg";
+import jest from "@/assets/images/skills/jest.svg";
 
-type Stack = Array<{
+type Stacks = Array<{
   src: StaticImageData;
   name: string;
 }>;
 
-const stack: Stack = [
+const stacks: Stacks = [
   {
     src: nextjs,
     name: "Next.js",
@@ -30,6 +37,10 @@ const stack: Stack = [
   {
     src: react,
     name: "React",
+  },
+  {
+    src: vite,
+    name: "Vite",
   },
   {
     src: typescript,
@@ -40,27 +51,19 @@ const stack: Stack = [
     name: "JavaScript",
   },
   {
-    src: node,
-    name: "Node.js",
+    src: react_router,
+    name: "React Router",
   },
   {
-    src: vite,
-    name: "Vite",
-  },
-  {
-    src: mongo,
-    name: "MongoDB",
-  },
-  {
-    src: mysql,
-    name: "MySQL",
+    src: next_auth,
+    name: "Next Auth",
   },
   {
     src: tailwind,
     name: "Tailwind CSS",
   },
   {
-    src: styledComponents,
+    src: styled_components,
     name: "Styled Components",
   },
   {
@@ -87,6 +90,38 @@ const stack: Stack = [
     src: css,
     name: "CSS",
   },
+  {
+    src: node,
+    name: "Node.js",
+  },
+  {
+    src: express,
+    name: "Express",
+  },
+  {
+    src: prisma,
+    name: "Prisma",
+  },
+  {
+    src: vitest,
+    name: "Vitest",
+  },
+  {
+    src: jest,
+    name: "Jest",
+  },
+  {
+    src: mongo,
+    name: "MongoDB",
+  },
+  {
+    src: mysql,
+    name: "MySQL",
+  },
+  {
+    src: git,
+    name: "Git",
+  },
 ];
 
-export { stack };
+export { stacks };

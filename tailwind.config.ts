@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const colors = require("tailwindcss/colors");
 
 const config: Config = {
   content: [
@@ -9,10 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#fff",
-        foreground: "#d4d4d4",
-        background: "#08070B",
+        primary: colors.white,
+        background: "#0E0F11",
+        foreground: colors.neutral[400],
+        muted: "#15161A",
         input: "#131415",
+        border: "#2D2E30",
+        divider: "#1F2022",
       },
       backgroundImage: {
         "globe-pattern": "url('/globe-pattern.svg')",

@@ -17,12 +17,12 @@ import radix from "@/assets/images/skills/radix.svg";
 import vite from "@/assets/images/skills/vite.svg";
 import shadcn from "@/assets/images/skills/shadcn.svg";
 import mongo from "@/assets/images/skills/mongo.svg";
-import nextauth from "@/assets/images/skills/nextauth.svg";
+import nextauth from "@/assets/images/skills/next-auth.svg";
 import openai from "@/assets/images/skills/openai.svg";
 import react from "@/assets/images/skills/react.svg";
 import typescript from "@/assets/images/skills/typescript.svg";
 import javascript from "@/assets/images/skills/javascript.svg";
-import styledComponents from "@/assets/images/skills/styledcomponents.svg";
+import styled_components from "@/assets/images/skills/styled-components.svg";
 import tailwind from "@/assets/images/skills/tailwindcss.svg";
 import framer from "@/assets/images/skills/framer.svg";
 
@@ -196,7 +196,7 @@ const projects: Projects = [
         name: "TypeScript",
       },
       {
-        image: styledComponents,
+        image: styled_components,
         name: "Styled Components",
       },
     ],
@@ -229,7 +229,7 @@ const projects: Projects = [
         name: "TypeScript",
       },
       {
-        image: styledComponents,
+        image: styled_components,
         name: "Styled Components",
       },
     ],

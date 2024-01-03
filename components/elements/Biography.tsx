@@ -30,7 +30,7 @@ const Biography = () => {
           href="https://www.cps.sp.gov.br/etec/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary underline decoration-primary/50 underline-offset-4 duration-300 hover:decoration-primary"
+          className="text-primary/80 underline decoration-primary/50 underline-offset-4 duration-300 hover:decoration-primary/80"
         >
           ETEC
         </a>

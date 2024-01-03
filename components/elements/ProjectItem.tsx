@@ -34,7 +34,7 @@ const ProjectItem = (props: Project) => {
         mouseX.set(e.clientX - left);
         mouseY.set(e.clientY - top);
       }}
-      className="group relative flex flex-col items-center rounded-xl border border-zinc-800 p-2"
+      className="border-border group relative flex flex-col items-center rounded-xl border p-2"
     >
       <div className="absolute right-5 top-0 h-px w-80 bg-gradient-to-l from-transparent via-primary/30 via-10% to-transparent" />
       <motion.div

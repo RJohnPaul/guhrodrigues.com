@@ -22,7 +22,7 @@ const HomePage = () => {
         <LatestProjects />
       </section>
       <Divider />
-      <section className="flex flex-col gap-4 rounded-lg border border-neutral-800 bg-neutral-900 bg-globe-pattern bg-right bg-no-repeat p-5 max-md:bg-none">
+      <section className="border-border/50 bg-muted flex flex-col gap-4 rounded-lg border bg-globe-pattern bg-right bg-no-repeat p-5 max-md:bg-none">
         <Title variant="title" size="xl">
           Vamos trabalhar juntos!
         </Title>

@@ -32,7 +32,7 @@ const DownloadButton = () => {
         <Lottie
           lottieRef={downloadRef}
           animationData={downloadIcon}
-          style={{ width: 20, height: 20 }}
+          style={{ width: 18, height: 18 }}
           autoplay={false}
           loop={false}
         />
