@@ -14,20 +14,30 @@ const config: Config = {
         background: "#0E0F11",
         foreground: colors.neutral[400],
         muted: "#15161A",
-        input: "#131415",
         border: "#2D2E30",
         divider: "#1F2022",
       },
       backgroundImage: {
         "globe-pattern": "url('/globe-pattern.svg')",
+        "fade-gradient":
+          "linear-gradient(90deg, #0E0F11, transparent 20%, transparent 80%, #0E0F11)",
       },
       animation: {
         rotate: "rotate 3s linear infinite both",
+        slide: "slide 100s linear infinite",
       },
       keyframes: {
         rotate: {
           to: {
             transform: "rotate(90deg)",
+          },
+        },
+        slide: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(-50%)",
           },
         },
       },

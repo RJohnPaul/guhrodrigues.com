@@ -24,104 +24,34 @@ import git from "@/assets/images/skills/git.svg";
 import vitest from "@/assets/images/skills/vitest.svg";
 import jest from "@/assets/images/skills/jest.svg";
 
-type Stacks = Array<{
-  src: StaticImageData;
-  name: string;
-}>;
+type Stacks = {
+  [key: string]: StaticImageData;
+};
 
-const stacks: Stacks = [
-  {
-    src: nextjs,
-    name: "Next.js",
-  },
-  {
-    src: react,
-    name: "React",
-  },
-  {
-    src: vite,
-    name: "Vite",
-  },
-  {
-    src: typescript,
-    name: "TypeScript",
-  },
-  {
-    src: javascript,
-    name: "JavaScript",
-  },
-  {
-    src: react_router,
-    name: "React Router",
-  },
-  {
-    src: next_auth,
-    name: "Next Auth",
-  },
-  {
-    src: tailwind,
-    name: "Tailwind CSS",
-  },
-  {
-    src: styled_components,
-    name: "Styled Components",
-  },
-  {
-    src: mui,
-    name: "MUI",
-  },
-  {
-    src: shadcn,
-    name: "shadcn/ui",
-  },
-  {
-    src: framer,
-    name: "Framer",
-  },
-  {
-    src: radix,
-    name: "Radix UI",
-  },
-  {
-    src: html,
-    name: "HTML",
-  },
-  {
-    src: css,
-    name: "CSS",
-  },
-  {
-    src: node,
-    name: "Node.js",
-  },
-  {
-    src: express,
-    name: "Express",
-  },
-  {
-    src: prisma,
-    name: "Prisma",
-  },
-  {
-    src: vitest,
-    name: "Vitest",
-  },
-  {
-    src: jest,
-    name: "Jest",
-  },
-  {
-    src: mongo,
-    name: "MongoDB",
-  },
-  {
-    src: mysql,
-    name: "MySQL",
-  },
-  {
-    src: git,
-    name: "Git",
-  },
-];
+const stacks: Stacks = {
+  "Next.js": nextjs,
+  React: react,
+  Vite: vite,
+  TypeScript: typescript,
+  JavaScript: javascript,
+  "React Router": react_router,
+  "Next Auth": next_auth,
+  "Tailwind CSS": tailwind,
+  "Styled Components": styled_components,
+  MUI: mui,
+  "shadcn/ui": shadcn,
+  Framer: framer,
+  "Radix UI": radix,
+  HTML: html,
+  CSS: css,
+  "Node.js": node,
+  Express: express,
+  Prisma: prisma,
+  Vitest: vitest,
+  Jest: jest,
+  MongoDB: mongo,
+  MySQL: mysql,
+  Git: git,
+};
 
 export { stacks };

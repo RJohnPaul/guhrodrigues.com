@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
+    <AnimateEnter className="max-w-[854px] overflow-hidden max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section>
         <Title variant="title">Sobre mim</Title>
         <div className="my-6">

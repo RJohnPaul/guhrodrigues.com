@@ -118,7 +118,7 @@ const ProjectPage = ({ params }: { params: any }) => {
               {techs.map((tech, index) => (
                 <li
                   key={index}
-                  className="border-border/50 bg-muted flex items-center gap-2 rounded-lg border px-3 py-2"
+                  className="flex items-center gap-2 rounded-lg border border-border/50 bg-muted px-3 py-2"
                 >
                   <Image src={tech.image} width={20} alt={tech.name} />
                   <Typography size="sm" className="font-medium">
