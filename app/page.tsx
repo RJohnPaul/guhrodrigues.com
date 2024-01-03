@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Send } from "lucide-react";
 
 import { AnimateEnter } from "@/components/elements/AnimateEnter";
@@ -37,10 +39,12 @@ const HomePage = () => {
           <span className="text-primary/80">estou aberto a trocar ideias</span>{" "}
           e discutir qualquer aspecto que possa ser relevante.
         </Typography>
-        <Button className="w-fit">
-          Contate-me
-          <Send size={18} />
-        </Button>
+        <Link href="/contact" className="w-fit">
+          <Button>
+            Contate-me
+            <Send size={18} />
+          </Button>
+        </Link>
       </section>
     </AnimateEnter>
   );
