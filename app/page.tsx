@@ -1,9 +1,11 @@
+import { Send } from "lucide-react";
+
 import { AnimateEnter } from "@/components/elements/AnimateEnter";
 import { Title } from "@/components/elements/Title";
 import { Typography } from "@/components/elements/Typography";
 import { Divider } from "@/components/elements/Divider";
 import { LatestProjects } from "@/components/elements/LatestProjects";
-import { ContactButton } from "@/components/elements/ContactButton";
+import { Button } from "@/components/elements/Button";
 
 const HomePage = () => {
   return (
@@ -30,7 +32,10 @@ const HomePage = () => {
           Caso se interessou pelo meu trabalho ou queira dar um feedback sobre
           este website, vamos trocar um papo.
         </Typography>
-        <ContactButton />
+        <Button className="w-fit">
+          Contate-me
+          <Send size={18} />
+        </Button>
       </section>
     </AnimateEnter>
   );
