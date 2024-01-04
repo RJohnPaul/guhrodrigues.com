@@ -13,7 +13,7 @@ const config: Config = {
         primary: colors.white,
         background: "#0E0F11",
         foreground: colors.neutral[400],
-        muted: "#15161A",
+        muted: colors.neutral[900],
         border: "#2D2E30",
         divider: "#1F2022",
       },

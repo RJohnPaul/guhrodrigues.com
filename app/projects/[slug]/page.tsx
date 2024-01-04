@@ -58,7 +58,7 @@ const ProjectPage = ({ params }: { params: any }) => {
       <section className="space-y-6">
         <Link
           href="/projects"
-          className="flex w-fit items-center gap-1 text-sm font-medium text-neutral-400 duration-300 hover:gap-1.5 hover:text-foreground"
+          className="flex w-fit items-center gap-1 text-sm font-medium text-foreground duration-300 hover:text-neutral-300/80"
         >
           <Undo2 size={16} />
           Voltar
