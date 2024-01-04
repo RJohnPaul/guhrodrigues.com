@@ -159,12 +159,12 @@ const projects: Projects = [
         name: "Tailwind CSS",
       },
       {
-        image: shadcn,
-        name: "shadcn/ui",
-      },
-      {
         image: framer,
         name: "Framer",
+      },
+      {
+        image: shadcn,
+        name: "shadcn/ui",
       },
     ],
     code: "https://github.com/guhrodriguess/sharespace",

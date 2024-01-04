@@ -14,10 +14,11 @@ const Toast = () => {
       toastOptions={{
         duration: 5000,
         style: {
-          border: "1px solid #2D2E30",
-          background: "#15161A",
+          border: "1px solid #262626",
+          background: "#171717",
           color: "#fff",
           fontSize: "15px",
+          borderRadius: "12px",
         },
       }}
     />

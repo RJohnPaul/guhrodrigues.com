@@ -70,7 +70,7 @@ const ProjectPage = ({ params }: { params: any }) => {
           <div className="flex flex-wrap items-center gap-2">
             {visit && (
               <a href={visit} target="_blank" rel="noopener noreferrer">
-                <Button variant="dark" className="rounded-2xl">
+                <Button variant="dark" className="rounded-full px-4 py-2.5">
                   <Eye size={18} />
                   Visualizar
                 </Button>
@@ -78,7 +78,7 @@ const ProjectPage = ({ params }: { params: any }) => {
             )}
             {code && (
               <a href={code} target="_blank" rel="noopener noreferrer">
-                <Button variant="dark" className="rounded-2xl">
+                <Button variant="dark" className="rounded-full px-4 py-2.5">
                   <Github size={18} />
                   Código fonte
                 </Button>
