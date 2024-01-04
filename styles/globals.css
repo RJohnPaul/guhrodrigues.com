@@ -12,11 +12,11 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply rounded-2xl bg-neutral-500;
+    @apply rounded-2xl bg-neutral-700;
   }
 
   ::selection {
-    @apply bg-emerald-300/10 text-emerald-300;
+    @apply bg-neutral-800/50 text-primary/60;
   }
 
   h1 {

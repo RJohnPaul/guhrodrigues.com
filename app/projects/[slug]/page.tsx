@@ -7,10 +7,10 @@ import { Undo2, Eye, Github } from "lucide-react";
 import { projects } from "@/data/projects";
 
 import { AnimateEnter } from "@/components/elements/AnimateEnter";
-import { Separator } from "@/components/elements/Separator";
 import { Title } from "@/components/elements/Title";
 import { Image } from "@/components/elements/Image";
 import { Typography } from "@/components/elements/Typography";
+import { Button } from "@/components/elements/Button";
 
 export const generateMetadata = async ({
   params,
@@ -67,32 +67,21 @@ const ProjectPage = ({ params }: { params: any }) => {
           <div className="space-y-2">
             <Title variant="title">{title}</Title>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             {visit && (
-              <a
-                href={visit}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 font-mono text-base"
-              >
-                <Eye size={18} className="text-primary/70" />
-                <span className="text-emerald-500 duration-300 hover:text-emerald-400">
+              <a href={visit} target="_blank" rel="noopener noreferrer">
+                <Button variant="dark" className="rounded-2xl">
+                  <Eye size={18} />
                   Visualizar
-                </span>
+                </Button>
               </a>
             )}
-            {visit && code && <Separator />}
             {code && (
-              <a
-                href={code}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 font-mono text-base"
-              >
-                <Github size={18} className="text-primary/70" />
-                <span className="text-emerald-500 duration-300 hover:text-emerald-400">
+              <a href={code} target="_blank" rel="noopener noreferrer">
+                <Button variant="dark" className="rounded-2xl">
+                  <Github size={18} />
                   Código fonte
-                </span>
+                </Button>
               </a>
             )}
           </div>
