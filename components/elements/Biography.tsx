@@ -42,7 +42,7 @@ const Biography = () => {
         Ao longo de mais de{" "}
         <span className="text-primary/80">dois anos de estudo</span> no campo do
         desenvolvimento web, adquiri significativa experiência na criação de
-        soluções digitais. Meu foco atual está direcionado para a exploração de
+        soluções digitais. Meu foco atual está direcionado para a exploração de{" "}
         <span className="text-primary/80">design systems</span>, na elaboração
         de <span className="text-primary/80">interfaces inovadoras</span> e na
         capacidade de transformar códigos em experiências de usuário
