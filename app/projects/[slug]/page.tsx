@@ -86,7 +86,7 @@ const ProjectPage = ({ params }: { params: any }) => {
             )}
           </div>
         </div>
-        <div className="overflow-hidden rounded-md">
+        <div className="overflow-hidden rounded-xl">
           <Image src={image} alt={title} zoomHover={true} />
         </div>
       </section>
