@@ -30,7 +30,7 @@ const initialValues = {
   setEmail: () => undefined,
   message: "",
   setMessage: () => undefined,
-  submitting: true,
+  submitting: false,
   setSubmitting: () => undefined,
 };
 
