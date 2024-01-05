@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useRef } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useRef } from "react";
 
 import Lottie from "lottie-react";
 
@@ -18,6 +18,7 @@ const Navigation = () => {
   const contactRef = useRef<any>();
 
   const pathname = usePathname();
+  const router = useRouter();
 
   const actions = [
     {
@@ -25,50 +26,85 @@ const Navigation = () => {
       ref: homeRef,
       icon: homeIcon,
       name: "Início",
+      keyword: "1",
     },
     {
       href: "/about",
       ref: aboutRef,
       icon: aboutIcon,
       name: "Sobre",
+      keyword: "2",
     },
     {
       href: "/projects",
       ref: projectsRef,
       icon: projectsIcon,
       name: "Projetos",
+      keyword: "3",
     },
     {
       href: "/contact",
       ref: contactRef,
       icon: contactIcon,
       name: "Contato",
+      keyword: "4",
     },
   ];
 
+  useEffect(() => {
+    const down = (e: KeyboardEvent) => {
+      e.preventDefault();
+
+      switch (e.key) {
+        case "1":
+          router.push("/");
+          break;
+        case "2":
+          router.push("/about");
+          break;
+        case "3":
+          router.push("/projects");
+          break;
+        case "4":
+          router.push("/contact");
+        default:
+          break;
+      }
+    };
+
+    document.addEventListener("keydown", down);
+    return () => document.removeEventListener("keydown", down);
+  }, [router]);
+
   return (
     <nav className="hidden flex-col gap-1 lg:flex">
-      {actions.map(({ href, ref, icon, name }) => (
+      {actions.map(({ href, ref, icon, name, keyword }) => (
         <Link
           key={name}
           href={href}
           onMouseEnter={() => ref.current?.play()}
           onMouseLeave={() => ref.current?.stop()}
           className={cn(
-            "flex items-center gap-2 rounded-lg border border-transparent px-2.5 py-2 text-foreground duration-300 hover:bg-muted",
+            "flex items-center justify-between gap-2 rounded-lg border border-transparent px-2.5 py-2 text-foreground duration-300 hover:bg-muted",
             {
-              "border-border/50 bg-muted text-primary/80": href === pathname,
+              "cursor-default border-border/50 bg-muted text-primary/80":
+                href === pathname,
             },
           )}
         >
-          <Lottie
-            lottieRef={ref}
-            animationData={icon}
-            style={{ width: 24, height: 24 }}
-            autoplay={false}
-            loop={false}
-          />
-          <span className="text-sm">{name}</span>
+          <div className="flex items-center gap-2">
+            <Lottie
+              lottieRef={ref}
+              animationData={icon}
+              style={{ width: 24, height: 24 }}
+              autoplay={false}
+              loop={false}
+            />
+            <span className="text-sm">{name}</span>
+          </div>
+          <div className="flex h-5 w-5 items-center justify-center rounded-md border border-border">
+            <span className="text-xs">{keyword}</span>
+          </div>
         </Link>
       ))}
     </nav>

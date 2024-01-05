@@ -49,7 +49,7 @@ const DesktopProfile = () => {
         >
           <Typography
             variant="muted"
-            className="select-none text-sm duration-300 hover:text-foreground"
+            className="select-none text-sm text-neutral-500 duration-300 hover:text-foreground"
           >
             @guhrodriguess
           </Typography>
