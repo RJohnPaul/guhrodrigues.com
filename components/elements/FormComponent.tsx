@@ -58,86 +58,53 @@ const FormComponent = () => {
   };
 
   return (
-    <div className="w-full max-w-md">
-      <Form.Root onSubmit={sendEmail}>
-        <div className="mx-auto flex flex-col gap-4">
-          <Form.Field name="text">
-            <div className="flex items-center justify-between">
-              <Form.Label className="py-2 text-sm font-medium text-neutral-400">
-                Nome
-              </Form.Label>
-              <Form.Message
-                className="text-xs font-medium text-red-500/70"
-                match="valueMissing"
-              >
-                Insira um nome
-              </Form.Message>
-            </div>
+    <Form.Root onSubmit={sendEmail}>
+      <div className="mx-auto flex flex-col gap-4">
+        <div className="flex flex-1 items-center gap-4 sm:flex-col md:flex-row">
+          <Form.Field name="text" className="w-full">
             <Form.Control asChild>
               <input
-                className="w-7xl border-border bg-muted focus:ring-border w-full appearance-none rounded-lg border p-2 text-sm text-primary/60 outline-none duration-300 placeholder:text-primary/60 focus:ring-1"
+                className="w-full appearance-none rounded-lg border border-border bg-muted p-3 text-sm text-primary/60 outline-none duration-300 placeholder:text-neutral-500 focus:ring-1 focus:ring-border data-[invalid]:border-red-500"
                 type="text"
                 autoComplete="off"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Jordan Walke"
+                placeholder="Nome"
               />
             </Form.Control>
           </Form.Field>
-          <Form.Field name="question">
-            <div className="flex items-center justify-between">
-              <Form.Label className="py-2 text-sm font-medium text-neutral-400">
-                Email
-              </Form.Label>
-              <Form.Message
-                className="text-xs font-medium text-red-500/70"
-                match="valueMissing"
-              >
-                Insira um email
-              </Form.Message>
-            </div>
+          <Form.Field name="question" className="w-full">
             <Form.Control asChild>
               <input
-                className="w-7xl border-border bg-muted focus:ring-border w-full appearance-none rounded-lg border p-2 text-sm text-primary/60 outline-none duration-300 placeholder:text-primary/60 focus:ring-1"
+                className="w-full appearance-none rounded-lg border border-border bg-muted p-3 text-sm text-primary/60 outline-none duration-300 placeholder:text-neutral-500 focus:ring-1 focus:ring-border data-[invalid]:border-red-500"
                 type="email"
                 autoComplete="off"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="jordan@walke.com"
+                placeholder="Email"
               />
             </Form.Control>
           </Form.Field>
-          <Form.Field name="question">
-            <div className="flex items-center justify-between">
-              <Form.Label className="py-2 text-sm font-medium text-neutral-400">
-                Mensagem
-              </Form.Label>
-              <Form.Message
-                className="text-xs font-medium text-red-500/70"
-                match="valueMissing"
-              >
-                Insira uma mensagem
-              </Form.Message>
-            </div>
-            <Form.Control asChild>
-              <textarea
-                className="w-7xl border-border bg-muted focus:ring-border h-20 w-full resize-none appearance-none rounded-lg border p-2 text-sm leading-relaxed text-primary/60 outline-none duration-300 placeholder:text-primary/60 focus:ring-1"
-                autoComplete="off"
-                required
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="Como posso ajudá-lo?"
-              />
-            </Form.Control>
-          </Form.Field>
-          <Form.Submit asChild>
-            <SendButton submitting={submitting} />
-          </Form.Submit>
         </div>
-      </Form.Root>
-    </div>
+        <Form.Field name="question">
+          <Form.Control asChild>
+            <textarea
+              className="w-7xl h-44 w-full resize-none appearance-none rounded-lg border border-border bg-muted p-3 text-sm leading-relaxed text-primary/60 outline-none duration-300 placeholder:text-neutral-500 focus:ring-1 focus:ring-border data-[invalid]:border-red-500"
+              autoComplete="off"
+              required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Mensagem"
+            />
+          </Form.Control>
+        </Form.Field>
+        <Form.Submit asChild>
+          <SendButton submitting={submitting} />
+        </Form.Submit>
+      </div>
+    </Form.Root>
   );
 };
 

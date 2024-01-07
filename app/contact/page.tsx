@@ -32,18 +32,20 @@ const ContactPage = () => {
         </div>
       </section>
       <Divider />
-      <section className="space-y-4">
-        <Title variant="title" size="xl">
-          Mande um email, como nos velhos tempos
-        </Title>
-        <Typography className="leading-relaxed">
-          Se meu trabalho despertou seu interesse ou se você gostaria de
-          compartilhar feedback sobre este website,{" "}
-          <span className="text-primary/80">
-            ficarei aberto em trocar ideias
-          </span>
-          .
-        </Typography>
+      <section className="space-y-6">
+        <div className="space-y-3">
+          <Title variant="title" size="xl">
+            Mande um email, como nos velhos tempos
+          </Title>
+          <Typography className="leading-relaxed">
+            Se meu trabalho despertou seu interesse ou se você gostaria de
+            compartilhar feedback sobre este website,{" "}
+            <span className="text-primary/80">
+              ficarei aberto em trocar ideias
+            </span>
+            .
+          </Typography>
+        </div>
         <FormComponent />
       </section>
     </AnimateEnter>
