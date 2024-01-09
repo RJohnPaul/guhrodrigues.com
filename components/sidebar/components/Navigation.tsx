@@ -53,6 +53,13 @@ const Navigation = () => {
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLTextAreaElement
+      ) {
+        return;
+      }
+
       switch (e.key) {
         case "1":
           router.push("/");
