@@ -42,7 +42,6 @@ const Stack = () => {
                 width={32}
                 height={32}
                 className="z-1"
-                loading="lazy"
               />
               <Image
                 src={image}
