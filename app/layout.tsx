@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       {
         width: 1920,
         height: 1080,
-        url: "https://i.imgur.com/3vOCpWU.png",
+        url: "https://i.imgur.com/YyeR5Mn.png",
         alt: "Gustavo Rodrigues",
       },
     ],
