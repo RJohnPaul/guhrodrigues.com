@@ -4,7 +4,6 @@ import { Title } from "@/components/elements/Title";
 import { Typography } from "@/components/elements/Typography";
 import { FormComponent } from "@/components/elements/FormComponent";
 import { Socials } from "@/components/elements/Socials";
-import { Divider } from "@/components/elements/Divider";
 import { AnimateEnter } from "@/components/elements/AnimateEnter";
 
 export const metadata: Metadata = {
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
+    <AnimateEnter className="max-w-[854px] space-y-12 max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section className="space-y-6">
         <Title variant="title">Contato</Title>
         <Typography className="leading-relaxed">
@@ -31,7 +30,6 @@ const ContactPage = () => {
           <Socials />
         </div>
       </section>
-      <Divider />
       <section className="space-y-6">
         <div className="space-y-3">
           <Title variant="title" size="xl">

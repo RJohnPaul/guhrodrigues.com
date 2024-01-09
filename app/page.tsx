@@ -5,13 +5,12 @@ import { Send } from "lucide-react";
 import { AnimateEnter } from "@/components/elements/AnimateEnter";
 import { Title } from "@/components/elements/Title";
 import { Typography } from "@/components/elements/Typography";
-import { Divider } from "@/components/elements/Divider";
 import { LatestProjects } from "@/components/elements/LatestProjects";
 import { Button } from "@/components/elements/Button";
 
 const HomePage = () => {
   return (
-    <AnimateEnter className="max-w-[854px] max-lg:py-8 lg:w-4/5 lg:pt-8">
+    <AnimateEnter className="max-w-[854px] space-y-12 max-lg:py-8 lg:w-4/5 lg:pt-8">
       <section className="space-y-4">
         <Title variant="title">Gustavo Rodrigues</Title>
         <Typography className="leading-relaxed">
@@ -24,11 +23,9 @@ const HomePage = () => {
           </span>
         </Typography>
       </section>
-      <Divider />
       <section>
         <LatestProjects />
       </section>
-      <Divider />
       <section className="relative flex flex-col gap-4 overflow-hidden rounded-lg border border-border/50 bg-muted p-5">
         <Title variant="title" size="xl">
           Vamos trabalhar juntos!
