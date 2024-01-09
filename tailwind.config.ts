@@ -11,19 +11,20 @@ const config: Config = {
     extend: {
       colors: {
         primary: colors.white,
-        background: "#0E0F11",
+        secondary: "#D3D2D2",
+        background: "#040102",
         foreground: colors.neutral[400],
-        muted: colors.neutral[900],
+        muted: "#090507",
         border: "#2D2E30",
         divider: "#1F2022",
       },
       backgroundImage: {
         "globe-pattern": "url('/globe-pattern.svg')",
         "fade-gradient":
-          "linear-gradient(90deg, #0E0F11, transparent 20%, transparent 80%, #0E0F11)",
+          "linear-gradient(90deg, #090507, transparent 20%, transparent 80%, #090507)",
       },
       animation: {
-        slide: "slide 100s linear infinite",
+        slide: "slide 35s linear infinite",
       },
       keyframes: {
         slide: {
@@ -47,7 +48,7 @@ const config: Config = {
     },
     fontFamily: {
       poppins: "var(--font-default)",
-      mono: "var(--font-mono)",
+      sans: "var(--font-calsans)",
     },
   },
   plugins: [require("tailwindcss-animate")],

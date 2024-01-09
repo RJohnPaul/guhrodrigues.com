@@ -18,12 +18,12 @@ const LatestProjects = () => {
   return (
     <>
       <div className="flex items-center justify-between">
-        <Title variant="title" size="xl">
+        <Title variant="title" size="lg">
           Projetos recentes
         </Title>
         <Link
           href="/projects"
-          className="flex select-none items-center gap-1 text-xs font-medium text-foreground duration-300 hover:text-primary"
+          className="hover:text-secondary flex select-none items-center gap-1 text-xs font-medium text-foreground duration-300"
           onMouseEnter={() => arrowRef.current?.play()}
           onMouseLeave={() => arrowRef.current?.stop()}
         >

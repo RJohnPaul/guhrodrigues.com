@@ -9,7 +9,8 @@ const typography = tv({
       muted: "text-neutral-400 font-medium",
     },
     size: {
-      default: "text-md",
+      default: "text-base",
+      xs: "text-xs",
       sm: "text-sm",
     },
   },

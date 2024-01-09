@@ -29,7 +29,7 @@ const HomePage = () => {
         <LatestProjects />
       </section>
       <Divider />
-      <section className="flex flex-col gap-4 rounded-lg border border-border/50 bg-muted p-5">
+      <section className="relative flex flex-col gap-4 overflow-hidden rounded-lg border border-border/50 bg-muted p-5">
         <Title variant="title" size="xl">
           Vamos trabalhar juntos!
         </Title>
@@ -45,6 +45,7 @@ const HomePage = () => {
             <Send size={18} />
           </Button>
         </Link>
+        <div className="absolute right-8 top-0 h-px w-[500px] bg-gradient-to-l from-transparent via-primary/30 via-20% to-transparent" />
       </section>
     </AnimateEnter>
   );

@@ -90,13 +90,19 @@ const Navigation = () => {
           onMouseEnter={() => ref.current?.play()}
           onMouseLeave={() => ref.current?.stop()}
           className={cn(
-            "flex items-center justify-between gap-2 rounded-lg border border-transparent px-2.5 py-2 text-foreground duration-300 hover:bg-muted",
+            "relative flex items-center justify-between gap-2 overflow-hidden rounded-lg border border-transparent px-2.5 py-2 text-foreground shadow-md duration-300 hover:bg-muted",
             {
               "cursor-default border-border/50 bg-muted text-primary/80":
                 href === pathname,
             },
           )}
         >
+          <div
+            className={cn("absolute", {
+              "right-5 top-0 h-px w-80 bg-gradient-to-l from-transparent via-primary/30 via-10% to-transparent":
+                href === pathname,
+            })}
+          />
           <div className="flex items-center gap-2">
             <Lottie
               lottieRef={ref}

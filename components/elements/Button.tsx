@@ -9,7 +9,7 @@ const button = tv({
       default: "bg-primary text-black text-sm hover:bg-primary/70",
       ghost:
         "text-neutral-400 border border-transparent hover:text-primary/70 hover:bg-muted hover:border-border",
-      dark: "font-medium text-foreground bg-background border border-neutral-800 hover:bg-muted hover:text-primary/70 duration-300",
+      dark: "font-medium text-secondary/80 bg-transparent border border-border/50 hover:bg-neutral-950 duration-300",
       muted: "text-neutral-400",
     },
     size: {

@@ -8,7 +8,6 @@ import { stacks } from "@/data/stacks";
 import { cn } from "@/lib/utils";
 
 import { Title } from "./Title";
-import { Typography } from "./Typography";
 import { Image } from "./Image";
 
 const Stack = () => {
@@ -23,7 +22,7 @@ const Stack = () => {
     setShuffledStack(stackArray);
   }, []);
 
-  const sliders = Array.from({ length: 3 }, (_, index) => {
+  const sliders = Array.from({ length: 2 }, (_, index) => {
     const slider = [...shuffledStack].sort(() => Math.random() - 0.5);
 
     return (
@@ -35,14 +34,24 @@ const Stack = () => {
         )}
       >
         {slider.map(([title, image]) => (
-          <div
-            key={title}
-            className="mr-3 flex w-max items-center gap-2 rounded-lg border border-border/50 bg-muted px-3 py-2"
-          >
-            <Image src={image} width={20} alt={title} />
-            <Typography size="sm" className="font-medium">
-              {title}
-            </Typography>
+          <div key={title} className="mr-3 w-max">
+            <div className="relative flex h-full items-center overflow-hidden rounded-lg px-3 py-2">
+              <Image
+                src={image}
+                alt={title}
+                width={32}
+                height={32}
+                className="z-1"
+                loading="lazy"
+              />
+              <Image
+                src={image}
+                alt={title}
+                width={8}
+                height={8}
+                className="absolute inset-0 z-0 h-[125%] w-[125%] opacity-90 blur-xl"
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -50,20 +59,15 @@ const Stack = () => {
   });
 
   return (
-    <section className="space-y-4">
-      <div className="space-y-2">
-        <Title variant="title" size="xl">
-          Habilidades
-        </Title>
-        <Typography className="leading-relaxed">
-          Explore as tecnologias e ferramentas que impulsionam minha jornada de
-          desenvolvimento.
-        </Typography>
-      </div>
+    <section className="relative flex flex-col gap-4 overflow-hidden rounded-lg border border-border/50 bg-muted p-5">
+      <Title variant="title" size="xl">
+        Habilidades
+      </Title>
       <div className="relative flex flex-col justify-start gap-y-4 overflow-hidden py-2">
         {sliders}
         <div className="pointer-events-none absolute inset-0 bg-fade-gradient" />
       </div>
+      <div className="absolute right-8 top-0 h-px w-[500px] bg-gradient-to-l from-transparent via-primary/30 via-20% to-transparent" />
     </section>
   );
 };

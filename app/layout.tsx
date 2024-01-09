@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Poppins, Kanit } from "next/font/google";
+import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 
 import "@/styles/globals.css";
 
@@ -11,7 +12,6 @@ import { AnimateEnter } from "@/components/elements/AnimateEnter";
 import { CommandMenu } from "@/components/command";
 import { Sidebar } from "@/components/sidebar";
 import { Toast } from "@/components/elements/Toast";
-import { Texture } from "@/components/elements/Texture";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,10 +19,9 @@ const poppins = Poppins({
   variable: "--font-default",
 });
 
-const kanit = Kanit({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-mono",
+const calsans = localFont({
+  src: "../public/fonts/CalSans-SemiBold.woff2",
+  variable: "--font-calsans",
 });
 
 export const metadata: Metadata = {
@@ -101,7 +100,7 @@ const RootLayout = (props: RootLayoutProps) => {
         className={cn(
           "min-h-screen bg-background font-poppins outline-none",
           poppins.variable,
-          kanit.variable,
+          calsans.variable,
         )}
       >
         <AnimateEnter className="mx-auto flex max-w-6xl flex-col px-8 lg:flex-row lg:gap-10 lg:py-24">
@@ -112,7 +111,6 @@ const RootLayout = (props: RootLayoutProps) => {
           </Provider>
         </AnimateEnter>
         <Toast />
-        <Texture />
       </body>
     </html>
   );

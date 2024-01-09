@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
@@ -9,6 +10,8 @@ import { navLinks } from "@/data/mobile-menu";
 
 const MobileMenu = () => {
   const { showMenu, setShowMenu } = useHooks();
+
+  const pathname = usePathname();
 
   const scope = useMenuAnimation(showMenu);
 
@@ -39,11 +42,15 @@ const MobileMenu = () => {
           <Link
             key={name}
             href={path}
-            className="flex items-center gap-4 px-2 py-2.5 text-sm text-primary"
+            className={cn(
+              "flex items-center gap-4 px-2 py-2.5 text-sm text-foreground",
+              {
+                "text-primary/80": path === pathname,
+              },
+            )}
             onClick={handleCloseMenu}
           >
-            <span>{icon}</span>
-
+            {icon}
             {name}
           </Link>
         ))}

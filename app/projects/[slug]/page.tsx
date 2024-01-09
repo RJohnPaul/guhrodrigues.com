@@ -105,19 +105,21 @@ const ProjectPage = ({ params }: { params: any }) => {
             ))}
           </div>
           <div className="space-y-4">
-            <Title variant="title" size="xl">
+            <Title variant="title" size="lg">
               Tecnologias utilizadas
             </Title>
             <ul className="flex flex-wrap items-center gap-3">
               {techs.map((tech, index) => (
                 <li
                   key={index}
-                  className="flex items-center gap-2 rounded-lg border border-border/50 bg-muted px-3 py-2"
+                  className="relative flex items-center gap-2 overflow-hidden rounded-lg border border-border/50 bg-muted px-3 py-2"
                 >
                   <Image src={tech.image} width={20} alt={tech.name} />
                   <Typography size="sm" className="font-medium">
                     {tech.name}
                   </Typography>
+
+                  <div className="absolute right-0 top-0 h-px w-80 bg-gradient-to-l from-transparent via-primary/30 via-10% to-transparent" />
                 </li>
               ))}
             </ul>

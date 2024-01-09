@@ -7,6 +7,7 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
 import { Image } from "@/components/elements/Image";
 import { Typography } from "@/components/elements/Typography";
+import { Title } from "./Title";
 
 type Project = {
   image: StaticImageData;
@@ -34,9 +35,9 @@ const ProjectItem = (props: Project) => {
         mouseX.set(e.clientX - left);
         mouseY.set(e.clientY - top);
       }}
-      className="border-border group relative flex flex-col items-center rounded-xl border p-2"
+      className="group relative flex flex-col items-center overflow-hidden rounded-xl border border-border/50 p-2"
     >
-      <div className="absolute right-5 top-0 h-px w-80 bg-gradient-to-l from-transparent via-primary/30 via-10% to-transparent" />
+      <div className="absolute right-5 top-0 h-px w-[400px] bg-gradient-to-l from-transparent via-primary/30 via-20% to-transparent" />
       <motion.div
         className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
@@ -53,7 +54,9 @@ const ProjectItem = (props: Project) => {
         <Image src={image} className="rounded-md" alt={title} />
         <div className="flex w-full flex-col space-y-4 px-3 py-4">
           <div className="flex flex-col justify-center space-y-2">
-            <h3 className="font-mono text-xl text-primary">{title}</h3>
+            <Title variant="title" size="xl">
+              {title}
+            </Title>
             <Typography size="sm" className="leading-[1.7]">
               {smallDescription}
             </Typography>
