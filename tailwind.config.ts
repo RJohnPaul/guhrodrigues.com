@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         primary: colors.white,
         secondary: "#D3D2D2",
-        background: "#040102",
+        background: "#070405",
         foreground: colors.neutral[400],
         muted: "#090507",
         border: "#2D2E30",
