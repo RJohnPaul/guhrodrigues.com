@@ -48,7 +48,7 @@ const Stack = () => {
                 alt={title}
                 width={8}
                 height={8}
-                className="absolute inset-0 z-0 h-[125%] w-[125%] opacity-90 blur-xl"
+                className="absolute inset-0 -z-[1] h-[125%] w-[125%] opacity-90 blur-xl"
               />
             </div>
           </div>

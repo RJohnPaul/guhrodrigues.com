@@ -24,7 +24,7 @@ const config: Config = {
           "linear-gradient(90deg, #090507, transparent 20%, transparent 80%, #090507)",
       },
       animation: {
-        slide: "slide 35s linear infinite",
+        slide: "slide 100s linear infinite",
       },
       keyframes: {
         slide: {
