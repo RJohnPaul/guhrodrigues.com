@@ -54,8 +54,8 @@ const DesktopProfile = () => {
       </div>
       <div className="mb-1 mt-3 flex items-center gap-2">
         <div>
-          <div className="h-2.5 w-2.5 rounded-full bg-emerald-600">
-            <div className="z-[11] h-2.5 w-2.5 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
+          <div className="h-2.5 w-2.5 rounded-full bg-emerald-700">
+            <div className="z-[11] h-2.5 w-2.5 animate-ping rounded-full bg-emerald-700 transition-[4s]" />
           </div>
         </div>
         <Typography size="xs" variant="muted">
