@@ -23,7 +23,7 @@ const LatestProjects = () => {
         </Title>
         <Link
           href="/projects"
-          className="hover:text-secondary flex select-none items-center gap-1 text-xs font-medium text-foreground duration-300"
+          className="flex select-none items-center gap-1 text-xs font-medium text-foreground duration-300 hover:text-secondary"
           onMouseEnter={() => arrowRef.current?.play()}
           onMouseLeave={() => arrowRef.current?.stop()}
         >
