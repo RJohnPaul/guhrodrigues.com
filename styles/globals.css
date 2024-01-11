@@ -16,7 +16,7 @@
   }
 
   ::selection {
-    @apply bg-neutral-800/50 text-primary/60;
+    @apply bg-teal-500/10 text-teal-400;
   }
 
   h1 {
